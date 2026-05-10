@@ -341,6 +341,35 @@ class SystemConfigApiTestCase(unittest.TestCase):
             self.assertEqual(import_ctx.exception.status_code, 401)
             self.assertEqual(import_ctx.exception.detail["error"], "env_backup_access_denied")
 
+    def test_config_env_endpoints_require_explicit_true_for_desktop_bypass(self) -> None:
+        with patch.dict(
+            os.environ,
+            {"DSA_DESKTOP_MODE": "desktop"},
+            clear=False,
+        ):
+            self.env_path.write_text(
+                "\n".join(
+                    [
+                        "STOCK_LIST=600519,000001",
+                        "GEMINI_API_KEY=secret-key-value",
+                        "SCHEDULE_TIME=18:00",
+                        "LOG_LEVEL=INFO",
+                        "ADMIN_AUTH_ENABLED=false",
+                    ]
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            self.manager = ConfigManager(env_path=self.env_path)
+            self.service = SystemConfigService(manager=self.manager)
+            Config.reset_instance()
+
+            with self.assertRaises(HTTPException) as export_ctx:
+                system_config.export_system_config(service=self.service)
+
+            self.assertEqual(export_ctx.exception.status_code, 401)
+            self.assertEqual(export_ctx.exception.detail["error"], "env_backup_access_denied")
+
     def test_config_env_endpoints_return_server_error_for_storage_permission_error(self) -> None:
         current = system_config.get_system_config(include_schema=False, service=self.service).model_dump()
 

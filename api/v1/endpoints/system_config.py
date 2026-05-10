@@ -35,7 +35,6 @@ from src.services.system_config_service import (
     ConfigValidationError,
     SystemConfigService,
 )
-from src.config import parse_env_bool
 
 logger = logging.getLogger(__name__)
 
@@ -48,7 +47,7 @@ def _allow_env_backup_access() -> None:
     - Desktop runtime keeps existing local behavior via DSA_DESKTOP_MODE.
     - Non-desktop runtime must be explicitly enabled via admin auth.
     """
-    if parse_env_bool(os.getenv("DSA_DESKTOP_MODE"), default=False):
+    if os.getenv("DSA_DESKTOP_MODE") == "true":
         return
 
     refresh_auth_state()
