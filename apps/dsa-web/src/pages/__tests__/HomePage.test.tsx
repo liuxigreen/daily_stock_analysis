@@ -209,6 +209,54 @@ describe('HomePage', () => {
     expect(analysisApi.getStatus).toHaveBeenCalledWith('task-1');
   });
 
+  it('scrolls the dashboard to market review feedback after toolbar clicks', async () => {
+    vi.mocked(historyApi.getList).mockResolvedValue({
+      total: 1,
+      page: 1,
+      limit: 20,
+      items: [historyItem],
+    });
+    vi.mocked(historyApi.getDetail).mockResolvedValue(historyReport);
+    vi.mocked(analysisApi.triggerMarketReview).mockResolvedValue({
+      status: 'accepted',
+      sendNotification: true,
+      message: '大盘复盘任务已提交',
+      taskId: 'task-1',
+    });
+    vi.mocked(analysisApi.getStatus).mockResolvedValue({
+      taskId: 'task-1',
+      status: 'completed',
+      marketReviewReport: '市场复盘报告示例文本',
+    });
+
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>,
+    );
+
+    await screen.findByText('趋势维持强势');
+    const dashboardScroll = screen.getByTestId('home-dashboard-scroll');
+    const scrollToMock = vi.fn(function scrollTo(this: HTMLElement, options?: ScrollToOptions) {
+      if (typeof options?.top === 'number') {
+        this.scrollTop = options.top;
+      }
+    });
+    Object.defineProperty(dashboardScroll, 'scrollTo', {
+      configurable: true,
+      value: scrollToMock,
+    });
+    dashboardScroll.scrollTop = 480;
+
+    fireEvent.click(screen.getByRole('button', { name: '大盘复盘' }));
+
+    await waitFor(() => {
+      expect(scrollToMock).toHaveBeenCalledWith({ top: 0, behavior: 'smooth' });
+    });
+    expect(dashboardScroll.scrollTop).toBe(0);
+    expect(await screen.findByText('大盘复盘已完成')).toBeInTheDocument();
+  });
+
   it('keeps market review results in the main dashboard scroll area', async () => {
     vi.mocked(historyApi.getList).mockResolvedValue({
       total: 0,

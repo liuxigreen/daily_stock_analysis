@@ -31,12 +31,27 @@ const HomePage: React.FC = () => {
   const [marketReviewReport, setMarketReviewReport] = useState<string | null>(null);
   const [marketReviewReportCopied, setMarketReviewReportCopied] = useState(false);
   const marketReviewPollTimer = useRef<number | null>(null);
+  const dashboardScrollRef = useRef<HTMLElement | null>(null);
 
   const stopMarketReviewPolling = useCallback(() => {
     if (marketReviewPollTimer.current !== null) {
       window.clearInterval(marketReviewPollTimer.current);
       marketReviewPollTimer.current = null;
     }
+  }, []);
+
+  const scrollMarketReviewFeedbackIntoView = useCallback(() => {
+    const scrollContainer = dashboardScrollRef.current;
+    if (!scrollContainer) {
+      return;
+    }
+
+    if (typeof scrollContainer.scrollTo === 'function') {
+      scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    scrollContainer.scrollTop = 0;
   }, []);
 
   useEffect(() => stopMarketReviewPolling, [stopMarketReviewPolling]);
@@ -187,6 +202,7 @@ const HomePage: React.FC = () => {
             title: '大盘复盘已超时',
             message: '任务长时间未返回最终结果，请在任务列表/历史中查看。',
           });
+          scrollMarketReviewFeedbackIntoView();
           return false;
         }
 
@@ -219,6 +235,7 @@ const HomePage: React.FC = () => {
               message: marketReviewText ? '大盘复盘任务已完成，结果如下：' : '大盘复盘任务已完成，结果已生成并按配置推送。',
             });
             setMarketReviewError(null);
+            scrollMarketReviewFeedbackIntoView();
             return false;
           }
 
@@ -237,6 +254,7 @@ const HomePage: React.FC = () => {
               }),
             );
             setMarketReviewNotice(null);
+            scrollMarketReviewFeedbackIntoView();
             return false;
           }
 
@@ -247,6 +265,7 @@ const HomePage: React.FC = () => {
             title: '大盘复盘状态异常',
             message: `收到未知任务状态：${status.status}`,
           });
+          scrollMarketReviewFeedbackIntoView();
           return false;
         } catch (err: unknown) {
           const parsed = getParsedApiError(err);
@@ -255,6 +274,7 @@ const HomePage: React.FC = () => {
             setMarketReviewReport(null);
             setMarketReviewError(parsed);
             setMarketReviewNotice(null);
+            scrollMarketReviewFeedbackIntoView();
             return false;
           }
           return true;
@@ -273,7 +293,7 @@ const HomePage: React.FC = () => {
         }, intervalMs);
       }
     },
-    [stopMarketReviewPolling],
+    [scrollMarketReviewFeedbackIntoView, stopMarketReviewPolling],
   );
 
   const handleTriggerMarketReview = useCallback(async () => {
@@ -281,6 +301,7 @@ const HomePage: React.FC = () => {
     setMarketReviewNotice(null);
     setMarketReviewError(null);
     setMarketReviewReport(null);
+    scrollMarketReviewFeedbackIntoView();
     try {
       const result = await analysisApi.triggerMarketReview({ sendNotification: notify });
       setMarketReviewNotice({
@@ -288,6 +309,7 @@ const HomePage: React.FC = () => {
         title: '大盘复盘已提交',
         message: result.message,
       });
+      scrollMarketReviewFeedbackIntoView();
 
       if (result.taskId) {
         await pollMarketReviewStatus(result.taskId);
@@ -295,10 +317,11 @@ const HomePage: React.FC = () => {
     } catch (err: unknown) {
       setMarketReviewError(getParsedApiError(err));
       setMarketReviewNotice(null);
+      scrollMarketReviewFeedbackIntoView();
     } finally {
       setIsSubmittingMarketReview(false);
     }
-  }, [notify, pollMarketReviewStatus]);
+  }, [notify, pollMarketReviewStatus, scrollMarketReviewFeedbackIntoView]);
 
   const handleCopyMarketReviewReport = useCallback(() => {
     if (!marketReviewReport) {
@@ -497,6 +520,7 @@ const HomePage: React.FC = () => {
           ) : null}
 
           <section
+            ref={dashboardScrollRef}
             data-testid="home-dashboard-scroll"
             className="flex-1 min-w-0 min-h-0 overflow-x-auto overflow-y-auto px-3 pb-4 md:px-6 touch-pan-y"
           >
