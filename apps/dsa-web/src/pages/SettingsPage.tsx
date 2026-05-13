@@ -14,6 +14,7 @@ import {
   SettingsAlert,
   SettingsField,
   SettingsLoading,
+  SettingsPanelErrorBoundary,
   SettingsSectionCard,
 } from '../components/settings';
 import { WEB_BUILD_INFO } from '../utils/constants';
@@ -495,6 +496,31 @@ const SettingsPage: React.FC = () => {
   };
 
   const desktopUpdateNotice = getDesktopUpdateNotice(desktopUpdateState);
+  const shouldGuardActiveConfigPanel = activeCategory === 'notification' || activeCategory === 'agent';
+  const activeConfigPanelErrorTitle = activeCategory === 'agent' ? 'Agent 设置' : '通知设置';
+  const activeConfigPanel = activeItems.length ? (
+    <SettingsSectionCard
+      title="当前分类配置项"
+      description={getCategoryDescriptionZh(activeCategory as SystemConfigCategory, '') || '使用统一字段卡片维护当前分类的系统配置。'}
+    >
+      {activeItems.map((item) => (
+        <SettingsField
+          key={item.key}
+          item={item}
+          value={item.value}
+          disabled={isSaving}
+          onChange={setDraftValue}
+          issues={issueByKey[item.key] || []}
+        />
+      ))}
+    </SettingsSectionCard>
+  ) : (
+    <EmptyState
+      title="当前分类下暂无配置项"
+      description="当前分类没有可编辑字段；可切换左侧分类继续查看其它系统配置。"
+      className="settings-surface-panel settings-border-strong border-none bg-transparent shadow-none"
+    />
+  );
 
   return (
     <div className="settings-page min-h-full px-4 pb-6 pt-4 md:px-6">
@@ -754,35 +780,25 @@ const SettingsPage: React.FC = () => {
               <ChangePasswordCard />
             ) : null}
             {activeCategory === 'notification' ? (
-              <NotificationTestPanel
-                items={rawActiveItems.map((item) => ({ key: item.key, value: String(item.value ?? '') }))}
-                maskToken={maskToken}
-                disabled={isSaving || isLoading}
-              />
-            ) : null}
-            {activeItems.length ? (
-              <SettingsSectionCard
-                title="当前分类配置项"
-                description={getCategoryDescriptionZh(activeCategory as SystemConfigCategory, '') || '使用统一字段卡片维护当前分类的系统配置。'}
+              <SettingsPanelErrorBoundary
+                title="通知测试"
+                resetKey={`notification-test:${configVersion}`}
               >
-                {activeItems.map((item) => (
-                  <SettingsField
-                    key={item.key}
-                    item={item}
-                    value={item.value}
-                    disabled={isSaving}
-                    onChange={setDraftValue}
-                    issues={issueByKey[item.key] || []}
-                  />
-                ))}
-              </SettingsSectionCard>
-            ) : (
-              <EmptyState
-                title="当前分类下暂无配置项"
-                description="当前分类没有可编辑字段；可切换左侧分类继续查看其它系统配置。"
-                className="settings-surface-panel settings-border-strong border-none bg-transparent shadow-none"
-              />
-            )}
+                <NotificationTestPanel
+                  items={rawActiveItems.map((item) => ({ key: item.key, value: String(item.value ?? '') }))}
+                  maskToken={maskToken}
+                  disabled={isSaving || isLoading}
+                />
+              </SettingsPanelErrorBoundary>
+            ) : null}
+            {shouldGuardActiveConfigPanel && activeItems.length ? (
+              <SettingsPanelErrorBoundary
+                title={activeConfigPanelErrorTitle}
+                resetKey={`${activeCategory}:${configVersion}`}
+              >
+                {activeConfigPanel}
+              </SettingsPanelErrorBoundary>
+            ) : activeConfigPanel}
           </section>
         </div>
       )}

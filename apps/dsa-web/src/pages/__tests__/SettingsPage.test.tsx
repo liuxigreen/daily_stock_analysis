@@ -21,6 +21,7 @@ const {
   applyPartialUpdate,
   refreshAfterExternalSave,
   refreshStatus,
+  settingsPanelErrorBoundary,
   useAuthMock,
   useSystemConfigMock,
   webBuildInfoMock,
@@ -41,6 +42,7 @@ const {
   applyPartialUpdate: vi.fn(),
   refreshAfterExternalSave: vi.fn(),
   refreshStatus: vi.fn(),
+  settingsPanelErrorBoundary: vi.fn(),
   useAuthMock: vi.fn(),
   useSystemConfigMock: vi.fn(),
   webBuildInfoMock: {
@@ -141,6 +143,16 @@ vi.mock('../../components/settings', () => ({
   ),
   SettingsField: ({ item }: { item: { key: string } }) => <div>{item.key}</div>,
   SettingsLoading: () => <div>loading</div>,
+  SettingsPanelErrorBoundary: ({
+    title,
+    children,
+  }: {
+    title: string;
+    children: React.ReactNode;
+  }) => {
+    settingsPanelErrorBoundary(title);
+    return <>{children}</>;
+  },
   SettingsSectionCard: ({
     title,
     description,
@@ -578,6 +590,7 @@ describe('SettingsPage', () => {
     expect(screen.getByText('AGENT_ORCHESTRATOR_TIMEOUT_S')).toBeInTheDocument();
     expect(screen.getByText('AGENT_DEEP_RESEARCH_BUDGET')).toBeInTheDocument();
     expect(screen.getByText('AGENT_EVENT_MONITOR_ENABLED')).toBeInTheDocument();
+    expect(settingsPanelErrorBoundary).toHaveBeenCalledWith('Agent 设置');
   });
 
   it('reset button semantic: discards local changes without network request', () => {
@@ -633,6 +646,8 @@ describe('SettingsPage', () => {
 
     expect(screen.getByText('通知测试面板:WECHAT_WEBHOOK_URL')).toBeInTheDocument();
     expect(screen.getByText('WECHAT_WEBHOOK_URL')).toBeInTheDocument();
+    expect(settingsPanelErrorBoundary).toHaveBeenCalledWith('通知测试');
+    expect(settingsPanelErrorBoundary).toHaveBeenCalledWith('通知设置');
   });
 
   it('renders env backup actions outside desktop runtime', () => {
