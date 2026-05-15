@@ -415,6 +415,24 @@ class ExtensionRuntimeTestCase(unittest.TestCase):
         self.assertEqual(result.error.code, "invalid_input")
         self.assertEqual(result.error.details["field_errors"], {"items": "must be an array"})
 
+    def test_builtin_analyze_stock_rejects_non_string_fields_before_submission(self):
+        task_runner = StubTaskRunner()
+        runtime = create_builtin_extension_runtime()
+        runtime.task_runner = task_runner
+
+        dry_run = runtime.execute_action("dsa.analyze_stock", {"stock_code": []}, {"dry_run": True})
+        async_result = runtime.execute_action("dsa.analyze_stock", {"stock_code": {}, "report_type": []})
+
+        self.assertFalse(dry_run.ok)
+        self.assertEqual(dry_run.error.code, "invalid_input")
+        self.assertEqual(dry_run.error.details["field_errors"], {"stock_code": "must be a string"})
+        self.assertFalse(async_result.ok)
+        self.assertEqual(
+            async_result.error.details["field_errors"],
+            {"stock_code": "must be a string", "report_type": "must be a string"},
+        )
+        self.assertEqual(task_runner.calls, [])
+
     def test_async_submission_failure_returns_structured_error(self):
         class FailingTaskRunner:
             def submit(self, **kwargs):

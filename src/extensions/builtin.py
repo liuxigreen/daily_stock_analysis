@@ -56,7 +56,14 @@ def get_builtin_actions() -> list[ActionDefinition]:
             plugin_id="dsa-core",
             description="Run DSA stock analysis through the shared Action Runtime.",
             handler=_handle_analyze_stock,
-            input_schema={"type": "object", "required": ["stock_code"]},
+            input_schema={
+                "type": "object",
+                "required": ["stock_code"],
+                "properties": {
+                    "stock_code": {"type": "string"},
+                    "report_type": {"type": "string"},
+                },
+            },
             mode=ActionMode.ASYNC,
             permissions=["analysis.run"],
             timeout_seconds=300,
