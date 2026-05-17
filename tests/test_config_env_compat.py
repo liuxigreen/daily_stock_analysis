@@ -44,19 +44,24 @@ class _FakeUrlopenResponse:
         return self._final_url
 
 
+def _safe_stock_list_fetch_getaddrinfo(_host, port, *_args, **_kwargs):
+    resolved_port = 443 if port is None else port
+    return [
+        (
+            socket.AF_INET,
+            socket.SOCK_STREAM,
+            socket.IPPROTO_TCP,
+            "",
+            ("93.184.216.34", resolved_port),
+        )
+    ]
+
+
 class ConfigEnvCompatibilityTestCase(unittest.TestCase):
     def setUp(self):
         self._getaddrinfo_patcher = patch(
             "src.config.socket.getaddrinfo",
-            return_value=[
-                (
-                    socket.AF_INET,
-                    socket.SOCK_STREAM,
-                    socket.IPPROTO_TCP,
-                    "",
-                    ("93.184.216.34", 443),
-                )
-            ],
+            side_effect=_safe_stock_list_fetch_getaddrinfo,
         )
         self.mock_getaddrinfo = self._getaddrinfo_patcher.start()
 
@@ -926,6 +931,7 @@ class ConfigEnvCompatibilityTestCase(unittest.TestCase):
         mock_urlopen,
         _mock_setup_env,
     ) -> None:
+        self.mock_getaddrinfo.side_effect = None
         self.mock_getaddrinfo.return_value = [
             (
                 socket.AF_INET,
@@ -958,6 +964,7 @@ class ConfigEnvCompatibilityTestCase(unittest.TestCase):
         mock_urlopen,
         _mock_setup_env,
     ) -> None:
+        self.mock_getaddrinfo.side_effect = None
         self.mock_getaddrinfo.return_value = [
             (
                 socket.AF_INET6,
@@ -1014,6 +1021,7 @@ class ConfigEnvCompatibilityTestCase(unittest.TestCase):
         mock_urlopen,
         _mock_setup_env,
     ) -> None:
+        self.mock_getaddrinfo.side_effect = None
         self.mock_getaddrinfo.return_value = [
             (
                 socket.AF_INET,
