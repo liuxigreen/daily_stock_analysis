@@ -146,6 +146,7 @@ daily_stock_analysis/
 |------------|------|:----:|
 | `STOCK_LIST` | 自选股代码，如 `600519,300750,002594`；当 `STOCK_LIST_FETCH_API` 不可用或返回空列表时作为兜底 | ✅ |
 | `STOCK_LIST_FETCH_API` | 可选 HTTP(S) 地址，用于动态拉取自选股列表；支持纯文本、JSON 数组或 `{"stocks":[...]}` / `{"stock_list":[...]}` / `{"codes":[...]}`；该请求不复用 `HTTP_PROXY`/`HTTPS_PROXY`，并会阻断 loopback、link-local 和云 metadata 地址；启动进程时显式设置的进程级环境变量优先于 WebUI 写回的 `.env` 值 | 可选 |
+> 兼容性说明（Issue #786）：该改动仅改变自选股加载来源与回退顺序，不修改 LLM provider、Base URL、模型清理/迁移语义；回退方式为清空 `STOCK_LIST_FETCH_API` 恢复 `STOCK_LIST` 兜底。
 | `ANSPIRE_API_KEYS` | [Anspire AI Search](https://aisearch.anspire.cn/) 针对中文内容特别优化；同一 Key 可用于搜索与 Anspire 大模型网关的兜底示例（是否可用以控制台与账号权限为准） | 推荐 |
 | `SERPAPI_API_KEYS` | [SerpAPI](https://serpapi.com/baidu-search-api?utm_source=github_daily_stock_analysis) 搜索引擎结果补强，适合实时金融新闻 | 推荐 |
 | `TAVILY_API_KEYS` | [Tavily](https://tavily.com/) 搜索 API（新闻搜索） | 可选 |

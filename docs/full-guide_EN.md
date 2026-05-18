@@ -141,6 +141,7 @@ Go to your forked repo → `Settings` → `Secrets and variables` → `Actions` 
 |------------|------|:----:|
 | `STOCK_LIST` | Watchlist codes, e.g., `600519,300750,002594`; used as fallback when `STOCK_LIST_FETCH_API` is unavailable or empty | ✅ |
 | `STOCK_LIST_FETCH_API` | Optional HTTP(S) endpoint for a dynamic watchlist; supports plain text, JSON arrays, or `{"stocks":[...]}` / `{"stock_list":[...]}` / `{"codes":[...]}`; request does not reuse `HTTP_PROXY`/`HTTPS_PROXY`, and loopback, link-local, and cloud metadata addresses are blocked; process-level env set before startup has highest priority over WebUI-written `.env` values | Optional |
+> Compatibility note (Issue #786): this change only updates stock-list source/ordering and fallback behavior, and does not alter LLM provider, Base URL, or LiteLLM model cleanup/migration semantics. Rollback is to clear `STOCK_LIST_FETCH_API` so `STOCK_LIST` fallback is used.
 | `ANSPIRE_API_KEYS` | [Anspire AI Search](https://aisearch.anspire.cn/) optimized for Chinese content; the same key can also be used for Anspire LLM fallback scenarios (example model: `Doubao-Seed-2.0-lite`) | Recommended |
 | `SERPAPI_API_KEYS` | [SerpAPI](https://serpapi.com/baidu-search-api?utm_source=github_daily_stock_analysis) search-engine results for realtime financial news | Recommended |
 | `TAVILY_API_KEYS` | [Tavily](https://tavily.com/) Search API (for news search) | Optional |

@@ -600,6 +600,36 @@ class ConfigEnvCompatibilityTestCase(unittest.TestCase):
     @patch("src.config.setup_env")
     @patch("src.config._open_stock_list_fetch_request")
     @patch.object(Config, "_parse_litellm_yaml", return_value=[])
+    def test_stock_list_fetch_api_does_not_touch_llm_routing_configuration(
+        self,
+        _mock_parse_yaml,
+        mock_urlopen,
+        _mock_setup_env,
+    ) -> None:
+        mock_urlopen.return_value = _FakeUrlopenResponse('[\"600519\"]')
+
+        with patch.dict(
+            os.environ,
+            {
+                "STOCK_LIST": "000001",
+                "STOCK_LIST_FETCH_API": "https://example.com/stocks.json",
+                "LITELLM_MODEL": "deepseek/deepseek-v4-flash",
+                "OPENAI_BASE_URL": "https://open.example.com/v1",
+                "OPENAI_API_KEY": "openai-test",
+            },
+            clear=True,
+        ):
+            config = Config._load_from_env()
+
+        self.assertEqual(config.stock_list, ["600519"])
+        self.assertEqual(config.stock_list_fetch_api, "https://example.com/stocks.json")
+        self.assertEqual(config.litellm_model, "deepseek/deepseek-v4-flash")
+        self.assertEqual(config.openai_base_url, "https://open.example.com/v1")
+        self.assertEqual(config.openai_api_keys, ["openai-test"])
+
+    @patch("src.config.setup_env")
+    @patch("src.config._open_stock_list_fetch_request")
+    @patch.object(Config, "_parse_litellm_yaml", return_value=[])
     def test_stock_list_fetch_api_text_payload_supports_commas_and_newlines(
         self,
         _mock_parse_yaml,
