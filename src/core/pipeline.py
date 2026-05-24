@@ -1682,6 +1682,8 @@ class StockAnalysisPipeline:
             "realtime_quote_raw": self._safe_to_dict(realtime_quote),
             "chip_distribution_raw": self._safe_to_dict(chip_data),
         }
+        if news_content is not None:
+            snapshot["news_retrieval_content"] = news_content
         if news_result_count is not None:
             snapshot["news_result_count"] = news_result_count
         diagnostic_snapshot = current_diagnostic_snapshot()

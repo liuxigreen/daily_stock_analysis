@@ -553,8 +553,8 @@ def _provider_component(
 
 def _news_component(context_snapshot: Dict[str, Any], raw_result: Dict[str, Any]) -> RunDiagnosticComponent:
     label = "新闻搜索"
-    has_snapshot_news = "news_content" in context_snapshot
-    news_content = context_snapshot.get("news_content")
+    has_retrieval_news = "news_retrieval_content" in context_snapshot
+    has_snapshot_news = has_retrieval_news or "news_content" in context_snapshot
     news_result_count = context_snapshot.get("news_result_count")
     if isinstance(news_result_count, int):
         if news_result_count > 0:
@@ -566,10 +566,10 @@ def _news_component(context_snapshot: Dict[str, Any], raw_result: Dict[str, Any]
                 {"record_count": news_result_count},
             )
         return _component("news", label, "degraded", "新闻搜索无结果", {"record_count": 0})
-    if isinstance(news_content, str) and news_content.strip():
-        return _component("news", label, "ok", "新闻摘要已获取")
-    if has_snapshot_news:
-        return _component("news", label, "degraded", "未获取到新闻摘要或新闻搜索无结果")
+    if has_snapshot_news and not has_retrieval_news:
+        if isinstance(context_snapshot.get("news_content"), str) and context_snapshot.get("news_content").strip():
+            return _component("news", label, "unknown", "新闻检索原始证据缺失（历史字段）")
+        return _component("news", label, "degraded", "未获取到新闻检索原始证据")
     return _component("news", label, "unknown", "新闻搜索未记录诊断信息")
 
 

@@ -171,6 +171,25 @@ class RunDiagnosticsP2TestCase(unittest.TestCase):
         self.assertEqual(summary["components"]["news"]["status"], "degraded")
         self.assertEqual(summary["status"], "degraded")
 
+    def test_news_summary_string_is_not_treated_as_retrieval_evidence(self) -> None:
+        diagnostics = _diagnostic_snapshot()
+
+        summary = build_run_diagnostic_summary(
+            context_snapshot={
+                "diagnostics": diagnostics,
+                "news_content": "模型生成的新闻摘要",
+            },
+            raw_result={
+                "success": True,
+                "model_used": "deepseek-chat",
+                "analysis_summary": "测试摘要",
+                "news_summary": "模型生成的新闻摘要",
+            },
+            report_saved=True,
+        )
+
+        self.assertEqual(summary["components"]["news"]["status"], "unknown")
+
     def test_news_result_count_zero_is_degraded_even_with_formatted_text(self) -> None:
         diagnostics = _diagnostic_snapshot()
 
