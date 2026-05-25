@@ -1032,7 +1032,12 @@ class StockAnalysisPipeline:
             # 保存分析历史记录
             if result and result.success:
                 try:
-                    history_context = self._without_market_phase_context(initial_context)
+                    history_context = self._build_context_snapshot(
+                        enhanced_context=initial_context,
+                        news_content=initial_context.get("news_context"),
+                        realtime_quote=realtime_quote,
+                        chip_data=chip_data,
+                    )
                     history_context["stock_name"] = resolved_stock_name
                     saved_count = self.db.save_analysis_history(
                         result=result,
