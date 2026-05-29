@@ -557,7 +557,12 @@ python main.py --workers 5            # Specify concurrency
 
 ### GitHub Actions Schedule
 
-Edit `.github/workflows/00-daily-analysis.yml`:
+GitHub Actions parses `on.schedule.cron` before a job starts, so the cron expression cannot directly
+read Repository Variables, Secrets, or env values. As a result, the `SCHEDULE_TIME` repository
+variable only applies to the built-in local scheduler (`python main.py --schedule`); setting it alone
+does not change the default GitHub Actions trigger time.
+
+The default workflow still uses a fixed cron:
 
 ```yaml
 schedule:
@@ -565,7 +570,9 @@ schedule:
   - cron: '0 10 * * 1-5'   # Monday to Friday 18:00 (Beijing Time)
 ```
 
-Common time reference:
+To change the actual GitHub Actions trigger time, edit the cron in
+`.github/workflows/00-daily-analysis.yml` in your fork or private repository and convert Beijing Time
+to UTC:
 
 | Beijing Time | UTC cron expression |
 |---------|----------------|

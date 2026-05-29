@@ -621,7 +621,12 @@ python main.py --workers 5            # 指定并发数
 
 ### GitHub Actions 定时
 
-编辑 `.github/workflows/00-daily-analysis.yml`:
+GitHub Actions 的 `on.schedule.cron` 在 job 启动前由 GitHub 调度器解析，不能直接读取
+Repository Variables、Secrets 或 env。因此，仓库变量 `SCHEDULE_TIME` 只对本地内置
+`python main.py --schedule` 调度模式生效；在默认 GitHub Actions workflow 中，单独配置
+`SCHEDULE_TIME` 不能改变触发时间。
+
+默认 workflow 仍使用固定 cron：
 
 ```yaml
 schedule:
@@ -629,7 +634,8 @@ schedule:
   - cron: '0 10 * * 1-5'   # 周一到周五 18:00（北京时间）
 ```
 
-常用时间对照：
+如需调整 GitHub Actions 的实际触发时间，需要在 fork 或私有仓库中修改
+`.github/workflows/00-daily-analysis.yml` 的 cron，并按 UTC 时间换算：
 
 | 北京时间 | UTC cron 表达式 |
 |---------|----------------|
