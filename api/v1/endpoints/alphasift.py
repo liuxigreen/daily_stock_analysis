@@ -21,7 +21,7 @@ from pydantic import BaseModel, Field
 
 from api.deps import get_config_dep
 from src.auth import COOKIE_NAME, is_auth_enabled, refresh_auth_state, verify_session
-from src.config import Config, DEFAULT_ALPHASIFT_INSTALL_SPEC
+from src.config import Config, DEFAULT_ALPHASIFT_INSTALL_SPEC, get_configured_llm_models
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -30,6 +30,7 @@ ALPHASIFT_DSA_ADAPTER_MODULE = "alphasift.dsa_adapter"
 ALPHASIFT_EXPECTED_MISSING_MODULES = frozenset({"alphasift", ALPHASIFT_DSA_ADAPTER_MODULE})
 ALLOWED_ALPHASIFT_INSTALL_SPECS = frozenset({DEFAULT_ALPHASIFT_INSTALL_SPEC})
 _ALPHASIFT_INSTALL_LOCK = threading.RLock()
+ALPHASIFT_MANAGED_LITELLM_PROVIDERS = frozenset({"gemini", "vertex_ai", "anthropic", "openai", "deepseek"})
 _ALPHASIFT_RUNTIME_ENV_LOCK = threading.RLock()
 
 
@@ -575,9 +576,10 @@ def _build_alphasift_runtime_env(config: Config) -> Dict[str, str]:
         if text:
             env[key] = text
 
-    put("LITELLM_MODEL", config.litellm_model)
-    if config.litellm_fallback_models:
-        put("LITELLM_FALLBACK_MODELS", ",".join(config.litellm_fallback_models))
+    litellm_model, fallback_models = _resolve_alphasift_llm_models(config)
+    put("LITELLM_MODEL", litellm_model)
+    if fallback_models:
+        put("LITELLM_FALLBACK_MODELS", ",".join(fallback_models))
     put("LITELLM_CONFIG", config.litellm_config_path)
     if os.getenv("LLM_TEMPERATURE") not in (None, ""):
         put("LLM_TEMPERATURE", config.llm_temperature)
@@ -621,16 +623,57 @@ def _build_alphasift_runtime_env(config: Config) -> Dict[str, str]:
 
 def _build_alphasift_context(config: Config) -> Dict[str, Any]:
     channels = _normalize_dsa_llm_channels(config)
+    litellm_model, fallback_models = _resolve_alphasift_llm_models(config)
     return {
         "llm": {
-            "model": config.litellm_model or "",
-            "fallback_models": list(config.litellm_fallback_models or []),
+            "model": litellm_model,
+            "fallback_models": fallback_models,
             "temperature": config.llm_temperature,
             "channels": channels,
             "model_list": _to_plain(config.llm_model_list or []),
             "litellm_config_path": config.litellm_config_path or "",
         }
     }
+
+
+def _resolve_alphasift_llm_models(config: Config) -> Tuple[str, List[str]]:
+    primary = _env_text(config.litellm_model)
+    configured_models = get_configured_llm_models(config.llm_model_list or [])
+    configured_model_set = set(configured_models)
+
+    if configured_models and (
+        not primary or (primary not in configured_model_set and _is_managed_litellm_model(primary))
+    ):
+        primary = configured_models[0]
+
+    raw_fallbacks = _dedupe_strings(config.litellm_fallback_models or [])
+    if not configured_models:
+        return primary, [model for model in raw_fallbacks if model != primary]
+
+    fallback_models: List[str] = []
+    seen = {primary} if primary else set()
+
+    for model in raw_fallbacks:
+        if model in seen:
+            continue
+        if model in configured_model_set or not _is_managed_litellm_model(model):
+            fallback_models.append(model)
+            seen.add(model)
+
+    for model in configured_models:
+        if model and model not in seen:
+            fallback_models.append(model)
+            seen.add(model)
+
+    return primary, fallback_models
+
+
+def _is_managed_litellm_model(model: str) -> bool:
+    text = _env_text(model)
+    if not text:
+        return False
+    provider = text.split("/", 1)[0].lower() if "/" in text else "openai"
+    return provider in ALPHASIFT_MANAGED_LITELLM_PROVIDERS
 
 
 def _normalize_dsa_llm_channels(config: Config) -> List[Dict[str, Any]]:

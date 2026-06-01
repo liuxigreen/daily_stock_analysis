@@ -530,6 +530,74 @@ class AlphaSiftOpportunitiesApiTestCase(unittest.TestCase):
         self.assertEqual(context["llm"]["channels"][0]["api_keys"], ["dsa-gemini-key"])
         self.assertEqual(payload["candidate_count"], 0)
 
+    def test_screen_filters_undeclared_managed_fallbacks_for_dsa_routes(self) -> None:
+        config = Config(
+            alphasift_enabled=True,
+            alphasift_install_spec=DEFAULT_ALPHASIFT_TEST_SPEC,
+            litellm_model="gemini/gemini-3-flash-preview",
+            litellm_fallback_models=["gemini/gemini-2.5-flash"],
+            llm_channels=[
+                {
+                    "name": "gemini",
+                    "protocol": "gemini",
+                    "enabled": True,
+                    "base_url": "",
+                    "api_keys": ["dsa-gemini-key"],
+                    "models": ["gemini/gemini-3-flash-preview"],
+                },
+                {
+                    "name": "deepseek",
+                    "protocol": "deepseek",
+                    "enabled": True,
+                    "base_url": "https://api.deepseek.com",
+                    "api_keys": ["dsa-deepseek-key"],
+                    "models": ["deepseek/deepseek-chat"],
+                },
+            ],
+            llm_model_list=[
+                {
+                    "model_name": "gemini/gemini-3-flash-preview",
+                    "litellm_params": {
+                        "model": "gemini/gemini-3-flash-preview",
+                        "api_key": "dsa-gemini-key",
+                    },
+                },
+                {
+                    "model_name": "deepseek/deepseek-chat",
+                    "litellm_params": {
+                        "model": "deepseek/deepseek-chat",
+                        "api_key": "dsa-deepseek-key",
+                        "api_base": "https://api.deepseek.com",
+                    },
+                },
+            ],
+        )
+        captured: dict[str, object] = {}
+
+        def screen_impl(_strategy: str, **kwargs):
+            captured["env"] = {
+                "LITELLM_MODEL": alphasift_endpoint.os.environ.get("LITELLM_MODEL"),
+                "LITELLM_FALLBACK_MODELS": alphasift_endpoint.os.environ.get("LITELLM_FALLBACK_MODELS"),
+                "LLM_CHANNELS": alphasift_endpoint.os.environ.get("LLM_CHANNELS"),
+            }
+            captured["context"] = kwargs.get("context")
+            return {"candidates": []}
+
+        fake_module = _make_adapter_module(screen=MagicMock(side_effect=screen_impl))
+
+        with patch("api.v1.endpoints.alphasift._import_alphasift", return_value=fake_module):
+            payload = self._screen(config, market="cn", strategy="dual_low", max_results=5)
+
+        runtime_env = captured["env"]
+        self.assertIsInstance(runtime_env, dict)
+        self.assertEqual(runtime_env["LITELLM_MODEL"], "gemini/gemini-3-flash-preview")
+        self.assertEqual(runtime_env["LITELLM_FALLBACK_MODELS"], "deepseek/deepseek-chat")
+        self.assertEqual(runtime_env["LLM_CHANNELS"], "gemini,deepseek")
+        context = captured["context"]
+        self.assertIsInstance(context, dict)
+        self.assertEqual(context["llm"]["fallback_models"], ["deepseek/deepseek-chat"])
+        self.assertEqual(payload["candidate_count"], 0)
+
     def test_screen_retries_without_context_for_older_adapter_kwargs_wrappers(self) -> None:
         config = self._config(enabled=True)
 
