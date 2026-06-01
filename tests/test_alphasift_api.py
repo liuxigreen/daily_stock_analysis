@@ -503,7 +503,6 @@ class AlphaSiftOpportunitiesApiTestCase(unittest.TestCase):
                 "LLM_GEMINI_PROTOCOL": alphasift_endpoint.os.environ.get("LLM_GEMINI_PROTOCOL"),
                 "LLM_GEMINI_API_KEYS": alphasift_endpoint.os.environ.get("LLM_GEMINI_API_KEYS"),
                 "GEMINI_API_KEY": alphasift_endpoint.os.environ.get("GEMINI_API_KEY"),
-                "SNAPSHOT_SOURCE_PRIORITY": alphasift_endpoint.os.environ.get("SNAPSHOT_SOURCE_PRIORITY"),
             }
             captured["context"] = kwargs.get("context")
             return {"candidates": []}
@@ -525,14 +524,13 @@ class AlphaSiftOpportunitiesApiTestCase(unittest.TestCase):
         self.assertEqual(runtime_env["LLM_GEMINI_PROTOCOL"], "gemini")
         self.assertEqual(runtime_env["LLM_GEMINI_API_KEYS"], "dsa-gemini-key")
         self.assertEqual(runtime_env["GEMINI_API_KEY"], "dsa-gemini-key")
-        self.assertEqual(runtime_env["SNAPSHOT_SOURCE_PRIORITY"], "em_datacenter,efinance,akshare_em,tushare")
         context = captured["context"]
         self.assertIsInstance(context, dict)
         self.assertEqual(context["llm"]["model"], "gemini/gemini-2.5-flash")
         self.assertEqual(context["llm"]["channels"][0]["api_keys"], ["dsa-gemini-key"])
         self.assertEqual(payload["candidate_count"], 0)
 
-    def test_screen_respects_explicit_alphasift_snapshot_source_priority(self) -> None:
+    def test_screen_preserves_explicit_alphasift_snapshot_source_priority(self) -> None:
         config = self._config(enabled=True)
         captured: dict[str, object] = {}
 
