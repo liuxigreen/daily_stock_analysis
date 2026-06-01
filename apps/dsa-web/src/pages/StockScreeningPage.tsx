@@ -219,7 +219,7 @@ const StockScreeningPage: React.FC = () => {
         <InlineAlert
           variant="info"
           title="AlphaSift 未开启"
-          message="点击后写入 ALPHASIFT_ENABLED=true 并检查 AlphaSift 适配层；桌面发布包已内置依赖，源码部署需先在后端 Python 环境安装。"
+          message="点击后写入 ALPHASIFT_ENABLED=true；若适配层缺失，会使用受信任来源尝试自动安装。"
           action={
             <Button size="sm" isLoading={enabling} loadingText="开启中..." onClick={() => void handleEnable()}>
               开启 AlphaSift

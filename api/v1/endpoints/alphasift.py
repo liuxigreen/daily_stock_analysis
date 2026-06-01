@@ -75,6 +75,9 @@ def alphasift_strategies(config: Config = Depends(get_config_dep)) -> Dict[str, 
 
 
 def _require_admin_session_for_install(request: Request) -> None:
+    if os.getenv("DSA_DESKTOP_MODE") == "true":
+        return
+
     if not is_auth_enabled():
         raise HTTPException(
             status_code=403,

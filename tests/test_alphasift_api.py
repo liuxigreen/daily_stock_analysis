@@ -239,10 +239,22 @@ class AlphaSiftOpportunitiesApiTestCase(unittest.TestCase):
         import_mock.assert_not_called()
         run_mock.assert_not_called()
 
+    def test_install_dependency_allows_desktop_mode(self) -> None:
+        request = SimpleNamespace(cookies={})
+
+        with (
+            patch.dict("os.environ", {"DSA_DESKTOP_MODE": "true"}, clear=False),
+            patch("api.v1.endpoints.alphasift.is_auth_enabled", return_value=False),
+        ):
+            alphasift_endpoint._require_admin_session_for_install(request)
+
     def test_install_dependency_requires_admin_auth_enabled(self) -> None:
         request = SimpleNamespace(cookies={})
 
-        with patch("api.v1.endpoints.alphasift.is_auth_enabled", return_value=False):
+        with (
+            patch.dict("os.environ", {"DSA_DESKTOP_MODE": "false"}, clear=False),
+            patch("api.v1.endpoints.alphasift.is_auth_enabled", return_value=False),
+        ):
             with self.assertRaises(HTTPException) as caught:
                 alphasift_endpoint._require_admin_session_for_install(request)
 
@@ -253,6 +265,7 @@ class AlphaSiftOpportunitiesApiTestCase(unittest.TestCase):
         request = SimpleNamespace(cookies={"dsa_session": "session-token"})
 
         with (
+            patch.dict("os.environ", {"DSA_DESKTOP_MODE": "false"}, clear=False),
             patch("api.v1.endpoints.alphasift.is_auth_enabled", return_value=True),
             patch("api.v1.endpoints.alphasift.verify_session", return_value=False),
         ):
@@ -266,6 +279,7 @@ class AlphaSiftOpportunitiesApiTestCase(unittest.TestCase):
         request = SimpleNamespace(cookies={"dsa_session": "session-token"})
 
         with (
+            patch.dict("os.environ", {"DSA_DESKTOP_MODE": "false"}, clear=False),
             patch("api.v1.endpoints.alphasift.is_auth_enabled", return_value=True),
             patch("api.v1.endpoints.alphasift.verify_session", return_value=True),
         ):
