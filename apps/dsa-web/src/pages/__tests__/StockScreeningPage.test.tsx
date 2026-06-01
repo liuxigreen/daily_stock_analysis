@@ -232,4 +232,39 @@ describe('StockScreeningPage', () => {
     expect(screen.getByText('LLM 元数据未返回')).toBeInTheDocument();
     expect(screen.getAllByText('未返回（LLM 已降级）')).toHaveLength(2);
   });
+
+  it('deduplicates AlphaSift snapshot fallback warnings and source errors', async () => {
+    getAlphaSiftStatus.mockResolvedValueOnce({
+      enabled: true,
+      available: true,
+      installSpecIsDefault: true,
+    });
+    screenStocks.mockResolvedValueOnce({
+      enabled: true,
+      candidates: [
+        {
+          rank: 1,
+          code: '601919',
+          name: '中远海控',
+          score: 82.88,
+          llmScore: 82,
+          riskLevel: 'low',
+          raw: {},
+        },
+      ],
+      candidateCount: 1,
+      llmRanked: true,
+      warnings: ['Snapshot source fallback: tushare: tushare trade_cal returned no open trading days'],
+      sourceErrors: ['tushare: tushare trade_cal returned no open trading days'],
+    });
+
+    render(<StockScreeningPage />);
+
+    expect(await screen.findByText('选股已开启')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /运行选股/ }));
+
+    expect(await screen.findByText('AlphaSift 提示')).toBeInTheDocument();
+    expect(screen.getAllByText(/tushare trade_cal returned no open trading days/)).toHaveLength(1);
+    expect(screen.getByText(/数据源降级：tushare/)).toBeInTheDocument();
+  });
 });

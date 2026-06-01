@@ -503,6 +503,7 @@ class AlphaSiftOpportunitiesApiTestCase(unittest.TestCase):
                 "LLM_GEMINI_PROTOCOL": alphasift_endpoint.os.environ.get("LLM_GEMINI_PROTOCOL"),
                 "LLM_GEMINI_API_KEYS": alphasift_endpoint.os.environ.get("LLM_GEMINI_API_KEYS"),
                 "GEMINI_API_KEY": alphasift_endpoint.os.environ.get("GEMINI_API_KEY"),
+                "SNAPSHOT_SOURCE_PRIORITY": alphasift_endpoint.os.environ.get("SNAPSHOT_SOURCE_PRIORITY"),
             }
             captured["context"] = kwargs.get("context")
             return {"candidates": []}
@@ -510,7 +511,7 @@ class AlphaSiftOpportunitiesApiTestCase(unittest.TestCase):
         fake_module = _make_adapter_module(screen=MagicMock(side_effect=screen_impl))
 
         with (
-            patch.dict(alphasift_endpoint.os.environ, {"GEMINI_API_KEY": "outer-key"}, clear=False),
+            patch.dict(alphasift_endpoint.os.environ, {"GEMINI_API_KEY": "outer-key", "SNAPSHOT_SOURCE_PRIORITY": ""}, clear=False),
             patch("api.v1.endpoints.alphasift._import_alphasift", return_value=fake_module),
         ):
             payload = self._screen(config, market="cn", strategy="dual_low", max_results=5)
@@ -524,10 +525,30 @@ class AlphaSiftOpportunitiesApiTestCase(unittest.TestCase):
         self.assertEqual(runtime_env["LLM_GEMINI_PROTOCOL"], "gemini")
         self.assertEqual(runtime_env["LLM_GEMINI_API_KEYS"], "dsa-gemini-key")
         self.assertEqual(runtime_env["GEMINI_API_KEY"], "dsa-gemini-key")
+        self.assertEqual(runtime_env["SNAPSHOT_SOURCE_PRIORITY"], "em_datacenter,efinance,akshare_em,tushare")
         context = captured["context"]
         self.assertIsInstance(context, dict)
         self.assertEqual(context["llm"]["model"], "gemini/gemini-2.5-flash")
         self.assertEqual(context["llm"]["channels"][0]["api_keys"], ["dsa-gemini-key"])
+        self.assertEqual(payload["candidate_count"], 0)
+
+    def test_screen_respects_explicit_alphasift_snapshot_source_priority(self) -> None:
+        config = self._config(enabled=True)
+        captured: dict[str, object] = {}
+
+        def screen_impl(_strategy: str, **_kwargs):
+            captured["snapshot_priority"] = alphasift_endpoint.os.environ.get("SNAPSHOT_SOURCE_PRIORITY")
+            return {"candidates": []}
+
+        fake_module = _make_adapter_module(screen=MagicMock(side_effect=screen_impl))
+
+        with (
+            patch.dict(alphasift_endpoint.os.environ, {"SNAPSHOT_SOURCE_PRIORITY": "tushare,em_datacenter"}, clear=False),
+            patch("api.v1.endpoints.alphasift._import_alphasift", return_value=fake_module),
+        ):
+            payload = self._screen(config, market="cn", strategy="dual_low", max_results=5)
+
+        self.assertEqual(captured["snapshot_priority"], "tushare,em_datacenter")
         self.assertEqual(payload["candidate_count"], 0)
 
     def test_screen_filters_undeclared_managed_fallbacks_for_dsa_routes(self) -> None:

@@ -31,6 +31,7 @@ ALPHASIFT_EXPECTED_MISSING_MODULES = frozenset({"alphasift", ALPHASIFT_DSA_ADAPT
 ALLOWED_ALPHASIFT_INSTALL_SPECS = frozenset({DEFAULT_ALPHASIFT_INSTALL_SPEC})
 _ALPHASIFT_INSTALL_LOCK = threading.RLock()
 ALPHASIFT_MANAGED_LITELLM_PROVIDERS = frozenset({"gemini", "vertex_ai", "anthropic", "openai", "deepseek"})
+ALPHASIFT_DEFAULT_SNAPSHOT_SOURCE_PRIORITY = "em_datacenter,efinance,akshare_em,tushare"
 _ALPHASIFT_RUNTIME_ENV_LOCK = threading.RLock()
 
 
@@ -577,6 +578,10 @@ def _build_alphasift_runtime_env(config: Config) -> Dict[str, str]:
             env[key] = text
 
     litellm_model, fallback_models = _resolve_alphasift_llm_models(config)
+    put(
+        "SNAPSHOT_SOURCE_PRIORITY",
+        os.getenv("SNAPSHOT_SOURCE_PRIORITY") or ALPHASIFT_DEFAULT_SNAPSHOT_SOURCE_PRIORITY,
+    )
     put("LITELLM_MODEL", litellm_model)
     if fallback_models:
         put("LITELLM_FALLBACK_MODELS", ",".join(fallback_models))

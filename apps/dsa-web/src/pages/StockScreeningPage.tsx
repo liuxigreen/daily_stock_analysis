@@ -72,17 +72,34 @@ const getFactorEntries = (item: AlphaSiftCandidate) =>
 const toMessageList = (values: string[] | undefined) =>
   Array.isArray(values) ? values.map((value) => String(value).trim()).filter(Boolean) : [];
 
+const normalizeScreenMessageKey = (value: string) =>
+  value.replace(/^Snapshot source fallback:\s*/i, '').trim();
+
+const formatScreenMessage = (value: string) => {
+  const snapshotFallback = value.match(/^Snapshot source fallback:\s*(.+)$/i);
+  if (snapshotFallback) {
+    return `数据源降级：${snapshotFallback[1]}`;
+  }
+  return value;
+};
+
 const getScreenMessages = (meta: AlphaSiftScreenResponse | null) => {
   if (!meta) {
     return [];
   }
-  return Array.from(
-    new Set([
-      ...toMessageList(meta.warnings),
-      ...toMessageList(meta.sourceErrors),
-      ...toMessageList(meta.llmParseErrors),
-    ]),
+  const messages: string[] = [];
+  const seen = new Set<string>();
+  [...toMessageList(meta.warnings), ...toMessageList(meta.sourceErrors), ...toMessageList(meta.llmParseErrors)].forEach(
+    (value) => {
+      const key = normalizeScreenMessageKey(value);
+      if (seen.has(key)) {
+        return;
+      }
+      seen.add(key);
+      messages.push(formatScreenMessage(value));
+    },
   );
+  return messages;
 };
 
 const hasLlmInsight = (item: AlphaSiftCandidate) =>
