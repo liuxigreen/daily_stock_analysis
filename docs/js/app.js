@@ -1,6 +1,5 @@
 /**
  * 每日选股 - Mobile App
- * Fetches data from JSON files in the repo and renders cards
  */
 
 const BASE_PATH = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
@@ -10,7 +9,8 @@ let state = {
   picks: null,
   analysis: null,
   history: null,
-  currentTab: 'today'
+  currentTab: 'today',
+  historyView: 'daily'
 };
 
 // ===== Tab Switching =====
@@ -27,12 +27,22 @@ function switchTab(tab) {
   document.querySelectorAll('.tab-content').forEach(c => c.classList.toggle('active', c.id === `tab-${tab}`));
 }
 
-// ===== Date Formatting =====
+// ===== Date Utils =====
 function todayStr() { return new Date().toISOString().slice(0, 10); }
 function formatDate(str) {
   const d = new Date(str);
   const weekdays = ['日', '一', '二', '三', '四', '五', '六'];
   return `${d.getMonth()+1}/${d.getDate()} 周${weekdays[d.getDay()]}`;
+}
+function getISOWeek(dateStr) {
+  const d = new Date(dateStr);
+  const yearStart = new Date(d.getFullYear(), 0, 1);
+  const weekNo = Math.ceil(((d - yearStart) / 86400000 + yearStart.getDay() + 1) / 7);
+  return `${d.getFullYear()}年 第${weekNo}周`;
+}
+function getMonth(dateStr) {
+  const d = new Date(dateStr);
+  return `${d.getFullYear()}年${d.getMonth()+1}月`;
 }
 function fmtPrice(v) { return Number(v).toFixed(2); }
 function fmtPct(v) { const n = Number(v); return `${n > 0 ? '+' : ''}${n.toFixed(2)}%`; }
@@ -50,17 +60,10 @@ async function loadData() {
   el.style.display = 'flex';
   try {
     const today = todayStr();
-    // Try today's data first, fall back to example
     let picksData, analysisData, historyData;
-    try {
-      picksData = await fetchJSON(`/data/picks.json`);
-    } catch { picksData = null; }
-    try {
-      analysisData = await fetchJSON(`/data/analysis.json`);
-    } catch { analysisData = null; }
-    try {
-      historyData = await fetchJSON(`/data/history.json`);
-    } catch { historyData = null; }
+    try { picksData = await fetchJSON(`/data/picks.json`); } catch { picksData = null; }
+    try { analysisData = await fetchJSON(`/data/analysis.json`); } catch { analysisData = null; }
+    try { historyData = await fetchJSON(`/data/history.json`); } catch { historyData = null; }
 
     state.picks = picksData;
     state.analysis = analysisData;
@@ -81,7 +84,8 @@ async function loadData() {
     renderHistory();
   } catch (err) {
     document.getElementById('loading').style.display = 'none';
-    document.querySelector('#tab-today').innerHTML = `<div class="error-state"><div class="icon">⚠️</div><p>数据加载失败：${err.message}</p></div>`;
+    document.querySelector('#tab-today').innerHTML =
+      `<div class="error-state"><div class="icon">⚠️</div><p>数据加载失败：${err.message}</p></div>`;
   } finally {
     el.style.display = 'none';
   }
@@ -231,19 +235,30 @@ function renderAnalysisCard(s, i) {
   `;
 }
 
-// ===== Render: History =====
+// ===== Render: History (with daily/weekly/monthly) =====
+function switchHistoryView(view) {
+  state.historyView = view;
+  document.querySelectorAll('.sub-tab-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
+  renderHistory();
+}
+
 function renderHistory() {
   const list = document.getElementById('historyList');
   if (!state.history || !state.history.records || state.history.records.length === 0) {
     list.innerHTML = `<div class="empty-state"><div class="icon">📊</div><p>暂无历史记录</p></div>`;
     return;
   }
-  list.innerHTML = state.history.records.map((r, i) => renderHistoryCard(r, i)).join('');
+
+  switch (state.historyView) {
+    case 'weekly': renderWeekly(); break;
+    case 'monthly': renderMonthly(); break;
+    default: renderDaily(); break;
+  }
 }
 
-function renderHistoryCard(r, i) {
-  const winRate = r.win_count && r.total_count ? Math.round(r.win_count / r.total_count * 100) : 0;
-  return `
+function renderDaily() {
+  const list = document.getElementById('historyList');
+  list.innerHTML = state.history.records.map((r, i) => `
     <div class="history-item" style="animation-delay:${i * 0.05}s">
       <div class="history-date">${formatDate(r.date)}</div>
       <div class="history-stats">
@@ -256,16 +271,113 @@ function renderHistoryCard(r, i) {
           <div class="stat-label">推荐数量</div>
         </div>
         <div class="stat-box">
-          <div class="stat-value ${winRate >= 50 ? 'green' : 'red'}">${winRate}%</div>
+          <div class="stat-value ${(r.win_count/r.total_count*100) >= 50 ? 'green' : 'red'}">
+            ${Math.round(r.win_count / r.total_count * 100)}%
+          </div>
           <div class="stat-label">胜率</div>
         </div>
       </div>
       <div class="history-picks">
-        ${(r.picks || []).map(p => `<span class="history-pick"><span class="code">${p.code}</span> <span class="${Number(p.return||0) >= 0 ? 'up' : 'down'}">${fmtPct(p.return||0)}</span></span>`).join('')}
+        ${(r.picks || []).map(p =>
+          `<span class="history-pick"><span class="code">${p.code}</span> <span class="${Number(p.return||0) >= 0 ? 'up' : 'down'}">${fmtPct(p.return||0)}</span></span>`
+        ).join('')}
       </div>
       ${r.review ? `<div style="font-size:0.8125rem;color:var(--text-muted);margin-top:8px">${r.review}</div>` : ''}
     </div>
-  `;
+  `).join('');
+}
+
+function renderWeekly() {
+  const groups = groupHistory('week');
+  const list = document.getElementById('historyList');
+  list.innerHTML = Object.entries(groups).sort().reverse().map(([week, days]) => {
+    const total = days.reduce((s, d) => s + (d.picks?.length || d.total_count || 0), 0);
+    const wins = days.reduce((s, d) => s + (d.win_count || 0), 0);
+    const totalCount = days.reduce((s, d) => s + d.total_count, 0);
+    const avgRet = days.reduce((s, d) => s + (d.avg_return || 0), 0) / days.length;
+    const winRate = totalCount > 0 ? Math.round(wins / totalCount * 100) : 0;
+    return `
+      <div class="history-item" style="border-left:3px solid var(--accent)">
+        <div class="history-date" style="font-size:0.9375rem">📅 ${week}</div>
+        <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">${days.length}个交易日</div>
+        <div class="history-stats">
+          <div class="stat-box">
+            <div class="stat-value ${avgRet >= 0 ? 'green' : 'red'}">${fmtPct(avgRet)}</div>
+            <div class="stat-label">日均收益</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value" style="color:var(--accent)">${total}</div>
+            <div class="stat-label">推荐总数</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value ${winRate >= 50 ? 'green' : 'red'}">${winRate}%</div>
+            <div class="stat-label">周胜率</div>
+          </div>
+        </div>
+        <details style="font-size:0.8125rem">
+          <summary style="color:var(--accent);cursor:pointer">查看每日明细 (${days.length}天)</summary>
+          <div style="margin-top:8px">
+            ${days.map(d => `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border)">
+              <span>${formatDate(d.date)}</span>
+              <span class="${d.avg_return >= 0 ? 'up' : 'down'}">${fmtPct(d.avg_return)}</span>
+            </div>`).join('')}
+          </div>
+        </details>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderMonthly() {
+  const groups = groupHistory('month');
+  const list = document.getElementById('historyList');
+  list.innerHTML = Object.entries(groups).sort().reverse().map(([month, days]) => {
+    const total = days.reduce((s, d) => s + (d.picks?.length || d.total_count || 0), 0);
+    const wins = days.reduce((s, d) => s + (d.win_count || 0), 0);
+    const totalCount = days.reduce((s, d) => s + d.total_count, 0);
+    const avgRet = days.reduce((s, d) => s + (d.avg_return || 0), 0) / days.length;
+    const winRate = totalCount > 0 ? Math.round(wins / totalCount * 100) : 0;
+    return `
+      <div class="history-item" style="border-left:3px solid var(--purple)">
+        <div class="history-date" style="font-size:0.9375rem">📆 ${month}</div>
+        <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:8px">${days.length}个交易日</div>
+        <div class="history-stats">
+          <div class="stat-box">
+            <div class="stat-value ${avgRet >= 0 ? 'green' : 'red'}">${fmtPct(avgRet)}</div>
+            <div class="stat-label">日均收益</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value" style="color:var(--accent)">${total}</div>
+            <div class="stat-label">推荐总数</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value ${winRate >= 50 ? 'green' : 'red'}">${winRate}%</div>
+            <div class="stat-label">月胜率</div>
+          </div>
+        </div>
+        <details style="font-size:0.8125rem">
+          <summary style="color:var(--accent);cursor:pointer">查看每日明细 (${days.length}天)</summary>
+          <div style="margin-top:8px">
+            ${days.map(d => `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border)">
+              <span>${formatDate(d.date)}</span>
+              <span class="${d.avg_return >= 0 ? 'up' : 'down'}">${fmtPct(d.avg_return)}</span>
+            </div>`).join('')}
+          </div>
+        </details>
+      </div>
+    `;
+  }).join('');
+}
+
+function groupHistory(period) {
+  const records = state.history.records;
+  const groups = {};
+  records.forEach(r => {
+    const key = period === 'week' ? getISOWeek(r.date) : getMonth(r.date);
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(r);
+  });
+  return groups;
 }
 
 // ===== Init =====

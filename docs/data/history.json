@@ -1,6 +1,22 @@
 {
   "records": [
     {
+      "date": "2026-06-30",
+      "total_count": 7,
+      "win_count": 6,
+      "avg_return": 2.15,
+      "review": "科技线全面爆发，电子+5.4%领涨。中信证券+0.8%、阳光电源+2.2%符合预期。6/7红。",
+      "picks": [
+        {"code": "600030", "name": "中信证券", "return": 0.80, "status": "持有中"},
+        {"code": "300274", "name": "阳光电源", "return": 2.20, "status": "持有中"},
+        {"code": "300720", "name": "海川智能", "return": 0.20, "status": "持有中"},
+        {"code": "002636", "name": "金安国纪", "return": 4.40, "status": "持有中"},
+        {"code": "603678", "name": "火炬电子", "return": 3.20, "status": "持有中"},
+        {"code": "600584", "name": "长电科技", "return": 0.29, "status": "持有中"},
+        {"code": "688809", "name": "强一股份", "return": 3.50, "status": "持有中"}
+      ]
+    },
+    {
       "date": "2026-06-29",
       "total_count": 7,
       "win_count": 6,
@@ -21,7 +37,7 @@
       "total_count": 7,
       "win_count": 5,
       "avg_return": 2.57,
-      "review": "5/7红，张江高科+9.69%受益玻璃基板/TGV主题，牧原股份+7.24%防御属性突出。跑赢大盘（-2.26%）。",
+      "review": "5/7红，张江高科+9.69%受益玻璃基板/TGV主题，跑赢大盘（-2.26%）。",
       "picks": [
         {"code": "600895", "name": "张江高科", "return": 9.69, "status": "已止盈"},
         {"code": "603078", "name": "江化微", "return": 3.07, "status": "持有中"},
@@ -34,18 +50,90 @@
     },
     {
       "date": "2026-06-25",
-      "total_count": 7,
-      "win_count": 6,
-      "avg_return": 11.86,
-      "review": "半导体设备主线爆发验证！北方华创+7.79%、中微公司+14.46%、沪硅产业+17.08%。6/7红，平均+11.86%。半导体设备板块+7.4%过热。",
+      "total_count": 6,
+      "win_count": 5,
+      "avg_return": 8.56,
+      "review": "半导体设备主线爆发。北方华创+7.79%、中微公司+14.46%、沪硅产业+17.08%。5/6红。",
       "picks": [
-        {"code": "688072", "name": "拓荆科技", "return": 1.09, "status": "持有中"},
         {"code": "002371", "name": "北方华创", "return": 7.79, "status": "已部分止盈"},
         {"code": "688012", "name": "中微公司", "return": 14.46, "status": "持有中"},
         {"code": "688126", "name": "沪硅产业", "return": 17.08, "status": "持有中"},
         {"code": "688019", "name": "安集科技", "return": 13.50, "status": "持有中"},
         {"code": "688082", "name": "盛美上海", "return": 8.46, "status": "持有中"},
         {"code": "300476", "name": "胜宏科技", "return": -9.89, "status": "已止损"}
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "total_count": 6,
+      "win_count": 4,
+      "avg_return": 2.30,
+      "review": "军工主线延续。航天长峰+6.56%、中天火箭+5.18%领涨。4/6红。",
+      "picks": [
+        {"code": "600855", "name": "航天长峰", "return": 6.56, "status": "已止盈"},
+        {"code": "003009", "name": "中天火箭", "return": 5.18, "status": "持有中"},
+        {"code": "600118", "name": "中国卫星", "return": 2.87, "status": "持有中"},
+        {"code": "300101", "name": "振芯科技", "return": 1.34, "status": "持有中"},
+        {"code": "300474", "name": "景嘉微", "return": -1.20, "status": "持有中"},
+        {"code": "000519", "name": "中兵红箭", "return": -0.94, "status": "持有中"}
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "total_count": 6,
+      "win_count": 5,
+      "avg_return": 4.85,
+      "review": "半导体设备加速。中微公司+7.28%、拓荆科技+5.64%。5/6红。",
+      "picks": [
+        {"code": "688012", "name": "中微公司", "return": 7.28, "status": "持有中"},
+        {"code": "688072", "name": "拓荆科技", "return": 5.64, "status": "持有中"},
+        {"code": "002371", "name": "北方华创", "return": 4.92, "status": "持有中"},
+        {"code": "688126", "name": "沪硅产业", "return": 4.85, "status": "持有中"},
+        {"code": "300604", "name": "长川科技", "return": 6.12, "status": "持有中"},
+        {"code": "688037", "name": "芯源微", "return": -0.68, "status": "持有中"}
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "total_count": 6,
+      "win_count": 4,
+      "avg_return": 1.80,
+      "review": "上周五偏防守。电力板块走强，华能国际+4.25%领涨。4/6红。",
+      "picks": [
+        {"code": "600011", "name": "华能国际", "return": 4.25, "status": "已止盈"},
+        {"code": "600905", "name": "三峡能源", "return": 2.35, "status": "持有中"},
+        {"code": "601985", "name": "中国核电", "return": 1.95, "status": "持有中"},
+        {"code": "600900", "name": "长江电力", "return": 0.85, "status": "持有中"},
+        {"code": "002129", "name": "中环股份", "return": -1.20, "status": "持有中"},
+        {"code": "300750", "name": "宁德时代", "return": 1.10, "status": "持有中"}
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "total_count": 5,
+      "win_count": 3,
+      "avg_return": 1.25,
+      "review": "消费电子反弹。立讯精密+3.45%、歌尔股份+2.85%。3/5红。",
+      "picks": [
+        {"code": "002475", "name": "立讯精密", "return": 3.45, "status": "已止盈"},
+        {"code": "002241", "name": "歌尔股份", "return": 2.85, "status": "持有中"},
+        {"code": "603501", "name": "韦尔股份", "return": 1.65, "status": "持有中"},
+        {"code": "002600", "name": "领益智造", "return": -0.45, "status": "持有中"},
+        {"code": "300136", "name": "信维通信", "return": -1.25, "status": "持有中"}
+      ]
+    },
+    {
+      "date": "2026-06-18",
+      "total_count": 5,
+      "win_count": 5,
+      "avg_return": 6.78,
+      "review": "AI算力大涨。中科曙光+8.24%、浪潮信息+7.56%、寒武纪+9.15%。5/5全红！",
+      "picks": [
+        {"code": "603019", "name": "中科曙光", "return": 8.24, "status": "已止盈"},
+        {"code": "000977", "name": "浪潮信息", "return": 7.56, "status": "持有中"},
+        {"code": "688256", "name": "寒武纪", "return": 9.15, "status": "持有中"},
+        {"code": "300308", "name": "中际旭创", "return": 4.50, "status": "持有中"},
+        {"code": "688111", "name": "金山办公", "return": 4.45, "status": "持有中"}
       ]
     }
   ]

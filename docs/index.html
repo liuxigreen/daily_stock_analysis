@@ -39,6 +39,11 @@
       <section id="tab-history" class="tab-content">
         <div class="section-header">
           <h2>📊 历史回顾</h2>
+          <div class="sub-tabs">
+            <button class="sub-tab-btn active" data-view="daily" onclick="switchHistoryView('daily')">日</button>
+            <button class="sub-tab-btn" data-view="weekly" onclick="switchHistoryView('weekly')">周</button>
+            <button class="sub-tab-btn" data-view="monthly" onclick="switchHistoryView('monthly')">月</button>
+          </div>
         </div>
         <div id="historyList" class="history-list"></div>
       </section>
