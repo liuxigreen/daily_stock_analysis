@@ -1,0 +1,122 @@
+{
+  "date": "2026-06-30",
+  "market_context": {
+    "main_line": "科技大爆发（电子+5.4%，通信+4.1%）",
+    "accumulating": "风电设备（主力+15.0亿）、汽车零部件（+13.7亿）、家用电器（+13.6亿）",
+    "overheated": "电子、通信、光学光电子",
+    "sentiment": "bullish",
+    "policy": "政治局会议召开、国务院DeepSeek政策、PMI 50.3%重返扩张"
+  },
+  "picks": [
+    {
+      "code": "600030",
+      "name": "中信证券",
+      "price": 28.73,
+      "change_pct": 0.8,
+      "score": 50,
+      "target": 31.5,
+      "stop_loss": 26.5,
+      "buy_range": "27.8-28.5",
+      "expected_return": "+9.6%",
+      "highlight": "⭐首推",
+      "market_cap": "4258亿",
+      "sector": "券商",
+      "reason": "评分50全场最高，11天温和整理（极致收敛）。政治局会议=资本市场最大催化剂，成交额放大直接利好券商。这是提前埋伏政策行情的完美标的。"
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "price": 159.02,
+      "change_pct": 2.2,
+      "score": 40,
+      "target": 175.0,
+      "stop_loss": 148.0,
+      "buy_range": "155-158",
+      "expected_return": "+10.0%",
+      "highlight": null,
+      "market_cap": "3297亿",
+      "sector": "光伏",
+      "reason": "均线粘合0.6%（极致收敛），支撑4次（底部牢固）。光伏逆变器全球市占率第一，十五五新型能源规划直接受益。"
+    },
+    {
+      "code": "300720",
+      "name": "海川智能",
+      "price": 96.2,
+      "change_pct": 0.2,
+      "score": 35,
+      "target": 110.0,
+      "stop_loss": 86.0,
+      "buy_range": "92-96",
+      "expected_return": "+14.4%",
+      "highlight": "试盘量2.3x",
+      "market_cap": "187亿",
+      "sector": "自动化设备",
+      "reason": "试盘量2.3x（全候选最高）。经典洗盘+吸筹，弱手被洗出。站位93%强势区间顶部，自动化设备板块蓄势，小盘弹性最大。"
+    },
+    {
+      "code": "002636",
+      "name": "金安国纪",
+      "price": 119.97,
+      "change_pct": 4.4,
+      "score": 30,
+      "target": 132.0,
+      "stop_loss": 110.0,
+      "buy_range": "115-119",
+      "expected_return": "+10.0%",
+      "highlight": null,
+      "market_cap": "873亿",
+      "sector": "电子（PCB）",
+      "reason": "温和缩量70%（浮筹洗尽），站位94%（强势）。PCB覆铜板龙头，电子上游原材料。中信证券预测二季度电子业绩全面向好。"
+    },
+    {
+      "code": "603678",
+      "name": "火炬电子",
+      "price": 83.0,
+      "change_pct": 3.2,
+      "score": 30,
+      "target": 92.0,
+      "stop_loss": 76.0,
+      "buy_range": "80-82.5",
+      "expected_return": "+10.8%",
+      "highlight": null,
+      "market_cap": "395亿",
+      "sector": "军工/电子",
+      "reason": "温和缩量72%+站位85%。军工MLCC/电子元器件龙头，军工+电子双概念交叉。军工是昨日主线延续，电子今日爆发，双催化加持。"
+    },
+    {
+      "code": "600584",
+      "name": "长电科技",
+      "price": 103.55,
+      "change_pct": 0.29,
+      "score": null,
+      "target": 115.0,
+      "stop_loss": 96.0,
+      "buy_range": "100-103",
+      "expected_return": "+11.1%",
+      "highlight": "轮动链末端",
+      "market_cap": "2318亿",
+      "sector": "半导体/封测",
+      "reason": "封测全球前三、国内第一。轮动链末端逻辑：存储芯片→设备→材料→设计→封测是下一棒。今日仅+0.29%完全未动。"
+    },
+    {
+      "code": "688809",
+      "name": "强一股份",
+      "price": 623.0,
+      "change_pct": 3.5,
+      "score": 40,
+      "target": 680.0,
+      "stop_loss": 575.0,
+      "buy_range": "600-618",
+      "expected_return": "+9.1%",
+      "highlight": null,
+      "market_cap": "807亿",
+      "sector": "科创板/半导体",
+      "reason": "评分40，均线粘合0.7%，支撑6次（全候选最多=底部极牢）。限售股解禁+3.5%，压力被市场充分吸收。"
+    }
+  ],
+  "strategies": [
+    "主题先行：科技线（电子+5.4%）全面爆发，验证昨日轮动预测",
+    "避开过热：电子+5.4%、通信+4.1%已过热，获利盘回吐风险",
+    "潜伏方向：封测（长电科技）是轮动链下一棒，风电设备主力+15亿涨仅1.6%"
+  ]
+}

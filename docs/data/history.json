@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "date": "2026-06-29",
+      "total_count": 7,
+      "win_count": 6,
+      "avg_return": 5.51,
+      "review": "6/7红，688220翱捷科技涨停+20%为最大亮点，浪潮信息+6.35%验证芯片设计轮动逻辑。",
+      "picks": [
+        {"code": "600343", "name": "航天动力", "return": 3.28, "status": "+1天持有中"},
+        {"code": "000977", "name": "浪潮信息", "return": 6.35, "status": "持有中"},
+        {"code": "688220", "name": "翱捷科技", "return": 20.0, "status": "已涨停"},
+        {"code": "300418", "name": "昆仑万维", "return": 1.46, "status": "持有中"},
+        {"code": "600584", "name": "长电科技", "return": 0.29, "status": "持有中"},
+        {"code": "300014", "name": "亿纬锂能", "return": 0.67, "status": "持有中"},
+        {"code": "600118", "name": "中国卫星", "return": 1.27, "status": "持有中"}
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "total_count": 7,
+      "win_count": 5,
+      "avg_return": 2.57,
+      "review": "5/7红，张江高科+9.69%受益玻璃基板/TGV主题，牧原股份+7.24%防御属性突出。跑赢大盘（-2.26%）。",
+      "picks": [
+        {"code": "600895", "name": "张江高科", "return": 9.69, "status": "已止盈"},
+        {"code": "603078", "name": "江化微", "return": 3.07, "status": "持有中"},
+        {"code": "300395", "name": "菲利华", "return": -4.45, "status": "止损观察"},
+        {"code": "002335", "name": "科华数据", "return": -2.68, "status": "持有中"},
+        {"code": "688141", "name": "杰华特", "return": 4.56, "status": "持有中"},
+        {"code": "601012", "name": "隆基绿能", "return": 3.55, "status": "持有中"},
+        {"code": "002714", "name": "牧原股份", "return": 4.26, "status": "持有中"}
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "total_count": 7,
+      "win_count": 6,
+      "avg_return": 11.86,
+      "review": "半导体设备主线爆发验证！北方华创+7.79%、中微公司+14.46%、沪硅产业+17.08%。6/7红，平均+11.86%。半导体设备板块+7.4%过热。",
+      "picks": [
+        {"code": "688072", "name": "拓荆科技", "return": 1.09, "status": "持有中"},
+        {"code": "002371", "name": "北方华创", "return": 7.79, "status": "已部分止盈"},
+        {"code": "688012", "name": "中微公司", "return": 14.46, "status": "持有中"},
+        {"code": "688126", "name": "沪硅产业", "return": 17.08, "status": "持有中"},
+        {"code": "688019", "name": "安集科技", "return": 13.50, "status": "持有中"},
+        {"code": "688082", "name": "盛美上海", "return": 8.46, "status": "持有中"},
+        {"code": "300476", "name": "胜宏科技", "return": -9.89, "status": "已止损"}
+      ]
+    }
+  ]
+}

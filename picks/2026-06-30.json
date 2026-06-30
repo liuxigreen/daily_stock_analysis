@@ -1,0 +1,64 @@
+{
+  "date": "2026-06-30",
+  "market_context": {
+    "main_line": "科技大爆发（电子+5.4%，通信+4.1%）",
+    "accumulating": "风电设备（主力+15.0亿）、汽车零部件（+13.7亿）",
+    "sentiment": "bullish",
+    "policy_catalyst": "政治局会议、国务院DeepSeek政策、PMI 50.3%"
+  },
+  "picks": [
+    {
+      "code": "600030",
+      "name": "中信证券",
+      "price": 28.73,
+      "change_pct": 0.80,
+      "score": 50,
+      "buy_range": "27.8-28.5",
+      "target": 31.5,
+      "stop_loss": 26.5,
+      "reason": "评分50全场最高，11天温和整理极致收敛，政治局会议催化券商行情确定性高。",
+      "highlight": "首推"
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "price": 159.02,
+      "change_pct": 2.20,
+      "score": 40,
+      "buy_range": "155-158",
+      "target": 175.0,
+      "stop_loss": 148.0,
+      "reason": "均线粘合0.6%极致收敛，支撑4次底部牢固，十五五新型能源规划直接受益。",
+      "highlight": null
+    },
+    {
+      "code": "300720",
+      "name": "海川智能",
+      "price": 96.20,
+      "change_pct": 0.20,
+      "score": 35,
+      "buy_range": "92-96",
+      "target": 110.0,
+      "stop_loss": 86.0,
+      "reason": "试盘量2.3x全候选最高，经典洗盘+吸筹，站位93%强势区间顶部。",
+      "highlight": "试盘量2.3x"
+    },
+    {
+      "code": "600584",
+      "name": "长电科技",
+      "price": 103.55,
+      "change_pct": 0.29,
+      "score": null,
+      "buy_range": "100-103",
+      "target": 115.0,
+      "stop_loss": 96.0,
+      "reason": "封测全球前三，轮动链末端逻辑最清晰。今日仅+0.29%完全未动，潜伏性价比最高。",
+      "highlight": "轮动链末端"
+    }
+  ],
+  "strategies": [
+    "主线：科技（电子+5.4%）全面爆发，验证轮动预测",
+    "避开已过热板块，潜伏封测+风电设备",
+    "政治局会议是关键催化剂，券商优先受益"
+  ]
+}
