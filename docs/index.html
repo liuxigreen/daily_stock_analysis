@@ -28,6 +28,11 @@
           <h2>🎯 今日关注</h2>
           <span class="stock-count" id="todayCount"></span>
         </div>
+        <div class="sub-tabs" id="todaySortTabs">
+          <button class="sub-tab-btn active" data-sort="default" onclick="switchTodaySort('default')">推荐顺序</button>
+          <button class="sub-tab-btn" data-sort="gainers" onclick="switchTodaySort('gainers')">涨幅榜</button>
+          <button class="sub-tab-btn" data-sort="losers" onclick="switchTodaySort('losers')">跌幅榜</button>
+        </div>
         <div id="stockList" class="stock-list"></div>
       </section>
       <section id="tab-analysis" class="tab-content">
@@ -43,6 +48,7 @@
             <button class="sub-tab-btn active" data-view="daily" onclick="switchHistoryView('daily')">日</button>
             <button class="sub-tab-btn" data-view="weekly" onclick="switchHistoryView('weekly')">周</button>
             <button class="sub-tab-btn" data-view="monthly" onclick="switchHistoryView('monthly')">月</button>
+            <button class="sub-tab-btn" data-view="review" onclick="switchHistoryView('review')">复盘</button>
           </div>
         </div>
         <div id="historyList" class="history-list"></div>

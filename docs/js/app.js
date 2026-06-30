@@ -10,7 +10,8 @@ let state = {
   analysis: null,
   history: null,
   currentTab: 'today',
-  historyView: 'daily'
+  historyView: 'daily',
+  todaySort: 'default'
 };
 
 // ===== Tab Switching =====
@@ -91,7 +92,14 @@ async function loadData() {
   }
 }
 
-// ===== Render: Today =====
+// ===== 龙虎榜排序 =====
+function switchTodaySort(sort) {
+  state.todaySort = sort;
+  document.querySelectorAll('#todaySortTabs .sub-tab-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.sort === sort));
+  renderToday();
+}
+
 function renderToday() {
   const list = document.getElementById('stockList');
   if (!state.picks || !state.picks.picks || state.picks.picks.length === 0) {
@@ -99,7 +107,14 @@ function renderToday() {
     document.getElementById('todayCount').textContent = '';
     return;
   }
-  const picks = state.picks.picks;
+
+  let picks = [...state.picks.picks];
+  if (state.todaySort === 'gainers') {
+    picks.sort((a, b) => (b.change_pct || 0) - (a.change_pct || 0));
+  } else if (state.todaySort === 'losers') {
+    picks.sort((a, b) => (a.change_pct || 0) - (b.change_pct || 0));
+  }
+
   document.getElementById('todayCount').textContent = `${picks.length}只`;
   list.innerHTML = picks.map((s, i) => renderStockCard(s, i)).join('');
 }
@@ -107,12 +122,18 @@ function renderToday() {
 function renderStockCard(s, idx) {
   const changeClass = s.change_pct > 0 ? 'up' : s.change_pct < 0 ? 'down' : 'flat';
   const changeStr = fmtPct(s.change_pct);
+  const rankNum = idx + 1;
+  const rankClass = rankNum <= 3 ? `rank-${rankNum}` : 'rank-other';
+  const showRank = state.todaySort !== 'default';
   return `
     <div class="stock-card" onclick="openModal(${idx})" style="animation-delay:${idx * 0.05}s">
       <div class="stock-card-header">
-        <div>
-          <div class="stock-name">${s.name || '--'}</div>
-          <span class="stock-code">${s.code || '--'}</span>
+        <div style="display:flex;align-items:center">
+          ${showRank ? `<span class="rank-badge ${rankClass}">${rankNum}</span>` : ''}
+          <div>
+            <div class="stock-name">${s.name || '--'}</div>
+            <span class="stock-code">${s.code || '--'}</span>
+          </div>
         </div>
         <div class="stock-price-change">
           <span class="stock-price">${fmtPrice(s.price)}</span>
@@ -132,8 +153,12 @@ function renderStockCard(s, idx) {
 
 // ===== Modal =====
 function openModal(idx) {
-  if (!state.picks?.picks?.[idx]) return;
-  const s = state.picks.picks[idx];
+  // Sort-aware lookup
+  let picks = [...state.picks.picks];
+  if (state.todaySort === 'gainers') picks.sort((a, b) => (b.change_pct || 0) - (a.change_pct || 0));
+  else if (state.todaySort === 'losers') picks.sort((a, b) => (a.change_pct || 0) - (b.change_pct || 0));
+  const s = picks[idx];
+  if (!s) return;
   const changeClass = s.change_pct > 0 ? 'up' : s.change_pct < 0 ? 'down' : 'flat';
   const changeStr = fmtPct(s.change_pct);
 
@@ -235,10 +260,11 @@ function renderAnalysisCard(s, i) {
   `;
 }
 
-// ===== Render: History (with daily/weekly/monthly) =====
+// ===== Render: History (daily/weekly/monthly/review) =====
 function switchHistoryView(view) {
   state.historyView = view;
-  document.querySelectorAll('.sub-tab-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
+  document.querySelectorAll('.sub-tab-btn:not(#todaySortTabs .sub-tab-btn)').forEach(b =>
+    b.classList.toggle('active', b.dataset.view === view));
   renderHistory();
 }
 
@@ -252,6 +278,7 @@ function renderHistory() {
   switch (state.historyView) {
     case 'weekly': renderWeekly(); break;
     case 'monthly': renderMonthly(); break;
+    case 'review': renderReview(); break;
     default: renderDaily(); break;
   }
 }
@@ -315,7 +342,7 @@ function renderWeekly() {
           </div>
         </div>
         <details style="font-size:0.8125rem">
-          <summary style="color:var(--accent);cursor:pointer">查看每日明细 (${days.length}天)</summary>
+          <summary style="color:var(--accent);cursor:pointer">每日明细 (${days.length}天)</summary>
           <div style="margin-top:8px">
             ${days.map(d => `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border)">
               <span>${formatDate(d.date)}</span>
@@ -356,7 +383,7 @@ function renderMonthly() {
           </div>
         </div>
         <details style="font-size:0.8125rem">
-          <summary style="color:var(--accent);cursor:pointer">查看每日明细 (${days.length}天)</summary>
+          <summary style="color:var(--accent);cursor:pointer">每日明细 (${days.length}天)</summary>
           <div style="margin-top:8px">
             ${days.map(d => `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border)">
               <span>${formatDate(d.date)}</span>
@@ -367,6 +394,104 @@ function renderMonthly() {
       </div>
     `;
   }).join('');
+}
+
+// ===== 复盘 =====
+function renderReview() {
+  const records = state.history.records;
+  const allPicks = records.flatMap(r =>
+    (r.picks || []).map(p => ({ ...p, date: r.date, review: r.review }))
+  );
+
+  // Collect all failing picks
+  const fails = allPicks.filter(p => Number(p.return || 0) < 0).sort((a, b) => a.return - b.return);
+  const winners = allPicks.filter(p => Number(p.return || 0) > 5).sort((a, b) => b.return - a.return);
+
+  const totalPicks = allPicks.length;
+  const winCount = allPicks.filter(p => Number(p.return || 0) >= 0).length;
+  const failCount = totalPicks - winCount;
+  const avgRet = allPicks.reduce((s, p) => s + Number(p.return || 0), 0) / totalPicks;
+  const bestPick = allPicks.reduce((a, b) => Number(a.return||0) > Number(b.return||0) ? a : b, {name:'--', return:0});
+  const worstPick = allPicks.reduce((a, b) => Number(a.return||0) < Number(b.return||0) ? a : b, {name:'--', return:0});
+
+  const list = document.getElementById('historyList');
+  let html = '';
+
+  // Overall stats
+  html += `
+    <div class="review-summary">
+      <div class="review-summary-header">
+        <span class="review-summary-title">📊 总体复盘</span>
+        <span style="font-size:0.75rem;color:var(--text-muted)">${records.length}个交易日</span>
+      </div>
+      <div class="review-summary-stats">
+        <div class="review-stat">
+          <div class="review-stat-val" style="color:${avgRet >= 0 ? 'var(--green)' : 'var(--red)'}">${fmtPct(avgRet)}</div>
+          <div class="review-stat-label">平均收益</div>
+        </div>
+        <div class="review-stat">
+          <div class="review-stat-val" style="color:var(--accent)">${Math.round(winCount/totalPicks*100)}%</div>
+          <div class="review-stat-label">胜率</div>
+        </div>
+        <div class="review-stat">
+          <div class="review-stat-val">${totalPicks}</div>
+          <div class="review-stat-label">总推荐</div>
+        </div>
+      </div>
+      <div style="font-size:0.8125rem;color:var(--text-muted)">
+        🏆 最佳：${bestPick.name} ${fmtPct(bestPick.return)} · 
+        💀 最差：${worstPick.name} ${fmtPct(worstPick.return)}
+      </div>
+    </div>
+  `;
+
+  // Recommended action breakdown
+  const actionCounts = {};
+  records.forEach(r => {
+    const action = r.recommended_action || r.strategy || '无';
+    if (!actionCounts[action]) actionCounts[action] = { count: 0, wins: 0, total: 0 };
+    (r.picks || []).forEach(p => {
+      actionCounts[action].count++;
+      actionCounts[action].total++;
+      if (Number(p.return || 0) >= 0) actionCounts[action].wins++;
+    });
+  });
+
+  // Failures section
+  if (fails.length > 0) {
+    html += `<h3 style="font-size:0.9375rem;margin:16px 0 10px">💀 失败案例 (${fails.length})</h3>`;
+    html += fails.map(p => `
+      <div class="review-fail">
+        <div class="review-fail-header">
+          <div>
+            <span class="review-fail-name">${p.name}</span>
+            <span class="review-fail-date"> · ${formatDate(p.date)}</span>
+          </div>
+          <span class="review-fail-return">${fmtPct(p.return)}</span>
+        </div>
+        <div class="review-fail-reason">${p.review || '暂无复盘'}</div>
+      </div>
+    `).join('');
+  }
+
+  // Top winners section
+  if (winners.length > 0) {
+    html += `<h3 style="font-size:0.9375rem;margin:16px 0 10px">🏆 暴赚案例 ( >+5%，${winners.length})</h3>`;
+    html += winners.slice(0, 10).map(p => `
+      <div class="review-win">
+        <div class="review-win-header">
+          <div>
+            <span class="review-win-name">${p.name}</span>
+            <span class="review-fail-date"> · ${formatDate(p.date)}</span>
+          </div>
+          <span class="review-win-return">${fmtPct(p.return)}</span>
+        </div>
+        <div class="review-fail-reason">${p.review || '暂无复盘'}</div>
+      </div>
+    `).join('');
+  }
+
+  list.innerHTML = html;
 }
 
 function groupHistory(period) {
