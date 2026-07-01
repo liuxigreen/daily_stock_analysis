@@ -23,9 +23,9 @@ on:
         default: false
         type: boolean
 
-# 并发控制：同一时间只运行一个分析任务
+# 并发控制：schedule 和 workflow_dispatch 独立队列，互不干扰
 concurrency:
-  group: stock-analysis
+  group: stock-analysis-${{ github.event_name }}
   cancel-in-progress: false
 
 jobs:
@@ -494,4 +494,79 @@ jobs:
           if [ -f "logs/stock_analysis_$(date +%Y%m%d).log" ]; then
             echo "📜 最近日志（最后 30 行）:"
             tail -30 logs/stock_analysis_*.log 2>/dev/null || echo "无日志"
+          fi
+
+      - name: 同步分析结果到网站
+        if: always()
+        run: |
+          echo "📊 同步分析结果到 docs/data/ ..."
+          
+          mkdir -p docs/data
+          TODAY=$(TZ=Asia/Shanghai date +%Y-%m-%d)
+          
+          # git pull 先同步（push_picks.py 可能已经推了新数据）
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git pull --rebase origin main || true
+          
+          CHANGED=false
+          
+          # 1. 尝试从 reports/ 提取分析数据到 analysis.json
+          LATEST_REPORT=$(ls -t reports/report_*.md 2>/dev/null | head -1)
+          if [ -n "$LATEST_REPORT" ]; then
+            echo "找到报告: $LATEST_REPORT"
+            
+            python3 << 'PYEOF'
+          import json, re, os
+          
+          report_path = os.popen("ls -t reports/report_*.md 2>/dev/null | head -1").read().strip()
+          if not report_path:
+              print("无报告文件")
+              exit(0)
+          
+          with open(report_path, encoding="utf-8") as f:
+              content = f.read()
+          
+          # 提取股票分析块
+          stocks = []
+          blocks = re.split(r"\n#{2,3}\s+", content)
+          for block in blocks:
+              code_match = re.search(r"(\d{6}|hk\d{5})", block)
+              if code_match:
+                  code = code_match.group(1)
+                  name_match = re.search(rf"{code}[(\uFF08]?([^)\uFF09\n]+)", block)
+                  name = name_match.group(1).strip() if name_match else code
+                  score_match = re.search(r"\u8BC4\u5206[\uff1a:]\s*(\d+)", block)
+                  score = int(score_match.group(1)) if score_match else 0
+                  signal = "\u5173\u6CE8"
+                  if "\u4E70\u5165" in block or "\u5F3A\u70C8\u63A8\u8350" in block:
+                      signal = "\u4E70\u5165"
+                  stocks.append({
+                      "code": code, "name": name, "price": 0,
+                      "score": score, "signal": signal,
+                      "trend": block[:200].replace("\n", " ").strip(),
+                      "support": "", "resistance": "",
+                  })
+          
+          if stocks:
+              from datetime import datetime
+              today = datetime.now().strftime("%Y-%m-%d")
+              analysis = {"date": today, "summary": content[:200].replace("\n", " ").strip(), "stocks": stocks[:20]}
+              with open("docs/data/analysis.json", "w", encoding="utf-8") as f:
+                  json.dump(analysis, f, ensure_ascii=False, indent=2)
+              print(f"analysis.json: {len(stocks)} stocks")
+          else:
+              print("未从报告中提取到股票数据")
+          PYEOF
+            CHANGED=true
+          fi
+          
+          # 2. Commit & push
+          git add docs/data/
+          if git diff --cached --quiet; then
+            echo "ℹ️ docs/data/ 无变更"
+          else
+            git commit -m "chore: sync analysis results to website ($TODAY)"
+            git push origin main
+            echo "✅ 已推送 → deploy-pages.yml 将自动部署"
           fi
