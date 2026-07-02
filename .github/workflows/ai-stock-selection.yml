@@ -31,6 +31,7 @@ jobs:
           ROUTER_API_KEY: ${{ secrets.ROUTER_API_KEY }}
         run: |
           set -e
+          echo "ROUTER_API_KEY length: ${#ROUTER_API_KEY}"
           echo "=== Step 1: Catalyst Scanner ==="
           python3 scripts/catalyst_scanner.py
 
