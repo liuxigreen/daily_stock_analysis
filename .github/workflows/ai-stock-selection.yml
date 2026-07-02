@@ -26,6 +26,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install deps
+        run: pip install requests
+
       - name: Run full pipeline
         env:
           ROUTER_API_KEY: ${{ secrets.ROUTER_API_KEY }}
