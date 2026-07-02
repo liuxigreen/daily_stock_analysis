@@ -114,10 +114,26 @@ def build_prompt(data):
 3. 多维度分析：催化剂 + 产业链位置 + 资金面 + 技术面 + 估值
 4. 找"蓄势待发"的，不追已涨停或涨幅>5%的
 5. 产业链传导思维：A环节已涨 → 找B环节还没动的
+6. 流动性过滤：日均成交额<1亿的不选（无法有效进出）
+7. 板块分散：6只票至少覆盖2个以上不同板块，避免集中风险
 \n"""]
 
-    # 蓄势信号
+    # 前瞻事件（新增）
     catalysts = data.get("catalysts", {})
+    if catalysts.get("forward_events"):
+        parts.append("## 未来催化事件（已知即将发生）")
+        for e in catalysts["forward_events"]:
+            parts.append(f"- {e.get('title','')}: 影响 {', '.join(e.get('affected',[]))}")
+        parts.append("")
+
+    # 今日重要新闻（新增）
+    if catalysts.get("top_headlines"):
+        parts.append("## 今日重要新闻")
+        for h in catalysts["top_headlines"][:8]:
+            parts.append(f"- {h}")
+        parts.append("")
+
+    # 蓄势信号
     if catalysts.get("accumulation_signals"):
         parts.append("## 蓄势信号（资金在吸筹但价格没动）")
         for s in catalysts["accumulation_signals"][:8]:
@@ -158,13 +174,31 @@ def build_prompt(data):
             parts.append(f"- {g.get('code','')} {g.get('name','')} {g.get('change_pct',0):+.1f}% 换手{g.get('turnover',0):.1f}%")
         parts.append("")
 
-    # 观察池
+    # 观察池（增强版）
     watchpool = data.get("watchpool", {})
     if watchpool.get("stocks"):
-        parts.append("## 观察池动态")
+        parts.append("## 观察池动态（已有持仓/观察标的，避免重复推荐）")
         for w in watchpool["stocks"]:
             parts.append(f"- {w.get('name','')} {w.get('code','')} 现价{w.get('current_price',0)} 盈亏{w.get('pnl_pct',0):+.1f}%")
+            if w.get("thesis"):
+                parts.append(f"  逻辑: {w.get('thesis','')[:80]}")
+            if w.get("catalyst_alerts"):
+                for a in w["catalyst_alerts"][:1]:
+                    parts.append(f"  催化: {a.get('event','')} ({a.get('expected_date','TBD')})")
         parts.append("")
+
+    # 复盘反馈（新增 — 让 AI 从失败中学习）
+    feedback_path = DOCS_DATA / "feedback.txt"
+    if feedback_path.exists():
+        try:
+            with open(feedback_path, encoding="utf-8") as f:
+                feedback = f.read(1000)
+            if feedback.strip():
+                parts.append("## 复盘反馈（近期失败案例，务必规避）")
+                parts.append(feedback)
+                parts.append("")
+        except Exception:
+            pass
 
     # 选股指令
     parts.append("""## 选股要求
@@ -176,9 +210,12 @@ def build_prompt(data):
    - 资金面：主力在进还是出？
    - 技术面：位置好不好？支撑在哪？
    - 估值：贵不贵？
+   - 风险：核心风险是什么？什么条件下必须止损？
 4. 市值 50-500亿优先，说明为什么选这只而不是同板块大票
-5. 给出：代码、名称、买入理由、买入区间、止损位、目标价
+5. 给出：代码、名称、买入理由、买入区间、止损位、目标价、持仓周期
 6. 不追涨停，不追涨幅>5%的，找蓄势待发的
+7. 不要重复推荐观察池已有的标的
+8. 6只票至少覆盖2个以上不同板块
 
 输出 JSON 格式：
 ```json
@@ -201,7 +238,9 @@ def build_prompt(data):
       "sector": "电池化学品",
       "reason": "电池化学品板块主力净流入15.3亿，蓄势形态",
       "catalyst": "十五五新能源规划出台在即",
-      "chain_position": "电池化学品（上游材料）"
+      "chain_position": "电池化学品（上游材料）",
+      "risk": "产能过剩导致价格战",
+      "timeframe": "波段(3-4周)"
     }
   ]
 }

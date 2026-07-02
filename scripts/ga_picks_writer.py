@@ -35,7 +35,11 @@ def main():
     # 组装 market_context
     main_theme = analysis.get("main_theme", "")
     hot_concepts = catalysts.get("hot_concepts", [])
-    accumulating = "、".join([c["name"] for c in hot_concepts[:3]]) if hot_concepts else ""
+    # 如果 hot_concepts 为空，从 accumulation_signals 中提取
+    if not hot_concepts:
+        acc = catalysts.get("accumulation_signals", [])
+        hot_concepts = [{"name": s.get("name", "")} for s in acc if s.get("score", 0) >= 20]
+    accumulating = "、".join([c.get("name", "") for c in hot_concepts[:3]]) if hot_concepts else ""
 
     picks_data = {
         "date": date,

@@ -3,7 +3,7 @@
 import json, sys, os
 from datetime import datetime, timedelta
 
-HISTORY_PATH = os.path.expanduser("~/workspace/daily_stock_analysis/docs/data/history.json")
+HISTORY_PATH = str(Path(__file__).resolve().parent.parent / "docs" / "data" / "history.json")
 LOOKBACK_DAYS = 60  # 从历史第一天算起
 
 def load_history():
@@ -87,6 +87,19 @@ def analyze():
     print("- 优先选择有明确催化剂（新闻/政策/业绩）的标的")
     print("- 评分 >30 且 试盘量 >1.5x 优先")
     print(f"- 近期平均亏损 {avg_loss:.2f}%，止损线收缩至 -6~-7%")
+
+
+# 同时写入文件供 ai_analyst.py 读取
+import io, contextlib
+buf = io.StringIO()
+with contextlib.redirect_stdout(buf):
+    analyze()
+feedback_text = buf.getvalue()
+feedback_path = Path(HISTORY_PATH).parent / "feedback.txt"
+with open(feedback_path, "w", encoding="utf-8") as f:
+    f.write(feedback_text)
+print(f"\n✅ 反馈已写入 {feedback_path}", file=sys.stderr)
+
 
 if __name__ == "__main__":
     analyze()

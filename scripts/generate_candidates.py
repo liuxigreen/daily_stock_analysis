@@ -197,7 +197,9 @@ def select_candidates(catalysts_data, all_stocks, fund_flow, verbose=False):
     # --- 规则 2: 产业链传导中的"下一环节"标的 ---
     for prop in catalysts_data.get("chain_propagations", []):
         for opp in prop.get("next_opportunities", []):
-            code = opp["code"]
+            code = opp.get("code", "")
+            if not code:
+                continue  # 新闻模式下无 code，跳过
             if code in selected:
                 continue
             cap = opp.get("market_cap_yi", 0)
