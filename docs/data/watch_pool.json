@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T16:00:00",
+  "last_updated": "2026-07-02",
   "stocks": [
     {
       "code": "688498",
@@ -39,6 +39,122 @@
         "100G EML量产延迟超3个月",
         "核心技术人员离职"
       ]
+    },
+    {
+      "code": "688037",
+      "name": "芯能科技",
+      "added_date": "2026-07-02",
+      "added_price": 18.45,
+      "thesis": "硅片是半导体产业链最上游，当前国产化率仅15%，政策强制导入空间大。股价在年线附近蓄势2周，成交量温和放大，主力资金小幅净流入。",
+      "supply_chain": "半导体材料（最上游），先受益于晶圆厂扩产",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "半导体国产替代专项政策即将出台，晶圆厂扩产带动硅片需求",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分75，半导体材料（最上游），先受益于晶圆厂扩产"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 18.45,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 75
+    },
+    {
+      "code": "300567",
+      "name": "精测电子",
+      "added_date": "2026-07-02",
+      "added_price": 68.2,
+      "thesis": "检测设备是芯片良率保障的关键环节，公司已切入长江存储、中芯国际供应链。近期半导体设备板块整体回调，该股处于60日线支撑位，技术面蓄势充分。",
+      "supply_chain": "半导体设备（中游），受益于晶圆厂扩产+国产替代",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "国产晶圆厂资本开支持续高增，设备国产化率提升",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分72，半导体设备（中游），受益于晶圆厂扩产+国产替代"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 68.2,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 72
+    },
+    {
+      "code": "688023",
+      "name": "兆易创新",
+      "added_date": "2026-07-02",
+      "added_price": 128.5,
+      "thesis": "存储芯片行业周期处于历史低位，NAND/DRAM价格Q3有望触底。公司是A股存储芯片设计龙头，MCU产品线受益于工业+汽车智能化。股价横盘3个月蓄势，突破在即。",
+      "supply_chain": "芯片设计（下游），后周期品种，复苏时弹性大",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "存储芯片价格Q3触底反弹，AI端侧需求带动MCU增长",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分70，芯片设计（下游），后周期品种，复苏时弹性大"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 128.5,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 70
+    },
+    {
+      "code": "300456",
+      "name": "华测导航",
+      "added_date": "2026-07-02",
+      "added_price": 24.6,
+      "thesis": "北斗高精度定位是低空经济、自动驾驶、精准农业的基础设施。公司是国内市占率第一的RTK厂商，受益政策推动的低空经济发展。股价沿20日线稳步攀升，量价配合良好。",
+      "supply_chain": "北斗定位（上游基础设施），先受益于应用场景爆发",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "低空经济政策持续出台，eVTOL/无人机监管放开",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分73，北斗定位（上游基础设施），先受益于应用场景爆发"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 24.6,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 73
     }
   ]
 }

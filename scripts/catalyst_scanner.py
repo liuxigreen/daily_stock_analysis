@@ -428,6 +428,7 @@ def detect_chain_propagation(stocks, verbose=False):
 
 # ─── 前瞻事件 ──────────────────────────────────────────────────
 def get_forward_events():
+    """返回前瞻性事件。"""
     today = datetime.now()
     month = today.month
     year = today.year
@@ -443,6 +444,94 @@ def get_forward_events():
     events.append({"title": "新能源装机旺季(Q3-Q4)", "affected": ["光伏", "风电", "储能"]})
     events.append({"title": "全球AI大模型迭代周期", "affected": ["AI芯片", "光模块", "算力"]})
     return events
+
+
+def detect_accumulation_from_news(headlines, verbose=False):
+    """
+    当实时数据为空时，从新闻标题中推断蓄势方向。
+    逻辑：如果多条新闻提到同一产业链关键词，说明该方向正在积累催化。
+    """
+    theme_counts = {}
+    for h in headlines:
+        title = h["title"]
+        for theme, info in INDUSTRY_CHAINS.items():
+            for kw in info["keywords"]:
+                if kw in title:
+                    if theme not in theme_counts:
+                        theme_counts[theme] = {"count": 0, "keywords": set(), "headlines": []}
+                    theme_counts[theme]["count"] += 1
+                    theme_counts[theme]["keywords"].add(kw)
+                    theme_counts[theme]["headlines"].append(title[:50])
+                    break
+            else:
+                continue
+            break
+
+    signals = []
+    for theme, data in theme_counts.items():
+        if data["count"] < 2:
+            continue
+        score = min(data["count"] * 15, 60)
+        signals.append({
+            "name": theme,
+            "change_pct": 0,
+            "market_cap_yi": 0,
+            "score": score,
+            "reasons": [
+                f"新闻蓄势：{data['count']}条相关新闻提及{', '.join(list(data['keywords'])[:3])}",
+                f"示例：{data['headlines'][0]}",
+            ],
+            "level": "news",
+        })
+    signals.sort(key=lambda x: x["score"], reverse=True)
+    log(f"  新闻蓄势信号: {len(signals)} 个", verbose)
+    return signals[:10]
+
+
+# ─── 新闻推断产业链传导 ────────────────────────────────────────
+def detect_chain_from_news(headlines, verbose=False):
+    """
+    当实时数据为空时，从新闻标题中推断产业链传导机会。
+    逻辑：如果多条新闻提到同一产业链的关键词，说明该方向有催化。
+    """
+    chain_hits = {}  # theme -> [matched headlines]
+    for h in headlines:
+        title = h["title"]
+        for theme, info in INDUSTRY_CHAINS.items():
+            for kw in info["keywords"]:
+                if kw in title:
+                    if theme not in chain_hits:
+                        chain_hits[theme] = []
+                    chain_hits[theme].append(title)
+                    break
+            else:
+                continue
+            break
+
+    results = []
+    for theme, hits in chain_hits.items():
+        if len(hits) < 2:
+            continue  # 至少 2 条相关新闻才有意义
+        info = INDUSTRY_CHAINS[theme]
+        # 推断：新闻提到的关键词 = 已启动的环节，chain 中其他环节 = 待补涨
+        active_kws = set()
+        for h in hits:
+            for kw in info["keywords"]:
+                if kw in h:
+                    active_kws.add(kw)
+        inactive = [seg for seg in info["chain"]
+                    if not any(ak in seg for ak in active_kws)]
+        if inactive:
+            results.append({
+                "theme": theme,
+                "logic": info["logic"],
+                "started": [{"name": kw, "source": "news"} for kw in active_kws],
+                "next_opportunities": [{"name": seg, "market_cap_yi": 0} for seg in inactive[:3]],
+                "news_count": len(hits),
+            })
+    results.sort(key=lambda x: x["news_count"], reverse=True)
+    log(f"  新闻推断传导: {len(results)} 个", verbose)
+    return results
 
 
 # ─── 主流程 ────────────────────────────────────────────────────
@@ -461,8 +550,18 @@ def main():
     # 2. 检测蓄势信号
     accumulation = detect_accumulation(all_stocks, sectors, verbose)
 
+    # 2.5 如果实时数据为空，用新闻推断蓄势方向
+    if not accumulation and headlines:
+        log("实时数据为空，用新闻推断蓄势方向...", verbose)
+        accumulation = detect_accumulation_from_news(headlines, verbose)
+
     # 3. 产业链传导
     chain_props = detect_chain_propagation(all_stocks, verbose)
+
+    # 3.5 如果实时数据为空，用新闻推断产业链传导
+    if not chain_props and headlines:
+        log("实时数据为空，用新闻推断产业链传导...", verbose)
+        chain_props = detect_chain_from_news(headlines, verbose)
 
     # 4. 前瞻事件
     forward_events = get_forward_events()
