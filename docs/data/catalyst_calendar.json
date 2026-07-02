@@ -72,6 +72,42 @@
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688200",
+      "stock_name": "鼎龙股份",
+      "event": "大基金三期资金到位，半导体材料专项扶持政策出台",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002115",
+      "stock_name": "深南电路",
+      "event": "大基金三期投向先进封装，国产AI芯片封装订单落地",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "603662",
+      "stock_name": "柯力传感",
+      "event": "Tesla Optimus Gen3量产，宇树科技/优必选订单落地",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "300101",
+      "stock_name": "振芯科技",
+      "event": "低空经济政策持续出台，eVTOL/无人机监管放开",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
     }
   ]
 }

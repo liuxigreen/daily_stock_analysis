@@ -213,6 +213,122 @@
       "exit_conditions": [],
       "source": "ai_daily_pick",
       "ai_score": 70
+    },
+    {
+      "code": "688200",
+      "name": "鼎龙股份",
+      "added_date": "2026-07-02",
+      "added_price": 450.0,
+      "thesis": "CMP抛光材料是半导体国产化率最低的环节之一（<10%），公司已实现抛光垫批量供货中芯国际，抛光液产能快速释放。近期半导体设备涨幅已大，材料端存在补涨需求，大基金三期有望重点支持。股价在年线附近蓄势2周，MACD金叉，成交量温和放大。",
+      "supply_chain": "半导体材料（CMP抛光耗材），晶圆制造环节上游",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "大基金三期资金到位，半导体材料专项扶持政策出台",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分75，半导体材料（CMP抛光耗材），晶圆制造环节上游"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 28.5,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 75
+    },
+    {
+      "code": "002115",
+      "name": "深南电路",
+      "added_date": "2026-07-02",
+      "added_price": 10.4,
+      "thesis": "封装基板是2.5D/3D先进封装的核心材料，FC-BGA技术壁垒高，国产化率<15%。公司是华为海思封装基板核心供应商，受益国产AI芯片（昇腾等）封装需求爆发。通富微电已涨30%，封装基板作为上游材料滞涨明显。股价在60日线附近蓄势，突破在即。",
+      "supply_chain": "先进封装上游（封装基板），先于封测厂受益",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "大基金三期投向先进封装，国产AI芯片封装订单落地",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分72，先进封装上游（封装基板），先于封测厂受益"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 78.3,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 72
+    },
+    {
+      "code": "603662",
+      "name": "柯力传感",
+      "added_date": "2026-07-02",
+      "added_price": 73.82,
+      "thesis": "绿的谐波已涨50%，产业链传导至传感器环节。机器人需要力矩传感器、触觉传感器、视觉传感器等，公司是国内力学传感器龙头，已布局机器人触觉传感器和六维力传感器。Tesla Optimus Gen3量产+国产机器人订单落地，传感器需求将爆发。股价沿20日线稳步攀升，量价配合良好。",
+      "supply_chain": "机器人核心零部件（传感器），本体之后受益",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "Tesla Optimus Gen3量产，宇树科技/优必选订单落地",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分78，机器人核心零部件（传感器），本体之后受益"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 52.8,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 78
+    },
+    {
+      "code": "300101",
+      "name": "振芯科技",
+      "added_date": "2026-07-02",
+      "added_price": 16.53,
+      "thesis": "低空经济政策持续出台，eVTOL/无人机需要高精度北斗定位。振芯科技是国内北斗芯片和终端核心供应商，产品覆盖定位、导航、授时。华测导航已涨30%，北斗板块内部轮动，振芯科技滞涨明显。股价在底部横盘2个月，成交量温和放大，突破在即。",
+      "supply_chain": "北斗导航（芯片+终端），基础设施层",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "低空经济政策持续出台，eVTOL/无人机监管放开",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分70，北斗导航（芯片+终端），基础设施层"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 18.9,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 70
     }
   ]
 }
