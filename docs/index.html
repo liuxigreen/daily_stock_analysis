@@ -53,6 +53,21 @@
         </div>
         <div id="historyList" class="history-list"></div>
       </section>
+      <section id="tab-catalyst" class="tab-content">
+        <div class="section-header">
+          <h2>⚡ 催化剂</h2>
+          <span class="stock-count" id="catalystCount"></span>
+        </div>
+        <div id="catalystList" class="catalyst-list"></div>
+      </section>
+      <section id="tab-watchpool" class="tab-content">
+        <div class="section-header">
+          <h2>👁️ 观察池</h2>
+          <span class="stock-count" id="watchpoolCount"></span>
+        </div>
+        <div id="watchpoolSummary" class="watchpool-summary"></div>
+        <div id="watchpoolList" class="watchpool-list"></div>
+      </section>
     </main>
     <div id="modal" class="modal hidden">
       <div class="modal-overlay" id="modalOverlay"></div>
@@ -73,6 +88,14 @@
       <button class="tab-btn" data-tab="history">
         <span class="tab-icon">📊</span>
         <span class="tab-label">回顾</span>
+      </button>
+      <button class="tab-btn" data-tab="catalyst">
+        <span class="tab-icon">⚡</span>
+        <span class="tab-label">催化剂</span>
+      </button>
+      <button class="tab-btn" data-tab="watchpool">
+        <span class="tab-icon">👁️</span>
+        <span class="tab-label">观察池</span>
       </button>
     </nav>
   </div>

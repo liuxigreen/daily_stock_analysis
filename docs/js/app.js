@@ -11,7 +11,9 @@ let state = {
   history: null,
   currentTab: 'today',
   historyView: 'daily',
-  todaySort: 'default'
+  todaySort: 'default',
+  catalysts: null,
+  watchpool: null
 };
 
 // ===== Tab Switching =====
@@ -65,10 +67,15 @@ async function loadData() {
     try { picksData = await fetchJSON(`/data/picks.json`); } catch { picksData = null; }
     try { analysisData = await fetchJSON(`/data/analysis.json`); } catch { analysisData = null; }
     try { historyData = await fetchJSON(`/data/history.json`); } catch { historyData = null; }
+    let catalystsData, watchpoolData;
+    try { catalystsData = await fetchJSON(`/data/catalyst_calendar.json`); } catch { catalystsData = null; }
+    try { watchpoolData = await fetchJSON(`/data/watch_pool_report.json`); } catch { watchpoolData = null; }
 
     state.picks = picksData;
     state.analysis = analysisData;
     state.history = historyData;
+    state.catalysts = catalystsData;
+    state.watchpool = watchpoolData;
 
     if (picksData) {
       document.getElementById('dateDisplay').textContent = formatDate(picksData.date || today);
@@ -83,6 +90,8 @@ async function loadData() {
     renderToday();
     renderAnalysis();
     renderHistory();
+    renderCatalysts();
+    renderWatchpool();
   } catch (err) {
     document.getElementById('loading').style.display = 'none';
     document.querySelector('#tab-today').innerHTML =
@@ -503,6 +512,94 @@ function groupHistory(period) {
     groups[key].push(r);
   });
   return groups;
+}
+
+// ===== Render: Catalysts =====
+function renderCatalysts() {
+  const list = document.getElementById('catalystList');
+  const countEl = document.getElementById('catalystCount');
+  const data = state.catalysts;
+  if (!data || !data.upcoming || data.upcoming.length === 0) {
+    list.innerHTML = '<div class="empty-state"><div class="icon">⚡</div><p>暂无催化剂事件</p></div>';
+    countEl.textContent = '';
+    return;
+  }
+  const items = data.upcoming;
+  countEl.textContent = items.length + '条';
+  list.innerHTML = items.map(function(c, i) { return renderCatalystCard(c, i); }).join('');
+}
+
+function renderCatalystCard(c, i) {
+  var urgency = c.importance || 'low';
+  var status = c.status || 'pending';
+  var statusLabels = { pending: '待确认', confirmed: '已确认', delayed: '已延迟', failed: '已失效' };
+  return '<div class="catalyst-card" style="animation-delay:' + (i * 0.05) + 's">' +
+    '<div class="catalyst-card-header">' +
+      '<div class="catalyst-title">' + (c.event || '--') + '</div>' +
+      '<span class="catalyst-urgency urgency-' + urgency + '">' + (urgency === 'high' ? '高' : urgency === 'medium' ? '中' : '低') + '</span>' +
+    '</div>' +
+    '<div class="catalyst-chain">' +
+      (c.stock_name || '') + ' <span class="stock-code">' + (c.stock_code || '') + '</span>' +
+      (c.date ? '<span style="margin-left:6px">📅 ' + c.date + '</span>' : '') +
+      '<span style="margin-left:6px"><span class="catalyst-dot dot-' + status + '"></span> ' + (statusLabels[status] || status) + '</span>' +
+    '</div>' +
+  '</div>';
+}
+
+// ===== Render: Watch Pool =====
+function renderWatchpool() {
+  var list = document.getElementById('watchpoolList');
+  var summaryEl = document.getElementById('watchpoolSummary');
+  var countEl = document.getElementById('watchpoolCount');
+  var data = state.watchpool;
+  if (!data || !data.stocks || data.stocks.length === 0) {
+    list.innerHTML = '<div class="empty-state"><div class="icon">👁️</div><p>暂无观察池数据</p></div>';
+    summaryEl.innerHTML = '';
+    countEl.textContent = '';
+    return;
+  }
+  var s = data.summary || {};
+  countEl.textContent = data.stocks.length + '只';
+  summaryEl.innerHTML =
+    '<div class="watchpool-stat"><div class="watchpool-stat-val" style="color:var(--accent)">' + (s.total || 0) + '</div><div class="watchpool-stat-label">总数</div></div>' +
+    '<div class="watchpool-stat"><div class="watchpool-stat-val" style="color:var(--accent)">' + (s.watching || 0) + '</div><div class="watchpool-stat-label">观察中</div></div>' +
+    '<div class="watchpool-stat"><div class="watchpool-stat-val" style="color:' + ((s.avg_pnl_pct||0) >= 0 ? 'var(--green)' : 'var(--red)') + '">' + (s.total_pnl || '--') + '</div><div class="watchpool-stat-label">总盈亏</div></div>';
+  list.innerHTML = data.stocks.map(function(st, i) { return renderWatchpoolCard(st, i); }).join('');
+}
+
+function renderWatchpoolCard(st, i) {
+  var statusClass = st.status === 'holding' ? 'status-holding' : st.status === 'exited' ? 'status-exited' : 'status-watching';
+  var statusLabel = st.status === 'holding' ? '持仓' : st.status === 'exited' ? '已退出' : '观察中';
+  var pnl = Number(st.pnl_pct || 0);
+  var pnlClass = pnl > 0 ? 'pnl-positive' : pnl < 0 ? 'pnl-negative' : 'pnl-flat';
+  var alerts = st.catalyst_alerts || [];
+  var alertsHtml = '';
+  if (alerts.length > 0) {
+    alertsHtml = '<div class="watchpool-catalysts">' +
+      alerts.map(function(a) {
+        return '<div class="watchpool-catalyst-item">' +
+          '<span class="catalyst-dot dot-' + (a.user_status || a.auto_status || 'pending') + '"></span>' +
+          '<span>' + (a.event || '') + '</span>' +
+          (a.expected_date ? '<span style="color:var(--text-dim)">' + a.expected_date + '</span>' : '') +
+        '</div>';
+      }).join('') +
+    '</div>';
+  }
+  return '<div class="watchpool-card" style="animation-delay:' + (i * 0.05) + 's">' +
+    '<div class="watchpool-card-header">' +
+      '<div>' +
+        '<span class="watchpool-name">' + (st.name || '--') + '</span>' +
+        '<span class="stock-code">' + (st.code || '') + '</span>' +
+        '<span class="watchpool-status ' + statusClass + '">' + statusLabel + '</span>' +
+      '</div>' +
+      '<div style="text-align:right">' +
+        '<div class="watchpool-price">' + fmtPrice(st.current_price) + '</div>' +
+        '<div class="watchpool-pnl ' + pnlClass + '">' + (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%</div>' +
+      '</div>' +
+    '</div>' +
+    alertsHtml +
+    (st.thesis ? '<div class="watchpool-thesis">💡 ' + st.thesis + '</div>' : '') +
+  '</div>';
 }
 
 // ===== Init =====

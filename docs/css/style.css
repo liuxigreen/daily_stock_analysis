@@ -312,3 +312,95 @@ main { padding: 12px 16px; }
 /* ===== Animations ===== */
 @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 .stock-card, .analysis-card, .history-item { animation: fadeIn 0.2s ease-out; }
+
+/* ===== Catalyst Cards ===== */
+.catalyst-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 10px;
+  animation: fadeIn 0.2s ease-out;
+}
+.catalyst-card-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 8px;
+}
+.catalyst-title { font-size: 0.9375rem; font-weight: 600; line-height: 1.4; }
+.catalyst-type-badge {
+  font-size: 0.625rem; padding: 2px 6px; border-radius: 4px;
+  background: #a371f720; color: var(--purple); white-space: nowrap; margin-left: 8px;
+  flex-shrink: 0;
+}
+.catalyst-urgency {
+  font-size: 0.6875rem; font-weight: 600; padding: 2px 8px; border-radius: 4px;
+}
+.urgency-high { background: #f8514920; color: var(--red); }
+.urgency-medium { background: #d2992220; color: var(--orange); }
+.urgency-low { background: #484f5820; color: var(--text-muted); }
+.catalyst-chain {
+  font-size: 0.75rem; color: var(--text-muted); margin-bottom: 8px;
+}
+.catalyst-beneficiaries {
+  display: flex; flex-wrap: wrap; gap: 4px;
+}
+.catalyst-stock-tag {
+  font-size: 0.6875rem; padding: 2px 6px; border-radius: 4px;
+  background: #58a6ff15; color: var(--accent);
+}
+
+/* ===== Watch Pool Cards ===== */
+.watchpool-summary {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+  margin-bottom: 12px;
+}
+.watchpool-stat {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 10px; text-align: center;
+}
+.watchpool-stat-val { font-size: 1.125rem; font-weight: 700; }
+.watchpool-stat-label { font-size: 0.6875rem; color: var(--text-muted); margin-top: 2px; }
+.watchpool-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 10px;
+  animation: fadeIn 0.2s ease-out;
+}
+.watchpool-card-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 8px;
+}
+.watchpool-name { font-size: 1rem; font-weight: 600; }
+.watchpool-price { font-size: 1.125rem; font-weight: 700; }
+.watchpool-status {
+  font-size: 0.625rem; padding: 2px 6px; border-radius: 4px;
+  font-weight: 600; margin-left: 6px;
+}
+.status-watching { background: #58a6ff20; color: var(--accent); }
+.status-holding { background: #3fb95020; color: var(--green); }
+.status-exited { background: #484f5820; color: var(--text-muted); }
+.watchpool-pnl {
+  font-size: 0.8125rem; font-weight: 600; margin-bottom: 8px;
+}
+.pnl-positive { color: var(--green); }
+.pnl-negative { color: var(--red); }
+.pnl-flat { color: var(--text-muted); }
+.watchpool-catalysts { margin-bottom: 8px; }
+.watchpool-catalyst-item {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.75rem; color: var(--text-muted); padding: 3px 0;
+}
+.catalyst-dot {
+  width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+}
+.dot-pending { background: var(--orange); }
+.dot-confirmed { background: var(--green); }
+.dot-delayed { background: #d29922; }
+.dot-failed { background: var(--red); }
+.dot-upcoming { background: var(--accent); }
+.watchpool-thesis {
+  font-size: 0.8125rem; color: var(--text-muted);
+  border-top: 1px solid var(--border); padding-top: 8px; margin-top: 4px;
+}

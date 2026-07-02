@@ -1,0 +1,23 @@
+{
+  "last_updated": "2026-07-02",
+  "upcoming": [
+    {
+      "date": "2026-09",
+      "stock_code": "688498",
+      "stock_name": "源杰科技",
+      "event": "100G EML Q3小批量供货",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "upcoming"
+    },
+    {
+      "date": "2026-H2",
+      "stock_code": "688498",
+      "stock_name": "源杰科技",
+      "event": "大基金三期可能注资光芯片",
+      "importance": "medium",
+      "status": "pending",
+      "auto_status": "upcoming"
+    }
+  ]
+}

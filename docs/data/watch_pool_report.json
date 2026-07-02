@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-02",
+  "summary": {
+    "total": 1,
+    "watching": 1,
+    "buying": 0,
+    "holding": 0,
+    "exited": 0,
+    "total_pnl": "-1.56%",
+    "avg_pnl_pct": -1.56
+  },
+  "stocks": [
+    {
+      "code": "688498",
+      "name": "源杰科技",
+      "status": "watching",
+      "thesis": "AI算力 → 800G光模块 → 100G EML光芯片，国内唯一量产",
+      "supply_chain": "AI算力 → 800G光模块 → 光芯片",
+      "timeframe": "12-18个月",
+      "added_date": "2026-07-02",
+      "added_price": 1665.0,
+      "current_price": 1639.0,
+      "change_pct_today": -6.93,
+      "pnl_pct": -1.56,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "100G EML Q3小批量供货",
+          "expected_date": "2026-09",
+          "auto_status": "upcoming",
+          "user_status": "pending"
+        },
+        {
+          "event": "大基金三期可能注资光芯片",
+          "expected_date": "2026-H2",
+          "auto_status": "upcoming",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [
+        "限售股解禁抛压",
+        "量产良率不确定"
+      ],
+      "exit_conditions": [
+        "100G EML量产延迟超3个月",
+        "核心技术人员离职"
+      ],
+      "latest_price_note": "加入观察池"
+    }
+  ]
+}

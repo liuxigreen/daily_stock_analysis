@@ -1,0 +1,48 @@
+name: Daily Catalyst Scan + Watch Pool
+
+on:
+  schedule:
+    # 工作日 16:30 CST (08:30 UTC) — 在每日选股之后运行
+    - cron: '30 8 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalyst-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Catalyst Scanner
+        run: python3 scripts/catalyst_scanner.py
+        timeout-minutes: 5
+
+      - name: Run Watch Pool Tracker
+        run: python3 scripts/watcher.py
+        timeout-minutes: 5
+
+      - name: Commit and push data
+        run: |
+          git config user.name "Bot"
+          git config user.email "bot@liuxigreen.github.io"
+          git pull --rebase origin main
+          git add docs/data/catalysts.json docs/data/watch_pool_report.json docs/data/catalyst_calendar.json docs/data/watch_pool.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            DATE=$(date +%Y-%m-%d)
+            git commit -m "chore: catalyst scan + watch pool update $DATE"
+            git push origin main
+          fi
