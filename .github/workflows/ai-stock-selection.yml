@@ -1,0 +1,62 @@
+name: AI Stock Selection
+
+on:
+  schedule:
+    # 工作日 16:00 CST (08:00 UTC)
+    - cron: '0 8 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-stock-selection
+  cancel-in-progress: false
+
+jobs:
+  select:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run full pipeline
+        env:
+          ROUTER_API_KEY: ${{ secrets.ROUTER_API_KEY }}
+        run: |
+          set -e
+          echo "=== Step 1: Catalyst Scanner ==="
+          python3 scripts/catalyst_scanner.py
+
+          echo "=== Step 2: Stock Screener Data ==="
+          python3 scripts/daily_stock_screener_ga.py || echo "Screener failed, continuing with catalysts only"
+
+          echo "=== Step 3: AI Analysis ==="
+          python3 scripts/ai_analyst.py
+
+          echo "=== Step 4: Watch Pool Update ==="
+          python3 scripts/watcher.py
+
+          echo "=== Step 5: Generate picks.json ==="
+          python3 scripts/ga_picks_writer.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "AI Stock Bot"
+          git config user.email "bot@liuxigreen.github.io"
+          git pull --rebase origin main
+          git add docs/data/
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            DATE=$(date +%Y-%m-%d)
+            git commit -m "chore: AI stock selection $DATE"
+            git push origin main
+            echo "✅ Data pushed, Pages will auto-deploy"
+          fi
