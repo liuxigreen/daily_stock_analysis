@@ -44,11 +44,24 @@ def call_llm(prompt, max_tokens=4000):
 
     try:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
-        resp = json.loads(r.stdout)
+        raw = r.stdout.strip()
+        # 尝试提取第一个完整的 JSON 对象
+        depth = 0
+        end = 0
+        for i, c in enumerate(raw):
+            if c == '{':
+                depth += 1
+            elif c == '}':
+                depth -= 1
+                if depth == 0:
+                    end = i + 1
+                    break
+        json_str = raw[:end] if end else raw
+        resp = json.loads(json_str)
         if "choices" in resp and resp["choices"]:
             return resp["choices"][0]["message"]["content"]
         else:
-            print(f"⚠️ API 响应异常: {r.stdout[:500]}", file=sys.stderr)
+            print(f"⚠️ API 响应异常: {raw[:300]}", file=sys.stderr)
             return None
     except Exception as e:
         print(f"❌ LLM 调用失败: {e}", file=sys.stderr)
