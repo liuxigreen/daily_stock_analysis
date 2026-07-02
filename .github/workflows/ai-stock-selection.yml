@@ -54,11 +54,14 @@ jobs:
         run: |
           git config user.name "AI Stock Bot"
           git config user.email "bot@liuxigreen.github.io"
-          git pull --rebase origin main
           git add docs/data/
           if git diff --cached --quiet; then
             echo "No data changes"
           else
+            git stash --include-untracked
+            git pull --rebase origin main
+            git stash pop || true
+            git add docs/data/
             DATE=$(date +%Y-%m-%d)
             git commit -m "chore: AI stock selection $DATE"
             git push origin main

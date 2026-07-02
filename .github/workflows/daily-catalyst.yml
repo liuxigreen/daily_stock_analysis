@@ -40,11 +40,14 @@ jobs:
         run: |
           git config user.name "Bot"
           git config user.email "bot@liuxigreen.github.io"
-          git pull --rebase origin main
           git add docs/data/catalysts.json docs/data/watch_pool_report.json docs/data/catalyst_calendar.json docs/data/watch_pool.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
+            git stash --include-untracked
+            git pull --rebase origin main
+            git stash pop || true
+            git add docs/data/
             DATE=$(date +%Y-%m-%d)
             git commit -m "chore: catalyst scan + watch pool update $DATE"
             git push origin main
