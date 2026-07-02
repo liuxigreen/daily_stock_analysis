@@ -299,15 +299,36 @@ def main():
     verbose = "--verbose" in sys.argv or "-v" in sys.argv
     print("🎯 候选股票池生成器启动（催化剂驱动）", file=sys.stderr)
 
-    catalysts_data = read_catalysts(verbose)
-    all_stocks = get_all_stocks_efinance(verbose)
-    fund_flow = get_fund_flow(verbose)
+    import traceback
+    try:
+        catalysts_data = read_catalysts(verbose)
+    except Exception as e:
+        print(f"⚠️ 读取催化剂失败: {e}", file=sys.stderr)
+        catalysts_data = {}
+
+    try:
+        all_stocks = get_all_stocks_efinance(verbose)
+    except Exception as e:
+        print(f"⚠️ efinance 失败: {e}", file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
+        all_stocks = []
+
+    try:
+        fund_flow = get_fund_flow(verbose)
+    except Exception as e:
+        print(f"⚠️ 资金流向失败: {e}", file=sys.stderr)
+        fund_flow = []
 
     if not all_stocks and not fund_flow:
         print("⚠️ 无市场数据（efinance + curl 均失败）", file=sys.stderr)
         # 不退出，用空列表继续（可能有催化剂数据但无行情数据）
 
-    candidates = select_candidates(catalysts_data, all_stocks, fund_flow, verbose)
+    try:
+        candidates = select_candidates(catalysts_data, all_stocks, fund_flow, verbose)
+    except Exception as e:
+        print(f"⚠️ 选择候选失败: {e}", file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
+        candidates = []
 
     if not candidates:
         print("⚠️ 未生成候选", file=sys.stderr)
