@@ -71,31 +71,20 @@ def call_llm(prompt, max_tokens=4000):
 def load_data():
     """加载市场数据和催化剂数据。"""
     data = {}
-
-    # 选股数据
-    screener_path = DOCS_DATA / "screener_data.json"
-    if screener_path.exists():
-        with open(screener_path, encoding="utf-8") as f:
-            data["screener"] = json.load(f)
-
-    # 催化剂数据
-    catalyst_path = DOCS_DATA / "catalysts.json"
-    if catalyst_path.exists():
-        with open(catalyst_path, encoding="utf-8") as f:
-            data["catalysts"] = json.load(f)
-
-    # 观察池
-    watch_path = DOCS_DATA / "watch_pool_report.json"
-    if watch_path.exists():
-        with open(watch_path, encoding="utf-8") as f:
-            data["watchpool"] = json.load(f)
-
-    # 候选标的
-    candidates_path = DOCS_DATA / "candidates.json"
-    if candidates_path.exists():
-        with open(candidates_path, encoding="utf-8") as f:
-            data["candidates"] = json.load(f)
-
+    files = {
+        "screener": "screener_data.json",
+        "catalysts": "catalysts.json",
+        "watchpool": "watch_pool_report.json",
+        "candidates": "candidates.json",
+    }
+    for key, filename in files.items():
+        path = DOCS_DATA / filename
+        if path.exists():
+            try:
+                with open(path, encoding="utf-8") as f:
+                    data[key] = json.load(f)
+            except json.JSONDecodeError as e:
+                print(f"⚠️ {filename} JSON解析失败: {e}", file=sys.stderr)
     return data
 
 

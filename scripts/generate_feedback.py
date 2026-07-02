@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """读取历史失败案例，生成复盘反馈简报，供选股分析参考"""
 import json, sys, os
+from pathlib import Path
 from datetime import datetime, timedelta
 
 HISTORY_PATH = str(Path(__file__).resolve().parent.parent / "docs" / "data" / "history.json")
@@ -89,17 +90,13 @@ def analyze():
     print(f"- 近期平均亏损 {avg_loss:.2f}%，止损线收缩至 -6~-7%")
 
 
-# 同时写入文件供 ai_analyst.py 读取
-import io, contextlib
-buf = io.StringIO()
-with contextlib.redirect_stdout(buf):
-    analyze()
-feedback_text = buf.getvalue()
-feedback_path = Path(HISTORY_PATH).parent / "feedback.txt"
-with open(feedback_path, "w", encoding="utf-8") as f:
-    f.write(feedback_text)
-print(f"\n✅ 反馈已写入 {feedback_path}", file=sys.stderr)
-
-
 if __name__ == "__main__":
-    analyze()
+    import io, contextlib
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        analyze()
+    feedback_text = buf.getvalue()
+    feedback_path = Path(HISTORY_PATH).parent / "feedback.txt"
+    with open(feedback_path, "w", encoding="utf-8") as f:
+        f.write(feedback_text)
+    print(f"\n✅ 反馈已写入 {feedback_path}", file=sys.stderr)

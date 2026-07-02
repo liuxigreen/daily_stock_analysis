@@ -25,27 +25,7 @@ def curl_get(url, timeout=10):
 
 
 def get_sector_flow():
-    """获取板块资金流向 Top 15。优先 efinance，回退 curl。"""
-    # 尝试 efinance
-    try:
-        import efinance as ef
-        # 东方财富行业板块资金流向
-        df = ef.stock.get_belong_board("000001")
-        if df is not None and not df.empty:
-            sectors = []
-            for _, row in df.iterrows():
-                sectors.append({
-                    "code": str(row.get("板块代码", row.get("股票代码", ""))),
-                    "name": str(row.get("板块名称", row.get("股票名称", ""))),
-                    "change_pct": round(float(row.get("涨跌幅", 0) or 0), 2),
-                    "net_inflow_yi": round(float(row.get("主力净流入-净额", 0) or 0) / 1e8, 2),
-                })
-            if sectors:
-                return sectors[:15]
-    except Exception:
-        pass
-
-    # 回退 curl
+    """获取板块资金流向 Top 15。efinance 无法直接获取板块流向，使用 curl。"""
     url = (
         "https://push2.eastmoney.com/api/qt/clist/get?"
         "pn=1&pz=15&po=1&np=1&fltt=2&invt=2"

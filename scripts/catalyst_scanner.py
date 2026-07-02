@@ -95,48 +95,7 @@ def log(msg, verbose=False):
         print(f"  {msg}", file=sys.stderr)
 
 
-# ─── 数据源 1: efinance 板块数据 ────────────────────────────────
-def get_sector_data_efinance(verbose=False):
-    """用 efinance 获取行业板块 + 概念板块资金流向。"""
-    try:
-        import efinance as ef
-    except ImportError:
-        log("⚠️ efinance 未安装，跳过板块数据", verbose)
-        return [], []
-
-    industries = []
-    concepts = []
-
-    try:
-        # 行业板块资金流向
-        log("efinance: 获取行业板块...", verbose)
-        df_ind = ef.stock.get_realtime_quotes([])
-        # efinance 板块数据需要通过 board 模块
-    except Exception as e:
-        log(f"⚠️ efinance 行业板块失败: {e}", verbose)
-
-    # efinance 的板块接口
-    try:
-        from efinance.stock import get_belong_board
-        log("efinance: 获取概念板块数据...", verbose)
-    except ImportError:
-        pass
-
-    # 最可靠的方式：用 efinance 的东财接口
-    try:
-        import efinance as ef
-        # 获取 A 股实时行情（包含市值）
-        log("efinance: 获取全市场实时行情...", verbose)
-        df = ef.stock.get_realtime_quotes()
-        if df is not None and not df.empty:
-            log(f"  获取 {len(df)} 只股票行情", verbose)
-            return [], df  # 返回原始 DataFrame
-    except Exception as e:
-        log(f"⚠️ efinance 实时行情失败: {e}", verbose)
-
-    return [], []
-
-
+# ─── 数据源 1: 板块数据 ────────────────────────────────
 def get_sector_flow_efinance(verbose=False):
     """用 efinance 获取板块资金流向。"""
     try:

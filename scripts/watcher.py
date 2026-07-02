@@ -173,10 +173,10 @@ def parse_catalyst_date(expected_date: str) -> Optional[date]:
     # YYYY-MM (取当月最后一天)
     m = re.match(r"^(\d{4})-(\d{2})$", expected_date)
     if m:
+        import calendar
         y, mo = int(m.group(1)), int(m.group(2))
-        if mo == 12:
-            return date(y + 1, 1, 1)
-        return date(y, mo + 1, 1)
+        last_day = calendar.monthrange(y, mo)[1]
+        return date(y, mo, last_day)
 
     # YYYY-H1 / YYYY-H2
     m = re.match(r"^(\d{4})-H([12])$", expected_date)
@@ -267,10 +267,10 @@ def generate_report(
         for cat in catalysts:
             if cat.get("status") == "confirmed" or cat.get("status") == "failed":
                 continue
-            auto_status = check_catalyst_status(cat["expected_date"], today_date)
+            auto_status = check_catalyst_status(cat.get("expected_date", "TBD"), today_date)
             catalyst_alerts.append({
                 "event": cat["event"],
-                "expected_date": cat["expected_date"],
+                "expected_date": cat.get("expected_date", "TBD"),
                 "auto_status": auto_status,
                 "user_status": cat.get("status", "pending"),
             })
@@ -362,13 +362,13 @@ def update_catalyst_calendar(
 
     for stock in pool_data.get("stocks", []):
         for cat in stock.get("catalysts", []):
-            auto_status = check_catalyst_status(cat["expected_date"], today_date)
+            auto_status = check_catalyst_status(cat.get("expected_date", "TBD"), today_date)
             importance = "high"
-            if cat["expected_date"].endswith("-H2") or cat["expected_date"].endswith("-H1"):
+            if cat.get("expected_date", "TBD").endswith("-H2") or cat.get("expected_date", "TBD").endswith("-H1"):
                 importance = "medium"
 
             upcoming.append({
-                "date": cat["expected_date"],
+                "date": cat.get("expected_date", "TBD"),
                 "stock_code": stock["code"],
                 "stock_name": stock.get("name", ""),
                 "event": cat["event"],
@@ -453,8 +453,8 @@ def main():
     logger.info("--- 催化剂检查 ---")
     for stock in stocks:
         for cat in stock.get("catalysts", []):
-            auto_status = check_catalyst_status(cat["expected_date"], today_date)
-            deadline = parse_catalyst_date(cat["expected_date"])
+            auto_status = check_catalyst_status(cat.get("expected_date", "TBD"), today_date)
+            deadline = parse_catalyst_date(cat.get("expected_date", "TBD"))
             days_left = (deadline - today_date).days if deadline else None
             status_emoji = {
                 "overdue": "🔴",
