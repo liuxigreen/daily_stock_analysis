@@ -6,8 +6,8 @@
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "+374.02%",
-    "avg_pnl_pct": 374.02
+    "total_pnl": "+0.0%",
+    "avg_pnl_pct": 0.0
   },
   "stocks": [
     {
@@ -18,10 +18,10 @@
       "supply_chain": "AI算力 → 800G光模块 → 光芯片",
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
-      "added_price": 1665.0,
+      "added_price": 1639.0,
       "current_price": 1639.0,
       "change_pct_today": -6.93,
-      "pnl_pct": -1.56,
+      "pnl_pct": 0.0,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -45,7 +45,7 @@
         "100G EML量产延迟超3个月",
         "核心技术人员离职"
       ],
-      "latest_price_note": "加入观察池"
+      "latest_price_note": "修正入池价"
     },
     {
       "code": "688037",
@@ -55,10 +55,10 @@
       "supply_chain": "半导体材料（最上游），先受益于晶圆厂扩产",
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
-      "added_price": 18.45,
+      "added_price": 360.0,
       "current_price": 360.0,
       "change_pct_today": -11.76,
-      "pnl_pct": 1851.22,
+      "pnl_pct": 0.0,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -70,7 +70,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": "修正入池价"
     },
     {
       "code": "300567",
@@ -80,10 +80,10 @@
       "supply_chain": "半导体设备（中游），受益于晶圆厂扩产+国产替代",
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
-      "added_price": 68.2,
+      "added_price": 269.95,
       "current_price": 269.95,
       "change_pct_today": -11.09,
-      "pnl_pct": 295.82,
+      "pnl_pct": 0.0,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -95,7 +95,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": "修正入池价"
     },
     {
       "code": "688023",
@@ -105,10 +105,10 @@
       "supply_chain": "芯片设计（下游），后周期品种，复苏时弹性大",
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
-      "added_price": 128.5,
+      "added_price": 36.42,
       "current_price": 36.42,
       "change_pct_today": -3.52,
-      "pnl_pct": -71.66,
+      "pnl_pct": 0.0,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -120,7 +120,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": "修正入池价"
     },
     {
       "code": "300456",
@@ -130,10 +130,10 @@
       "supply_chain": "北斗定位（上游基础设施），先受益于应用场景爆发",
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
-      "added_price": 24.6,
+      "added_price": 42.81,
       "current_price": 42.81,
       "change_pct_today": -3.67,
-      "pnl_pct": 74.02,
+      "pnl_pct": 0.0,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -145,7 +145,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": "修正入池价"
     },
     {
       "code": "688017",
@@ -155,10 +155,10 @@
       "supply_chain": "人形机器人核心零部件（上游），先于整机受益",
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
-      "added_price": 95.2,
+      "added_price": 413.05,
       "current_price": 413.05,
       "change_pct_today": -2.58,
-      "pnl_pct": 333.88,
+      "pnl_pct": 0.0,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -170,7 +170,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": "修正入池价"
     },
     {
       "code": "002156",
@@ -180,10 +180,10 @@
       "supply_chain": "半导体封测环节（下游），国产替代最后环节但弹性最大",
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
-      "added_price": 28.5,
+      "added_price": 67.37,
       "current_price": 67.37,
       "change_pct_today": -8.85,
-      "pnl_pct": 136.39,
+      "pnl_pct": 0.0,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -195,7 +195,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": "修正入池价"
     }
   ]
 }

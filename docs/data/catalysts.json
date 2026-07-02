@@ -2,28 +2,22 @@
   "date": "2026-07-02",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：8条相关新闻提及存储, 算力；示例：Meta“小作文”有偏误！国内算力供不应求！",
+      "title": "蓄势信号：新闻蓄势：8条相关新闻提及算力, 存储；示例：Meta“小作文”有偏误！国内算力供不应求！",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：6条相关新闻提及机器人；示例：特斯拉&#x2B;宇树双利好！人形机器人概念股梳理",
-      "type": "accumulation",
-      "theme": "人形机器人",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及半导体, 材料, 芯片；示例：机构调研丨超硬材料&#x2B;培育钻石&#x2B;机器人概念 这家公司金刚石散热片和金刚石光学窗口片",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及芯片, 半导体, 材料；示例：机构调研丨超硬材料&#x2B;培育钻石&#x2B;机器人概念 这家公司金刚石散热片和金刚石光学窗口片",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药, 创新药；示例：百诚医药创新药BIOS0629-109片临床试验获批",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及机器人；示例：特斯拉&#x2B;宇树双利好！人形机器人概念股梳理",
       "type": "accumulation",
-      "theme": "创新药",
-      "urgency": "medium"
+      "theme": "人形机器人",
+      "urgency": "high"
     },
     {
       "title": "蓄势信号：新闻蓄势：2条相关新闻提及电池；示例：电池新国标落地 受益股揭秘（附名单）",
@@ -32,13 +26,24 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 存储, 算力已启动",
+      "title": "产业链传导：AI算力 — 算力, 存储已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
         "光模块",
         "光芯片"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 芯片, 半导体, 材料已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
       ],
       "urgency": "medium"
     },
@@ -54,29 +59,7 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 半导体, 材料, 芯片已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：创新药 — 医药, 创新药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "CXO",
-        "CDMO",
-        "原料药"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：新能源车 — 电池, 锂电已启动",
+      "title": "产业链传导：新能源车 — 锂电, 电池已启动",
       "type": "chain_propagation",
       "theme": "新能源车",
       "next": [
@@ -135,15 +118,15 @@
       "urgency": "medium"
     },
     {
-      "title": "104天！宇树科技科创板IPO注册生效 A股“人形机器人第一股”诞生在即",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
       "title": "从词元到算力中心：人工智能浪潮下A股硬科技的重估逻辑",
       "type": "news",
       "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "芯片股拉升！美重磅数据发布",
+      "type": "news",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     }
   ],
@@ -154,19 +137,8 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：8条相关新闻提及存储, 算力",
+        "新闻蓄势：8条相关新闻提及算力, 存储",
         "示例：Meta“小作文”有偏误！国内算力供不应求！"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "人形机器人",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：6条相关新闻提及机器人",
-        "示例：特斯拉&#x2B;宇树双利好！人形机器人概念股梳理"
       ],
       "level": "news"
     },
@@ -176,19 +148,19 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及半导体, 材料, 芯片",
+        "新闻蓄势：4条相关新闻提及芯片, 半导体, 材料",
         "示例：机构调研丨超硬材料&#x2B;培育钻石&#x2B;机器人概念 这家公司金刚石散热片和金刚石光学窗口片"
       ],
       "level": "news"
     },
     {
-      "name": "创新药",
+      "name": "人形机器人",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 45,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及医药, 创新药",
-        "示例：百诚医药创新药BIOS0629-109片临床试验获批"
+        "新闻蓄势：3条相关新闻提及机器人",
+        "示例：特斯拉&#x2B;宇树双利好！人形机器人概念股梳理"
       ],
       "level": "news"
     },
@@ -210,11 +182,11 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "存储",
+          "name": "算力",
           "source": "news"
         },
         {
-          "name": "算力",
+          "name": "存储",
           "source": "news"
         }
       ],
@@ -233,6 +205,39 @@
         }
       ],
       "news_count": 8
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "芯片",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "材料",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 4
     },
     {
       "theme": "人形机器人",
@@ -257,80 +262,18 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 6
-    },
-    {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "材料",
-          "source": "news"
-        },
-        {
-          "name": "芯片",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 4
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "医药",
-          "source": "news"
-        },
-        {
-          "name": "创新药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
+      "news_count": 3
     },
     {
       "theme": "新能源车",
       "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
       "started": [
         {
-          "name": "电池",
+          "name": "锂电",
           "source": "news"
         },
         {
-          "name": "锂电",
+          "name": "电池",
           "source": "news"
         }
       ],
@@ -395,13 +338,13 @@
     "7月2日晚间上市公司利好消息一览(附名单)",
     "亚太股市重挫！SK海力士跌超14% AI硬件全线“崩塌” 原因找到了",
     "商务部回应对美农产品关税问题",
-    "A股上半年新开户2016.13万户 同比增长60%"
+    "7月2日东方财富财经晚报（附新闻联播）"
   ],
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 5,
-    "chain_propagations": 5,
-    "news_catalysts": 22
+    "accumulation_signals": 4,
+    "chain_propagations": 4,
+    "news_catalysts": 17
   }
 }

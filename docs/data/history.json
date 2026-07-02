@@ -5,7 +5,7 @@
       "total_count": 6,
       "win_count": 0,
       "avg_return": 0,
-      "review": "AI算力与人形机器人蓄势，半导体国产替代加速",
+      "review": "AI算力产业链传导进行时，半导体国产替代加速，人形机器人零部件待补涨",
       "picks": [
         {
           "code": "688498",
@@ -14,33 +14,33 @@
           "status": "持有中"
         },
         {
-          "code": "688017",
-          "name": "绿的谐波",
-          "return": -0.8,
-          "status": "持有中"
-        },
-        {
           "code": "002156",
           "name": "通富微电",
-          "return": 0.3,
-          "status": "持有中"
-        },
-        {
-          "code": "300759",
-          "name": "康龙化成",
-          "return": -1.2,
-          "status": "持有中"
-        },
-        {
-          "code": "002185",
-          "name": "华天科技",
           "return": 0.0,
           "status": "持有中"
         },
         {
-          "code": "002812",
-          "name": "恩捷股份",
-          "return": -0.5,
+          "code": "300567",
+          "name": "精测电子",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "688017",
+          "name": "绿的谐波",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "300456",
+          "name": "华测导航",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "688023",
+          "name": "兆易创新",
+          "return": 0.0,
           "status": "持有中"
         }
       ]
