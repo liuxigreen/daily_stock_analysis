@@ -1,13 +1,13 @@
 {
   "date": "2026-07-02",
   "summary": {
-    "total": 1,
-    "watching": 1,
+    "total": 7,
+    "watching": 7,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "-1.56%",
-    "avg_pnl_pct": -1.56
+    "total_pnl": "+374.02%",
+    "avg_pnl_pct": 374.02
   },
   "stocks": [
     {
@@ -46,6 +46,156 @@
         "核心技术人员离职"
       ],
       "latest_price_note": "加入观察池"
+    },
+    {
+      "code": "688037",
+      "name": "芯能科技",
+      "status": "watching",
+      "thesis": "硅片是半导体产业链最上游，当前国产化率仅15%，政策强制导入空间大。股价在年线附近蓄势2周，成交量温和放大，主力资金小幅净流入。",
+      "supply_chain": "半导体材料（最上游），先受益于晶圆厂扩产",
+      "timeframe": "12-18个月",
+      "added_date": "2026-07-02",
+      "added_price": 18.45,
+      "current_price": 360.0,
+      "change_pct_today": -11.76,
+      "pnl_pct": 1851.22,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "半导体国产替代专项政策即将出台，晶圆厂扩产带动硅片需求",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    },
+    {
+      "code": "300567",
+      "name": "精测电子",
+      "status": "watching",
+      "thesis": "检测设备是芯片良率保障的关键环节，公司已切入长江存储、中芯国际供应链。近期半导体设备板块整体回调，该股处于60日线支撑位，技术面蓄势充分。",
+      "supply_chain": "半导体设备（中游），受益于晶圆厂扩产+国产替代",
+      "timeframe": "12-18个月",
+      "added_date": "2026-07-02",
+      "added_price": 68.2,
+      "current_price": 269.95,
+      "change_pct_today": -11.09,
+      "pnl_pct": 295.82,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "国产晶圆厂资本开支持续高增，设备国产化率提升",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    },
+    {
+      "code": "688023",
+      "name": "兆易创新",
+      "status": "watching",
+      "thesis": "存储芯片行业周期处于历史低位，NAND/DRAM价格Q3有望触底。公司是A股存储芯片设计龙头，MCU产品线受益于工业+汽车智能化。股价横盘3个月蓄势，突破在即。",
+      "supply_chain": "芯片设计（下游），后周期品种，复苏时弹性大",
+      "timeframe": "12-18个月",
+      "added_date": "2026-07-02",
+      "added_price": 128.5,
+      "current_price": 36.42,
+      "change_pct_today": -3.52,
+      "pnl_pct": -71.66,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "存储芯片价格Q3触底反弹，AI端侧需求带动MCU增长",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    },
+    {
+      "code": "300456",
+      "name": "华测导航",
+      "status": "watching",
+      "thesis": "北斗高精度定位是低空经济、自动驾驶、精准农业的基础设施。公司是国内市占率第一的RTK厂商，受益政策推动的低空经济发展。股价沿20日线稳步攀升，量价配合良好。",
+      "supply_chain": "北斗定位（上游基础设施），先受益于应用场景爆发",
+      "timeframe": "12-18个月",
+      "added_date": "2026-07-02",
+      "added_price": 24.6,
+      "current_price": 42.81,
+      "change_pct_today": -3.67,
+      "pnl_pct": 74.02,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "低空经济政策持续出台，eVTOL/无人机监管放开",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    },
+    {
+      "code": "688017",
+      "name": "绿的谐波",
+      "status": "watching",
+      "thesis": "人形机器人产业链传导：机器人本体已涨→核心零部件需求爆发。绿的谐波是国产谐波减速器绝对龙头，产品性能对标哈默纳科，价格低30%。Tesla Optimus量产+宇树科技订单释放，减速器环节最受益。",
+      "supply_chain": "人形机器人核心零部件（上游），先于整机受益",
+      "timeframe": "12-18个月",
+      "added_date": "2026-07-02",
+      "added_price": 95.2,
+      "current_price": 413.05,
+      "change_pct_today": -2.58,
+      "pnl_pct": 333.88,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "Tesla Optimus Gen3量产预期，宇树科技/优必选等国产机器人厂商订单落地，机器人产业链从主题炒作进入业绩兑现期",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "status": "watching",
+      "thesis": "半导体国产替代传导：设备/材料已涨→先进封装补涨。大基金三期重点投向先进封装，通富微电是国产2.5D/3D封装技术最成熟厂商，承接华为/海思等国产AI芯片封装订单，受益算力芯片国产化。",
+      "supply_chain": "半导体封测环节（下游），国产替代最后环节但弹性最大",
+      "timeframe": "12-18个月",
+      "added_date": "2026-07-02",
+      "added_price": 28.5,
+      "current_price": 67.37,
+      "change_pct_today": -8.85,
+      "pnl_pct": 136.39,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "大基金三期资金到位，国产AI芯片（华为昇腾等）封装需求爆发，先进封装技术突破",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
     }
   ]
 }

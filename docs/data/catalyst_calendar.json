@@ -18,6 +18,60 @@
       "importance": "medium",
       "status": "pending",
       "auto_status": "upcoming"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688037",
+      "stock_name": "芯能科技",
+      "event": "半导体国产替代专项政策即将出台，晶圆厂扩产带动硅片需求",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "300567",
+      "stock_name": "精测电子",
+      "event": "国产晶圆厂资本开支持续高增，设备国产化率提升",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688023",
+      "stock_name": "兆易创新",
+      "event": "存储芯片价格Q3触底反弹，AI端侧需求带动MCU增长",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "300456",
+      "stock_name": "华测导航",
+      "event": "低空经济政策持续出台，eVTOL/无人机监管放开",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688017",
+      "stock_name": "绿的谐波",
+      "event": "Tesla Optimus Gen3量产预期，宇树科技/优必选等国产机器人厂商订单落地，机器人产业链从主题炒作进入业绩兑现期",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002156",
+      "stock_name": "通富微电",
+      "event": "大基金三期资金到位，国产AI芯片（华为昇腾等）封装需求爆发，先进封装技术突破",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
     }
   ]
 }

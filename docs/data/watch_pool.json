@@ -155,6 +155,64 @@
       "exit_conditions": [],
       "source": "ai_daily_pick",
       "ai_score": 73
+    },
+    {
+      "code": "688017",
+      "name": "绿的谐波",
+      "added_date": "2026-07-02",
+      "added_price": 95.2,
+      "thesis": "人形机器人产业链传导：机器人本体已涨→核心零部件需求爆发。绿的谐波是国产谐波减速器绝对龙头，产品性能对标哈默纳科，价格低30%。Tesla Optimus量产+宇树科技订单释放，减速器环节最受益。",
+      "supply_chain": "人形机器人核心零部件（上游），先于整机受益",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "Tesla Optimus Gen3量产预期，宇树科技/优必选等国产机器人厂商订单落地，机器人产业链从主题炒作进入业绩兑现期",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分72，人形机器人核心零部件（上游），先于整机受益"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 95.2,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 72
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "added_date": "2026-07-02",
+      "added_price": 28.5,
+      "thesis": "半导体国产替代传导：设备/材料已涨→先进封装补涨。大基金三期重点投向先进封装，通富微电是国产2.5D/3D封装技术最成熟厂商，承接华为/海思等国产AI芯片封装订单，受益算力芯片国产化。",
+      "supply_chain": "半导体封测环节（下游），国产替代最后环节但弹性最大",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "大基金三期资金到位，国产AI芯片（华为昇腾等）封装需求爆发，先进封装技术突破",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分70，半导体封测环节（下游），国产替代最后环节但弹性最大"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-07-02",
+          "price": 28.5,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 70
     }
   ]
 }
