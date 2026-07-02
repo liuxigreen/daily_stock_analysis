@@ -1,12 +1,6 @@
 {
   "date": "2026-07-02",
-  "market_context": {
-    "main_line": "光通信、半导体国产替代双主线，AI算力回调后资金回流科技成长",
-    "accumulating": "",
-    "overheated": "",
-    "sentiment": "neutral",
-    "policy": ""
-  },
+  "main_theme": "光通信、半导体国产替代双主线，AI算力回调后资金回流科技成长",
   "picks": [
     {
       "code": "688498",
@@ -98,5 +92,7 @@
       "sector": "AI芯片",
       "reason": "国产算力需求爆发，芯片国产替代核心标的，业绩拐点显现"
     }
-  ]
+  ],
+  "generated_at": "2026-07-02T11:39:25.311150",
+  "model": "edgen"
 }

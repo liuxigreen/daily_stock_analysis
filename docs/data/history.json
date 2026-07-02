@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-07-02",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "光通信、半导体国产替代双主线，AI算力回调后资金回流科技成长",
+      "picks": [
+        {
+          "code": "688498",
+          "name": "源杰科技",
+          "return": -1.6,
+          "status": "持有中"
+        },
+        {
+          "code": "688126",
+          "name": "沪硅产业",
+          "return": 0.8,
+          "status": "持有中"
+        },
+        {
+          "code": "002475",
+          "name": "立讯精密",
+          "return": 1.2,
+          "status": "持有中"
+        },
+        {
+          "code": "300750",
+          "name": "宁德时代",
+          "return": 0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "600519",
+          "name": "贵州茅台",
+          "return": -0.3,
+          "status": "持有中"
+        },
+        {
+          "code": "688256",
+          "name": "寒武纪",
+          "return": 2.1,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-07-01",
       "total_count": 6,
       "win_count": 0,

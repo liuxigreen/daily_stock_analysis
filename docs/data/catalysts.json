@@ -1,46 +1,10 @@
 {
   "date": "2026-07-02",
-  "catalysts": [
-    {
-      "title": "特斯拉加速量产、英伟达招兵买马 人形机器人逆势大涨 融资客超亿元押注这14股",
-      "source": "东方财富",
-      "type": "industry",
-      "affected_sectors": [
-        "人形机器人"
-      ],
-      "chain": "AI + 制造 → 人形机器人",
-      "beneficiary_stocks": [],
-      "urgency": "medium",
-      "detected_at": "2026-07-02T16:02:17.501135"
-    },
-    {
-      "title": "期权智投播报 | AI电力接棒算力行情 Bloom Energy大涨；并购与指数纳入预期加持 SpaceX斩获三连涨",
-      "source": "东方财富",
-      "type": "industry",
-      "affected_sectors": [
-        "算力"
-      ],
-      "chain": "AI算力 → GPU/ASIC → 算力基建",
-      "beneficiary_stocks": [],
-      "urgency": "medium",
-      "detected_at": "2026-07-02T16:02:17.501135"
-    }
-  ],
+  "catalysts": [],
   "hot_concepts": [],
-  "top_headlines": [
-    "广发银行深耕广东制造业",
-    "阳光能源市值跌破3000亿",
-    "白酒原酒拍卖出现“可乐价”",
-    "沪指跌超2% 创业板指跌近6% 贵金属板块逆市大涨",
-    "10分钟！直线涨停 封单超12万手！业绩利好引爆这些A股",
-    "商务部回应对美农产品关税问题",
-    "美联储加息究竟是不是“危言耸听”？今晚美国非农夜重磅来袭！",
-    "黄金股飙升！高盛看涨金价20%(附股)",
-    "供需偏紧&#x2B;预告开门红！稀土永磁逆势拉升 10股2026业绩预测翻倍",
-    "南方两倍做多海力士、两倍做多三星电子均跌30%"
-  ],
+  "top_headlines": [],
   "stats": {
-    "total_catalysts": 2,
+    "total_catalysts": 0,
     "high_urgency": 0,
     "concepts_scanned": 0,
     "anomalies_detected": 0
