@@ -45,7 +45,11 @@ def call_llm(prompt, max_tokens=4000):
     try:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
         resp = json.loads(r.stdout)
-        return resp["choices"][0]["message"]["content"]
+        if "choices" in resp and resp["choices"]:
+            return resp["choices"][0]["message"]["content"]
+        else:
+            print(f"⚠️ API 响应异常: {r.stdout[:500]}", file=sys.stderr)
+            return None
     except Exception as e:
         print(f"❌ LLM 调用失败: {e}", file=sys.stderr)
         return None
