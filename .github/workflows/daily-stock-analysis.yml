@@ -1,0 +1,101 @@
+name: Daily Stock Analysis
+
+on:
+  schedule:
+    - cron: '0 8 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode'
+        required: false
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - watchpool-only
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stock-analysis
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install requests pandas
+
+      - name: Feedback
+        if: github.event.inputs.mode != 'watchpool-only'
+        run: python3 scripts/generate_feedback.py || true
+
+      - name: Catalyst scan
+        if: github.event.inputs.mode != 'watchpool-only'
+        run: python3 scripts/catalyst_scanner.py
+
+      - name: Generate candidates
+        if: github.event.inputs.mode != 'watchpool-only'
+        run: python3 scripts/generate_candidates.py --verbose
+
+      - name: Deep analysis
+        if: github.event.inputs.mode != 'watchpool-only'
+        env:
+          LITELLM_API_KEY: ${{ secrets.ROUTER_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.ROUTER_API_KEY }}
+          OPENAI_BASE_URL: https://9router.opspilot.me/v1
+          OPENAI_MODEL: edgen
+        run: |
+          CODES=$(python3 -c "
+          import json
+          try:
+              d = json.load(open('docs/data/candidates.json'))
+              print(','.join(c['code'] for c in d.get('candidates',[])))
+          except: print('')
+          " 2>/dev/null)
+          if [ -n "$CODES" ]; then
+            echo "Analyzing: $CODES"
+            python main.py --stocks "$CODES" --no-market-review || true
+          else
+            echo "No candidates, skipping"
+          fi
+
+      - name: AI integration
+        if: github.event.inputs.mode != 'watchpool-only'
+        env:
+          ROUTER_API_KEY: ${{ secrets.ROUTER_API_KEY }}
+        run: python3 scripts/ai_analyst.py || true
+
+      - name: Generate picks
+        if: github.event.inputs.mode != 'watchpool-only'
+        run: python3 scripts/ga_picks_writer.py || true
+
+      - name: Watch pool
+        run: python3 scripts/watcher.py
+
+      - name: Push
+        run: |
+          git config user.name "Stock Bot"
+          git config user.email "bot@liuxigreen.github.io"
+          git add docs/data/
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git stash --include-untracked
+            git pull --rebase origin main
+            git stash pop || true
+            git add docs/data/
+            DATE=$(date +%Y-%m-%d)
+            git commit -m "chore: daily stock analysis $DATE"
+            git push origin main
+            echo "Done"
+          fi

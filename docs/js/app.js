@@ -8,6 +8,7 @@ const BASE_PATH = location.hostname === 'localhost' || location.hostname === '12
 let state = {
   picks: null,
   analysis: null,
+  aiAnalysis: null,
   history: null,
   currentTab: 'today',
   historyView: 'daily',
@@ -67,12 +68,14 @@ async function loadData() {
     try { picksData = await fetchJSON(`/data/picks.json`); } catch { picksData = null; }
     try { analysisData = await fetchJSON(`/data/analysis.json`); } catch { analysisData = null; }
     try { historyData = await fetchJSON(`/data/history.json`); } catch { historyData = null; }
-    let catalystsData, watchpoolData;
+    let catalystsData, watchpoolData, aiAnalysisData;
     try { catalystsData = await fetchJSON(`/data/catalyst_calendar.json`); } catch { catalystsData = null; }
     try { watchpoolData = await fetchJSON(`/data/watch_pool_report.json`); } catch { watchpoolData = null; }
+    try { aiAnalysisData = await fetchJSON(`/data/ai_analysis.json`); } catch { aiAnalysisData = null; }
 
     state.picks = picksData;
     state.analysis = analysisData;
+    state.aiAnalysis = aiAnalysisData;
     state.history = historyData;
     state.catalysts = catalystsData;
     state.watchpool = watchpoolData;
@@ -235,11 +238,61 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 // ===== Render: Analysis =====
 function renderAnalysis() {
   const list = document.getElementById('analysisList');
-  if (!state.analysis || !state.analysis.stocks || state.analysis.stocks.length === 0) {
+  const hasAiData = state.aiAnalysis && state.aiAnalysis.picks && state.aiAnalysis.picks.length > 0;
+  const hasAnalysisData = state.analysis && state.analysis.stocks && state.analysis.stocks.length > 0;
+  if (!hasAiData && !hasAnalysisData) {
     list.innerHTML = `<div class="empty-state"><div class="icon">🤖</div><p>深度分析数据将在收盘后更新</p></div>`;
     return;
   }
-  list.innerHTML = state.analysis.stocks.map((s, i) => renderAnalysisCard(s, i)).join('');
+  let html = '';
+  // Show main theme banner if available
+  if (state.aiAnalysis && state.aiAnalysis.main_theme) {
+    html += `<div class="analysis-theme-banner"><span class="analysis-theme-icon">🎯</span><div><div class="analysis-theme-label">今日主线</div><div class="analysis-theme-text">${state.aiAnalysis.main_theme}</div></div></div>`;
+  }
+  // Show AI picks if available
+  if (hasAiData) {
+    html += `<div class="analysis-section-header"><h3>🤖 AI 精选</h3><span class="analysis-section-count">${state.aiAnalysis.picks.length}只</span></div>`;
+    html += state.aiAnalysis.picks.map((p, i) => renderAiPickCard(p, i)).join('');
+  }
+  // Show strategy analysis scores if available
+  if (hasAnalysisData) {
+    html += `<div class="analysis-section-header" style="margin-top:16px"><h3>📊 策略评分</h3><span class="analysis-section-count">${state.analysis.stocks.length}只</span></div>`;
+    html += state.analysis.stocks.map((s, i) => renderAnalysisCard(s, i + (hasAiData ? state.aiAnalysis.picks.length : 0))).join('');
+  }
+  list.innerHTML = html;
+}
+
+function renderAiPickCard(p, i) {
+  const score = Number(p.score) || 0;
+  const scoreClass = score >= 70 ? 'score-good' : score >= 40 ? 'score-mid' : 'score-bad';
+  const changePct = p.change_pct != null ? Number(p.change_pct) : null;
+  const changeClass = changePct > 0 ? 'up' : changePct < 0 ? 'down' : 'flat';
+  const changeStr = changePct != null ? fmtPct(changePct) : '';
+  return `
+    <div class="analysis-card ai-pick-card" style="animation-delay:${i * 0.05}s">
+      <div class="analysis-card-header">
+        <div>
+          <div style="font-weight:600">${p.name || '--'} <span style="font-size:0.75rem;color:var(--text-muted)">${p.code || '--'}</span></div>
+          <div style="display:flex;align-items:center;gap:6px;margin-top:2px">
+            <span style="font-size:0.875rem;font-weight:600">${fmtPrice(p.price)}</span>
+            ${changeStr ? `<span class="stock-change ${changeClass}" style="font-size:0.75rem">${changeStr}</span>` : ''}
+            ${p.sector ? `<span class="tag tag-sector">${p.sector}</span>` : ''}
+          </div>
+        </div>
+        <div class="analysis-score ${scoreClass}">${score}</div>
+      </div>
+      <div class="score-bar"><div class="score-fill" style="width:${score}%"></div></div>
+      <div class="ai-pick-grid">
+        ${p.buy_range ? `<div class="ai-pick-item"><div class="ai-pick-label">买入区间</div><div class="ai-pick-value" style="color:var(--accent)">${p.buy_range}</div></div>` : ''}
+        ${p.stop_loss ? `<div class="ai-pick-item"><div class="ai-pick-label">止损价</div><div class="ai-pick-value" style="color:var(--red)">${fmtPrice(p.stop_loss)}</div></div>` : ''}
+        ${p.target ? `<div class="ai-pick-item"><div class="ai-pick-label">目标价</div><div class="ai-pick-value" style="color:var(--green)">${fmtPrice(p.target)}</div></div>` : ''}
+        ${p.expected_return ? `<div class="ai-pick-item"><div class="ai-pick-label">预期收益</div><div class="ai-pick-value" style="color:var(--green)">${p.expected_return}</div></div>` : ''}
+        ${p.market_cap ? `<div class="ai-pick-item"><div class="ai-pick-label">市值</div><div class="ai-pick-value">${p.market_cap}</div></div>` : ''}
+      </div>
+      ${p.highlight ? `<div class="ai-pick-highlight">⭐ ${p.highlight}</div>` : ''}
+      ${p.reason ? `<div class="analysis-detail" style="margin-top:6px">${p.reason}</div>` : ''}
+    </div>
+  `;
 }
 
 function renderAnalysisCard(s, i) {
