@@ -17,8 +17,8 @@ from pathlib import Path
 
 DOCS_DATA = Path(__file__).resolve().parent.parent / "docs" / "data"
 API_KEY = os.environ.get("ROUTER_API_KEY", "")
-API_URL = "https://api.9router.top/v1/chat/completions"
-MODEL = "deepseek-ai/DeepSeek-V3"
+API_URL = "https://9router.opspilot.me/v1/chat/completions"
+MODEL = "edgen"
 
 
 def call_llm(prompt, max_tokens=4000):
