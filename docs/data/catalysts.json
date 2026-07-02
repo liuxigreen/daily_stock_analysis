@@ -8,15 +8,15 @@
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及芯片, 半导体, 材料；示例：机构调研丨超硬材料&#x2B;培育钻石&#x2B;机器人概念 这家公司金刚石散热片和金刚石光学窗口片",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及机器人；示例：特斯拉&#x2B;宇树双利好！人形机器人概念股梳理",
       "type": "accumulation",
-      "theme": "半导体国产替代",
+      "theme": "人形机器人",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及机器人；示例：特斯拉&#x2B;宇树双利好！人形机器人概念股梳理",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及材料, 半导体, 硅片；示例：机构调研丨超硬材料&#x2B;培育钻石&#x2B;机器人概念 这家公司金刚石散热片和金刚石光学窗口片",
       "type": "accumulation",
-      "theme": "人形机器人",
+      "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
@@ -37,17 +37,6 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 芯片, 半导体, 材料已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
-      "urgency": "medium"
-    },
-    {
       "title": "产业链传导：人形机器人 — 机器人已启动",
       "type": "chain_propagation",
       "theme": "人形机器人",
@@ -55,6 +44,17 @@
         "减速器",
         "伺服电机",
         "传感器"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 材料, 半导体, 硅片已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
       ],
       "urgency": "medium"
     },
@@ -124,9 +124,9 @@
       "urgency": "medium"
     },
     {
-      "title": "芯片股拉升！美重磅数据发布",
+      "title": "“十五五”期间北京将以创新推动医药产业发展",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "创新药",
       "urgency": "medium"
     }
   ],
@@ -143,24 +143,24 @@
       "level": "news"
     },
     {
-      "name": "半导体国产替代",
+      "name": "人形机器人",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及芯片, 半导体, 材料",
-        "示例：机构调研丨超硬材料&#x2B;培育钻石&#x2B;机器人概念 这家公司金刚石散热片和金刚石光学窗口片"
+        "新闻蓄势：4条相关新闻提及机器人",
+        "示例：特斯拉&#x2B;宇树双利好！人形机器人概念股梳理"
       ],
       "level": "news"
     },
     {
-      "name": "人形机器人",
+      "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 45,
       "reasons": [
-        "新闻蓄势：3条相关新闻提及机器人",
-        "示例：特斯拉&#x2B;宇树双利好！人形机器人概念股梳理"
+        "新闻蓄势：3条相关新闻提及材料, 半导体, 硅片",
+        "示例：机构调研丨超硬材料&#x2B;培育钻石&#x2B;机器人概念 这家公司金刚石散热片和金刚石光学窗口片"
       ],
       "level": "news"
     },
@@ -207,39 +207,6 @@
       "news_count": 8
     },
     {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "芯片",
-          "source": "news"
-        },
-        {
-          "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "材料",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 4
-    },
-    {
       "theme": "人形机器人",
       "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
       "started": [
@@ -259,6 +226,39 @@
         },
         {
           "name": "传感器",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 4
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "材料",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "硅片",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
           "market_cap_yi": 0
         }
       ],
@@ -333,18 +333,18 @@
     "阳光能源市值跌破3000亿",
     "白酒原酒拍卖出现“可乐价”",
     "Meta“小作文”有偏误！国内算力供不应求！",
-    "美国6月非农就业人数增加5.7万人 远低于市场预期",
+    "美国6月非农仅增5.7万人远逊预期 市场削减美联储加息押注",
     "证监会最新批复：同意宇树科技IPO注册",
+    "美股三大指数走势分化 道指再创历史新高 国际金价大涨",
     "7月2日晚间上市公司利好消息一览(附名单)",
     "亚太股市重挫！SK海力士跌超14% AI硬件全线“崩塌” 原因找到了",
-    "商务部回应对美农产品关税问题",
-    "7月2日东方财富财经晚报（附新闻联播）"
+    "商务部回应对美农产品关税问题"
   ],
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
     "accumulation_signals": 4,
     "chain_propagations": 4,
-    "news_catalysts": 17
+    "news_catalysts": 18
   }
 }
