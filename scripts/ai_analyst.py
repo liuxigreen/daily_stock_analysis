@@ -90,34 +90,57 @@ def load_data():
         with open(watch_path, encoding="utf-8") as f:
             data["watchpool"] = json.load(f)
 
+    # 候选标的
+    candidates_path = DOCS_DATA / "candidates.json"
+    if candidates_path.exists():
+        with open(candidates_path, encoding="utf-8") as f:
+            data["candidates"] = json.load(f)
+
     return data
 
 
 def build_prompt(data):
-    """构建 AI 分析 prompt。"""
+    """构建前瞻性 AI 分析 prompt。"""
     date = datetime.now().strftime("%Y-%m-%d")
 
-    parts = [f"你是A股选股分析师。今天是 {date}。根据以下数据选出 5-6 只明日值得关注的A股。\n"]
+    parts = [f"""你是A股前瞻性选股分析师。今天是 {date}。
 
-    # 催化剂
+核心目标：提前发现未来 1-4 周的市场风向，找到产业链中还没被市场发现的机会。
+你不追已爆发的热点，而是找"下一个"会爆发的方向。
+
+选股原则：
+1. 市值 50-500亿优先（中盘弹性股），回避千亿以上蓝筹
+2. 优先选有明确催化剂（政策/事件/产业链传导）的标的
+3. 多维度分析：催化剂 + 产业链位置 + 资金面 + 技术面 + 估值
+4. 找"蓄势待发"的，不追已涨停或涨幅>5%的
+5. 产业链传导思维：A环节已涨 → 找B环节还没动的
+\n"""]
+
+    # 蓄势信号
     catalysts = data.get("catalysts", {})
-    if catalysts.get("catalysts"):
-        parts.append("## 今日催化剂")
-        for c in catalysts["catalysts"][:5]:
-            parts.append(f"- [{c.get('urgency','')}] {c.get('title','')}")
-            if c.get("chain"):
-                parts.append(f"  产业链: {c['chain']}")
-            for s in c.get("beneficiary_stocks", [])[:3]:
-                parts.append(f"  受益: {s.get('code','')} {s.get('name','')} - {s.get('reason','')}")
+    if catalysts.get("accumulation_signals"):
+        parts.append("## 蓄势信号（资金在吸筹但价格没动）")
+        for s in catalysts["accumulation_signals"][:8]:
+            parts.append(f"- {s.get('name','')} 涨{s.get('change_pct',0):+.1f}% 评分{s.get('score',0)} | {'；'.join(s.get('reasons',[]))}")
         parts.append("")
 
-    # 热点概念
-    if catalysts.get("hot_concepts"):
-        parts.append("## 异动概念板块")
-        for c in catalysts["hot_concepts"][:5]:
-            parts.append(f"- {c.get('name','')} {c.get('change_pct',0):+.1f}% 主力{c.get('net_inflow',0):.1f}亿 → {c.get('chain','')}")
-            for s in c.get("constituents", [])[:3]:
-                parts.append(f"  {s.get('code','')} {s.get('name','')} {s.get('change_pct',0):+.1f}%")
+    # 产业链传导
+    if catalysts.get("chain_propagations"):
+        parts.append("## 产业链传导机会（上游已启动，下游待补涨）")
+        for p in catalysts["chain_propagations"][:5]:
+            started = ", ".join(s["name"] for s in p.get("started", []))
+            next_ops = ", ".join(s["name"] for s in p.get("next_opportunities", [])[:3])
+            parts.append(f"- {p.get('theme','')}: {started} 已涨 → 关注 {next_ops}")
+            parts.append(f"  逻辑: {p.get('logic','')}")
+        parts.append("")
+
+    # 候选标的
+    candidates = data.get("candidates", {})
+    if candidates.get("candidates"):
+        parts.append("## 候选标的（已通过市值+蓄势筛选）")
+        for c in candidates["candidates"][:15]:
+            cap = c.get("market_cap_yi", 0)
+            parts.append(f"- {c.get('code','')} {c.get('name','')} {cap:.0f}亿 [{c.get('source','')}] {c.get('reason','')[:60]}")
         parts.append("")
 
     # 板块资金流
@@ -145,11 +168,17 @@ def build_prompt(data):
 
     # 选股指令
     parts.append("""## 选股要求
-1. 选出 5-6 只明日值得关注的A股
-2. 优先选择有明确催化剂的标的
-3. 给出：代码、名称、买入理由（一句话）、买入区间、止损位、目标价
-4. 考虑板块轮动和资金流向
-5. 不追涨停，找蓄势待发的
+1. 选出 5-6 只未来 1-4 周值得关注的A股
+2. 从候选标的中选择，也可补充你认为有价值的标的
+3. 每只票必须给出多维度分析：
+   - 催化剂：什么事件/政策/趋势会驱动它？
+   - 产业链位置：在供应链哪个环节？先受益还是后受益？
+   - 资金面：主力在进还是出？
+   - 技术面：位置好不好？支撑在哪？
+   - 估值：贵不贵？
+4. 市值 50-500亿优先，说明为什么选这只而不是同板块大票
+5. 给出：代码、名称、买入理由、买入区间、止损位、目标价
+6. 不追涨停，不追涨幅>5%的，找蓄势待发的
 
 输出 JSON 格式：
 ```json
@@ -168,9 +197,11 @@ def build_prompt(data):
       "buy_range": "29.8-30.8",
       "expected_return": "+10%",
       "highlight": "",
-      "market_cap": "",
+      "market_cap": "160亿",
       "sector": "电池化学品",
-      "reason": "电池化学品板块主力净流入15.3亿，蓄势形态"
+      "reason": "电池化学品板块主力净流入15.3亿，蓄势形态",
+      "catalyst": "十五五新能源规划出台在即",
+      "chain_position": "电池化学品（上游材料）"
     }
   ]
 }

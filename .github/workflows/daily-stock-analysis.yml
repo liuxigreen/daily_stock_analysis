@@ -33,41 +33,23 @@ jobs:
           python-version: '3.12'
 
       - name: Install deps
-        run: pip install requests pandas
+        run: pip install requests pandas efinance
 
-      - name: Feedback
+      - name: Screener data
         if: github.event.inputs.mode != 'watchpool-only'
-        run: python3 scripts/generate_feedback.py || true
+        run: python3 scripts/daily_stock_screener_ga.py
 
       - name: Catalyst scan
         if: github.event.inputs.mode != 'watchpool-only'
-        run: python3 scripts/catalyst_scanner.py
+        run: python3 scripts/catalyst_scanner.py --verbose
 
       - name: Generate candidates
         if: github.event.inputs.mode != 'watchpool-only'
         run: python3 scripts/generate_candidates.py --verbose
 
-      - name: Deep analysis
+      - name: Feedback
         if: github.event.inputs.mode != 'watchpool-only'
-        env:
-          LITELLM_API_KEY: ${{ secrets.ROUTER_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.ROUTER_API_KEY }}
-          OPENAI_BASE_URL: https://9router.opspilot.me/v1
-          OPENAI_MODEL: edgen
-        run: |
-          CODES=$(python3 -c "
-          import json
-          try:
-              d = json.load(open('docs/data/candidates.json'))
-              print(','.join(c['code'] for c in d.get('candidates',[])))
-          except: print('')
-          " 2>/dev/null)
-          if [ -n "$CODES" ]; then
-            echo "Analyzing: $CODES"
-            python main.py --stocks "$CODES" --no-market-review || true
-          else
-            echo "No candidates, skipping"
-          fi
+        run: python3 scripts/generate_feedback.py || true
 
       - name: AI integration
         if: github.event.inputs.mode != 'watchpool-only'
