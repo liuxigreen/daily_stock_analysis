@@ -1,12 +1,1 @@
-{
-  "date": "2026-07-02",
-  "catalysts": [],
-  "hot_concepts": [],
-  "top_headlines": [],
-  "stats": {
-    "total_catalysts": 0,
-    "high_urgency": 0,
-    "concepts_scanned": 0,
-    "anomalies_detected": 0
-  }
-}
+{"date": "2026-07-02", "catalysts": [], "accumulation_signals": [{"name": "光模块", "change_pct": 0.5, "score": 30, "reasons": ["蓄势信号"], "level": "sector", "code": "", "market_cap_yi": 0}, {"name": "测试股票", "code": "000001", "change_pct": 1.0, "score": 25, "reasons": ["活跃蓄势"], "level": "stock", "market_cap_yi": 200}], "chain_propagations": [{"theme": "AI算力", "logic": "算力需求爆发", "started": [{"code": "300308", "name": "中际旭创", "change_pct": 3.5}], "next_opportunities": [{"code": "002281", "name": "光迅科技", "market_cap_yi": 180, "change_pct": 0.3}]}]}

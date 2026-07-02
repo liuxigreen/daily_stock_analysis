@@ -194,15 +194,27 @@ def get_all_stocks_efinance(verbose=False):
             log("⚠️ efinance 返回空数据", verbose)
             return []
 
+        # 动态检测列名
+        cols = set(df.columns)
+        code_col = next((c for c in ["股票代码", "代码", "code"] if c in cols), None)
+        name_col = next((c for c in ["股票名称", "名称", "name"] if c in cols), None)
+        cap_col = next((c for c in ["总市值", "总市值(元)", "market_cap"] if c in cols), None)
+        change_col = next((c for c in ["涨跌幅", "change_pct"] if c in cols), None)
+        amount_col = next((c for c in ["成交额", "amount"] if c in cols), None)
+
+        if not code_col or not name_col:
+            log(f"⚠️ efinance 列名不匹配: {list(cols)[:10]}", verbose)
+            return []
+
         stocks = []
         for _, row in df.iterrows():
-            code = str(row.get("股票代码", ""))
-            name = str(row.get("股票名称", ""))
+            code = str(row.get(code_col, ""))
+            name = str(row.get(name_col, ""))
             if not code or not name:
                 continue
 
             # 市值
-            cap = row.get("总市值", 0)
+            cap = row.get(cap_col, 0) if cap_col else 0
             try:
                 cap_yi = round(float(cap) / 1e8, 0) if cap and float(cap) > 0 else 0
             except (ValueError, TypeError):
@@ -210,13 +222,13 @@ def get_all_stocks_efinance(verbose=False):
 
             # 涨跌幅
             try:
-                change = round(float(row.get("涨跌幅", 0) or 0), 2)
+                change = round(float(row.get(change_col, 0) or 0), 2) if change_col else 0
             except (ValueError, TypeError):
                 change = 0
 
             # 成交额
             try:
-                amount = float(row.get("成交额", 0) or 0)
+                amount = float(row.get(amount_col, 0) or 0) if amount_col else 0
                 amount_yi = round(amount / 1e8, 2)
             except (ValueError, TypeError):
                 amount_yi = 0
