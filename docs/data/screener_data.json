@@ -1,7 +1,98 @@
 {
   "date": "2026-07-02",
-  "time": "11:39",
-  "sector_flow": [],
+  "time": "12:49",
+  "sector_flow": [
+    {
+      "code": "BK1610",
+      "name": "股份制银行Ⅲ",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK1283",
+      "name": "银行",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK0475",
+      "name": "银行Ⅱ",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK0153",
+      "name": "广东板块",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK1640",
+      "name": "价值股",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK1635",
+      "name": "长期破净",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK1112",
+      "name": "破净股",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK1666",
+      "name": "大盘价值",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK1673",
+      "name": "破增发价股",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK0879",
+      "name": "标准普尔",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK0552",
+      "name": "机构重仓",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK0718",
+      "name": "证金持股",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK0867",
+      "name": "富时罗素",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK1714",
+      "name": "金融地产风格",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    },
+    {
+      "code": "BK1071",
+      "name": "跨境支付",
+      "change_pct": 0.0,
+      "net_inflow_yi": 0.0
+    }
+  ],
   "top_gainers": [],
   "concept_flow": []
 }

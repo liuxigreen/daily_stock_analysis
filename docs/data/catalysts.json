@@ -1,1 +1,120 @@
-{"date": "2026-07-02", "catalysts": [], "accumulation_signals": [{"name": "光模块", "change_pct": 0.5, "score": 30, "reasons": ["蓄势信号"], "level": "sector", "code": "", "market_cap_yi": 0}, {"name": "测试股票", "code": "000001", "change_pct": 1.0, "score": 25, "reasons": ["活跃蓄势"], "level": "stock", "market_cap_yi": 200}], "chain_propagations": [{"theme": "AI算力", "logic": "算力需求爆发", "started": [{"code": "300308", "name": "中际旭创", "change_pct": 3.5}], "next_opportunities": [{"code": "002281", "name": "光迅科技", "market_cap_yi": 180, "change_pct": 0.3}]}]}
+{
+  "date": "2026-07-02",
+  "catalysts": [
+    {
+      "title": "Meta“小作文”有偏误！国内算力供不应求！",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "特斯拉&#x2B;宇树双利好！人形机器人概念股梳理",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "兴业证券：有关Meta对外租售算力的新闻不宜过度悲观地解读为算力过剩",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "Meta“带崩”科技股？业内人士：算力过剩系误读！",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨超硬材料&#x2B;培育钻石&#x2B;机器人概念 这家公司金刚石散热片和金刚石光学窗口片已有小批量订单",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "罕见暴跌超30%！热门大牛股集体跌停！存储“一哥”成交额超320亿",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "特斯拉加速量产、英伟达招兵买马 人形机器人逆势大涨 融资客超亿元押注这14股",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "104天！宇树科技科创板IPO注册生效 A股“人形机器人第一股”诞生在即",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "从词元到算力中心：人工智能浪潮下A股硬科技的重估逻辑",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "21评论｜全球芯片股震荡，AI高估值的一次“压力测试”",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    }
+  ],
+  "accumulation_signals": [],
+  "chain_propagations": [],
+  "forward_events": [
+    {
+      "title": "Q3财报季",
+      "affected": [
+        "全行业"
+      ]
+    },
+    {
+      "title": "大基金三期投资节奏",
+      "affected": [
+        "半导体设备",
+        "半导体材料",
+        "先进封装"
+      ]
+    },
+    {
+      "title": "新能源装机旺季(Q3-Q4)",
+      "affected": [
+        "光伏",
+        "风电",
+        "储能"
+      ]
+    },
+    {
+      "title": "全球AI大模型迭代周期",
+      "affected": [
+        "AI芯片",
+        "光模块",
+        "算力"
+      ]
+    }
+  ],
+  "sectors": [],
+  "fund_flow_top10": [],
+  "top_headlines": [
+    "广发银行深耕广东制造业",
+    "阳光能源市值跌破3000亿",
+    "白酒原酒拍卖出现“可乐价”",
+    "Meta“小作文”有偏误！国内算力供不应求！",
+    "证监会最新批复：同意宇树科技IPO注册",
+    "7月2日晚间上市公司利好消息一览(附名单)",
+    "美国6月非农就业人数增加5.7万人 远低于市场预期",
+    "亚太股市重挫！SK海力士跌超14% AI硬件全线“崩塌” 原因找到了",
+    "商务部回应对美农产品关税问题",
+    "A股上半年新开户2016.13万户 同比增长60%"
+  ],
+  "stats": {
+    "sectors_scanned": 0,
+    "stocks_scanned": 0,
+    "accumulation_signals": 0,
+    "chain_propagations": 0,
+    "news_catalysts": 17
+  }
+}

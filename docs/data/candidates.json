@@ -1,17 +1,9 @@
 {
   "date": "2026-07-02",
-  "candidates": [
-    {
-      "code": "300750",
-      "name": "宁德时代",
-      "source": "flow",
-      "reason": "资金流入第5名 (10.95亿)，涨幅-0.4% < 3%，蓄势吸筹"
-    }
-  ],
+  "candidates": [],
   "stats": {
-    "total": 1,
-    "by_source": {
-      "flow": 1
-    }
+    "total": 0,
+    "by_source": {},
+    "avg_market_cap": 0
   }
 }
