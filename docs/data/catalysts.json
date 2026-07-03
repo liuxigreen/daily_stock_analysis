@@ -1,8 +1,532 @@
 {
-  "date": "2026-07-02",
-  "catalysts": [],
-  "accumulation_signals": [],
-  "chain_propagations": [],
+  "date": "2026-07-03",
+  "catalysts": [
+    {
+      "title": "蓄势信号：蓄势：涨+2.0%但主力流入39.6亿；板块64涨/22跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "消费电子零部件及组装",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：蓄势：涨+1.4%但主力流入23.8亿；板块275涨/126跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "电力设备",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：蓄势：涨+2.0%但主力流入21.7亿；板块14涨/3跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "铜",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：蓄势：涨+1.8%但主力流入20.4亿；板块431涨/70跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "医药生物",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：蓄势：涨+1.2%但主力流入17.7亿；板块41涨/16跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "工业金属",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：蓄势：涨+0.9%但主力流入16.8亿；板块55涨/21跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "建筑材料",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：蓄势：涨+2.0%但主力流入16.4亿；板块115涨/23跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "电网设备",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：蓄势：涨+0.7%但主力流入15.5亿；板块6涨/2跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "玻纤制造",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：逆市吸筹：跌-0.2%但主力14.0亿",
+      "type": "accumulation",
+      "theme": "玻璃玻纤",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：蓄势：涨+1.2%但主力流入55.5亿",
+      "type": "accumulation",
+      "theme": "印制电路板",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：蓄势：涨+0.3%但主力流入28.2亿",
+      "type": "accumulation",
+      "theme": "元件",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：板块472涨/138跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "机械设备",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：板块73涨/24跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "消费电子",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：板块84涨/23跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "家用电器",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：板块183涨/67跌，集体蓄势",
+      "type": "accumulation",
+      "theme": "通用设备",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 光刻, 芯片, 设备, 材料, 半导体已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "先进封装",
+        "硅片"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：AI算力 — CPO, 算力, 存储已启动",
+      "type": "chain_propagation",
+      "theme": "AI算力",
+      "next": [
+        "AI芯片",
+        "光模块",
+        "光芯片"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：人形机器人 — 机器人已启动",
+      "type": "chain_propagation",
+      "theme": "人形机器人",
+      "next": [
+        "减速器",
+        "伺服电机",
+        "传感器"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：军工航天 — 航天已启动",
+      "type": "chain_propagation",
+      "theme": "军工航天",
+      "next": [
+        "航空发动机",
+        "导弹",
+        "卫星"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "三星光刻技术引入量子",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "半导体涨价潮能持续多久？",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "创业板指与科创50指数冲高回落 机器人概念股爆发",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "中国机器人“霸榜”！年复合增速106% 融资客吸筹多股",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "可回收验证与政策利好催化 商业航天或迎交易性机会(附股)",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构测算存储成本接近60% 千元手机明年或许买不到了",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "机器人产业链近40家A股公司涨停！",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "Meta“卖算力”原因曝光？扎克伯格：AI智能体开发速度不及预期",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "4分钟封死涨停！商业航天集体爆发！重磅催化临近？",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "突发熔断！韩国股市大逆转！两大芯片巨头狂飙",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    }
+  ],
+  "accumulation_signals": [
+    {
+      "code": "BK1338",
+      "name": "消费电子零部件及组装",
+      "change_pct": 1.99,
+      "net_inflow_yi": 39.61,
+      "up_count": 64,
+      "down_count": 22,
+      "score": 50,
+      "reasons": [
+        "蓄势：涨+2.0%但主力流入39.6亿",
+        "板块64涨/22跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK1200",
+      "name": "电力设备",
+      "change_pct": 1.36,
+      "net_inflow_yi": 23.82,
+      "up_count": 275,
+      "down_count": 126,
+      "score": 50,
+      "reasons": [
+        "蓄势：涨+1.4%但主力流入23.8亿",
+        "板块275涨/126跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK1615",
+      "name": "铜",
+      "change_pct": 1.97,
+      "net_inflow_yi": 21.71,
+      "up_count": 14,
+      "down_count": 3,
+      "score": 50,
+      "reasons": [
+        "蓄势：涨+2.0%但主力流入21.7亿",
+        "板块14涨/3跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK1216",
+      "name": "医药生物",
+      "change_pct": 1.8,
+      "net_inflow_yi": 20.45,
+      "up_count": 431,
+      "down_count": 70,
+      "score": 50,
+      "reasons": [
+        "蓄势：涨+1.8%但主力流入20.4亿",
+        "板块431涨/70跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK1287",
+      "name": "工业金属",
+      "change_pct": 1.17,
+      "net_inflow_yi": 17.67,
+      "up_count": 41,
+      "down_count": 16,
+      "score": 50,
+      "reasons": [
+        "蓄势：涨+1.2%但主力流入17.7亿",
+        "板块41涨/16跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK1208",
+      "name": "建筑材料",
+      "change_pct": 0.87,
+      "net_inflow_yi": 16.78,
+      "up_count": 55,
+      "down_count": 21,
+      "score": 50,
+      "reasons": [
+        "蓄势：涨+0.9%但主力流入16.8亿",
+        "板块55涨/21跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK0457",
+      "name": "电网设备",
+      "change_pct": 1.98,
+      "net_inflow_yi": 16.42,
+      "up_count": 115,
+      "down_count": 23,
+      "score": 50,
+      "reasons": [
+        "蓄势：涨+2.0%但主力流入16.4亿",
+        "板块115涨/23跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK1462",
+      "name": "玻纤制造",
+      "change_pct": 0.66,
+      "net_inflow_yi": 15.52,
+      "up_count": 6,
+      "down_count": 2,
+      "score": 50,
+      "reasons": [
+        "蓄势：涨+0.7%但主力流入15.5亿",
+        "板块6涨/2跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK0546",
+      "name": "玻璃玻纤",
+      "change_pct": -0.16,
+      "net_inflow_yi": 13.98,
+      "up_count": 9,
+      "down_count": 6,
+      "score": 40,
+      "reasons": [
+        "逆市吸筹：跌-0.2%但主力14.0亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK1340",
+      "name": "印制电路板",
+      "change_pct": 1.18,
+      "net_inflow_yi": 55.46,
+      "up_count": 27,
+      "down_count": 20,
+      "score": 30,
+      "reasons": [
+        "蓄势：涨+1.2%但主力流入55.5亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK0459",
+      "name": "元件",
+      "change_pct": 0.33,
+      "net_inflow_yi": 28.23,
+      "up_count": 34,
+      "down_count": 32,
+      "score": 30,
+      "reasons": [
+        "蓄势：涨+0.3%但主力流入28.2亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK1205",
+      "name": "机械设备",
+      "change_pct": 2.61,
+      "net_inflow_yi": 44.22,
+      "up_count": 472,
+      "down_count": 138,
+      "score": 20,
+      "reasons": [
+        "板块472涨/138跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK1037",
+      "name": "消费电子",
+      "change_pct": 2.06,
+      "net_inflow_yi": 39.92,
+      "up_count": 73,
+      "down_count": 24,
+      "score": 20,
+      "reasons": [
+        "板块73涨/24跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK0456",
+      "name": "家用电器",
+      "change_pct": 2.37,
+      "net_inflow_yi": 24.43,
+      "up_count": 84,
+      "down_count": 23,
+      "score": 20,
+      "reasons": [
+        "板块84涨/23跌，集体蓄势"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "BK0545",
+      "name": "通用设备",
+      "change_pct": 2.59,
+      "net_inflow_yi": 18.14,
+      "up_count": 183,
+      "down_count": 67,
+      "score": 20,
+      "reasons": [
+        "板块183涨/67跌，集体蓄势"
+      ],
+      "level": "sector"
+    }
+  ],
+  "chain_propagations": [
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "光刻",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
+          "source": "news"
+        },
+        {
+          "name": "设备",
+          "source": "news"
+        },
+        {
+          "name": "材料",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "硅片",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 11
+    },
+    {
+      "theme": "AI算力",
+      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
+      "started": [
+        {
+          "name": "CPO",
+          "source": "news"
+        },
+        {
+          "name": "算力",
+          "source": "news"
+        },
+        {
+          "name": "存储",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "AI芯片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光模块",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光芯片",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 6
+    },
+    {
+      "theme": "人形机器人",
+      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
+      "started": [
+        {
+          "name": "机器人",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "减速器",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "伺服电机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "传感器",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 4
+    },
+    {
+      "theme": "军工航天",
+      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
+      "started": [
+        {
+          "name": "航天",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "航空发动机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "导弹",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "卫星",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
+    }
+  ],
   "forward_events": [
     {
       "title": "Q3财报季",
@@ -35,16 +559,227 @@
       ]
     }
   ],
-  "sectors": [],
-  "fund_flow_top10": [],
+  "sectors": [
+    {
+      "code": "BK1211",
+      "name": "汽车",
+      "change_pct": 3.77,
+      "net_inflow_yi": 82.56,
+      "up_count": 296,
+      "down_count": 27
+    },
+    {
+      "code": "BK0481",
+      "name": "汽车零部件",
+      "change_pct": 4.17,
+      "net_inflow_yi": 68.93,
+      "up_count": 250,
+      "down_count": 21
+    },
+    {
+      "code": "BK1340",
+      "name": "印制电路板",
+      "change_pct": 1.18,
+      "net_inflow_yi": 55.46,
+      "up_count": 27,
+      "down_count": 20
+    },
+    {
+      "code": "BK1204",
+      "name": "国防军工",
+      "change_pct": 3.67,
+      "net_inflow_yi": 46.25,
+      "up_count": 123,
+      "down_count": 19
+    },
+    {
+      "code": "BK1205",
+      "name": "机械设备",
+      "change_pct": 2.61,
+      "net_inflow_yi": 44.22,
+      "up_count": 472,
+      "down_count": 138
+    },
+    {
+      "code": "BK1526",
+      "name": "底盘与发动机系统",
+      "change_pct": 4.75,
+      "net_inflow_yi": 41.19,
+      "up_count": 106,
+      "down_count": 6
+    },
+    {
+      "code": "BK1037",
+      "name": "消费电子",
+      "change_pct": 2.06,
+      "net_inflow_yi": 39.92,
+      "up_count": 73,
+      "down_count": 24
+    },
+    {
+      "code": "BK1338",
+      "name": "消费电子零部件及组装",
+      "change_pct": 1.99,
+      "net_inflow_yi": 39.61,
+      "up_count": 64,
+      "down_count": 22
+    },
+    {
+      "code": "BK0459",
+      "name": "元件",
+      "change_pct": 0.33,
+      "net_inflow_yi": 28.23,
+      "up_count": 34,
+      "down_count": 32
+    },
+    {
+      "code": "BK1455",
+      "name": "家电零部件Ⅲ",
+      "change_pct": 3.38,
+      "net_inflow_yi": 27.66,
+      "up_count": 28,
+      "down_count": 7
+    },
+    {
+      "code": "BK1242",
+      "name": "家电零部件Ⅱ",
+      "change_pct": 3.38,
+      "net_inflow_yi": 27.66,
+      "up_count": 28,
+      "down_count": 7
+    },
+    {
+      "code": "BK0732",
+      "name": "贵金属",
+      "change_pct": 6.74,
+      "net_inflow_yi": 27.45,
+      "up_count": 12,
+      "down_count": 1
+    },
+    {
+      "code": "BK1617",
+      "name": "黄金",
+      "change_pct": 8.3,
+      "net_inflow_yi": 24.45,
+      "up_count": 10,
+      "down_count": 0
+    },
+    {
+      "code": "BK0456",
+      "name": "家用电器",
+      "change_pct": 2.37,
+      "net_inflow_yi": 24.43,
+      "up_count": 84,
+      "down_count": 23
+    },
+    {
+      "code": "BK1200",
+      "name": "电力设备",
+      "change_pct": 1.36,
+      "net_inflow_yi": 23.82,
+      "up_count": 275,
+      "down_count": 126
+    }
+  ],
+  "fund_flow_top10": [
+    {
+      "code": "002050",
+      "name": "三花智控",
+      "change_pct": 9.06,
+      "turnover": 8.73,
+      "net_inflow_yi": 21.88,
+      "market_cap_yi": 2062.0
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "change_pct": 4.98,
+      "turnover": 8.96,
+      "net_inflow_yi": 15.62,
+      "market_cap_yi": 4263.0
+    },
+    {
+      "code": "002475",
+      "name": "立讯精密",
+      "change_pct": 5.81,
+      "turnover": 2.82,
+      "net_inflow_yi": 14.24,
+      "market_cap_yi": 4716.0
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "change_pct": 3.34,
+      "turnover": 4.26,
+      "net_inflow_yi": 13.62,
+      "market_cap_yi": 7334.0
+    },
+    {
+      "code": "600176",
+      "name": "中国巨石",
+      "change_pct": 4.54,
+      "turnover": 5.84,
+      "net_inflow_yi": 12.95,
+      "market_cap_yi": 2838.0
+    },
+    {
+      "code": "002594",
+      "name": "比亚迪",
+      "change_pct": 5.86,
+      "turnover": 2.41,
+      "net_inflow_yi": 11.73,
+      "market_cap_yi": 8066.0
+    },
+    {
+      "code": "600150",
+      "name": "中国船舶",
+      "change_pct": 8.12,
+      "turnover": 2.5,
+      "net_inflow_yi": 11.43,
+      "market_cap_yi": 2796.0
+    },
+    {
+      "code": "603228",
+      "name": "景旺电子",
+      "change_pct": 8.77,
+      "turnover": 5.71,
+      "net_inflow_yi": 9.19,
+      "market_cap_yi": 709.0
+    },
+    {
+      "code": "601689",
+      "name": "拓普集团",
+      "change_pct": 10.01,
+      "turnover": 4.97,
+      "net_inflow_yi": 9.11,
+      "market_cap_yi": 1085.0
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "change_pct": 3.71,
+      "turnover": 4.54,
+      "net_inflow_yi": 8.64,
+      "market_cap_yi": 2605.0
+    }
+  ],
   "top_headlines": [
-    "08-clou-126-20260702230319-a0d9ba45"
+    "广发银行深耕广东制造业",
+    "三星光刻技术引入量子",
+    "半导体涨价潮能持续多久？",
+    "创业板指与科创50指数冲高回落 机器人概念股爆发",
+    "刷新年内最大降幅！今晚油价下调 加满一箱油少花37.5元",
+    "中国机器人“霸榜”！年复合增速106% 融资客吸筹多股",
+    "因存在植入后门风险 阿里内部全面禁用Claude Code",
+    "非农走弱&#x2B;美联储新表态！黄金概念走强 13股2026业绩预测翻倍",
+    "可回收验证与政策利好催化 商业航天或迎交易性机会(附股)",
+    "莫迪称日本和印度将加强关键矿产合作 外交部回应"
   ],
   "stats": {
-    "sectors_scanned": 0,
+    "sectors_scanned": 30,
     "stocks_scanned": 0,
-    "accumulation_signals": 0,
-    "chain_propagations": 0,
-    "news_catalysts": 0
+    "accumulation_signals": 15,
+    "chain_propagations": 4,
+    "news_catalysts": 24
   }
 }
