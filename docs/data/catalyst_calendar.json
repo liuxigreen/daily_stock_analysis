@@ -108,6 +108,24 @@
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688313",
+      "stock_name": "仕佳光子",
+      "event": "Meta/谷歌数据中心资本开支增加，100G/400G光模块需求爆发，公司AWG组件供货放量",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002837",
+      "stock_name": "英维克",
+      "event": "AI大模型训练需求爆发，头部云厂商数据中心资本开支增加",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
     }
   ]
 }

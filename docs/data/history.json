@@ -2,39 +2,45 @@
   "records": [
     {
       "date": "2026-07-03",
-      "total_count": 5,
+      "total_count": 6,
       "win_count": 0,
       "avg_return": 0,
-      "review": "印制电路板+消费电子零部件 — 主力资金大幅流入的蓄势板块，机器人涨停潮后资金向产业链上游PCB/元件蔓延",
+      "review": "AI算力产业链传导+半导体国产替代补涨",
       "picks": [
         {
-          "code": "002600",
-          "name": "领益智造",
-          "return": 4.9,
+          "code": "688313",
+          "name": "仕佳光子",
+          "return": 0.0,
           "status": "持有中"
         },
         {
-          "code": "603459",
-          "name": "红板科技",
-          "return": 1.3,
+          "code": "002837",
+          "name": "英维克",
+          "return": 0.2,
           "status": "持有中"
         },
         {
-          "code": "600667",
-          "name": "太极实业",
-          "return": 3.7,
+          "code": "688206",
+          "name": "概伦电子",
+          "return": -0.3,
           "status": "持有中"
         },
         {
-          "code": "600031",
-          "name": "三一重工",
-          "return": 4.5,
+          "code": "301018",
+          "name": "申菱环境",
+          "return": 0.0,
           "status": "持有中"
         },
         {
-          "code": "300033",
-          "name": "同花顺",
-          "return": -0.6,
+          "code": "002979",
+          "name": "雷赛智能",
+          "return": 0.1,
+          "status": "持有中"
+        },
+        {
+          "code": "605358",
+          "name": "立昂微",
+          "return": -0.1,
           "status": "持有中"
         }
       ]
