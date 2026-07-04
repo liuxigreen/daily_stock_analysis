@@ -716,7 +716,7 @@ class TushareFetcher(BaseFetcher):
                     price=safe_float(row.get('price')),
                     change_pct=safe_float(row.get('pct_chg')),  # Pro 接口通常直接返回涨跌幅
                     change_amount=safe_float(row.get('change')),
-                    volume=safe_int(row.get('vol')),
+                    volume=(safe_int(row.get('vol')) or 0) * 100,  # Tushare Pro vol 单位为手，转为股
                     amount=safe_float(row.get('amount')),
                     high=safe_float(row.get('high')),
                     low=safe_float(row.get('low')),
@@ -763,8 +763,8 @@ class TushareFetcher(BaseFetcher):
                 price=price,
                 change_pct=round(change_pct, 2),
                 change_amount=round(change_amount, 2),
-                volume=safe_int(row['volume']) // 100,  # 转换为手
-                amount=safe_float(row['amount']),
+                volume=safe_int(row['volume']),  # Tushare 旧版 volume 单位为股，与 UnifiedRealtimeQuote 一致
+                amount=(safe_float(row['amount']) or 0.0) * 1000,  # Tushare 旧版 amount 单位为千元，转为元
                 high=safe_float(row['high']),
                 low=safe_float(row['low']),
                 open_price=safe_float(row['open']),
