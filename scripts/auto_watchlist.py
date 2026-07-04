@@ -18,6 +18,7 @@ auto_watchlist.py — 从每日选股中自动添加高确信标的到观察池�
   python3 scripts/auto_watchlist.py --verbose
 """
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime, timedelta
@@ -190,11 +191,13 @@ def main():
         added.append(f"{code} {name} {cap:.0f}亿 评分{score}")
         log(f"  ✅ 入池: {code} {name} {cap:.0f}亿 评分{score}", verbose)
 
-    # 写回观察池
+    # C3: 写回观察池（使用临时文件 + atomic rename 防止并发写入损坏）
     if added:
         pool["last_updated"] = today
-        with open(pool_path, "w", encoding="utf-8") as f:
+        tmp_path = pool_path.with_suffix(".tmp")
+        with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump(pool, f, ensure_ascii=False, indent=2)
+        os.replace(str(tmp_path), str(pool_path))
         print(f"✅ 自动入池 {len(added)} 只标的:", file=sys.stderr)
         for a in added:
             print(f"   {a}", file=sys.stderr)

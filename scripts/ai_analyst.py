@@ -10,8 +10,10 @@ AI 分析师 — 用 DeepSeek (via 9Router) 分析市场数据，选出 5-6 只�
 """
 import json
 import os
+import re
 import subprocess
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -19,6 +21,73 @@ DOCS_DATA = Path(__file__).resolve().parent.parent / "docs" / "data"
 API_KEY = os.environ.get("ROUTER_API_KEY", "")
 API_URL = "https://9router.opspilot.me/v1/chat/completions"
 MODEL = "edgen"
+
+
+def validate_picks(picks):
+    """校验每个 pick 的 code 与名称是否匹配，跳过幻觉代码。"""
+    valid = []
+    for pick in picks:
+        code = pick.get("code", "")
+        name = pick.get("name", "")
+        if not code:
+            continue
+        # 确定前缀
+        if code.startswith("6") or code.startswith("9"):
+            symbol = f"sh{code}"
+        else:
+            symbol = f"sz{code}"
+        try:
+            r = subprocess.run(
+                ["curl", "-s", "--max-time", "5", f"https://qt.gtimg.cn/q={symbol}"],
+                capture_output=True, timeout=10,
+            )
+            text = r.stdout.decode("gbk", errors="ignore")
+            parts = text.split("~")
+            if len(parts) > 2:
+                real_name = parts[1]
+                if real_name and name and real_name != name:
+                    print(f"  ⚠️ 跳过 {name}({code})：代码实际对应{real_name}，AI 幻觉错误代码", file=sys.stderr)
+                    continue
+        except Exception:
+            pass  # 无法校验时放行
+        valid.append(pick)
+    return valid
+
+
+def _try_repair_json(text):
+    """H1: 尝试从 LLM 文本中提取 JSON，支持 json_repair 和正则回退。"""
+    # 尝试用 json_repair
+    try:
+        from json_repair import repair_json
+        repaired = repair_json(text)
+        result = json.loads(repaired)
+        if isinstance(result, dict):
+            return result
+    except Exception:
+        pass
+    # 尝试用正则提取 ```json ... ``` 块
+    m = re.search(r"```json\s*(.*?)\s*```", text, re.DOTALL)
+    if m:
+        try:
+            return json.loads(m.group(1))
+        except json.JSONDecodeError:
+            pass
+    # 尝试提取最后一个完整的 JSON 对象
+    depth = 0
+    start = -1
+    for i, c in enumerate(text):
+        if c == '{':
+            if depth == 0:
+                start = i
+            depth += 1
+        elif c == '}':
+            depth -= 1
+            if depth == 0 and start >= 0:
+                try:
+                    return json.loads(text[start:i + 1])
+                except json.JSONDecodeError:
+                    start = -1
+    return None
 
 
 def call_llm(prompt, max_tokens=4000):
@@ -42,30 +111,37 @@ def call_llm(prompt, max_tokens=4000):
         "-d", payload,
     ]
 
-    try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
-        raw = r.stdout.strip()
-        # 尝试提取第一个完整的 JSON 对象
-        depth = 0
-        end = 0
-        for i, c in enumerate(raw):
-            if c == '{':
-                depth += 1
-            elif c == '}':
-                depth -= 1
-                if depth == 0:
-                    end = i + 1
-                    break
-        json_str = raw[:end] if end else raw
-        resp = json.loads(json_str)
-        if "choices" in resp and resp["choices"]:
-            return resp["choices"][0]["message"]["content"]
-        else:
-            print(f"⚠️ API 响应异常: {raw[:300]}", file=sys.stderr)
-            return None
-    except Exception as e:
-        print(f"❌ LLM 调用失败: {e}", file=sys.stderr)
-        return None
+    # H6: 添加 3 次重试，每次间隔 2 秒
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            r = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
+            raw = r.stdout.strip()
+            # 尝试提取第一个完整的 JSON 对象
+            depth = 0
+            end = 0
+            for i, c in enumerate(raw):
+                if c == '{':
+                    depth += 1
+                elif c == '}':
+                    depth -= 1
+                    if depth == 0:
+                        end = i + 1
+                        break
+            json_str = raw[:end] if end else raw
+            resp = json.loads(json_str)
+            if "choices" in resp and resp["choices"]:
+                return resp["choices"][0]["message"]["content"]
+            else:
+                print(f"⚠️ API 响应异常: {raw[:300]}", file=sys.stderr)
+                return None
+        except Exception as e:
+            if attempt < max_retries - 1:
+                print(f"⚠️ LLM 调用失败(尝试 {attempt + 1}/{max_retries}): {e}，2秒后重试", file=sys.stderr)
+                time.sleep(2)
+            else:
+                print(f"❌ LLM 调用失败(已重试 {max_retries} 次): {e}", file=sys.stderr)
+                return None
 
 
 def load_data():
@@ -265,19 +341,26 @@ def main():
             json_str = result.split("```")[1].split("```")[0].strip()
         else:
             json_str = result.strip()
-
         analysis = json.loads(json_str)
     except json.JSONDecodeError:
-        # 如果 JSON 解析失败，保存原始文本
-        analysis = {
-            "date": datetime.now().strftime("%Y-%m-%d"),
-            "raw_text": result,
-            "picks": [],
-        }
+        # H1: JSON 解析失败时，尝试用 json_repair 或正则修复
+        analysis = _try_repair_json(result)
+        if analysis is None:
+            # 如果所有修复都失败，保存原始文本
+            analysis = {
+                "date": datetime.now().strftime("%Y-%m-%d"),
+                "raw_text": result,
+                "picks": [],
+            }
 
     # 添加元数据
     analysis["generated_at"] = datetime.now().isoformat()
     analysis["model"] = MODEL
+
+    # C2: 校验 picks 中的代码与名称一致性，跳过幻觉代码
+    raw_picks = analysis.get("picks", [])
+    if raw_picks:
+        analysis["picks"] = validate_picks(raw_picks)
 
     # 写入文件
     DOCS_DATA.mkdir(parents=True, exist_ok=True)

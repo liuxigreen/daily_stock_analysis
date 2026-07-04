@@ -606,6 +606,11 @@ class DataFetcherManager:
         self._fundamental_cache_lock = RLock()
         self._fundamental_timeout_worker_limit = 8
         self._fundamental_timeout_slots = BoundedSemaphore(self._fundamental_timeout_worker_limit)
+        # C4: 数据源熔断器 — 连续失败 N 次后临时跳过
+        self._circuit_breaker: Dict[str, Dict[str, Any]] = {}
+        self._circuit_breaker_lock = RLock()
+        self._CIRCUIT_BREAKER_THRESHOLD = 3  # 连续失败次数阈值
+        self._CIRCUIT_BREAKER_COOLDOWN = 300  # 冷却时间（秒），默认 5 分钟
 
     def _ensure_concurrency_guards(self) -> None:
         """Lazily initialize thread-safety primitives for test scaffolds using __new__."""
@@ -621,6 +626,54 @@ class DataFetcherManager:
             self._stock_name_cache = {}
         if not hasattr(self, "_stock_name_cache_lock") or self._stock_name_cache_lock is None:
             self._stock_name_cache_lock = RLock()
+        if not hasattr(self, "_circuit_breaker") or self._circuit_breaker is None:
+            self._circuit_breaker = {}
+        if not hasattr(self, "_circuit_breaker_lock") or self._circuit_breaker_lock is None:
+            self._circuit_breaker_lock = RLock()
+        if not hasattr(self, "_CIRCUIT_BREAKER_THRESHOLD"):
+            self._CIRCUIT_BREAKER_THRESHOLD = 3
+        if not hasattr(self, "_CIRCUIT_BREAKER_COOLDOWN"):
+            self._CIRCUIT_BREAKER_COOLDOWN = 300
+
+    def _is_source_circuit_open(self, source_name: str) -> bool:
+        """C4: 检查数据源是否因连续失败而被熔断。"""
+        self._ensure_concurrency_guards()
+        with self._circuit_breaker_lock:
+            state = self._circuit_breaker.get(source_name)
+            if state is None:
+                return False
+            fail_count = state.get("fail_count", 0)
+            last_fail_time = state.get("last_fail_time", 0)
+            if fail_count >= self._CIRCUIT_BREAKER_THRESHOLD:
+                # 检查是否还在冷却期
+                if time.time() - last_fail_time < self._CIRCUIT_BREAKER_COOLDOWN:
+                    logger.warning(
+                        "[熔断器] %s 连续失败 %d 次，冷却中(剩余 %.0fs)，跳过",
+                        source_name, fail_count,
+                        self._CIRCUIT_BREAKER_COOLDOWN - (time.time() - last_fail_time),
+                    )
+                    return True
+                else:
+                    # 冷却期结束，重置计数器允许重试
+                    self._circuit_breaker[source_name] = {"fail_count": 0, "last_fail_time": 0}
+                    return False
+            return False
+
+    def _record_source_failure(self, source_name: str) -> None:
+        """C4: 记录数据源失败。"""
+        self._ensure_concurrency_guards()
+        with self._circuit_breaker_lock:
+            state = self._circuit_breaker.get(source_name, {"fail_count": 0, "last_fail_time": 0})
+            state["fail_count"] = state.get("fail_count", 0) + 1
+            state["last_fail_time"] = time.time()
+            self._circuit_breaker[source_name] = state
+
+    def _record_source_success(self, source_name: str) -> None:
+        """C4: 数据源成功，重置失败计数。"""
+        self._ensure_concurrency_guards()
+        with self._circuit_breaker_lock:
+            if source_name in self._circuit_breaker:
+                self._circuit_breaker[source_name] = {"fail_count": 0, "last_fail_time": 0}
 
     def _get_fetchers_snapshot(self) -> List[BaseFetcher]:
         self._ensure_concurrency_guards()
@@ -1269,6 +1322,10 @@ class DataFetcherManager:
             raise DataFetchError(error_summary)
 
         for attempt, fetcher in enumerate(fetchers, start=1):
+            # C4: 检查熔断器，跳过被熔断的数据源
+            if self._is_source_circuit_open(fetcher.name):
+                logger.info(f"[数据源跳过 {attempt}/{total_fetchers}] [{fetcher.name}] 被熔断，跳过")
+                continue
             attempt_start = time.time()
             fallback_to = fetchers[attempt].name if attempt < total_fetchers else None
             try:
@@ -1283,6 +1340,7 @@ class DataFetcherManager:
                 )
                 
                 if df is not None and not df.empty:
+                    self._record_source_success(fetcher.name)
                     duration_ms = int((time.time() - attempt_start) * 1000)
                     record_provider_run(
                         data_type="daily_data",
@@ -1298,6 +1356,8 @@ class DataFetcherManager:
                         f"rows={len(df)}, elapsed={elapsed:.2f}s"
                     )
                     return df, fetcher.name
+                # C4: 空数据也记录为失败（触发熔断计数）
+                self._record_source_failure(fetcher.name)
                 duration_ms = int((time.time() - attempt_start) * 1000)
                 record_provider_run(
                     data_type="daily_data",
@@ -1312,6 +1372,7 @@ class DataFetcherManager:
                 )
                     
             except Exception as e:
+                self._record_source_failure(fetcher.name)
                 error_type, error_reason = summarize_exception(e)
                 error_msg = f"[{fetcher.name}] ({error_type}) {error_reason}"
                 duration_ms = int((time.time() - attempt_start) * 1000)
