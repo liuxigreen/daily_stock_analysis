@@ -84,7 +84,7 @@
     },
     {
       "date": "TBD",
-      "stock_code": "002115",
+      "stock_code": "002916",
       "stock_name": "深南电路",
       "event": "大基金三期投向先进封装，国产AI芯片封装订单落地",
       "importance": "high",
@@ -105,24 +105,6 @@
       "stock_code": "300101",
       "stock_name": "振芯科技",
       "event": "低空经济政策持续出台，eVTOL/无人机监管放开",
-      "importance": "high",
-      "status": "pending",
-      "auto_status": "unknown"
-    },
-    {
-      "date": "TBD",
-      "stock_code": "688313",
-      "stock_name": "仕佳光子",
-      "event": "Meta/谷歌数据中心资本开支增加，100G/400G光模块需求爆发，公司AWG组件供货放量",
-      "importance": "high",
-      "status": "pending",
-      "auto_status": "unknown"
-    },
-    {
-      "date": "TBD",
-      "stock_code": "002837",
-      "stock_name": "英维克",
-      "event": "AI大模型训练需求爆发，头部云厂商数据中心资本开支增加",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"

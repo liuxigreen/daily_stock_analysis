@@ -55,6 +55,30 @@ def get_real_price(code, verbose=False):
     return 0
 
 
+def validate_code_name(code, name, verbose=False):
+    """校验股票代码与名称是否匹配，返回 (is_valid, real_name)。"""
+    if code.startswith("6") or code.startswith("9"):
+        symbol = f"sh{code}"
+    else:
+        symbol = f"sz{code}"
+    try:
+        r = subprocess.run(
+            ["curl", "-s", "--max-time", "5", f"https://qt.gtimg.cn/q={symbol}"],
+            capture_output=True, timeout=10,
+        )
+        text = r.stdout.decode("gbk", errors="ignore")
+        parts = text.split("~")
+        if len(parts) > 2:
+            real_name = parts[1]
+            if real_name and real_name != name:
+                log(f"  ⚠️ 代码{name}({code})不匹配，实际为{real_name}", verbose)
+                return False, real_name
+            return True, real_name
+    except Exception:
+        pass
+    return True, name  # 无法校验时放行
+
+
 def parse_market_cap(cap_str):
     """从 '185亿' 这样的字符串中提取市值数字。"""
     if not cap_str:
@@ -74,8 +98,12 @@ def main():
     if not ai_path.exists():
         log("⚠️ ai_analysis.json 不存在", verbose)
         return
-    with open(ai_path, encoding="utf-8") as f:
-        ai_data = json.load(f)
+    try:
+        with open(ai_path, encoding="utf-8") as f:
+            ai_data = json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"⚠️ ai_analysis.json 读取失败: {e}", file=sys.stderr)
+        return
 
     picks = ai_data.get("picks", [])
     if not picks:
@@ -86,8 +114,11 @@ def main():
     pool_path = DOCS_DATA / "watch_pool.json"
     pool = {"last_updated": today, "stocks": []}
     if pool_path.exists():
-        with open(pool_path, encoding="utf-8") as f:
-            pool = json.load(f)
+        try:
+            with open(pool_path, encoding="utf-8") as f:
+                pool = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            pool = {"last_updated": today, "stocks": []}
 
     existing_codes = {s["code"] for s in pool.get("stocks", [])}
 
@@ -113,8 +144,14 @@ def main():
         if not catalyst:
             log(f"  跳过 {name}（无明确催化剂）", verbose)
             continue
-        if cap > 0 and (cap < 30 or cap > 500):
+        if cap > 0 and (cap < 50 or cap > 500):
             log(f"  跳过 {name}（市值{cap:.0f}亿不在50-500范围）", verbose)
+            continue
+
+        # 校验代码-名称一致性（防止 LLM 幻觉错误代码）
+        is_valid, real_name = validate_code_name(code, name, verbose)
+        if not is_valid:
+            log(f"  ❌ 跳过 {name}({code})：代码实际对应{real_name}，AI 幻觉错误代码", verbose)
             continue
 
         # 入池

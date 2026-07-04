@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03",
+  "last_updated": "2026-07-03T16:02:30",
   "stocks": [
     {
       "code": "688498",
@@ -284,10 +284,10 @@
       "ai_score": 75
     },
     {
-      "code": "002115",
+      "code": "002916",
       "name": "深南电路",
       "added_date": "2026-07-02",
-      "added_price": 10.4,
+      "added_price": 454.48,
       "thesis": "封装基板是2.5D/3D先进封装的核心材料，FC-BGA技术壁垒高，国产化率<15%。公司是华为海思封装基板核心供应商，受益国产AI芯片（昇腾等）封装需求爆发。通富微电已涨30%，封装基板作为上游材料滞涨明显。股价在60日线附近蓄势，突破在即。",
       "supply_chain": "先进封装上游（封装基板），先于封测厂受益",
       "timeframe": "12-18个月",
@@ -378,64 +378,6 @@
           "date": "2026-07-03",
           "price": 16.66,
           "note": ""
-        }
-      ],
-      "risk_factors": [],
-      "exit_conditions": [],
-      "source": "ai_daily_pick",
-      "ai_score": 70
-    },
-    {
-      "code": "688313",
-      "name": "仕佳光子",
-      "added_date": "2026-07-03",
-      "added_price": 158.57,
-      "thesis": "AI算力传导链：光模块已涨30%+，上游光芯片滞涨。仕佳光子是国产PLC光分路器龙头，AWG芯片已切入华为、中兴供应链，数据中心用AWG组件有望放量。股价横盘蓄势2个月，60日线附近缩量整理，典型的蓄势形态。",
-      "supply_chain": "光模块上游（光芯片/组件），先于光模块受益",
-      "timeframe": "12-18个月",
-      "status": "watching",
-      "catalysts": [
-        {
-          "event": "Meta/谷歌数据中心资本开支增加，100G/400G光模块需求爆发，公司AWG组件供货放量",
-          "expected_date": "TBD",
-          "status": "pending",
-          "notes": "AI评分72，光模块上游（光芯片/组件），先于光模块受益"
-        }
-      ],
-      "price_history": [
-        {
-          "date": "2026-07-03",
-          "price": 28.5,
-          "note": "AI自动入池"
-        }
-      ],
-      "risk_factors": [],
-      "exit_conditions": [],
-      "source": "ai_daily_pick",
-      "ai_score": 72
-    },
-    {
-      "code": "002837",
-      "name": "英维克",
-      "added_date": "2026-07-03",
-      "added_price": 71.43,
-      "thesis": "AI算力基建传导：算力芯片→数据中心→液冷散热。英维克是国内液冷龙头，液冷解决方案供货华为、阿里巴巴、腾讯、字节等大厂。AI大模型训练需求爆发，数据中心建设提速，液冷是刚性需求。股价在年线附近蓄势2周，成交量温和放大。",
-      "supply_chain": "算力基建下游（数据中心温控），后于芯片/服务器受益",
-      "timeframe": "12-18个月",
-      "status": "watching",
-      "catalysts": [
-        {
-          "event": "AI大模型训练需求爆发，头部云厂商数据中心资本开支增加",
-          "expected_date": "TBD",
-          "status": "pending",
-          "notes": "AI评分70，算力基建下游（数据中心温控），后于芯片/服务器受益"
-        }
-      ],
-      "price_history": [
-        {
-          "date": "2026-07-03",
-          "price": 42.3,
-          "note": "AI自动入池"
         }
       ],
       "risk_factors": [],
