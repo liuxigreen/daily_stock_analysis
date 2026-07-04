@@ -164,6 +164,43 @@ def load_data():
     return data
 
 
+def get_market_environment():
+    """获取市场环境：上证指数近5日涨跌。"""
+    try:
+        import efinance as ef
+        df = ef.stock.get_quote_history("000001", klt=101)  # 日线
+        if df is not None and not df.empty:
+            # 取最近5个交易日
+            recent = df.tail(5)
+            cols = set(recent.columns)
+            close_col = next((c for c in ["收盘", "close", "收盘价"] if c in cols), None)
+            if close_col and len(recent) >= 2:
+                closes = recent[close_col].astype(float).tolist()
+                start_price = closes[0]
+                end_price = closes[-1]
+                change_pct = (end_price - start_price) / start_price * 100 if start_price > 0 else 0
+                # 判断市场阶段：用MA5和MA20的关系
+                all_closes = df[close_col].astype(float).tolist()
+                if len(all_closes) >= 20:
+                    ma5 = sum(all_closes[-5:]) / 5
+                    ma20 = sum(all_closes[-20:]) / 20
+                    if ma5 > ma20:
+                        phase = "牛市（MA5>MA20）"
+                    elif ma5 < ma20:
+                        phase = "熊市（MA5<MA20）"
+                    else:
+                        phase = "震荡（MA5≈MA20）"
+                else:
+                    phase = "数据不足"
+                start_str = f"{start_price:.2f}"
+                end_str = f"{end_price:.2f}"
+                sign = "+" if change_pct >= 0 else ""
+                return f"## 市场环境\n上证指数近5日：{start_str} → {end_str}（{sign}{change_pct:.1f}%）\n当前阶段：{phase}\n"
+    except Exception:
+        pass
+    return ""
+
+
 def build_prompt(data):
     """构建前瞻性 AI 分析 prompt。"""
     date = datetime.now().strftime("%Y-%m-%d")
@@ -181,6 +218,7 @@ def build_prompt(data):
 5. 产业链传导思维：A环节已涨 → 找B环节还没动的
 6. 流动性过滤：日均成交额<1亿的不选（无法有效进出）
 7. 板块分散：6只票至少覆盖2个以上不同板块，避免集中风险
+8. 不得推荐ST、*ST、退市风险警示、退市整理期、名称含'退'的标的
 \n"""]
 
     # 前瞻事件（新增）
@@ -221,8 +259,17 @@ def build_prompt(data):
         parts.append("## 候选标的（已通过市值+蓄势筛选）")
         for c in candidates["candidates"][:15]:
             cap = c.get("market_cap_yi", 0)
-            parts.append(f"- {c.get('code','')} {c.get('name','')} {cap:.0f}亿 [{c.get('source','')}] {c.get('reason','')[:60]}")
+            pe = c.get("pe", "")
+            pb = c.get("pb", "")
+            pe_str = f" PE:{pe}" if pe else ""
+            pb_str = f" PB:{pb}" if pb else ""
+            parts.append(f"- {c.get('code','')} {c.get('name','')} {cap:.0f}亿{pe_str}{pb_str} [{c.get('source','')}] {c.get('reason','')[:60]}")
         parts.append("")
+
+    # 市场环境
+    market_env = get_market_environment()
+    if market_env:
+        parts.append(market_env)
 
     # 板块资金流
     screener = data.get("screener", {})
@@ -280,8 +327,10 @@ def build_prompt(data):
 5. 给出：代码、名称、买入理由、买入区间、止损位、目标价、持仓周期
 6. 不追涨停，不追涨幅>5%的，找蓄势待发的
 7. 不要重复推荐观察池已有的标的
-8. 6只票至少覆盖2个以上不同板块
-9. 【关键】股票代码必须与上方「候选标的」列表中的代码完全一致。如需补充列表外标的，代码必须准确无误——深南电路=002916、通富微电=002156、长电科技=600584，切勿混淆。价格字段必须使用上方提供的实时价格。
+8. 6只票至少覆盖2个以上不同板块，避免集中风险
+9. 不得推荐ST、*ST、退市风险警示、退市整理期、名称含'退'的标的
+10. 【关键】股票代码必须与上方「候选标的」列表中的代码完全一致。如需补充列表外标的，代码必须准确无误——深南电路=002916、通富微电=002156、长电科技=600584，切勿混淆。价格字段必须使用上方提供的实时价格。
+11. 每只票给出风险回报比（目标收益/止损空间），以及建议仓位占总资金比例（单票不超过20%）
 
 输出 JSON 格式：
 ```json
@@ -310,7 +359,8 @@ def build_prompt(data):
     }
   ]
 }
-```""")
+```
+score 评分标准：80-100强催化剂+低估值+蓄势充分，60-79明确催化剂+合理估值，40-59有潜力但不确定，0-39风险大于收益""")
 
     return "\n".join(parts)
 

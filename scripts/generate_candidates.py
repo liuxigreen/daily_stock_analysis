@@ -84,6 +84,8 @@ def get_all_stocks_efinance(verbose=False):
         cap_col = next((c for c in ["总市值", "总市值(元)", "market_cap"] if c in cols), None)
         change_col = next((c for c in ["涨跌幅", "change_pct"] if c in cols), None)
         amount_col = next((c for c in ["成交额", "amount"] if c in cols), None)
+        pe_col = next((c for c in ["市盈率(动)", "市盈率TTM", "pe", "市盈率"] if c in cols), None)
+        pb_col = next((c for c in ["市净率", "pb", "市净率(MRQ)"] if c in cols), None)
 
         if not code_col or not name_col:
             log(f"⚠️ efinance 列名不匹配: {list(cols)[:10]}", verbose)
@@ -109,12 +111,22 @@ def get_all_stocks_efinance(verbose=False):
                 amount_yi = round(amount / 1e8, 2)
             except (ValueError, TypeError):
                 amount_yi = 0
+            try:
+                pe = round(float(row.get(pe_col, 0) or 0), 2) if pe_col else None
+            except (ValueError, TypeError):
+                pe = None
+            try:
+                pb = round(float(row.get(pb_col, 0) or 0), 2) if pb_col else None
+            except (ValueError, TypeError):
+                pb = None
 
             stocks.append({
                 "code": code, "name": name,
                 "change_pct": change,
                 "market_cap_yi": cap_yi,
                 "amount_yi": amount_yi,
+                "pe": pe,
+                "pb": pb,
             })
         log(f"  获取 {len(stocks)} 只 A 股", verbose)
         return stocks
@@ -191,6 +203,8 @@ def select_candidates(catalysts_data, all_stocks, fund_flow, verbose=False):
             "reason": f"蓄势信号：{'；'.join(sig.get('reasons', []))}",
             "market_cap_yi": cap,
             "score": 70 + cap_weight(cap) * 30,
+            "pe": st.get("pe"),
+            "pb": st.get("pb"),
         }
         stats["accumulation"] += 1
 
@@ -205,12 +219,15 @@ def select_candidates(catalysts_data, all_stocks, fund_flow, verbose=False):
             cap = opp.get("market_cap_yi", 0)
             if cap < 30 or cap > 2000:
                 continue
+            st2 = stock_map.get(code, opp)
             selected[code] = {
                 "code": code, "name": opp["name"],
                 "source": "chain",
                 "reason": f"产业链传导({prop['theme']}): 待补涨，{prop['logic'][:60]}",
                 "market_cap_yi": cap,
                 "score": 60 + cap_weight(cap) * 30,
+                "pe": st2.get("pe"),
+                "pb": st2.get("pb"),
             }
             stats["chain"] += 1
 
@@ -227,12 +244,15 @@ def select_candidates(catalysts_data, all_stocks, fund_flow, verbose=False):
         flow_ratio = s["net_inflow_yi"] / max(cap, 1) * 100
         if flow_ratio < 0.05:
             continue
+        st3 = stock_map.get(code, s)
         selected[code] = {
             "code": code, "name": s["name"],
             "source": "flow",
             "reason": f"资金蓄势：涨{s['change_pct']:+.1f}%，主力{s['net_inflow_yi']:+.1f}亿，{cap:.0f}亿",
             "market_cap_yi": cap,
             "score": 50 + cap_weight(cap) * 20 + min(flow_ratio * 10, 20),
+            "pe": st3.get("pe"),
+            "pb": st3.get("pb"),
         }
         stats["flow"] += 1
 
@@ -255,6 +275,8 @@ def select_candidates(catalysts_data, all_stocks, fund_flow, verbose=False):
             "reason": f"中盘蓄势：{cap:.0f}亿，涨{st['change_pct']:+.1f}%，活跃度{activity:.1f}%",
             "market_cap_yi": cap,
             "score": 40 + cap_weight(cap) * 20 + min(activity, 15),
+            "pe": st.get("pe"),
+            "pb": st.get("pb"),
         }
         stats["catalyst"] += 1
 

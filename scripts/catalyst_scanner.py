@@ -371,6 +371,8 @@ def detect_chain_propagation(stocks, verbose=False):
             started = [s for s in matched if s["change_pct"] > 2]
             not_started = [s for s in matched if s["change_pct"] <= 2 and s["market_cap_yi"] >= 50]
             if started and not_started:
+                avg_change = round(sum(s["change_pct"] for s in started) / len(started), 2)
+                total_cap_not_started = round(sum(s["market_cap_yi"] for s in not_started), 0)
                 results.append({
                     "theme": theme,
                     "logic": info["logic"],
@@ -379,6 +381,9 @@ def detect_chain_propagation(stocks, verbose=False):
                     "next_opportunities": [{"code": s["code"], "name": s["name"],
                                             "market_cap_yi": s["market_cap_yi"], "change_pct": s["change_pct"]}
                                            for s in not_started[:5]],
+                    "average_change": avg_change,
+                    "not_started_count": len(not_started),
+                    "total_market_cap_yi": total_cap_not_started,
                 })
     results.sort(key=lambda x: len(x["started"]), reverse=True)
     log(f"  检测到 {len(results)} 个产业链传导机会", verbose)
@@ -493,6 +498,139 @@ def detect_chain_from_news(headlines, verbose=False):
     return results
 
 
+# ─── 早期信号：北向资金 ────────────────────────────────────────
+def get_northbound_flow(verbose=False):
+    """获取北向资金（沪股通+深股通）当日净流入。"""
+    try:
+        import efinance as ef
+        log("efinance: 获取北向资金...", verbose)
+        # 尝试 efinance 接口
+        try:
+            df = ef.stock_em_hsgt_north_net_flow_in()
+            if df is not None and not df.empty:
+                log(f"  efinance 北向资金数据: {len(df)} 条", verbose)
+                # 取最新一条
+                latest = df.iloc[-1]
+                cols = set(df.columns)
+                # 尝试解析
+                return {"net_flow_yi": 0, "sh_flow_yi": 0, "sz_flow_yi": 0}
+        except Exception:
+            pass
+    except ImportError:
+        pass
+
+    # 回退：用 curl 从东方财富获取
+    log("curl: 尝试北向资金...", verbose)
+    url = "https://push2.eastmoney.com/api/qt/kamtbs.wss?fields1=f1,f2,f3,f4&fields2=f51,f52,f53,f54,f55,f56"
+    text = curl_get(url, timeout=8, referer="https://quote.eastmoney.com/")
+    if not text:
+        return {}
+    try:
+        data = json.loads(text)
+        # 东方财富北向资金接口格式：s2n 为沪股通，s3n 为深股通
+        s2n = data.get("data", {}).get("s2n", [])
+        s3n = data.get("data", {}).get("s3n", [])
+        # 取最新日期的数据
+        net_flow_yi = 0
+        sh_flow_yi = 0
+        sz_flow_yi = 0
+        if s2n:
+            # s2n 格式: [{f51: date, f52: sh_net, ...}]
+            for item in reversed(s2n):
+                try:
+                    sh_val = float(item.get("f52", 0) or 0)
+                    sz_val = float(item.get("f53", 0) or 0)
+                    net_val = float(item.get("f54", 0) or 0)
+                    if net_val != 0 or sh_val != 0 or sz_val != 0:
+                        net_flow_yi = round(net_val / 1e8, 2)
+                        sh_flow_yi = round(sh_val / 1e8, 2)
+                        sz_flow_yi = round(sz_val / 1e8, 2)
+                        break
+                except (ValueError, TypeError):
+                    continue
+        result = {"net_flow_yi": net_flow_yi, "sh_flow_yi": sh_flow_yi, "sz_flow_yi": sz_flow_yi}
+        log(f"  北向资金: 净流入{net_flow_yi:.2f}亿（沪{sh_flow_yi:.2f}/深{sz_flow_yi:.2f}）", verbose)
+        return result
+    except Exception:
+        return {}
+
+
+# ─── 早期信号：融资融券 ────────────────────────────────────────
+def get_margin_data(verbose=False):
+    """获取融资融券余额变化。"""
+    log("curl: 获取融资融券数据...", verbose)
+    url = (
+        "https://datacenter-web.eastmoney.com/api/data/v1/get?"
+        "reportName=RPTA_WEB_RZRQ_ZCZJMX&columns=ALL&pageNumber=1&pageSize=1"
+        "&sortColumns=TRADE_DATE&sortTypes=-1"
+    )
+    text = curl_get(url, timeout=8, referer="https://data.eastmoney.com/")
+    if not text:
+        return {}
+    try:
+        data = json.loads(text)
+        items = data.get("result", {}).get("data", [])
+        if not items:
+            return {}
+        latest = items[0]
+        # 东方财富融资融券字段
+        margin_balance = latest.get("RZYE", 0) or 0  # 融资余额
+        margin_prev = latest.get("RZYE_PREV", 0) or 0  # 前日融资余额
+        margin_change = margin_balance - margin_prev
+        result = {
+            "margin_balance_yi": round(margin_balance / 1e8, 2),
+            "margin_change_yi": round(margin_change / 1e8, 2),
+        }
+        log(f"  融资余额: {result['margin_balance_yi']:.2f}亿，变化{result['margin_change_yi']:+.2f}亿", verbose)
+        return result
+    except Exception:
+        return {}
+
+
+# ─── 早期信号：大宗交易 ────────────────────────────────────────
+def get_block_trades(verbose=False):
+    """获取今日大宗交易。"""
+    today = datetime.now().strftime("%Y-%m-%d")
+    log(f"curl: 获取大宗交易({today})...", verbose)
+    url = (
+        f"https://datacenter-web.eastmoney.com/api/data/v1/get?"
+        f"reportName=RPT_DAILYBILLBOARD_DETAILSNEW&columns=ALL"
+        f"&filter=(TRADE_DATE>='{today}')&pageNumber=1&pageSize=20"
+        f"&sortColumns=TRADE_AMOUNT&sortTypes=-1"
+    )
+    text = curl_get(url, timeout=8, referer="https://data.eastmoney.com/")
+    if not text:
+        return []
+    try:
+        data = json.loads(text)
+        items = data.get("result", {}).get("data", [])
+        if not items:
+            return []
+        trades = []
+        for item in items:
+            code = item.get("SECURITY_CODE", "") or item.get("SCODE", "")
+            name = item.get("SECURITY_NAME_ABBR", "") or item.get("SNAME", "")
+            try:
+                price = float(item.get("TRADE_PRICE", 0) or 0)
+                premium_rate = float(item.get("PREMIUM_RATE", 0) or 0)
+                amount = float(item.get("TRADE_AMOUNT", 0) or 0)
+            except (ValueError, TypeError):
+                continue
+            trades.append({
+                "code": code,
+                "name": name,
+                "price": price,
+                "premium_rate": round(premium_rate, 2),
+                "amount_yi": round(amount / 1e8, 4),
+            })
+        # 溢价率高的排前面
+        trades.sort(key=lambda x: x["premium_rate"], reverse=True)
+        log(f"  大宗交易: {len(trades)} 笔", verbose)
+        return trades
+    except Exception:
+        return []
+
+
 # ─── 主流程 ────────────────────────────────────────────────────
 def main():
     verbose = "--verbose" in sys.argv or "-v" in sys.argv
@@ -543,7 +681,12 @@ def main():
                 continue
             break
 
-    # 6. 输出
+    # 6. 早期信号采集
+    northbound_flow = get_northbound_flow(verbose)
+    margin_data = get_margin_data(verbose)
+    block_trades = get_block_trades(verbose)
+
+    # 7. 输出
     today = datetime.now().strftime("%Y-%m-%d")
     output = {
         "date": today,
@@ -566,6 +709,9 @@ def main():
         "sectors": sectors[:15],
         "fund_flow_top10": fund_flow[:10] if isinstance(fund_flow, list) else [],
         "top_headlines": [h["title"] for h in headlines[:10]],
+        "northbound_flow": northbound_flow,
+        "margin_data": margin_data,
+        "block_trades": block_trades,
         "stats": {
             "sectors_scanned": len(sectors),
             "stocks_scanned": len(all_stocks),
