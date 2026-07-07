@@ -2,19 +2,30 @@
   "date": "2026-07-07",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：8条相关新闻提及半导体, 硅片, 芯片；示例：亚洲跌完欧洲跌！芯片股抛售潮席卷全球 华尔街分析师热议",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及存储, 算力；示例：SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！",
+      "title": "蓄势信号：新闻蓄势：8条相关新闻提及光模块, 存储, 算力；示例：美股三大指数走势分化 道指再创新高 存储概念股大跌",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 半导体, 硅片, 芯片已启动",
+      "title": "蓄势信号：新闻蓄势：8条相关新闻提及芯片, 硅片, 半导体；示例：猛烈抛售！芯片巨头全线大跌！美股突遭重大警告",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "high"
+    },
+    {
+      "title": "产业链传导：AI算力 — 光模块, 存储, 算力已启动",
+      "type": "chain_propagation",
+      "theme": "AI算力",
+      "next": [
+        "AI芯片",
+        "光芯片",
+        "数据中心"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 芯片, 硅片, 半导体已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
@@ -25,20 +36,9 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 存储, 算力已启动",
-      "type": "chain_propagation",
-      "theme": "AI算力",
-      "next": [
-        "AI芯片",
-        "光模块",
-        "光芯片"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "亚洲跌完欧洲跌！芯片股抛售潮席卷全球 华尔街分析师热议",
+      "title": "美股三大指数走势分化 道指再创新高 存储概念股大跌",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
@@ -49,6 +49,12 @@
     },
     {
       "title": "猛烈抛售！芯片巨头全线大跌！美股突遭重大警告",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "亚洲跌完欧洲跌！芯片股抛售潮席卷全球 华尔街分析师热议",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
@@ -72,61 +78,88 @@
       "urgency": "medium"
     },
     {
-      "title": "美光大跌超5% 闪迪跌近5%！存储芯片股集体下挫",
+      "title": "海外研选 | 小摩：AI与存储涨价共振 全球半导体收入2026年或突破1.5万亿美元",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "减持计划届满，浙江医药股东国投高科未进行减持",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "期权智投播报 | 存储急跌 SpaceX正式入纳指盘前走弱 特斯拉交付亮眼引机构重仓看多",
+      "title": "美股开盘：三大指数涨跌不一 存储芯片股重挫 西部数据跌超7% 闪迪跌超6% 美光科技跌超6%",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "海外研选日报0707 | 大摩：半导体动能走弱 美股涨势将向其他板块扩散",
+      "title": "澄清了！AI服务器架构图没变！康宁玻璃桥不是光模块替代！华天科技、有研新材均涨停！",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "AI算力",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：8条相关新闻提及半导体, 硅片, 芯片",
-        "示例：亚洲跌完欧洲跌！芯片股抛售潮席卷全球 华尔街分析师热议"
-      ],
-      "level": "news"
-    },
     {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：5条相关新闻提及存储, 算力",
-        "示例：SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！"
+        "新闻蓄势：8条相关新闻提及光模块, 存储, 算力",
+        "示例：美股三大指数走势分化 道指再创新高 存储概念股大跌"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：8条相关新闻提及芯片, 硅片, 半导体",
+        "示例：猛烈抛售！芯片巨头全线大跌！美股突遭重大警告"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
+      "theme": "AI算力",
+      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
+      "started": [
+        {
+          "name": "光模块",
+          "source": "news"
+        },
+        {
+          "name": "存储",
+          "source": "news"
+        },
+        {
+          "name": "算力",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "AI芯片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光芯片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "数据中心",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 8
+    },
+    {
       "theme": "半导体国产替代",
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "半导体",
+          "name": "芯片",
           "source": "news"
         },
         {
@@ -134,7 +167,7 @@
           "source": "news"
         },
         {
-          "name": "芯片",
+          "name": "半导体",
           "source": "news"
         }
       ],
@@ -153,35 +186,6 @@
         }
       ],
       "news_count": 8
-    },
-    {
-      "theme": "AI算力",
-      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
-      "started": [
-        {
-          "name": "存储",
-          "source": "news"
-        },
-        {
-          "name": "算力",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "AI芯片",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光模块",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光芯片",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 5
     }
   ],
   "forward_events": [
@@ -222,13 +226,13 @@
     "中公教育相关投资者被暂停交易",
     "海南海药：半年度业绩亏损",
     "快手遭腾讯百亿元减持",
-    "亚洲跌完欧洲跌！芯片股抛售潮席卷全球 华尔街分析师热议",
+    "证监会对安某编造传播涉中公教育虚假信息立案调查",
     "国务院批复《旅游强国建设“十五五”规划》",
+    "美股三大指数走势分化 道指再创新高 存储概念股大跌",
     "SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！",
+    "7月7日晚间上市公司利好消息一览(附名单)",
     "国投证券前首席经济学家高善文去世 享年55岁",
-    "猛烈抛售！芯片巨头全线大跌！美股突遭重大警告",
-    "午后直线拉升！4000亿巨头突然爆发！一则传闻刷屏 英伟达回应",
-    "科技股大撤退！回撤榜TOP20前三都含“光”"
+    "7月7日东方财富财经晚报（附新闻联播）"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -238,6 +242,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 2,
     "chain_propagations": 2,
-    "news_catalysts": 15
+    "news_catalysts": 17
   }
 }
