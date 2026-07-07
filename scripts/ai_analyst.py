@@ -56,6 +56,8 @@ def validate_picks(picks):
 
 def _try_repair_json(text):
     """H1: 尝试从 LLM 文本中提取 JSON，支持 json_repair 和正则回退。"""
+    # 预处理：全角冒号/逗号/引号→半角（LLM 输出常见问题）
+    text = text.replace("\uff1a", ":").replace("\uff0c", ",").replace("\u201c", '"').replace("\u201d", '"')
     # 尝试用 json_repair
     try:
         from json_repair import repair_json
@@ -384,17 +386,19 @@ def main():
 
     # 提取 JSON
     try:
+        # 预处理：全角冒号→半角（LLM 输出常见问题）
+        _normalized = result.replace("\uff1a", ":").replace("\uff0c", ",").replace("\u201c", '"').replace("\u201d", '"')
         # 尝试从 markdown code block 中提取
-        if "```json" in result:
-            json_str = result.split("```json")[1].split("```")[0].strip()
-        elif "```" in result:
-            json_str = result.split("```")[1].split("```")[0].strip()
+        if "```json" in _normalized:
+            json_str = _normalized.split("```json")[1].split("```")[0].strip()
+        elif "```" in _normalized:
+            json_str = _normalized.split("```")[1].split("```")[0].strip()
         else:
-            json_str = result.strip()
+            json_str = _normalized.strip()
         analysis = json.loads(json_str)
     except json.JSONDecodeError:
         # H1: JSON 解析失败时，尝试用 json_repair 或正则修复
-        analysis = _try_repair_json(result)
+        analysis = _try_repair_json(_normalized)
         if analysis is None:
             # 如果所有修复都失败，保存原始文本
             analysis = {
