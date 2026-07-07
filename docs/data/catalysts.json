@@ -1,48 +1,31 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：9条相关新闻提及材料, 半导体, EDA；示例：利好突袭！刚刚美股全线拉升！半导体传来重磅消息！",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及医药, 创新药；示例：利好不断&#x2B;BD高增！创新药板块连续爆发 中长期布局良机已至？(附股)",
-      "type": "accumulation",
-      "theme": "创新药",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：7条相关新闻提及算力, 存储；示例：龙头业绩暴增与三星再提价共振 机构看好存储高景气周期(附股)",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及数据中心, 存储, 算力；示例：SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及机器人；示例：人形机器人“真场景”竞速",
+      "title": "蓄势信号：新闻蓄势：7条相关新闻提及硅片, 半导体；示例：海外映射&#x2B;“韬定律”带动！半导体逆势走强 这些股2026业绩预测高增",
       "type": "accumulation",
-      "theme": "人形机器人",
-      "urgency": "medium"
+      "theme": "半导体国产替代",
+      "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及电池；示例：1分钟 380亿龙头封死涨停！重大利好突袭锂电池",
-      "type": "accumulation",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：半导体国产替代 — 材料, 半导体, 设备, EDA, 封装, 芯片已启动",
+      "title": "产业链传导：半导体国产替代 — 芯片, 硅片, 半导体已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
+        "EDA",
         "光刻胶",
-        "硅片"
+        "先进封装"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 液冷, 算力, 存储已启动",
+      "title": "产业链传导：AI算力 — 数据中心, 存储, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -53,94 +36,61 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 医药, 创新药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "CXO",
-        "CDMO",
-        "原料药"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：人形机器人 — 机器人已启动",
-      "type": "chain_propagation",
-      "theme": "人形机器人",
-      "next": [
-        "减速器",
-        "伺服电机",
-        "传感器"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：新能源车 — 锂电, 电池已启动",
-      "type": "chain_propagation",
-      "theme": "新能源车",
-      "next": [
-        "隔膜",
-        "电解液",
-        "铜箔"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "人形机器人“真场景”竞速",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "利好突袭！刚刚美股全线拉升！半导体传来重磅消息！",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "华为Mate90系列有望搭载基于韬定律的新麒麟芯片",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "先进封装成“韬定律”关键！一图梳理相关概念股",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "利好不断&#x2B;BD高增！创新药板块连续爆发 中长期布局良机已至？(附股)",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "龙头业绩暴增与三星再提价共振 机构看好存储高景气周期(附股)",
+      "title": "SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨AIDC&#x2B;液冷&#x2B;字节概念 这家公司订单充足 将稳步拓展日韩、澳洲、欧美高端算力市场",
+      "title": "海外映射&#x2B;“韬定律”带动！半导体逆势走强 这些股2026业绩预测高增",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨半导体概念&#x2B;国产芯片&#x2B;物联网 这家公司目前订单需求旺盛 正聚焦AI端侧积极布局",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "国家发展改革委披露人工智能产业“十五五”五大工作思路 强化模型、算力、数据等关键技术攻关",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "1分钟 380亿龙头封死涨停！重大利好突袭锂电池",
+      "title": "存储芯片涨价潮持续！三星Q2营业利润飙升18倍 再创历史新高",
       "type": "news",
-      "theme": "新能源车",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "就在今天凌晨！人形机器人首度亮相世界杯赛场",
+      "title": "【风口研报】全球硅片龙头年内两轮提价   行业景气度有望持续回升",
       "type": "news",
-      "theme": "人形机器人",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "韬定律从理论走向工程落地 EDA成关键胜负手？",
+      "title": "从投资热潮到社区抗争：美国数据中心为何陷入争议？",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "广药集团“挖”来百济神州前高管 这家老牌药企想转型创新药",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "海外研选日报0707 | 大摩：半导体动能走弱 美股涨势将向其他板块扩散",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "期权智投播报 | 半导体盘前回暖 MSTR新资本框架助力股价连续反弹",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
@@ -148,57 +98,24 @@
   ],
   "accumulation_signals": [
     {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：9条相关新闻提及材料, 半导体, EDA",
-        "示例：利好突袭！刚刚美股全线拉升！半导体传来重磅消息！"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "创新药",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：4条相关新闻提及医药, 创新药",
-        "示例：利好不断&#x2B;BD高增！创新药板块连续爆发 中长期布局良机已至？(附股)"
-      ],
-      "level": "news"
-    },
-    {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：7条相关新闻提及算力, 存储",
-        "示例：龙头业绩暴增与三星再提价共振 机构看好存储高景气周期(附股)"
+        "新闻蓄势：5条相关新闻提及数据中心, 存储, 算力",
+        "示例：SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！"
       ],
       "level": "news"
     },
     {
-      "name": "人形机器人",
+      "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及机器人",
-        "示例：人形机器人“真场景”竞速"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "新能源车",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及电池",
-        "示例：1分钟 380亿龙头封死涨停！重大利好突袭锂电池"
+        "新闻蓄势：7条相关新闻提及硅片, 半导体",
+        "示例：海外映射&#x2B;“韬定律”带动！半导体逆势走强 这些股2026业绩预测高增"
       ],
       "level": "news"
     }
@@ -209,56 +126,48 @@
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "材料",
+          "name": "芯片",
+          "source": "news"
+        },
+        {
+          "name": "硅片",
           "source": "news"
         },
         {
           "name": "半导体",
           "source": "news"
-        },
-        {
-          "name": "设备",
-          "source": "news"
-        },
-        {
-          "name": "EDA",
-          "source": "news"
-        },
-        {
-          "name": "封装",
-          "source": "news"
-        },
-        {
-          "name": "芯片",
-          "source": "news"
         }
       ],
       "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
         {
           "name": "光刻胶",
           "market_cap_yi": 0
         },
         {
-          "name": "硅片",
+          "name": "先进封装",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 9
+      "news_count": 7
     },
     {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "液冷",
-          "source": "news"
-        },
-        {
-          "name": "算力",
+          "name": "数据中心",
           "source": "news"
         },
         {
           "name": "存储",
+          "source": "news"
+        },
+        {
+          "name": "算力",
           "source": "news"
         }
       ],
@@ -276,90 +185,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 7
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "医药",
-          "source": "news"
-        },
-        {
-          "name": "创新药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 4
-    },
-    {
-      "theme": "人形机器人",
-      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
-      "started": [
-        {
-          "name": "机器人",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "减速器",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "伺服电机",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "传感器",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
-      "theme": "新能源车",
-      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
-      "started": [
-        {
-          "name": "锂电",
-          "source": "news"
-        },
-        {
-          "name": "电池",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "隔膜",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "电解液",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "铜箔",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
+      "news_count": 5
     }
   ],
   "forward_events": [
@@ -397,16 +223,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "AI巨头鸿海营收激增超52%",
-    "人形机器人“真场景”竞速",
-    "三星Q2营利料狂飙17倍",
-    "利好突袭！刚刚美股全线拉升！半导体传来重磅消息！",
-    "华为Mate90系列有望搭载基于韬定律的新麒麟芯片",
-    "英伟达核心能源生态伙伴称：“800V正常推进中”",
-    "意外！五倍大牛股封死跌停！一则利空来袭 影响多大？",
-    "涨涨涨！内存硬盘涨价凶猛 1TB固态硬盘从500涨至1000元",
-    "先进封装成“韬定律”关键！一图梳理相关概念股",
-    "最高预增超700倍！中报预告梳理"
+    "中公教育相关投资者被暂停交易",
+    "海南海药：半年度业绩亏损",
+    "快手遭腾讯百亿元减持",
+    "午后直线拉升！4000亿巨头突然爆发！一则传闻刷屏 英伟达回应",
+    "国务院批复《旅游强国建设“十五五”规划》",
+    "SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！",
+    "沪硅产业：国家集成电路产业投资基金拟减持不超2%股份",
+    "巨头纷纷自研！一图梳理ASIC概念",
+    "中国央行连续第20个月增持黄金",
+    "央视网评：斩断“低俗赌约” 莫把股市当赌场"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -414,8 +240,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 5,
-    "chain_propagations": 5,
-    "news_catalysts": 26
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 14
   }
 }
