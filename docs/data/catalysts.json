@@ -2,19 +2,19 @@
   "date": "2026-07-07",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及数据中心, 存储, 算力；示例：SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！",
-      "type": "accumulation",
-      "theme": "AI算力",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：7条相关新闻提及硅片, 半导体；示例：海外映射&#x2B;“韬定律”带动！半导体逆势走强 这些股2026业绩预测高增",
+      "title": "蓄势信号：新闻蓄势：8条相关新闻提及半导体, 硅片, 芯片；示例：亚洲跌完欧洲跌！芯片股抛售潮席卷全球 华尔街分析师热议",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 芯片, 硅片, 半导体已启动",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及存储, 算力；示例：SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！",
+      "type": "accumulation",
+      "theme": "AI算力",
+      "urgency": "high"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 半导体, 硅片, 芯片已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
@@ -25,7 +25,7 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 数据中心, 存储, 算力已启动",
+      "title": "产业链传导：AI算力 — 存储, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -36,9 +36,21 @@
       "urgency": "medium"
     },
     {
+      "title": "亚洲跌完欧洲跌！芯片股抛售潮席卷全球 华尔街分析师热议",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
       "title": "SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！",
       "type": "news",
       "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "猛烈抛售！芯片巨头全线大跌！美股突遭重大警告",
+      "type": "news",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
@@ -60,27 +72,21 @@
       "urgency": "medium"
     },
     {
-      "title": "存储芯片涨价潮持续！三星Q2营业利润飙升18倍 再创历史新高",
+      "title": "美光大跌超5% 闪迪跌近5%！存储芯片股集体下挫",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "【风口研报】全球硅片龙头年内两轮提价   行业景气度有望持续回升",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "从投资热潮到社区抗争：美国数据中心为何陷入争议？",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "广药集团“挖”来百济神州前高管 这家老牌药企想转型创新药",
+      "title": "减持计划届满，浙江医药股东国投高科未进行减持",
       "type": "news",
       "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "期权智投播报 | 存储急跌 SpaceX正式入纳指盘前走弱 特斯拉交付亮眼引机构重仓看多",
+      "type": "news",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
@@ -88,34 +94,28 @@
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
-    },
-    {
-      "title": "期权智投播报 | 半导体盘前回暖 MSTR新资本框架助力股价连续反弹",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
     }
   ],
   "accumulation_signals": [
-    {
-      "name": "AI算力",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：5条相关新闻提及数据中心, 存储, 算力",
-        "示例：SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！"
-      ],
-      "level": "news"
-    },
     {
       "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：7条相关新闻提及硅片, 半导体",
-        "示例：海外映射&#x2B;“韬定律”带动！半导体逆势走强 这些股2026业绩预测高增"
+        "新闻蓄势：8条相关新闻提及半导体, 硅片, 芯片",
+        "示例：亚洲跌完欧洲跌！芯片股抛售潮席卷全球 华尔街分析师热议"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "AI算力",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：5条相关新闻提及存储, 算力",
+        "示例：SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！"
       ],
       "level": "news"
     }
@@ -126,7 +126,7 @@
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "芯片",
+          "name": "半导体",
           "source": "news"
         },
         {
@@ -134,7 +134,7 @@
           "source": "news"
         },
         {
-          "name": "半导体",
+          "name": "芯片",
           "source": "news"
         }
       ],
@@ -152,16 +152,12 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 7
+      "news_count": 8
     },
     {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
-        {
-          "name": "数据中心",
-          "source": "news"
-        },
         {
           "name": "存储",
           "source": "news"
@@ -226,13 +222,13 @@
     "中公教育相关投资者被暂停交易",
     "海南海药：半年度业绩亏损",
     "快手遭腾讯百亿元减持",
-    "午后直线拉升！4000亿巨头突然爆发！一则传闻刷屏 英伟达回应",
+    "亚洲跌完欧洲跌！芯片股抛售潮席卷全球 华尔街分析师热议",
     "国务院批复《旅游强国建设“十五五”规划》",
     "SemiAnalysis又发报告：Meta算力采购将加速 明年资本支出或大增！",
-    "沪硅产业：国家集成电路产业投资基金拟减持不超2%股份",
-    "巨头纷纷自研！一图梳理ASIC概念",
-    "中国央行连续第20个月增持黄金",
-    "央视网评：斩断“低俗赌约” 莫把股市当赌场"
+    "国投证券前首席经济学家高善文去世 享年55岁",
+    "猛烈抛售！芯片巨头全线大跌！美股突遭重大警告",
+    "午后直线拉升！4000亿巨头突然爆发！一则传闻刷屏 英伟达回应",
+    "科技股大撤退！回撤榜TOP20前三都含“光”"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -242,6 +238,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 2,
     "chain_propagations": 2,
-    "news_catalysts": 14
+    "news_catalysts": 15
   }
 }

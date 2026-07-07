@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "date": "2026-07-07",
+      "total_count": 0,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "",
+      "picks": []
+    },
+    {
       "date": "2026-07-03",
       "total_count": 6,
       "win_count": 0,
