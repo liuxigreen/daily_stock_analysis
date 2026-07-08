@@ -382,7 +382,21 @@ def main():
 
     if not result:
         print("❌ AI 分析失败", file=sys.stderr)
-        sys.exit(1)
+        # 优雅降级：写空结果让下游步骤继续，而非崩溃整个pipeline
+        fallback = {
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "picks": [],
+            "main_theme": "AI分析失败，无数据",
+            "error": "call_llm returned None",
+        }
+        out_path = DOCS_DATA / "ai_analysis.json"
+        DOCS_DATA.mkdir(parents=True, exist_ok=True)
+        tmp_path = out_path.with_suffix(".tmp")
+        with open(tmp_path, "w", encoding="utf-8") as f:
+            json.dump(fallback, f, ensure_ascii=False, indent=2)
+        os.replace(str(tmp_path), str(out_path))
+        print("⚠️ 已写入空 ai_analysis.json，下游步骤将继续", file=sys.stderr)
+        return
 
     # 提取 JSON
     try:
@@ -419,8 +433,10 @@ def main():
     # 写入文件
     DOCS_DATA.mkdir(parents=True, exist_ok=True)
     out_path = DOCS_DATA / "ai_analysis.json"
-    with open(out_path, "w", encoding="utf-8") as f:
+    tmp_path = out_path.with_suffix(".tmp")
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(analysis, f, ensure_ascii=False, indent=2)
+    os.replace(str(tmp_path), str(out_path))
 
     picks = analysis.get("picks", [])
     print(f"✅ AI 分析完成", file=sys.stderr)
