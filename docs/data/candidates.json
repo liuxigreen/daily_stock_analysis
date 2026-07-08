@@ -4,6 +4,7 @@
   "stats": {
     "total": 0,
     "by_source": {},
-    "avg_market_cap": 0
+    "avg_market_cap": 0,
+    "data_source_status": "no_data"
   }
 }

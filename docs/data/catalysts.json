@@ -2,25 +2,25 @@
   "date": "2026-07-08",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及算力, 存储；示例：昇腾950超节点首秀在即 概念股集体活跃 国产算力有望加速突围(附股)",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及存储, 算力；示例：昇腾950超节点首秀在即 概念股集体活跃 国产算力有望加速突围(附股)",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及封装, 半导体, 芯片；示例：替代HBM4？英特尔公布AI内存新专利 采用定制化封装方案",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及电池；示例：大增80%！储能电池出货超预期",
       "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及卫星, 航空；示例：SpaceX申请部署10万颗卫星 建立面向AI时代的空基通信底座",
-      "type": "accumulation",
-      "theme": "军工航天",
+      "theme": "新能源车",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 存储已启动",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及半导体；示例：期权智投播报 | 美伊冲突升温 半导体高位避险 能源股逆势走强",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：AI算力 — 存储, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -31,24 +31,24 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 封装, 半导体, 芯片已启动",
+      "title": "产业链传导：新能源车 — 电池, 锂电已启动",
+      "type": "chain_propagation",
+      "theme": "新能源车",
+      "next": [
+        "隔膜",
+        "电解液",
+        "铜箔"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 半导体已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
         "EDA",
         "光刻胶",
-        "硅片"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：军工航天 — 卫星, 航空已启动",
-      "type": "chain_propagation",
-      "theme": "军工航天",
-      "next": [
-        "导弹",
-        "雷达",
-        "军工电子"
+        "先进封装"
       ],
       "urgency": "medium"
     },
@@ -65,27 +65,21 @@
       "urgency": "medium"
     },
     {
-      "title": "替代HBM4？英特尔公布AI内存新专利 采用定制化封装方案",
+      "title": "大增80%！储能电池出货超预期",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "金刚光伏：控股股东拟增持公司股份不低于1亿元",
+      "type": "news",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "期权智投播报 | 美伊冲突升温 半导体高位避险 能源股逆势走强",
       "type": "news",
       "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "刚刚！全线拉升！芯片巨头飙涨！韩国政府紧急发声",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "SpaceX申请部署10万颗卫星 建立面向AI时代的空基通信底座",
-      "type": "news",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "东北首个调度平台投运 算力“一张网”加速成形 产业链迎业绩拐点",
-      "type": "news",
-      "theme": "AI算力",
       "urgency": "medium"
     },
     {
@@ -101,15 +95,21 @@
       "urgency": "medium"
     },
     {
-      "title": "期权智投播报 | 半导体盘前回暖 MSTR新资本框架助力股价连续反弹",
+      "title": "TrendForce集邦咨询：预计第三季度存储器价格涨幅收窄至13%-18%",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "春秋航空宣布免费承运救灾队伍和物资",
+      "title": "告别算力内卷：AI基建狂潮下，铜、铝、稀土的下一站在哪？",
       "type": "news",
-      "theme": "军工航天",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "投资能到80岁？揭秘实战派博主的锂电池“慢牛”逻辑 | 对话琳子话",
+      "type": "news",
+      "theme": "新能源车",
       "urgency": "medium"
     }
   ],
@@ -120,8 +120,19 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：5条相关新闻提及算力, 存储",
+        "新闻蓄势：5条相关新闻提及存储, 算力",
         "示例：昇腾950超节点首秀在即 概念股集体活跃 国产算力有望加速突围(附股)"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "新能源车",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及电池",
+        "示例：大增80%！储能电池出货超预期"
       ],
       "level": "news"
     },
@@ -129,21 +140,10 @@
       "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：4条相关新闻提及封装, 半导体, 芯片",
-        "示例：替代HBM4？英特尔公布AI内存新专利 采用定制化封装方案"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "军工航天",
-      "change_pct": 0,
-      "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及卫星, 航空",
-        "示例：SpaceX申请部署10万颗卫星 建立面向AI时代的空基通信底座"
+        "新闻蓄势：2条相关新闻提及半导体",
+        "示例：期权智投播报 | 美伊冲突升温 半导体高位避险 能源股逆势走强"
       ],
       "level": "news"
     }
@@ -154,11 +154,11 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "算力",
+          "name": "存储",
           "source": "news"
         },
         {
-          "name": "存储",
+          "name": "算力",
           "source": "news"
         }
       ],
@@ -179,19 +179,40 @@
       "news_count": 5
     },
     {
+      "theme": "新能源车",
+      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
+      "started": [
+        {
+          "name": "电池",
+          "source": "news"
+        },
+        {
+          "name": "锂电",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "隔膜",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "电解液",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "铜箔",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
+    },
+    {
       "theme": "半导体国产替代",
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "封装",
-          "source": "news"
-        },
-        {
           "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "芯片",
           "source": "news"
         }
       ],
@@ -205,36 +226,7 @@
           "market_cap_yi": 0
         },
         {
-          "name": "硅片",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 4
-    },
-    {
-      "theme": "军工航天",
-      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
-      "started": [
-        {
-          "name": "卫星",
-          "source": "news"
-        },
-        {
-          "name": "航空",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "导弹",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "雷达",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "军工电子",
+          "name": "先进封装",
           "market_cap_yi": 0
         }
       ],
@@ -279,13 +271,13 @@
     "招商证券业绩预喜！",
     "智谱今日迎来首次限售股解禁",
     "万华化学上半年净赚近百亿",
+    "习近平出席国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会并发表重要讲话",
     "特朗普：美伊谅解备忘录“已终结”",
-    "狂飙超19%！港股科技股集体大爆发！拐点真的来了？",
-    "今夜全球市场瞩目！沃什任内首份美联储纪要文件将发布",
-    "昇腾950超节点首秀在即 概念股集体活跃 国产算力有望加速突围(附股)",
-    "机构调研丨国产算力&#x2B;华为昇腾&#x2B;数字货币 这家公司与昇腾、曦云等深度合作 具身智能领域也有新突破",
-    "中金公司：预计上半年归母净利润同比增长78%-90%",
-    "乘联分会：6月全国乘用车市场零售160.2万辆 同比下降23.2%"
+    "央行：加强对扩大内需、科技创新、中小微企业等重点领域的金融支持",
+    "美股三大指数集体低开 阿里巴巴大涨",
+    "特朗普称“今夜可能再打伊朗”",
+    "7月8日晚间上市公司利好消息一览(附名单)",
+    "首破3万亿！二季度北向资金持仓曝光"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -295,6 +287,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 3,
     "chain_propagations": 3,
-    "news_catalysts": 12
+    "news_catalysts": 10
   }
 }
