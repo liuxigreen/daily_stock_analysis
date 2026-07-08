@@ -13,6 +13,7 @@
 输出：docs/data/candidates.json
 """
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime
@@ -290,7 +291,7 @@ def select_candidates(catalysts_data, all_stocks, fund_flow, verbose=False):
     return candidates
 
 
-def write_outputs(candidates, verbose=False):
+def write_outputs(candidates, data_status="ok", verbose=False):
     today = datetime.now().strftime("%Y-%m-%d")
     output = {
         "date": today,
@@ -299,6 +300,7 @@ def write_outputs(candidates, verbose=False):
             "total": len(candidates),
             "by_source": {},
             "avg_market_cap": 0,
+            "data_source_status": data_status,
         },
     }
     total_cap = 0
@@ -310,8 +312,11 @@ def write_outputs(candidates, verbose=False):
         output["stats"]["avg_market_cap"] = round(total_cap / len(candidates))
 
     DOCS_DATA.mkdir(parents=True, exist_ok=True)
-    with open(DOCS_DATA / "candidates.json", "w", encoding="utf-8") as f:
+    out_path = DOCS_DATA / "candidates.json"
+    tmp_path = out_path.with_suffix(".tmp")
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
+    os.replace(str(tmp_path), str(out_path))
 
     codes = ",".join(c["code"] for c in candidates)
     with open(DOCS_DATA / "candidate_codes.txt", "w", encoding="utf-8") as f:
@@ -356,10 +361,13 @@ def main():
 
     if not candidates:
         print("⚠️ 未生成候选", file=sys.stderr)
-        write_outputs([], verbose)
+        status = "no_data" if not all_stocks and not fund_flow else "no_candidates"
+        write_outputs([], data_status=status, verbose=verbose)
+        if status == "no_data":
+            print("❌ 无市场数据，pipeline 可能产出空报告", file=sys.stderr)
         sys.exit(0)
 
-    write_outputs(candidates, verbose)
+    write_outputs(candidates, data_status="ok", verbose=verbose)
     print(f"✅ 候选池: {len(candidates)} 只", file=sys.stderr)
     for c in candidates:
         cap = c.get("market_cap_yi", 0)
