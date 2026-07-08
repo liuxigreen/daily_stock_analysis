@@ -219,7 +219,8 @@ def get_fund_flow_efinance(verbose=False):
         df = ef.stock.get_latest_entrust()
         if df is not None and not df.empty:
             log(f"  资金流向: {len(df)} 条", verbose)
-            return df
+            # 转为 list[dict]，避免下游 isinstance(list) 检查失败
+            return df.to_dict("records")
     except Exception:
         pass
 
@@ -512,8 +513,17 @@ def get_northbound_flow(verbose=False):
                 # 取最新一条
                 latest = df.iloc[-1]
                 cols = set(df.columns)
-                # 尝试解析
-                return {"net_flow_yi": 0, "sh_flow_yi": 0, "sz_flow_yi": 0}
+                # 动态列名匹配
+                net_col = next((c for c in cols if "净流入" in str(c) or "net" in str(c).lower()), None)
+                sh_col = next((c for c in cols if "沪" in str(c) or "sh" in str(c).lower()), None)
+                sz_col = next((c for c in cols if "深" in str(c) or "sz" in str(c).lower()), None)
+                try:
+                    net = float(latest[net_col]) / 1e8 if net_col else 0
+                    sh = float(latest[sh_col]) / 1e8 if sh_col else 0
+                    sz = float(latest[sz_col]) / 1e8 if sz_col else 0
+                    return {"net_flow_yi": round(net, 2), "sh_flow_yi": round(sh, 2), "sz_flow_yi": round(sz, 2)}
+                except (ValueError, TypeError):
+                    return {"net_flow_yi": 0, "sh_flow_yi": 0, "sz_flow_yi": 0}
         except Exception:
             pass
     except ImportError:
