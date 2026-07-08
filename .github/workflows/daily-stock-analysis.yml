@@ -1,94 +1,210 @@
 name: Daily Stock Analysis
 
+
+
 on:
+
   schedule:
+
     - cron: '0 8 * * 1-5'
+
   workflow_dispatch:
+
     inputs:
+
       mode:
+
         description: 'Run mode'
+
         required: false
+
         default: 'full'
+
         type: choice
+
         options:
+
           - full
+
           - watchpool-only
 
+
+
 permissions:
+
   contents: write
 
+  pages: write
+
+  actions: write
+
+
+
 concurrency:
+
   group: stock-analysis
+
   cancel-in-progress: false
 
+
+
 jobs:
+
   analyze:
+
     runs-on: ubuntu-latest
+
     timeout-minutes: 30
+
     steps:
+
       - uses: actions/checkout@v4
 
+
+
       - uses: actions/setup-python@v5
+
         with:
+
           python-version: '3.12'
 
+
+
       - name: Install deps
+
         run: pip install requests pandas efinance
 
+
+
       - name: Screener data
+
         if: github.event.inputs.mode != 'watchpool-only'
+
         run: python3 scripts/daily_stock_screener_ga.py
 
+
+
       - name: Catalyst scan
+
         if: github.event.inputs.mode != 'watchpool-only'
+
         run: python3 scripts/catalyst_scanner.py --verbose
 
+
+
       - name: Generate candidates
+
         if: github.event.inputs.mode != 'watchpool-only'
+
         run: python3 scripts/generate_candidates.py --verbose
 
+
+
       - name: Feedback
+
         if: github.event.inputs.mode != 'watchpool-only'
+
         run: python3 scripts/generate_feedback.py || true
 
+
+
       - name: AI integration
+
         if: github.event.inputs.mode != 'watchpool-only'
+
         env:
+
           ROUTER_API_KEY: ${{ secrets.ROUTER_API_KEY }}
+
         run: python3 scripts/ai_analyst.py
 
+
+
       - name: Generate picks
+
         if: github.event.inputs.mode != 'watchpool-only' && success()
+
         run: python3 scripts/ga_picks_writer.py
 
+
+
       - name: Auto watchlist
+
         if: github.event.inputs.mode != 'watchpool-only' && success()
+
         run: python3 scripts/auto_watchlist.py
 
+
+
       - name: Watch pool
+
         if: always()
+
         run: python3 scripts/watcher.py
 
+
+
       - name: Push
+
         if: always()
+
         run: |
+
           git config user.name "Stock Bot"
+
           git config user.email "bot@liuxigreen.github.io"
+
           git add docs/data/
+
           if git diff --cached --quiet; then
+
             echo "No changes"
+
           else
+
             git stash --include-untracked
+
             git pull --rebase origin main
+
             git stash pop || true
+
             git add docs/data/
+
             DATE=$(date +%Y-%m-%d)
+
             git commit -m "chore: daily stock analysis $DATE"
+
             git push origin main
+
             echo "Done"
-          fi
+
+          fi          
+
+
+
+      - name: Trigger Pages deploy
+
+        if: always()
+
+        run: |
+
+          curl -s -X POST \
+
+            "${{ github.server_url }}/repos/${{ github.repository }}/actions/workflows/deploy-pages.yml/dispatches" \
+
+            -H "Authorization: Bearer ${{ github.token }}" \
+
+            -H "Accept: application/vnd.github.v3+json" \
+
+            -d '{"ref":"main"}' && echo "Pages deploy triggered" || echo "Pages deploy trigger failed (non-blocking)"          
+
+
 
       - name: Notify on failure
+
         if: failure()
+
         run: |
-          echo "⚠️ 每日选股分析失败，详情: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+          echo "⚠️ 每日选股分析失败，详情: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"          
+
