@@ -7,10 +7,29 @@ picks.json 生成器 — 从 AI 分析结果 + 催化剂数据组装最终 picks
 """
 import json
 import os
+import subprocess
 from datetime import datetime
 from pathlib import Path
 
 DOCS_DATA = Path(__file__).resolve().parent.parent / "docs" / "data"
+
+
+def get_real_price(code):
+    """用腾讯API获取真实现价，失败返回0。"""
+    prefix = "sh" if code.startswith("6") or code.startswith("9") else "sz"
+    try:
+        r = subprocess.run(
+            ["curl", "-s", "--max-time", "5", f"https://qt.gtimg.cn/q={prefix}{code}"],
+            capture_output=True, timeout=10,
+        )
+        parts = r.stdout.decode("gbk", errors="ignore").split("~")
+        if len(parts) > 3:
+            price = float(parts[3])
+            if price > 0:
+                return price
+    except Exception:
+        pass
+    return 0
 
 
 def main():
@@ -52,6 +71,17 @@ def main():
         },
         "picks": analysis.get("picks", []),
     }
+
+    # 验证并修正AI给出的价格
+    for pick in picks_data["picks"]:
+        code = pick.get("code", "")
+        ai_price = pick.get("price", 0)
+        if code:
+            real = get_real_price(code)
+            if real > 0:
+                pick["price"] = real
+                if ai_price > 0 and abs(real - ai_price) / ai_price > 0.03:
+                    print(f"  ⚠️ {code} AI价格{ai_price}→修正为{real}", flush=True)
 
     # 写入 picks.json
     picks_path = DOCS_DATA / "picks.json"
