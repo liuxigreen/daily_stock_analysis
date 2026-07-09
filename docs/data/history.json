@@ -1,6 +1,14 @@
 {
   "records": [
     {
+      "date": "2026-07-09",
+      "total_count": 0,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "AI分析失败，无数据",
+      "picks": []
+    },
+    {
       "date": "2026-07-08",
       "total_count": 0,
       "win_count": 0,
