@@ -1,96 +1,112 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：8条相关新闻提及算力, 光模块, 数据中心；示例：4天2板东山精密：预计上半年净利润同比增长283%-296% 光模块业务整合效应显现",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及芯片, 半导体；示例：A股三大指数收跌 半导体板块领跌 创新药概念大涨",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：6条相关新闻提及算力, 存储, 数据中心；示例：佰维存储：预计上半年净利润70亿元-75亿元 同比增长3200%-3422%",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及芯片；示例：中东局势升级叠加AI交易降温 美股期指走弱 芯片股集体承压 | 今夜看点",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及医药, CXO, 创新药；示例：1分钟20%涨停！创新药爆发涨停潮！“猴子”彻底刷屏",
       "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
+      "theme": "创新药",
+      "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 光模块, 数据中心, 存储已启动",
+      "title": "产业链传导：AI算力 — 算力, 存储, 数据中心已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
-        "光芯片",
-        "液冷散热"
+        "光模块",
+        "光芯片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 芯片已启动",
+      "title": "产业链传导：半导体国产替代 — 芯片, 半导体已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
-        "半导体设备",
-        "半导体材料",
-        "EDA"
+        "EDA",
+        "光刻胶",
+        "先进封装"
       ],
       "urgency": "medium"
     },
     {
-      "title": "4天2板东山精密：预计上半年净利润同比增长283%-296% 光模块业务整合效应显现",
-      "type": "news",
-      "theme": "AI算力",
+      "title": "产业链传导：创新药 — 医药, CXO, 创新药已启动",
+      "type": "chain_propagation",
+      "theme": "创新药",
+      "next": [
+        "CDMO",
+        "原料药"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨PCB&#x2B;AI算力&#x2B;出海 这家公司上半年净利预增超85% 泰国工厂二期预计Q4产生新增产能",
+      "title": "两家光伏巨头半年预亏超80亿",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "光伏风电",
       "urgency": "medium"
     },
     {
-      "title": "韩国存储双雄杠杆ETF价格上窜下跳 政府周四将开会讨论对策",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "全球首颗软件定义近存计算3D芯片发布 国产算力新路线正式起航(附股)",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "美国纽约州将暂停新建超大规模数据中心，以便建立监管框架",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "中东局势升级叠加AI交易降温 美股期指走弱 芯片股集体承压 | 今夜看点",
+      "title": "A股三大指数收跌 半导体板块领跌 创新药概念大涨",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "SK海力士创纪录赴美上市 美股期指涨跌不一 芯片股盘前普遍下跌 | 今夜看点",
+      "title": "佰维存储：预计上半年净利润70亿元-75亿元 同比增长3200%-3422%",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "韩股又熔断！芯片股杠杆ETF放大波动 券商讨论提高投资门槛",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "期权智投播报 | 存储龙头SK海力士盘前下挫 Meta算力出租+自研芯片催化昨日收涨",
+      "title": "1分钟20%涨停！创新药爆发涨停潮！“猴子”彻底刷屏",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "10倍大牛股跌停！存储概念股集体下跌！发生了什么？",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "算力需求依然旺盛！Meta计划扩容最大数据中心项目 追加百亿美元投资",
+      "title": "政策&#x2B;业绩双重共振！创新药掀涨停潮 20股2026业绩预测翻倍",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "中信证券：基本药物目录再扩容 创新药物破冰新放量",
+      "title": "三重利好共振！“CXO或有望复刻2019年史诗牛”",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "真没有“量化韩国因子”？周三A股芯片股大跌 资金选择“站在猴子里”",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "原因找到了 一只猴子引发的暴涨！医药股逆市走强",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
@@ -98,24 +114,35 @@
   ],
   "accumulation_signals": [
     {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：5条相关新闻提及芯片, 半导体",
+        "示例：A股三大指数收跌 半导体板块领跌 创新药概念大涨"
+      ],
+      "level": "news"
+    },
+    {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：8条相关新闻提及算力, 光模块, 数据中心",
-        "示例：4天2板东山精密：预计上半年净利润同比增长283%-296% 光模块业务整合效应显现"
+        "新闻蓄势：6条相关新闻提及算力, 存储, 数据中心",
+        "示例：佰维存储：预计上半年净利润70亿元-75亿元 同比增长3200%-3422%"
       ],
       "level": "news"
     },
     {
-      "name": "半导体国产替代",
+      "name": "创新药",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及芯片",
-        "示例：中东局势升级叠加AI交易降温 美股期指走弱 芯片股集体承压 | 今夜看点"
+        "新闻蓄势：4条相关新闻提及医药, CXO, 创新药",
+        "示例：1分钟20%涨停！创新药爆发涨停潮！“猴子”彻底刷屏"
       ],
       "level": "news"
     }
@@ -130,15 +157,11 @@
           "source": "news"
         },
         {
-          "name": "光模块",
+          "name": "存储",
           "source": "news"
         },
         {
           "name": "数据中心",
-          "source": "news"
-        },
-        {
-          "name": "存储",
           "source": "news"
         }
       ],
@@ -148,15 +171,15 @@
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
+          "name": "光模块",
           "market_cap_yi": 0
         },
         {
-          "name": "液冷散热",
+          "name": "光芯片",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 8
+      "news_count": 6
     },
     {
       "theme": "半导体国产替代",
@@ -165,23 +188,56 @@
         {
           "name": "芯片",
           "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "半导体设备",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "半导体材料",
-          "market_cap_yi": 0
-        },
-        {
           "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 2
+      "news_count": 5
+    },
+    {
+      "theme": "创新药",
+      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "started": [
+        {
+          "name": "医药",
+          "source": "news"
+        },
+        {
+          "name": "CXO",
+          "source": "news"
+        },
+        {
+          "name": "创新药",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "CDMO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "原料药",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 4
     }
   ],
   "forward_events": [
@@ -219,16 +275,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "SK海力士“点火”爆仓潮",
-    "天际股份：股票被“ST”",
-    "胜宏科技紧急澄清负面传闻",
-    "倒计时2天 长鑫科技最全打新攻略来了",
-    "A股三大指数收涨 创业板指大涨超3% 逾4200只股飘红",
-    "两大利好突袭：韩国稳市 A股ETF再现大手笔买入",
-    "央行：7月15日将开展14000亿元买断式逆回购操作",
-    "中国人寿：预计上半年归母净利润同比增长约215%到235%",
-    "同比倍增！6月集成电路、稀土出口额双双迎来爆发",
-    "4天2板东山精密：预计上半年净利润同比增长283%-296% 光模块业务整合效应显现"
+    "两家光伏巨头半年预亏超80亿",
+    "白酒业绩预告密集出炉",
+    "德明利上半年最高预盈65亿",
+    "A股三大指数收跌 半导体板块领跌 创新药概念大涨",
+    "央行：上半年社会融资规模增量累计为20.84万亿元 人民币贷款增加10.72万亿元",
+    "发行价8.66元 长鑫科技打新中一签能赚多少？",
+    "佰维存储：预计上半年净利润70亿元-75亿元 同比增长3200%-3422%",
+    "美国拟出台新制裁法案对俄能源买家征最高100%关税 中印在列 外交部回应",
+    "韩股又熔断！芯片股杠杆ETF放大波动 券商讨论提高投资门槛",
+    "国行苹果AI功能完成备案 合作方包括阿里"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -236,8 +292,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 2,
-    "chain_propagations": 2,
-    "news_catalysts": 11
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
+    "news_catalysts": 17
   }
 }
