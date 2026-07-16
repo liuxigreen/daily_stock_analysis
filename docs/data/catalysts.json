@@ -1,26 +1,31 @@
 {
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及芯片, 半导体；示例：A股三大指数收跌 半导体板块领跌 创新药概念大涨",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 芯片；示例：全球最大内存接口芯片公司突遭变故 韩国检方突击搜查澜起科技",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：6条相关新闻提及算力, 存储, 数据中心；示例：佰维存储：预计上半年净利润70亿元-75亿元 同比增长3200%-3422%",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及存储, 算力；示例：连续两日“一字”跌停 Q2净利为何环比下滑？千亿存储龙头德明利回应",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及医药, CXO, 创新药；示例：1分钟20%涨停！创新药爆发涨停潮！“猴子”彻底刷屏",
-      "type": "accumulation",
-      "theme": "创新药",
-      "urgency": "high"
+      "title": "产业链传导：半导体国产替代 — 光刻, 半导体, 芯片已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "先进封装",
+        "硅片"
+      ],
+      "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 存储, 数据中心已启动",
+      "title": "产业链传导：AI算力 — 存储, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -31,82 +36,61 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 芯片, 半导体已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：创新药 — 医药, CXO, 创新药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "CDMO",
-        "原料药"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "两家光伏巨头半年预亏超80亿",
-      "type": "news",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "A股三大指数收跌 半导体板块领跌 创新药概念大涨",
+      "title": "全球最大内存接口芯片公司突遭变故 韩国检方突击搜查澜起科技",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "佰维存储：预计上半年净利润70亿元-75亿元 同比增长3200%-3422%",
+      "title": "连续两日“一字”跌停 Q2净利为何环比下滑？千亿存储龙头德明利回应",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "韩股又熔断！芯片股杠杆ETF放大波动 券商讨论提高投资门槛",
+      "title": "商务部回应推动解决安世半导体问题进展",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "1分钟20%涨停！创新药爆发涨停潮！“猴子”彻底刷屏",
+      "title": "半导体行业涨价潮蔓延！光刻机巨头据悉酝酿提价 台积电反对",
       "type": "news",
-      "theme": "创新药",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "10倍大牛股跌停！存储概念股集体下跌！发生了什么？",
+      "title": "锂电排产大增！业绩大面积预喜 “或有望开启新周期”(附股)",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "世界机器人大会将至，产业链景气度持续升温，这些股频获机构调研",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "【焦点复盘】科创50连续2日大跌超4%，算力硬件板块持续低迷，850亿“中药茅”现久违涨停",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "政策&#x2B;业绩双重共振！创新药掀涨停潮 20股2026业绩预测翻倍",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "三重利好共振！“CXO或有望复刻2019年史诗牛”",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "真没有“量化韩国因子”？周三A股芯片股大跌 资金选择“站在猴子里”",
+      "title": "台积电法说会实录：今年资本支出加码至640亿美元 高端芯片紧缺还将延续几年",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "原因找到了 一只猴子引发的暴涨！医药股逆市走强",
+      "title": "美国6月PPI低于预期 美股期指走高 阿斯麦财报提振芯片股 | 今夜看点",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "恒瑞医药HRS9531注射液临床试验获批",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
@@ -119,8 +103,8 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：5条相关新闻提及芯片, 半导体",
-        "示例：A股三大指数收跌 半导体板块领跌 创新药概念大涨"
+        "新闻蓄势：5条相关新闻提及半导体, 芯片",
+        "示例：全球最大内存接口芯片公司突遭变故 韩国检方突击搜查澜起科技"
       ],
       "level": "news"
     },
@@ -130,38 +114,56 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：6条相关新闻提及算力, 存储, 数据中心",
-        "示例：佰维存储：预计上半年净利润70亿元-75亿元 同比增长3200%-3422%"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "创新药",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：4条相关新闻提及医药, CXO, 创新药",
-        "示例：1分钟20%涨停！创新药爆发涨停潮！“猴子”彻底刷屏"
+        "新闻蓄势：4条相关新闻提及存储, 算力",
+        "示例：连续两日“一字”跌停 Q2净利为何环比下滑？千亿存储龙头德明利回应"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "光刻",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "硅片",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 5
+    },
+    {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
-        {
-          "name": "算力",
-          "source": "news"
-        },
         {
           "name": "存储",
           "source": "news"
         },
         {
-          "name": "数据中心",
+          "name": "算力",
           "source": "news"
         }
       ],
@@ -176,64 +178,6 @@
         },
         {
           "name": "光芯片",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 6
-    },
-    {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "芯片",
-          "source": "news"
-        },
-        {
-          "name": "半导体",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 5
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "医药",
-          "source": "news"
-        },
-        {
-          "name": "CXO",
-          "source": "news"
-        },
-        {
-          "name": "创新药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
           "market_cap_yi": 0
         }
       ],
@@ -275,16 +219,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "两家光伏巨头半年预亏超80亿",
-    "白酒业绩预告密集出炉",
-    "德明利上半年最高预盈65亿",
-    "A股三大指数收跌 半导体板块领跌 创新药概念大涨",
-    "央行：上半年社会融资规模增量累计为20.84万亿元 人民币贷款增加10.72万亿元",
-    "发行价8.66元 长鑫科技打新中一签能赚多少？",
-    "佰维存储：预计上半年净利润70亿元-75亿元 同比增长3200%-3422%",
-    "美国拟出台新制裁法案对俄能源买家征最高100%关税 中印在列 外交部回应",
-    "韩股又熔断！芯片股杠杆ETF放大波动 券商讨论提高投资门槛",
-    "国行苹果AI功能完成备案 合作方包括阿里"
+    "一批上市公司业绩报喜",
+    "20家上市券商上半年业绩预喜",
+    "SpaceX破发！散户压力山大",
+    "A股三大指数集体下跌 影视院线概念股逆市上涨",
+    "市场人士：长鑫科技IPO抽血是个“伪命题”",
+    "商务部：将根据国内外氦气供需变化适时调整出口管理",
+    "全球最大内存接口芯片公司突遭变故 韩国检方突击搜查澜起科技",
+    "连续两日“一字”跌停 Q2净利为何环比下滑？千亿存储龙头德明利回应",
+    "机构调研丨中药&#x2B;骨科&#x2B;养老概念 这家公司独家品种获纳入新版基药目录 有望成为核心增长极",
+    "韩国将暂停新的单一股票杠杆ETF上市 以抑制市场波动"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -292,8 +236,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
-    "news_catalysts": 17
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 14
   }
 }
