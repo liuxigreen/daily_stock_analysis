@@ -1,26 +1,32 @@
 {
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 芯片；示例：全球最大内存接口芯片公司突遭变故 韩国检方突击搜查澜起科技",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及锂电, 电池；示例：三部门：将分类分步对部分电池恢复征收消费税",
       "type": "accumulation",
-      "theme": "半导体国产替代",
+      "theme": "新能源车",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及存储, 算力；示例：连续两日“一字”跌停 Q2净利为何环比下滑？千亿存储龙头德明利回应",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及存储, 算力；示例：SK海力士大幅回调！崔泰源喊话坚守持仓：存储需求将呈指数级增长",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 光刻, 半导体, 芯片已启动",
-      "type": "chain_propagation",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及芯片；示例：台积电法说会实录：今年资本支出加码至640亿美元 高端芯片紧缺还将延续几年",
+      "type": "accumulation",
       "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：新能源车 — 锂电, 电池已启动",
+      "type": "chain_propagation",
+      "theme": "新能源车",
       "next": [
-        "EDA",
-        "先进封装",
-        "硅片"
+        "隔膜",
+        "电解液",
+        "铜箔"
       ],
       "urgency": "medium"
     },
@@ -36,45 +42,50 @@
       "urgency": "medium"
     },
     {
-      "title": "全球最大内存接口芯片公司突遭变故 韩国检方突击搜查澜起科技",
-      "type": "news",
+      "title": "产业链传导：半导体国产替代 — 芯片已启动",
+      "type": "chain_propagation",
       "theme": "半导体国产替代",
+      "next": [
+        "半导体设备",
+        "半导体材料",
+        "EDA"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "连续两日“一字”跌停 Q2净利为何环比下滑？千亿存储龙头德明利回应",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "商务部回应推动解决安世半导体问题进展",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "半导体行业涨价潮蔓延！光刻机巨头据悉酝酿提价 台积电反对",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "锂电排产大增！业绩大面积预喜 “或有望开启新周期”(附股)",
+      "title": "三部门：将分类分步对部分电池恢复征收消费税",
       "type": "news",
       "theme": "新能源车",
       "urgency": "medium"
     },
     {
-      "title": "世界机器人大会将至，产业链景气度持续升温，这些股频获机构调研",
+      "title": "电池消费税政策缘何调整？影响几何？",
       "type": "news",
-      "theme": "人形机器人",
+      "theme": "新能源车",
       "urgency": "medium"
     },
     {
-      "title": "【焦点复盘】科创50连续2日大跌超4%，算力硬件板块持续低迷，850亿“中药茅”现久违涨停",
+      "title": "机构调研丨储能&#x2B;AIDC&#x2B;锂电池 这家公司主要产品满产满销 AIDC电池争取明年大批量供货",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "SK海力士大幅回调！崔泰源喊话坚守持仓：存储需求将呈指数级增长",
       "type": "news",
       "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "三部门最新发文！电池消费税政策9月起将分步调整",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "“实验猴”行情引爆创新药板块！公募密集调研，多只主题ETF月涨超20%",
+      "type": "news",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
@@ -90,21 +101,27 @@
       "urgency": "medium"
     },
     {
-      "title": "恒瑞医药HRS9531注射液临床试验获批",
+      "title": "腾讯Robotics X实验室新一代示范性机器人“小六”首次公开亮相",
       "type": "news",
-      "theme": "创新药",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "狂堆GPU路渐窄 算力调优接棒AI竞赛",
+      "type": "news",
+      "theme": "AI算力",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
     {
-      "name": "半导体国产替代",
+      "name": "新能源车",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：5条相关新闻提及半导体, 芯片",
-        "示例：全球最大内存接口芯片公司突遭变故 韩国检方突击搜查澜起科技"
+        "新闻蓄势：5条相关新闻提及锂电, 电池",
+        "示例：三部门：将分类分步对部分电池恢复征收消费税"
       ],
       "level": "news"
     },
@@ -112,43 +129,50 @@
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 60,
+      "score": 45,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及存储, 算力",
-        "示例：连续两日“一字”跌停 Q2净利为何环比下滑？千亿存储龙头德明利回应"
+        "新闻蓄势：3条相关新闻提及存储, 算力",
+        "示例：SK海力士大幅回调！崔泰源喊话坚守持仓：存储需求将呈指数级增长"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及芯片",
+        "示例：台积电法说会实录：今年资本支出加码至640亿美元 高端芯片紧缺还将延续几年"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "theme": "新能源车",
+      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
       "started": [
         {
-          "name": "光刻",
+          "name": "锂电",
           "source": "news"
         },
         {
-          "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "芯片",
+          "name": "电池",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "EDA",
+          "name": "隔膜",
           "market_cap_yi": 0
         },
         {
-          "name": "先进封装",
+          "name": "电解液",
           "market_cap_yi": 0
         },
         {
-          "name": "硅片",
+          "name": "铜箔",
           "market_cap_yi": 0
         }
       ],
@@ -181,7 +205,32 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 4
+      "news_count": 3
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "芯片",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "半导体设备",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "半导体材料",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
     }
   ],
   "forward_events": [
@@ -219,16 +268,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "一批上市公司业绩报喜",
-    "20家上市券商上半年业绩预喜",
-    "SpaceX破发！散户压力山大",
-    "A股三大指数集体下跌 影视院线概念股逆市上涨",
-    "市场人士：长鑫科技IPO抽血是个“伪命题”",
-    "商务部：将根据国内外氦气供需变化适时调整出口管理",
-    "全球最大内存接口芯片公司突遭变故 韩国检方突击搜查澜起科技",
-    "连续两日“一字”跌停 Q2净利为何环比下滑？千亿存储龙头德明利回应",
-    "机构调研丨中药&#x2B;骨科&#x2B;养老概念 这家公司独家品种获纳入新版基药目录 有望成为核心增长极",
-    "韩国将暂停新的单一股票杠杆ETF上市 以抑制市场波动"
+    "长鑫科技中一签盈利几何",
+    "五粮液等多家A股公司分红",
+    "4家头部钨企上半年业绩预喜",
+    "习近平出席2026世界人工智能大会暨人工智能全球治理高级别会议开幕式并发表主旨讲话",
+    "三部门：将分类分步对部分电池恢复征收消费税",
+    "A股三大指数集体收跌 电力板块逆市走强",
+    "国内成品油价今晚上调 加满一箱油多花12元",
+    "国家发改委发布人工智能合作发展行动计划",
+    "电池消费税政策缘何调整？影响几何？",
+    "ST文峰：公司及控股股东因涉嫌信披违规被证监会立案调查"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -236,8 +285,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 2,
-    "chain_propagations": 2,
-    "news_catalysts": 14
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
+    "news_catalysts": 12
   }
 }
