@@ -1,37 +1,26 @@
 {
-  "date": "2026-07-17",
+  "date": "2026-07-20",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及锂电, 电池；示例：三部门：将分类分步对部分电池恢复征收消费税",
-      "type": "accumulation",
-      "theme": "新能源车",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及存储, 算力；示例：SK海力士大幅回调！崔泰源喊话坚守持仓：存储需求将呈指数级增长",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及算力；示例：【风口研报】高温天气叠加AI算力用电激增 电力板块或迎量价齐升机遇",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及芯片；示例：台积电法说会实录：今年资本支出加码至640亿美元 高端芯片紧缺还将延续几年",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及设备, 芯片；示例：中信证券：看好目前处于低位的内需高压设备龙头迎来拐点",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：新能源车 — 锂电, 电池已启动",
-      "type": "chain_propagation",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及电池；示例：部分电池恢复征税或带来千亿级税收 政策留有过渡期",
+      "type": "accumulation",
       "theme": "新能源车",
-      "next": [
-        "隔膜",
-        "电解液",
-        "铜箔"
-      ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 存储, 算力已启动",
+      "title": "产业链传导：AI算力 — 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -42,14 +31,61 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 芯片已启动",
+      "title": "产业链传导：半导体国产替代 — 设备, 芯片已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
-        "半导体设备",
         "半导体材料",
-        "EDA"
+        "EDA",
+        "光刻胶"
       ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：新能源车 — 电池已启动",
+      "type": "chain_propagation",
+      "theme": "新能源车",
+      "next": [
+        "隔膜",
+        "电解液",
+        "铜箔"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨绿色电力&#x2B;虚拟电厂&#x2B;算电协同 这家公司聚焦“AI&#x2B;虚拟电厂” 绿证累计销量已超70万张",
+      "type": "news",
+      "theme": "储能",
+      "urgency": "medium"
+    },
+    {
+      "title": "【风口研报】高温天气叠加AI算力用电激增 电力板块或迎量价齐升机遇",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "中信证券：看好目前处于低位的内需高压设备龙头迎来拐点",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "北京上半年GDP同比增长5.4%，服务机器人产品产量增长2.3倍",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "周末利好来袭！上海重大发布！事关太空算力",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "部分电池恢复征税或带来千亿级税收 政策留有过渡期",
+      "type": "news",
+      "theme": "新能源车",
       "urgency": "medium"
     },
     {
@@ -59,55 +95,19 @@
       "urgency": "medium"
     },
     {
-      "title": "电池消费税政策缘何调整？影响几何？",
-      "type": "news",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨储能&#x2B;AIDC&#x2B;锂电池 这家公司主要产品满产满销 AIDC电池争取明年大批量供货",
-      "type": "news",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "SK海力士大幅回调！崔泰源喊话坚守持仓：存储需求将呈指数级增长",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "三部门最新发文！电池消费税政策9月起将分步调整",
-      "type": "news",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "“实验猴”行情引爆创新药板块！公募密集调研，多只主题ETF月涨超20%",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
       "title": "台积电法说会实录：今年资本支出加码至640亿美元 高端芯片紧缺还将延续几年",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "美国6月PPI低于预期 美股期指走高 阿斯麦财报提振芯片股 | 今夜看点",
+      "title": "美军对伊朗发动新一轮空袭！伊朗最高领袖发声！美媒：伊朗导弹库存充足！黄金、白银还有机会吗？",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "军工航天",
       "urgency": "medium"
     },
     {
-      "title": "腾讯Robotics X实验室新一代示范性机器人“小六”首次公开亮相",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "狂堆GPU路渐窄 算力调优接棒AI竞赛",
+      "title": "算力紧缺！Kimi、Meta接连大动作 机构看好算力租赁景气与价值重估(附股)",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
@@ -115,24 +115,13 @@
   ],
   "accumulation_signals": [
     {
-      "name": "新能源车",
+      "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：5条相关新闻提及锂电, 电池",
-        "示例：三部门：将分类分步对部分电池恢复征收消费税"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "AI算力",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 45,
-      "reasons": [
-        "新闻蓄势：3条相关新闻提及存储, 算力",
-        "示例：SK海力士大幅回调！崔泰源喊话坚守持仓：存储需求将呈指数级增长"
+        "新闻蓄势：4条相关新闻提及算力",
+        "示例：【风口研报】高温天气叠加AI算力用电激增 电力板块或迎量价齐升机遇"
       ],
       "level": "news"
     },
@@ -142,50 +131,28 @@
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及芯片",
-        "示例：台积电法说会实录：今年资本支出加码至640亿美元 高端芯片紧缺还将延续几年"
+        "新闻蓄势：2条相关新闻提及设备, 芯片",
+        "示例：中信证券：看好目前处于低位的内需高压设备龙头迎来拐点"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "新能源车",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及电池",
+        "示例：部分电池恢复征税或带来千亿级税收 政策留有过渡期"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "新能源车",
-      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
-      "started": [
-        {
-          "name": "锂电",
-          "source": "news"
-        },
-        {
-          "name": "电池",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "隔膜",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "电解液",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "铜箔",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 5
-    },
-    {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
-        {
-          "name": "存储",
-          "source": "news"
-        },
         {
           "name": "算力",
           "source": "news"
@@ -205,12 +172,16 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 3
+      "news_count": 4
     },
     {
       "theme": "半导体国产替代",
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
+        {
+          "name": "设备",
+          "source": "news"
+        },
         {
           "name": "芯片",
           "source": "news"
@@ -218,15 +189,40 @@
       ],
       "next_opportunities": [
         {
-          "name": "半导体设备",
-          "market_cap_yi": 0
-        },
-        {
           "name": "半导体材料",
           "market_cap_yi": 0
         },
         {
           "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
+    },
+    {
+      "theme": "新能源车",
+      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
+      "started": [
+        {
+          "name": "电池",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "隔膜",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "电解液",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "铜箔",
           "market_cap_yi": 0
         }
       ],
@@ -268,16 +264,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "长鑫科技中一签盈利几何",
-    "五粮液等多家A股公司分红",
-    "4家头部钨企上半年业绩预喜",
-    "习近平出席2026世界人工智能大会暨人工智能全球治理高级别会议开幕式并发表主旨讲话",
-    "三部门：将分类分步对部分电池恢复征收消费税",
-    "A股三大指数集体收跌 电力板块逆市走强",
-    "国内成品油价今晚上调 加满一箱油多花12元",
-    "国家发改委发布人工智能合作发展行动计划",
-    "电池消费税政策缘何调整？影响几何？",
-    "ST文峰：公司及控股股东因涉嫌信披违规被证监会立案调查"
+    "Kimi宣布暂停会员开放",
+    "公募基金看好长鑫科技上市",
+    "天孚通信业绩最多预增45%",
+    "证监会召开投资者座谈会听取意见建议：全力维护市场平稳运行",
+    "外交部：中美双方就年内元首互动安排保持沟通",
+    "中国平安：坚定支持资本市场发展与提升股东回报",
+    "考虑延长交易时间！港股突发！两大重磅利好同步兑现",
+    "创纪录！股票ETF 2000亿抄底 A股又迎黄金坑？",
+    "事关A股 四大积极信号！花旗将中国市场上调至“超配”评级",
+    "中国太保：将继续投资科技成长、消费、新能源等领域股票及ETF"
   ],
   "northbound_flow": {},
   "margin_data": {},
