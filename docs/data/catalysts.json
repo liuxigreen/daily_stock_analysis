@@ -1,231 +1,150 @@
 {
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：8条相关新闻提及芯片, 半导体；示例：A股“大奇迹日” 暴涨原因找到了！半导体芯片股集体爆发",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：7条相关新闻提及存储, 算力；示例：机构调研丨半导体设备&#x2B;存储芯片&#x2B;国产替代 这家公司H1净利预增逾2倍 已确定6款",
+      "title": "蓄势信号：新闻蓄势：7条相关新闻提及算力, 光模块, 数据中心；示例：光模块一哥港股发行价出炉",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及电池；示例：工信部锂电池及类似产品标准工作组：将召开10项固态锂电池行业标准讨论会",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及封装, 芯片；示例：英伟达披露Vera Rubin最新进展 芯片已交付OpenAI等企业",
       "type": "accumulation",
-      "theme": "新能源车",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及创新药, 医药；示例：历史性突破！全球同步研发创新药在中国首报首发",
-      "type": "accumulation",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：半导体国产替代 — 芯片, 半导体已启动",
-      "type": "chain_propagation",
       "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 存储, AI芯片, 算力已启动",
+      "title": "产业链传导：AI算力 — 算力, 光模块, 数据中心, 存储已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
-        "光模块",
+        "AI芯片",
         "光芯片",
-        "数据中心"
+        "液冷散热"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：新能源车 — 锂电, 电池已启动",
+      "title": "产业链传导：半导体国产替代 — 封装, 芯片已启动",
       "type": "chain_propagation",
-      "theme": "新能源车",
+      "theme": "半导体国产替代",
       "next": [
-        "隔膜",
-        "电解液",
-        "铜箔"
+        "半导体设备",
+        "半导体材料",
+        "EDA"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 创新药, 医药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "CXO",
-        "CDMO",
-        "原料药"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "A股“大奇迹日” 暴涨原因找到了！半导体芯片股集体爆发",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "半导体市场规模预计暴增93%！SEMI三大关键预测(附股)",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨半导体设备&#x2B;存储芯片&#x2B;国产替代 这家公司H1净利预增逾2倍 已确定6款设备供货西部数据",
+      "title": "光模块一哥港股发行价出炉",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "历史性突破！全球同步研发创新药在中国首报首发",
+      "title": "20%涨停！北京传出重磅利好！算力租赁全线爆发",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨数据中心&#x2B;交换机&#x2B;智能穿戴 这家公司超节点产品Q3大规模交付 全年单品收入有望破百亿",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "新药首发破冰叠加关税扰动 创新药概念表现活跃 最新高增长潜力股名单揭晓",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "工信部锂电池及类似产品标准工作组：将召开10项固态锂电池行业标准讨论会",
+      "title": "英伟达披露Vera Rubin最新进展 芯片已交付OpenAI等企业",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "韩股反弹之路开启？连续第二日涨至熔断 “存储双雄”爆发",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "无人机袭击致俄3人死亡 俄打击乌港口目标",
+      "type": "news",
+      "theme": "低空经济",
+      "urgency": "medium"
+    },
+    {
+      "title": "腾讯华为纷纷入局！一图速览NPO近封装光学概念",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "美股盘前：三大股指期货齐涨 存储、光通信股盘前走高 美伊局势出现缓和信号",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "双政策催化叠加！固态电池赛道景气升温 20股今年业绩倍增可期(名单)",
       "type": "news",
       "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "腾讯云：将大规模部署国产化算力 布局NPO超级节点",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "国产算力闭环提速！AI芯片V型反转 融资客提前埋伏这7股(名单)",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "创业板指大涨逾7% 科创50指数飙升近11% 半导体板块爆发",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "SpaceX首份财报将至：紧盯星链业务与算力开支 千亿解禁能否平稳落地？",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "中信证券：AI下游、长鑫产业链、券商、医药生物主题热情有望升温",
-      "type": "news",
-      "theme": "创新药",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：8条相关新闻提及芯片, 半导体",
-        "示例：A股“大奇迹日” 暴涨原因找到了！半导体芯片股集体爆发"
-      ],
-      "level": "news"
-    },
     {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：7条相关新闻提及存储, 算力",
-        "示例：机构调研丨半导体设备&#x2B;存储芯片&#x2B;国产替代 这家公司H1净利预增逾2倍 已确定6款"
+        "新闻蓄势：7条相关新闻提及算力, 光模块, 数据中心",
+        "示例：光模块一哥港股发行价出炉"
       ],
       "level": "news"
     },
     {
-      "name": "新能源车",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 45,
-      "reasons": [
-        "新闻蓄势：3条相关新闻提及电池",
-        "示例：工信部锂电池及类似产品标准工作组：将召开10项固态锂电池行业标准讨论会"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "创新药",
+      "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及创新药, 医药",
-        "示例：历史性突破！全球同步研发创新药在中国首报首发"
+        "新闻蓄势：2条相关新闻提及封装, 芯片",
+        "示例：英伟达披露Vera Rubin最新进展 芯片已交付OpenAI等企业"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "芯片",
-          "source": "news"
-        },
-        {
-          "name": "半导体",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 8
-    },
-    {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "存储",
-          "source": "news"
-        },
-        {
-          "name": "AI芯片",
-          "source": "news"
-        },
-        {
           "name": "算力",
+          "source": "news"
+        },
+        {
+          "name": "光模块",
+          "source": "news"
+        },
+        {
+          "name": "数据中心",
+          "source": "news"
+        },
+        {
+          "name": "存储",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "光模块",
+          "name": "AI芯片",
           "market_cap_yi": 0
         },
         {
@@ -233,65 +152,36 @@
           "market_cap_yi": 0
         },
         {
-          "name": "数据中心",
+          "name": "液冷散热",
           "market_cap_yi": 0
         }
       ],
       "news_count": 7
     },
     {
-      "theme": "新能源车",
-      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "锂电",
+          "name": "封装",
           "source": "news"
         },
         {
-          "name": "电池",
+          "name": "芯片",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "隔膜",
+          "name": "半导体设备",
           "market_cap_yi": 0
         },
         {
-          "name": "电解液",
+          "name": "半导体材料",
           "market_cap_yi": 0
         },
         {
-          "name": "铜箔",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 3
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "创新药",
-          "source": "news"
-        },
-        {
-          "name": "医药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
+          "name": "EDA",
           "market_cap_yi": 0
         }
       ],
@@ -333,16 +223,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "氧化锆龙头宣布涨价",
-    "上海银行：高管将出手增持",
-    "飞天茅台半年两次提价",
-    "3567亿股票ETF逆市抄底创纪录 哪些力量在集中扫货？",
-    "NPO商业化落地提速！腾讯云预告四季度部署 机构看好五大投资方向",
-    "A股“大奇迹日” 暴涨原因找到了！半导体芯片股集体爆发",
-    "深化互联网协议第六版（IPv6）技术创新和融合应用实施方案发布",
-    "源杰科技：预计上半年净利润6亿-6.5亿 同比增长1197%-1305%",
-    "阳光电源：董事长曹仁贤提议回购5亿元-10亿元公司股份",
-    "半导体市场规模预计暴增93%！SEMI三大关键预测(附股)"
+    "光模块一哥港股发行价出炉",
+    "长鑫科技战配股数“腰斩”",
+    "源杰科技上半年净利预增超10倍",
+    "吴清：坚决维护资本市场平稳健康运行 持续提升外资参与资本市场的便利度",
+    "北京国管：坚定看好中国资本市场发展前景 已统筹自有资金累计投入近百亿布局股市",
+    "历史性调仓！AI硬科技接管公募核心仓位 消费股罕见缺席十大重仓",
+    "财政部：上半年证券交易印花税收入1549亿元 同比增长97.3%",
+    "国际油价持续走高 WTI原油期货涨幅扩大至5%",
+    "创业板指低开低走 AI硬件板块尾盘跳水 原因找到了！",
+    "商务部新闻发言人就欧委会对全球速卖通罚款答记者问"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -350,8 +240,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 4,
-    "chain_propagations": 4,
-    "news_catalysts": 21
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 12
   }
 }
