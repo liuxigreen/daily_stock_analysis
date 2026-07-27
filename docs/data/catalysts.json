@@ -1,23 +1,11 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-27",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：6条相关新闻提及算力, 存储；示例：氟化工逆势活跃！制冷剂&#x2B;算力需求驱动景气上行 7股业绩有望倍增(名单)",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及算力, 存储；示例：全线拉升！英伟达、OpenAI传出大动作！存储芯片、光通信集体走高",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及半导体；示例：销售高景气&#x2B;国产替代！半导体设备逆势走强 2026业绩高增股来了",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药；示例：第25届国际现代化中医药及健康产品会议将于8月13至15日在香港会展中心举行",
-      "type": "accumulation",
-      "theme": "创新药",
-      "urgency": "medium"
     },
     {
       "title": "产业链传导：AI算力 — 算力, 存储已启动",
@@ -31,85 +19,51 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 设备, 半导体已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：创新药 — 医药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "创新药",
-        "CXO",
-        "CDMO"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "销售高景气&#x2B;国产替代！半导体设备逆势走强 2026业绩高增股来了",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "氟化工逆势活跃！制冷剂&#x2B;算力需求驱动景气上行 7股业绩有望倍增(名单)",
+      "title": "全线拉升！英伟达、OpenAI传出大动作！存储芯片、光通信集体走高",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "东山精密、澜起科技、江波龙、佰维存储等 多家科技龙头公司加入“增持回购潮”",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "【风口研报】量价齐升&#x2B;存储巨头上市  先进封装产业有望迎多重催化共振",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "卡塔尔航空公司暂停飞往中东三地的航班",
-      "type": "news",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "第25届国际现代化中医药及健康产品会议将于8月13至15日在香港会展中心举行",
+      "title": "连续4天20%涨停！大牛股爆发！医药板块集体大涨",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "销售高景气+国产替代！半导体设备逆势走强 2026业绩高增股来了",
+      "title": "上市潮与量产提速共振 人形机器人表现活跃 机构紧盯多只概念股(名单)",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "VC飙涨！高盛再发唱多研报 看好锂电新增量",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "刚刚，全线拉升！英伟达、OpenAI，传出大动作！存储芯片、光通信集体走高",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "【风口研报】长鑫IPO刷新纪录＋海外设备交期翻倍  半导体设备景气度有望抬升",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "氟化工逆势活跃！制冷剂+算力需求驱动景气上行 7股业绩有望倍增(名单)",
+      "title": "订单暴增、“忙到冒烟”！储能赛道景气向好 多股业绩有望倍增",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "储能",
       "urgency": "medium"
     },
     {
-      "title": "【风口研报】量价齐升+存储巨头上市  先进封装产业有望迎多重催化共振",
+      "title": "告别算力内卷：AI基建狂潮下，铜、铝、稀土的下一站在哪？",
       "type": "news",
       "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "医药板块暴力反弹：两位“医药女神”左手减持 右手加仓",
-      "type": "news",
-      "theme": "创新药",
       "urgency": "medium"
     }
   ],
@@ -118,32 +72,10 @@
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 60,
+      "score": 45,
       "reasons": [
-        "新闻蓄势：6条相关新闻提及算力, 存储",
-        "示例：氟化工逆势活跃！制冷剂&#x2B;算力需求驱动景气上行 7股业绩有望倍增(名单)"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及半导体",
-        "示例：销售高景气&#x2B;国产替代！半导体设备逆势走强 2026业绩高增股来了"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "创新药",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及医药",
-        "示例：第25届国际现代化中医药及健康产品会议将于8月13至15日在香港会展中心举行"
+        "新闻蓄势：3条相关新闻提及算力, 存储",
+        "示例：全线拉升！英伟达、OpenAI传出大动作！存储芯片、光通信集体走高"
       ],
       "level": "news"
     }
@@ -176,61 +108,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 6
-    },
-    {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "设备",
-          "source": "news"
-        },
-        {
-          "name": "半导体",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "医药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "创新药",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
+      "news_count": 3
     }
   ],
   "forward_events": [
@@ -268,16 +146,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "东方甄选业绩大幅增长",
-    "江波龙、澜起科技领衔回购",
-    "欧盟再对谷歌罚款10亿美元",
-    "中方回应美对贸易伙伴征收新关税：反对单边关税措施",
-    "“两高”修改司法解释 加大力度惩治内幕交易、泄露内幕信息犯罪",
-    "两部门明确离岸信托个税事项：需按照规定申报缴纳个人所得税 适用20%税率",
-    "A股三大指数收跌 成交额超1.9万亿 地面兵装板块逆市走强",
-    "网传券商内部发文防范长鑫科技上市炒作 多家券商分支机构人士称未收到类似通知",
-    "央行将在7月29日至7月31日、8月3日开展隔夜逆回购操作",
-    "商务部：将14家欧盟实体列入出口管制管控名单"
+    "OpenAI失控AI内幕曝光",
+    "*ST元道拉响退市预警",
+    "希音过去三年营收增速放缓",
+    "美宣称拟对中国人工智能企业开展调查并实施制裁 商务部回应",
+    "长鑫科技上市首日十大看点！登顶A股市值榜首 单日成交额破千亿",
+    "7部门印发《疾病预防控制“十五五”规划》 提出重大传染病防控6项任务",
+    "外交部：中方的有关措施针对的是欧盟列单制裁中国企业的错误做法",
+    "从第19名跃升第4！合肥是长鑫上市最大赢家",
+    "美国发布“强迫劳动”301调查最终措施 对华加征12.5%的关税 商务部回应",
+    "被罚52亿 携程“跻身”前三"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -285,8 +163,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
-    "news_catalysts": 11
+    "accumulation_signals": 1,
+    "chain_propagations": 1,
+    "news_catalysts": 8
   }
 }
