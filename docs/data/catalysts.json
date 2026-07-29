@@ -1,100 +1,193 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-29",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及光芯片, 算力, 光模块；示例：光芯片概念股被扎堆调研超百次 震荡市下公募为何调研猛增？",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及机器人；示例：外交部回应美国实施先进机器人进口限制",
+      "type": "accumulation",
+      "theme": "人形机器人",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及液冷, 算力, 存储；示例：美股三大指数收盘涨跌不一 光通信、存储板块大跌 国际油价下跌",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 光芯片, 算力, 光模块, 存储已启动",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及芯片, 半导体；示例：近260亿元！中韩半导体ETF华泰柏瑞再现天量成交",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：人形机器人 — 机器人, 减速器已启动",
       "type": "chain_propagation",
-      "theme": "AI算力",
+      "theme": "人形机器人",
       "next": [
-        "AI芯片",
-        "数据中心",
-        "液冷散热"
+        "伺服电机",
+        "传感器",
+        "灵巧手"
       ],
       "urgency": "medium"
     },
     {
-      "title": "亚马逊入局卫星通信大战",
-      "type": "news",
-      "theme": "军工航天",
+      "title": "产业链传导：AI算力 — 液冷, 算力, 存储已启动",
+      "type": "chain_propagation",
+      "theme": "AI算力",
+      "next": [
+        "AI芯片",
+        "光模块",
+        "光芯片"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "比亚迪人形机器人8月郑州“上岗” 商业服务场景或率先落地",
+      "title": "产业链传导：半导体国产替代 — 芯片, 半导体已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "外交部回应美国实施先进机器人进口限制",
       "type": "news",
       "theme": "人形机器人",
       "urgency": "medium"
     },
     {
-      "title": "一文读懂：美股“芯片风暴”究竟是如何发生的？",
+      "title": "美股三大指数收盘涨跌不一 光通信、存储板块大跌 国际油价下跌",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "标准落地即行动！光伏行业价格合规指导活动在即 统一成本核算“红绿灯”亮起",
+      "type": "news",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "多位逆变器厂商人士回应美国市场禁令：对行业影响比较大",
+      "type": "news",
+      "theme": "储能",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨机器人概念&#x2B;热管理&#x2B;固态电池 这家公司正积极扩产 液冷方案已实现国内主流本体厂商全覆盖",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "近260亿元！中韩半导体ETF华泰柏瑞再现天量成交",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "光芯片概念股被扎堆调研超百次 震荡市下公募为何调研猛增？",
+      "title": "恒瑞医药：舒地胰岛素注射液获批上市",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "单日市值蒸发3358亿元！ “易中天”重挫，光模块是行情到头还是短期补跌？",
+      "title": "豪能股份：拟10亿元投资建设机器人关节减速器生产基地",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "人形机器人",
       "urgency": "medium"
     },
     {
-      "title": "期权智投播报 | 存储板块修复 闪迪盘前走强 期权交易热度抬升",
+      "title": "美股期指走势分化 芯片股继续下挫 道指期货涨近1% | 今夜看点",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "钠离子电池即将迈入大规模生产阶段 12只概念股预计净利润增速较高",
+      "title": "车企争相入局 人形机器人量产元年开启！机构紧盯多只概念股(名单)",
       "type": "news",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "告别算力内卷：AI基建狂潮下，铜、铝、稀土的下一站在哪？",
-      "type": "news",
-      "theme": "AI算力",
+      "theme": "人形机器人",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
     {
+      "name": "人形机器人",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 45,
+      "reasons": [
+        "新闻蓄势：3条相关新闻提及机器人",
+        "示例：外交部回应美国实施先进机器人进口限制"
+      ],
+      "level": "news"
+    },
+    {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 60,
+      "score": 45,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及光芯片, 算力, 光模块",
-        "示例：光芯片概念股被扎堆调研超百次 震荡市下公募为何调研猛增？"
+        "新闻蓄势：3条相关新闻提及液冷, 算力, 存储",
+        "示例：美股三大指数收盘涨跌不一 光通信、存储板块大跌 国际油价下跌"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及芯片, 半导体",
+        "示例：近260亿元！中韩半导体ETF华泰柏瑞再现天量成交"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
+      "theme": "人形机器人",
+      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
+      "started": [
+        {
+          "name": "机器人",
+          "source": "news"
+        },
+        {
+          "name": "减速器",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "伺服电机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "传感器",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "灵巧手",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 3
+    },
+    {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "光芯片",
+          "name": "液冷",
           "source": "news"
         },
         {
           "name": "算力",
-          "source": "news"
-        },
-        {
-          "name": "光模块",
           "source": "news"
         },
         {
@@ -108,15 +201,44 @@
           "market_cap_yi": 0
         },
         {
-          "name": "数据中心",
+          "name": "光模块",
           "market_cap_yi": 0
         },
         {
-          "name": "液冷散热",
+          "name": "光芯片",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 4
+      "news_count": 3
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "芯片",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
     }
   ],
   "forward_events": [
@@ -154,16 +276,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "亚马逊入局卫星通信大战",
-    "长鑫科技上市首日刷纪录",
-    "东方证券与上海证券重组草案出炉",
-    "商务部回应美针对产能问题发起301调查",
-    "财政部、税务总局：调整部分能源资源行业企业城镇土地使用税政策",
-    "怕散户爆仓 韩国考虑为“借钱炒股”封顶20%",
-    "我国启动人工智能大模型IPv6能力提升专项行动",
-    "机构调研丨传媒&#x2B;电商概念&#x2B;数字营销 这家公司深度合作抖音、小红书等平台 跨境客户正持续放量",
-    "商务部发布《关于所谓“产能过剩”问题的中方立场》",
-    "全球科技股巨震！“易中天”同日大跌 多只ETF异动 发生了什么？"
+    "中际旭创：有信心保持毛利率稳定",
+    "永辉超市称将“休养生息”",
+    "2000亿面板巨头实控人计划增持",
+    "外交部回应美国实施先进机器人进口限制",
+    "美股三大指数收盘涨跌不一 光通信、存储板块大跌 国际油价下跌",
+    "美联储决议今夜来袭！华尔街紧盯这四大看点",
+    "九部门印发《关于加强科技金融领域数据开发利用的通知》",
+    "但斌：大跌一定要敢买 刚把剩余的子弹打光",
+    "标准落地即行动！光伏行业价格合规指导活动在即 统一成本核算“红绿灯”亮起",
+    "资金避险&#x2B;板块多重利好！食品饮料密集涨停 2026业绩高增股来了"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -171,8 +293,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 1,
-    "chain_propagations": 1,
-    "news_catalysts": 8
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
+    "news_catalysts": 11
   }
 }
