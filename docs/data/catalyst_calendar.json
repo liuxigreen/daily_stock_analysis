@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31",
+  "last_updated": "2026-08-03",
   "upcoming": [
     {
       "date": "2026-09",
@@ -8,7 +8,7 @@
       "event": "100G EML Q3小批量供货",
       "importance": "high",
       "status": "pending",
-      "auto_status": "upcoming"
+      "auto_status": "due_soon"
     },
     {
       "date": "2026-H2",
