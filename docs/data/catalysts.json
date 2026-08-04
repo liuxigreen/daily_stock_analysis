@@ -1,48 +1,32 @@
 {
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及封装, 材料, 芯片；示例：300615“一字”涨停！先进封装重磅会议将举行 8只概念股业绩报喜",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 芯片；示例：芯片巨头预增最高超300%",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及机器人；示例：机构调研丨人形机器人&#x2B;工业互联 这家公司工业移动机器人行业第一 已为头部客户供货关节模组等",
-      "type": "accumulation",
-      "theme": "人形机器人",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及算力, 数据中心；示例：AI扩张遭遇电力瓶颈 英国拟提高数据中心接入门槛",
+      "title": "蓄势信号：新闻蓄势：9条相关新闻提及CPO, 存储, 算力；示例：存储龙头股价“腰斩”！",
       "type": "accumulation",
       "theme": "AI算力",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及储能, 虚拟电厂；示例：重磅规划落地！虚拟电厂加速迈向规模化商业化 多股业绩倍增可期(名单)",
+      "type": "accumulation",
+      "theme": "储能",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药；示例：医药龙头上调业绩指引",
+      "type": "accumulation",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 封装, 材料, 芯片已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "半导体设备",
-        "EDA",
-        "光刻胶"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：人形机器人 — 机器人已启动",
-      "type": "chain_propagation",
-      "theme": "人形机器人",
-      "next": [
-        "减速器",
-        "伺服电机",
-        "传感器"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 算力, 数据中心已启动",
+      "title": "产业链传导：AI算力 — CPO, 存储, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -53,63 +37,94 @@
       "urgency": "medium"
     },
     {
-      "title": "外国企业对特定二次圆柱形电池、电池组件及包含该组件的产品提起337调查申请",
-      "type": "news",
-      "theme": "新能源车",
+      "title": "产业链传导：半导体国产替代 — 半导体, 芯片已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨人形机器人&#x2B;工业互联 这家公司工业移动机器人行业第一 已为头部客户供货关节模组等部件",
-      "type": "news",
-      "theme": "人形机器人",
+      "title": "产业链传导：储能 — 储能, 虚拟电厂已启动",
+      "type": "chain_propagation",
+      "theme": "储能",
+      "next": [
+        "PCS逆变器"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "机器人利好密集催化！出货量未来或16倍增长",
-      "type": "news",
-      "theme": "人形机器人",
+      "title": "产业链传导：创新药 — 医药已启动",
+      "type": "chain_propagation",
+      "theme": "创新药",
+      "next": [
+        "创新药",
+        "CXO",
+        "CDMO"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "300615“一字”涨停！先进封装重磅会议将举行 8只概念股业绩报喜",
+      "title": "医药龙头上调业绩指引",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "芯片巨头预增最高超300%",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "中信证券新材料第三季度投资策略：调整后仍看好科技 缩圈到核心新材料标的",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "众擎机器人江苏创新中心与擎安机器人数采平台揭牌",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "美股盘前：三大股指期货齐涨 芯片股延续涨势 特斯拉回应剥离中国业务为不实消息",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "AI扩张遭遇电力瓶颈 英国拟提高数据中心接入门槛",
+      "title": "存储龙头股价“腰斩”！",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "中信证券：先进封装持续迭代升级 玻璃基板大有可为",
+      "title": "“降温”措施见效？韩国半导体杠杆ETF的交易量明显萎缩",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "告别算力内卷：AI基建狂潮下，铜、铝、稀土的下一站在哪？",
+      "title": "A股报复性大反攻！三大利好曝光 算力硬件方向爆发",
       "type": "news",
       "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "两大利好突袭！CPO涨停潮！又要站到“光”里？",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "存储突传大消息！韩股涨到熔断！摩根大通发出预警",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "三巨头蓄力AI存储新赛道：首套HBF标准规范发布 产业联盟初步成型",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "暴力反弹！CPO概念领涨 上月市值蒸发2.6万亿",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "重磅规划落地！虚拟电厂加速迈向规模化商业化 多股业绩倍增可期(名单)",
+      "type": "news",
+      "theme": "储能",
       "urgency": "medium"
     }
   ],
@@ -120,19 +135,8 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及封装, 材料, 芯片",
-        "示例：300615“一字”涨停！先进封装重磅会议将举行 8只概念股业绩报喜"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "人形机器人",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 45,
-      "reasons": [
-        "新闻蓄势：3条相关新闻提及机器人",
-        "示例：机构调研丨人形机器人&#x2B;工业互联 这家公司工业移动机器人行业第一 已为头部客户供货关节模组等"
+        "新闻蓄势：5条相关新闻提及半导体, 芯片",
+        "示例：芯片巨头预增最高超300%"
       ],
       "level": "news"
     },
@@ -140,83 +144,51 @@
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：9条相关新闻提及CPO, 存储, 算力",
+        "示例：存储龙头股价“腰斩”！"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "储能",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 45,
+      "reasons": [
+        "新闻蓄势：3条相关新闻提及储能, 虚拟电厂",
+        "示例：重磅规划落地！虚拟电厂加速迈向规模化商业化 多股业绩倍增可期(名单)"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "创新药",
+      "change_pct": 0,
+      "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及算力, 数据中心",
-        "示例：AI扩张遭遇电力瓶颈 英国拟提高数据中心接入门槛"
+        "新闻蓄势：2条相关新闻提及医药",
+        "示例：医药龙头上调业绩指引"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "封装",
-          "source": "news"
-        },
-        {
-          "name": "材料",
-          "source": "news"
-        },
-        {
-          "name": "芯片",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "半导体设备",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 4
-    },
-    {
-      "theme": "人形机器人",
-      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
-      "started": [
-        {
-          "name": "机器人",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "减速器",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "伺服电机",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "传感器",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 3
-    },
-    {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "算力",
+          "name": "CPO",
           "source": "news"
         },
         {
-          "name": "数据中心",
+          "name": "存储",
+          "source": "news"
+        },
+        {
+          "name": "算力",
           "source": "news"
         }
       ],
@@ -231,6 +203,81 @@
         },
         {
           "name": "光芯片",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 9
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 5
+    },
+    {
+      "theme": "储能",
+      "logic": "电力市场化改革 → 工商业储能经济性改善 → 装机爆发",
+      "started": [
+        {
+          "name": "储能",
+          "source": "news"
+        },
+        {
+          "name": "虚拟电厂",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "PCS逆变器",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 3
+    },
+    {
+      "theme": "创新药",
+      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "started": [
+        {
+          "name": "医药",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "创新药",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "CXO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "CDMO",
           "market_cap_yi": 0
         }
       ],
@@ -266,16 +313,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "热搜！小米多款手机涨价",
-    "欣天科技实控人拟变更！",
-    "华新建材公告重要收购！",
-    "李强签署国务院令 公布修订后的《集成电路布图设计保护条例》",
-    "两部门印发《新型电力系统建设“十五五”规划》",
-    "韩国总统办公室政策室长金容范因“仓促引入杠杆ETF”面临刑事指控",
-    "外国企业对特定二次圆柱形电池、电池组件及包含该组件的产品提起337调查申请",
-    "装机量料十年翻倍！一图梳理核电概念股",
-    "中微公司：预计上半年净利同比增长282%-311%",
-    "药明康德：上半年净利润111亿元 同比增长29%"
+    "医药龙头上调业绩指引",
+    "芯片巨头预增最高超300%",
+    "存储龙头股价“腰斩”！",
+    "《智能网联汽车自动驾驶系统安全要求》强制性国家标准正式发布",
+    "“降温”措施见效？韩国半导体杠杆ETF的交易量明显萎缩",
+    "A股报复性大反攻！三大利好曝光 算力硬件方向爆发",
+    "央行：8月5日将开展5000亿元买断式逆回购操作",
+    "AI应用拐点将至？Palantir业绩炸裂 盘后飙涨近15%",
+    "两大利好突袭！CPO涨停潮！又要站到“光”里？",
+    "存储突传大消息！韩股涨到熔断！摩根大通发出预警"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -283,8 +330,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
-    "news_catalysts": 10
+    "accumulation_signals": 4,
+    "chain_propagations": 4,
+    "news_catalysts": 20
   }
 }
