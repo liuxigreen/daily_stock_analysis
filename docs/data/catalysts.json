@@ -1,43 +1,37 @@
 {
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 芯片；示例：芯片巨头预增最高超300%",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及光模块, 存储, 算力；示例：科技股暴力反攻！存储芯片大消息 苹果压价失败！",
+      "type": "accumulation",
+      "theme": "AI算力",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及半导体, 设备；示例：商务部：对相关进口打印复印办公设备发起对外贸易国家安全立案调查",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：9条相关新闻提及CPO, 存储, 算力；示例：存储龙头股价“腰斩”！",
-      "type": "accumulation",
-      "theme": "AI算力",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及储能, 虚拟电厂；示例：重磅规划落地！虚拟电厂加速迈向规模化商业化 多股业绩倍增可期(名单)",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及储能；示例：机构：移动储能需求爆发，预计2026年出货量同比增长超80%",
       "type": "accumulation",
       "theme": "储能",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药；示例：医药龙头上调业绩指引",
-      "type": "accumulation",
-      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — CPO, 存储, 算力已启动",
+      "title": "产业链传导：AI算力 — 光模块, 存储, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
-        "光模块",
-        "光芯片"
+        "光芯片",
+        "数据中心"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 半导体, 芯片已启动",
+      "title": "产业链传导：半导体国产替代 — 半导体, 设备已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
@@ -48,106 +42,96 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：储能 — 储能, 虚拟电厂已启动",
+      "title": "产业链传导：储能 — 储能已启动",
       "type": "chain_propagation",
       "theme": "储能",
       "next": [
-        "PCS逆变器"
+        "PCS逆变器",
+        "虚拟电厂"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 医药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "创新药",
-        "CXO",
-        "CDMO"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "医药龙头上调业绩指引",
+      "title": "Meta盯上卫星通信！",
       "type": "news",
-      "theme": "创新药",
+      "theme": "军工航天",
       "urgency": "medium"
     },
     {
-      "title": "芯片巨头预增最高超300%",
+      "title": "美国将禁止出口钨废料和电池碎片！一文读懂：影响几何？",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "商务部：加强无人机相关两用物项对美国出口管制",
+      "type": "news",
+      "theme": "低空经济",
+      "urgency": "medium"
+    },
+    {
+      "title": "科技股暴力反攻！存储芯片大消息 苹果压价失败！",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "涨停潮！存储芯片引爆盘面！全球AI算力部署提速",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "A股“易中天”集体回应“美国光模块禁令”",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "商务部：对相关进口打印复印办公设备发起对外贸易国家安全立案调查",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "存储龙头股价“腰斩”！",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "“降温”措施见效？韩国半导体杠杆ETF的交易量明显萎缩",
+      "title": "沪指涨1.47% 科创50指数大涨4.78% 半导体板块爆发",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "A股报复性大反攻！三大利好曝光 算力硬件方向爆发",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "两大利好突袭！CPO涨停潮！又要站到“光”里？",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "存储突传大消息！韩股涨到熔断！摩根大通发出预警",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "三巨头蓄力AI存储新赛道：首套HBF标准规范发布 产业联盟初步成型",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "暴力反弹！CPO概念领涨 上月市值蒸发2.6万亿",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "重磅规划落地！虚拟电厂加速迈向规模化商业化 多股业绩倍增可期(名单)",
+      "title": "机构：移动储能需求爆发，预计2026年出货量同比增长超80%",
       "type": "news",
       "theme": "储能",
+      "urgency": "medium"
+    },
+    {
+      "title": "欧版“标普500”也创新高：半导体板块霸榜 能源股战争获益",
+      "type": "news",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：5条相关新闻提及半导体, 芯片",
-        "示例：芯片巨头预增最高超300%"
-      ],
-      "level": "news"
-    },
     {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：9条相关新闻提及CPO, 存储, 算力",
-        "示例：存储龙头股价“腰斩”！"
+        "新闻蓄势：5条相关新闻提及光模块, 存储, 算力",
+        "示例：科技股暴力反攻！存储芯片大消息 苹果压价失败！"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 45,
+      "reasons": [
+        "新闻蓄势：3条相关新闻提及半导体, 设备",
+        "示例：商务部：对相关进口打印复印办公设备发起对外贸易国家安全立案调查"
       ],
       "level": "news"
     },
@@ -155,21 +139,10 @@
       "name": "储能",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 45,
-      "reasons": [
-        "新闻蓄势：3条相关新闻提及储能, 虚拟电厂",
-        "示例：重磅规划落地！虚拟电厂加速迈向规模化商业化 多股业绩倍增可期(名单)"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "创新药",
-      "change_pct": 0,
-      "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及医药",
-        "示例：医药龙头上调业绩指引"
+        "新闻蓄势：2条相关新闻提及储能",
+        "示例：机构：移动储能需求爆发，预计2026年出货量同比增长超80%"
       ],
       "level": "news"
     }
@@ -180,7 +153,7 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "CPO",
+          "name": "光模块",
           "source": "news"
         },
         {
@@ -198,15 +171,15 @@
           "market_cap_yi": 0
         },
         {
-          "name": "光模块",
+          "name": "光芯片",
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
+          "name": "数据中心",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 9
+      "news_count": 5
     },
     {
       "theme": "半导体国产替代",
@@ -217,7 +190,7 @@
           "source": "news"
         },
         {
-          "name": "芯片",
+          "name": "设备",
           "source": "news"
         }
       ],
@@ -235,7 +208,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 5
+      "news_count": 3
     },
     {
       "theme": "储能",
@@ -244,40 +217,15 @@
         {
           "name": "储能",
           "source": "news"
-        },
-        {
-          "name": "虚拟电厂",
-          "source": "news"
         }
       ],
       "next_opportunities": [
         {
           "name": "PCS逆变器",
           "market_cap_yi": 0
-        }
-      ],
-      "news_count": 3
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "医药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "创新药",
-          "market_cap_yi": 0
         },
         {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
+          "name": "虚拟电厂",
           "market_cap_yi": 0
         }
       ],
@@ -313,16 +261,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "医药龙头上调业绩指引",
-    "芯片巨头预增最高超300%",
-    "存储龙头股价“腰斩”！",
-    "《智能网联汽车自动驾驶系统安全要求》强制性国家标准正式发布",
-    "“降温”措施见效？韩国半导体杠杆ETF的交易量明显萎缩",
-    "A股报复性大反攻！三大利好曝光 算力硬件方向爆发",
-    "央行：8月5日将开展5000亿元买断式逆回购操作",
-    "AI应用拐点将至？Palantir业绩炸裂 盘后飙涨近15%",
-    "两大利好突袭！CPO涨停潮！又要站到“光”里？",
-    "存储突传大消息！韩股涨到熔断！摩根大通发出预警"
+    "AI短剧市场有多火？",
+    "诺和诺德Q2利润超预期",
+    "Meta盯上卫星通信！",
+    "商务部新闻发言人就对美国系列涉华消极措施实施反制答记者问",
+    "美国将禁止出口钨废料和电池碎片！一文读懂：影响几何？",
+    "商务部：加强无人机相关两用物项对美国出口管制",
+    "局势突变！美伊协议曝光：很快重新开放！特朗普发出威胁 美军表态",
+    "科技股暴力反攻！存储芯片大消息 苹果压价失败！",
+    "段永平减持泡泡玛特 持股比例降至5.55%",
+    "涨停潮！存储芯片引爆盘面！全球AI算力部署提速"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -330,8 +278,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 4,
-    "chain_propagations": 4,
-    "news_catalysts": 20
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
+    "news_catalysts": 13
   }
 }
