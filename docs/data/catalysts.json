@@ -1,26 +1,20 @@
 {
-  "date": "2026-08-05",
+  "date": "2026-08-06",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及光模块, 存储, 算力；示例：科技股暴力反攻！存储芯片大消息 苹果压价失败！",
-      "type": "accumulation",
-      "theme": "AI算力",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及半导体, 设备；示例：商务部：对相关进口打印复印办公设备发起对外贸易国家安全立案调查",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及半导体, 材料, 芯片；示例：Anthropic确认组建芯片团队",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及储能；示例：机构：移动储能需求爆发，预计2026年出货量同比增长超80%",
+      "title": "蓄势信号：新闻蓄势：6条相关新闻提及算力, 存储, 光模块；示例：英伟达急寻中国AI基站供应商 明后年启动端侧算力组网",
       "type": "accumulation",
-      "theme": "储能",
-      "urgency": "medium"
+      "theme": "AI算力",
+      "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 光模块, 存储, 算力已启动",
+      "title": "产业链传导：AI算力 — 算力, 存储, 光模块已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -31,7 +25,7 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 半导体, 设备已启动",
+      "title": "产业链传导：半导体国产替代 — 半导体, 材料, 芯片已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
@@ -42,67 +36,51 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：储能 — 储能已启动",
-      "type": "chain_propagation",
-      "theme": "储能",
-      "next": [
-        "PCS逆变器",
-        "虚拟电厂"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "Meta盯上卫星通信！",
-      "type": "news",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "美国将禁止出口钨废料和电池碎片！一文读懂：影响几何？",
-      "type": "news",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "商务部：加强无人机相关两用物项对美国出口管制",
-      "type": "news",
-      "theme": "低空经济",
-      "urgency": "medium"
-    },
-    {
-      "title": "科技股暴力反攻！存储芯片大消息 苹果压价失败！",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "涨停潮！存储芯片引爆盘面！全球AI算力部署提速",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "A股“易中天”集体回应“美国光模块禁令”",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "商务部：对相关进口打印复印办公设备发起对外贸易国家安全立案调查",
+      "title": "Anthropic确认组建芯片团队",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "沪指涨1.47% 科创50指数大涨4.78% 半导体板块爆发",
+      "title": "国瓷材料披露2026年半年报",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "机构：移动储能需求爆发，预计2026年出货量同比增长超80%",
+      "title": "英伟达急寻中国AI基站供应商 明后年启动端侧算力组网",
       "type": "news",
-      "theme": "储能",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨端侧AI&#x2B;芯片设计&#x2B;扭亏 这家公司5G eMBB芯片出货大增 机器人领域芯片定制需求显著增多",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "美股存储板块盘前集体走低 闪迪、西部数据重挫",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "闪迪、西部数据盘后直线跳水！存储芯片巨头业绩利空来袭",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "全球五大存储巨头股价全“崩”！市场分歧集中释放 宁德时代一度暴跌5%",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "【风口研报】“禁令”传闻落地难度大＋景气持续    短期扰动或不改光模块赛道核心价值",
+      "type": "news",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
@@ -110,39 +88,34 @@
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
+    },
+    {
+      "title": "卫星组网提速+星链业绩爆发 卫星互联网表现活跃 融资客提前埋伏多股(名单)",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
     }
   ],
   "accumulation_signals": [
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：4条相关新闻提及半导体, 材料, 芯片",
+        "示例：Anthropic确认组建芯片团队"
+      ],
+      "level": "news"
+    },
     {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：5条相关新闻提及光模块, 存储, 算力",
-        "示例：科技股暴力反攻！存储芯片大消息 苹果压价失败！"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 45,
-      "reasons": [
-        "新闻蓄势：3条相关新闻提及半导体, 设备",
-        "示例：商务部：对相关进口打印复印办公设备发起对外贸易国家安全立案调查"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "储能",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及储能",
-        "示例：机构：移动储能需求爆发，预计2026年出货量同比增长超80%"
+        "新闻蓄势：6条相关新闻提及算力, 存储, 光模块",
+        "示例：英伟达急寻中国AI基站供应商 明后年启动端侧算力组网"
       ],
       "level": "news"
     }
@@ -153,7 +126,7 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "光模块",
+          "name": "算力",
           "source": "news"
         },
         {
@@ -161,7 +134,7 @@
           "source": "news"
         },
         {
-          "name": "算力",
+          "name": "光模块",
           "source": "news"
         }
       ],
@@ -179,7 +152,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 5
+      "news_count": 6
     },
     {
       "theme": "半导体国产替代",
@@ -190,7 +163,11 @@
           "source": "news"
         },
         {
-          "name": "设备",
+          "name": "材料",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
           "source": "news"
         }
       ],
@@ -208,28 +185,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 3
-    },
-    {
-      "theme": "储能",
-      "logic": "电力市场化改革 → 工商业储能经济性改善 → 装机爆发",
-      "started": [
-        {
-          "name": "储能",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "PCS逆变器",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "虚拟电厂",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
+      "news_count": 4
     }
   ],
   "forward_events": [
@@ -261,16 +217,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "AI短剧市场有多火？",
-    "诺和诺德Q2利润超预期",
-    "Meta盯上卫星通信！",
-    "商务部新闻发言人就对美国系列涉华消极措施实施反制答记者问",
-    "美国将禁止出口钨废料和电池碎片！一文读懂：影响几何？",
-    "商务部：加强无人机相关两用物项对美国出口管制",
-    "局势突变！美伊协议曝光：很快重新开放！特朗普发出威胁 美军表态",
-    "科技股暴力反攻！存储芯片大消息 苹果压价失败！",
-    "段永平减持泡泡玛特 持股比例降至5.55%",
-    "涨停潮！存储芯片引爆盘面！全球AI算力部署提速"
+    "“抗生素牛蛙”后续",
+    "Anthropic确认组建芯片团队",
+    "国瓷材料披露2026年半年报",
+    "网信办对派拓公司在华销售产品启动网络安全审查",
+    "DeepSeek宣布将大幅上调API服务定价",
+    "私募仓位创四年新高！七成机构满仓运作、百亿私募带头加仓 调仓方向曝光",
+    "高盛、摩根大通大幅增持中际旭创H股 多头持仓比例分别升至12.19%和13.72%",
+    "10连板爱丽家居：如股票价格进一步异常上涨 公司可能再次申请停牌核查",
+    "刚果（金）禁止铜精矿、钴精矿的出口",
+    "英伟达急寻中国AI基站供应商 明后年启动端侧算力组网"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -278,8 +234,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
-    "news_catalysts": 13
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 12
   }
 }
