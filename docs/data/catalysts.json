@@ -1,20 +1,32 @@
 {
-  "date": "2026-08-06",
+  "date": "2026-08-07",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及半导体, 材料, 芯片；示例：Anthropic确认组建芯片团队",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：6条相关新闻提及算力, 存储, 光模块；示例：英伟达急寻中国AI基站供应商 明后年启动端侧算力组网",
+      "title": "蓄势信号：新闻蓄势：8条相关新闻提及光模块, 算力, 存储；示例：葛卫东加仓存储龙头兆易创新",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 存储, 光模块已启动",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药, 创新药；示例：A股三大指数涨幅均超过1% 稀土与创新药板块大涨",
+      "type": "accumulation",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及硅料, 光伏；示例：八家硅料企业发布倡议 知情人士称或配套惩罚措施",
+      "type": "accumulation",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及半导体, 芯片；示例：SpaceX、特斯拉拟建地表最大芯片厂",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：AI算力 — 光模块, 算力, 存储已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -25,7 +37,29 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 半导体, 材料, 芯片已启动",
+      "title": "产业链传导：创新药 — 医药, 创新药已启动",
+      "type": "chain_propagation",
+      "theme": "创新药",
+      "next": [
+        "CXO",
+        "CDMO",
+        "原料药"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：光伏风电 — 硅料, 光伏已启动",
+      "type": "chain_propagation",
+      "theme": "光伏风电",
+      "next": [
+        "电池片",
+        "组件",
+        "逆变器"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 半导体, 芯片已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
@@ -36,86 +70,108 @@
       "urgency": "medium"
     },
     {
-      "title": "Anthropic确认组建芯片团队",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "国瓷材料披露2026年半年报",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "英伟达急寻中国AI基站供应商 明后年启动端侧算力组网",
+      "title": "葛卫东加仓存储龙头兆易创新",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨端侧AI&#x2B;芯片设计&#x2B;扭亏 这家公司5G eMBB芯片出货大增 机器人领域芯片定制需求显著增多",
+      "title": "A股三大指数涨幅均超过1% 稀土与创新药板块大涨",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "美股存储板块盘前集体走低 闪迪、西部数据重挫",
+      "title": "美股光模块黑马计划大幅扩产 全力押注800G、1.6Tb产品",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "闪迪、西部数据盘后直线跳水！存储芯片巨头业绩利空来袭",
+      "title": "SK海力士：将在韩国投资384亿美元建设晶圆厂 以应对AI时代持续增长的存储芯片需求",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "全球五大存储巨头股价全“崩”！市场分歧集中释放 宁德时代一度暴跌5%",
+      "title": "八家硅料企业发布倡议 知情人士称或配套惩罚措施",
+      "type": "news",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "光伏硅料八巨头签署倡议：不得低于成本价销售",
+      "type": "news",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨PCB&#x2B;EDA概念&#x2B;机器人 这家公司部分工序产能满产、订单积压 光模块PCBA业务已进入量产阶段",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "【风口研报】“禁令”传闻落地难度大＋景气持续    短期扰动或不改光模块赛道核心价值",
+      "title": "8月7日涨停复盘：74只股涨停 百花医药4连板",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "这国宣布：禁止铜精矿出口！“算力金属”影响多大？",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "欧版“标普500”也创新高：半导体板块霸榜 能源股战争获益",
+      "title": "“存储三巨头”2027产能已售罄？消息人士：一些AI公司已在“跪求芯片”",
       "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "卫星组网提速+星链业绩爆发 卫星互联网表现活跃 融资客提前埋伏多股(名单)",
-      "type": "news",
-      "theme": "军工航天",
+      "theme": "AI算力",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：4条相关新闻提及半导体, 材料, 芯片",
-        "示例：Anthropic确认组建芯片团队"
-      ],
-      "level": "news"
-    },
     {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：6条相关新闻提及算力, 存储, 光模块",
-        "示例：英伟达急寻中国AI基站供应商 明后年启动端侧算力组网"
+        "新闻蓄势：8条相关新闻提及光模块, 算力, 存储",
+        "示例：葛卫东加仓存储龙头兆易创新"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "创新药",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及医药, 创新药",
+        "示例：A股三大指数涨幅均超过1% 稀土与创新药板块大涨"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "光伏风电",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及硅料, 光伏",
+        "示例：八家硅料企业发布倡议 知情人士称或配套惩罚措施"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及半导体, 芯片",
+        "示例：SpaceX、特斯拉拟建地表最大芯片厂"
       ],
       "level": "news"
     }
@@ -126,15 +182,15 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
+          "name": "光模块",
+          "source": "news"
+        },
+        {
           "name": "算力",
           "source": "news"
         },
         {
           "name": "存储",
-          "source": "news"
-        },
-        {
-          "name": "光模块",
           "source": "news"
         }
       ],
@@ -152,7 +208,65 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 6
+      "news_count": 8
+    },
+    {
+      "theme": "创新药",
+      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "started": [
+        {
+          "name": "医药",
+          "source": "news"
+        },
+        {
+          "name": "创新药",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "CXO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "CDMO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "原料药",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
+    },
+    {
+      "theme": "光伏风电",
+      "logic": "产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
+      "started": [
+        {
+          "name": "硅料",
+          "source": "news"
+        },
+        {
+          "name": "光伏",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "电池片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "组件",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "逆变器",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
     },
     {
       "theme": "半导体国产替代",
@@ -160,10 +274,6 @@
       "started": [
         {
           "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "材料",
           "source": "news"
         },
         {
@@ -185,7 +295,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 4
+      "news_count": 2
     }
   ],
   "forward_events": [
@@ -217,16 +327,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "“抗生素牛蛙”后续",
-    "Anthropic确认组建芯片团队",
-    "国瓷材料披露2026年半年报",
-    "网信办对派拓公司在华销售产品启动网络安全审查",
-    "DeepSeek宣布将大幅上调API服务定价",
-    "私募仓位创四年新高！七成机构满仓运作、百亿私募带头加仓 调仓方向曝光",
-    "高盛、摩根大通大幅增持中际旭创H股 多头持仓比例分别升至12.19%和13.72%",
-    "10连板爱丽家居：如股票价格进一步异常上涨 公司可能再次申请停牌核查",
-    "刚果（金）禁止铜精矿、钴精矿的出口",
-    "英伟达急寻中国AI基站供应商 明后年启动端侧算力组网"
+    "多地上调！第八代五粮液涨价",
+    "葛卫东加仓存储龙头兆易创新",
+    "智能手机告别“高配低价”",
+    "A股三大指数涨幅均超过1% 稀土与创新药板块大涨",
+    "美股光模块黑马计划大幅扩产 全力押注800G、1.6Tb产品",
+    "SK海力士：将在韩国投资384亿美元建设晶圆厂 以应对AI时代持续增长的存储芯片需求",
+    "中国央行连续第21个月增持黄金",
+    "盘中振幅高达10% 中际旭创为何大幅跳水？",
+    "高盛“唱多”&#x2B;Rubin规模出货 PCB概念掀涨停潮！多只中报预增股获资金青睐(名单)",
+    "六大龙头释放利好！昔日“黄金赛道”集体飙涨！重估来了？"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -234,8 +344,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 2,
-    "chain_propagations": 2,
-    "news_catalysts": 12
+    "accumulation_signals": 4,
+    "chain_propagations": 4,
+    "news_catalysts": 14
   }
 }
