@@ -1,38 +1,43 @@
 {
-  "date": "2026-08-07",
+  "date": "2026-08-10",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：8条相关新闻提及光模块, 算力, 存储；示例：葛卫东加仓存储龙头兆易创新",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及芯片, 半导体；示例：韩国将设立一项价值5万亿韩元新基金 重点投资于前景广阔的半导体材料、零部件和设备领域",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：6条相关新闻提及数据中心, 存储, 算力；示例：阿里云计划将全球数据中心产能提升两倍以上",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药, 创新药；示例：A股三大指数涨幅均超过1% 稀土与创新药板块大涨",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药, 创新药；示例：秒板、超70万手封单！创新药强势霸屏 三重利好持续发酵",
       "type": "accumulation",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及硅料, 光伏；示例：八家硅料企业发布倡议 知情人士称或配套惩罚措施",
-      "type": "accumulation",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及半导体, 芯片；示例：SpaceX、特斯拉拟建地表最大芯片厂",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 光模块, 算力, 存储已启动",
+      "title": "产业链传导：AI算力 — 数据中心, 存储, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
-        "光芯片",
-        "数据中心"
+        "光模块",
+        "光芯片"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 材料, 设备, 芯片, 半导体已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
       ],
       "urgency": "medium"
     },
@@ -48,97 +53,86 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：光伏风电 — 硅料, 光伏已启动",
-      "type": "chain_propagation",
-      "theme": "光伏风电",
-      "next": [
-        "电池片",
-        "组件",
-        "逆变器"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：半导体国产替代 — 半导体, 芯片已启动",
-      "type": "chain_propagation",
+      "title": "韩国将设立一项价值5万亿韩元新基金 重点投资于前景广阔的半导体材料、零部件和设备领域",
+      "type": "news",
       "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
       "urgency": "medium"
     },
     {
-      "title": "葛卫东加仓存储龙头兆易创新",
+      "title": "阿里云计划将全球数据中心产能提升两倍以上",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "A股三大指数涨幅均超过1% 稀土与创新药板块大涨",
+      "title": "秒板、超70万手封单！创新药强势霸屏 三重利好持续发酵",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "美股光模块黑马计划大幅扩产 全力押注800G、1.6Tb产品",
+      "title": "机构调研丨算力租赁&#x2B;AI应用&#x2B;跨境贸易 这家公司迎客户加价扩量 在手算力长期框架订单约151亿元",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "SK海力士：将在韩国投资384亿美元建设晶圆厂 以应对AI时代持续增长的存储芯片需求",
+      "title": "猛买半导体芯片 全球最大资管公司二季度持仓曝光",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "八家硅料企业发布倡议 知情人士称或配套惩罚措施",
-      "type": "news",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "光伏硅料八巨头签署倡议：不得低于成本价销售",
-      "type": "news",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨PCB&#x2B;EDA概念&#x2B;机器人 这家公司部分工序产能满产、订单积压 光模块PCBA业务已进入量产阶段",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "8月7日涨停复盘：74只股涨停 百花医药4连板",
+      "title": "医药、农业、有色、消费集体爆发 科技股盘中大跌！今天A股发生了什么？",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "这国宣布：禁止铜精矿出口！“算力金属”影响多大？",
+      "title": "苹果被曝正测试长鑫存储芯片 用于在中国市场销售的设备",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "“存储三巨头”2027产能已售罄？消息人士：一些AI公司已在“跪求芯片”",
+      "title": "芯片股“霸屏”！一图速览贝莱德2026Q2持仓动向",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "宇树科技正式申购 人形机器人赛道迎来定价拐点",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "索尼与台积电拟合资建厂 1万亿日元布局下一代图像传感器芯片",
+      "type": "news",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：4条相关新闻提及芯片, 半导体",
+        "示例：韩国将设立一项价值5万亿韩元新基金 重点投资于前景广阔的半导体材料、零部件和设备领域"
+      ],
+      "level": "news"
+    },
     {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：8条相关新闻提及光模块, 算力, 存储",
-        "示例：葛卫东加仓存储龙头兆易创新"
+        "新闻蓄势：6条相关新闻提及数据中心, 存储, 算力",
+        "示例：阿里云计划将全球数据中心产能提升两倍以上"
       ],
       "level": "news"
     },
@@ -149,29 +143,7 @@
       "score": 30,
       "reasons": [
         "新闻蓄势：2条相关新闻提及医药, 创新药",
-        "示例：A股三大指数涨幅均超过1% 稀土与创新药板块大涨"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "光伏风电",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及硅料, 光伏",
-        "示例：八家硅料企业发布倡议 知情人士称或配套惩罚措施"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及半导体, 芯片",
-        "示例：SpaceX、特斯拉拟建地表最大芯片厂"
+        "示例：秒板、超70万手封单！创新药强势霸屏 三重利好持续发酵"
       ],
       "level": "news"
     }
@@ -182,15 +154,15 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "光模块",
-          "source": "news"
-        },
-        {
-          "name": "算力",
+          "name": "数据中心",
           "source": "news"
         },
         {
           "name": "存储",
+          "source": "news"
+        },
+        {
+          "name": "算力",
           "source": "news"
         }
       ],
@@ -200,15 +172,52 @@
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
+          "name": "光模块",
           "market_cap_yi": 0
         },
         {
-          "name": "数据中心",
+          "name": "光芯片",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 8
+      "news_count": 6
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "材料",
+          "source": "news"
+        },
+        {
+          "name": "设备",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 4
     },
     {
       "theme": "创新药",
@@ -234,64 +243,6 @@
         },
         {
           "name": "原料药",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
-      "theme": "光伏风电",
-      "logic": "产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
-      "started": [
-        {
-          "name": "硅料",
-          "source": "news"
-        },
-        {
-          "name": "光伏",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "电池片",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "组件",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "逆变器",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "芯片",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
           "market_cap_yi": 0
         }
       ],
@@ -327,16 +278,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "多地上调！第八代五粮液涨价",
-    "葛卫东加仓存储龙头兆易创新",
-    "智能手机告别“高配低价”",
-    "A股三大指数涨幅均超过1% 稀土与创新药板块大涨",
-    "美股光模块黑马计划大幅扩产 全力押注800G、1.6Tb产品",
-    "SK海力士：将在韩国投资384亿美元建设晶圆厂 以应对AI时代持续增长的存储芯片需求",
-    "中国央行连续第21个月增持黄金",
-    "盘中振幅高达10% 中际旭创为何大幅跳水？",
-    "高盛“唱多”&#x2B;Rubin规模出货 PCB概念掀涨停潮！多只中报预增股获资金青睐(名单)",
-    "六大龙头释放利好！昔日“黄金赛道”集体飙涨！重估来了？"
+    "欧菲光回应举报：已报案追责",
+    "摩尔线程上半年营收增长147%",
+    "频准激光中签率出炉",
+    "A股三大指数涨跌不一 沪指五连阳 超4000只股上涨",
+    "《煤炭工业发展“十五五”规划》印发：到2030年全国大型现代化煤矿产能比重提升至87%",
+    "高盛研判中国AI股：近期回调已释放核心风险 建议多元布局四大主线",
+    "韩国资金抢筹中际旭创！H股上市7天净买4339万美元",
+    "韩国将设立一项价值5万亿韩元新基金 重点投资于前景广阔的半导体材料、零部件和设备领域",
+    "阿里云计划将全球数据中心产能提升两倍以上",
+    "秒板、超70万手封单！创新药强势霸屏 三重利好持续发酵"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -344,8 +295,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 4,
-    "chain_propagations": 4,
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
     "news_catalysts": 14
   }
 }
