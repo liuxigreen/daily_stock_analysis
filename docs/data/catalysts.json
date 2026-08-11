@@ -1,26 +1,32 @@
 {
-  "date": "2026-08-10",
+  "date": "2026-08-11",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及芯片, 半导体；示例：韩国将设立一项价值5万亿韩元新基金 重点投资于前景广阔的半导体材料、零部件和设备领域",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及医药, 减肥药；示例：5连板！百花医药紧急提示",
       "type": "accumulation",
-      "theme": "半导体国产替代",
+      "theme": "创新药",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：6条相关新闻提及数据中心, 存储, 算力；示例：阿里云计划将全球数据中心产能提升两倍以上",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及机器人；示例：机构调研丨人形机器人&#x2B;工业互联 这家公司海外业务有望明年上量 正与头部客户探索智能关节解决",
+      "type": "accumulation",
+      "theme": "人形机器人",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：6条相关新闻提及算力, 存储；示例：黄仁勋深度解读5000亿美元融资计划：AI算力是“投资级资产”",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药, 创新药；示例：秒板、超70万手封单！创新药强势霸屏 三重利好持续发酵",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及半导体, 芯片；示例：非科技板块的春天？医药板块调研热度超越半导体",
       "type": "accumulation",
-      "theme": "创新药",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 数据中心, 存储, 算力已启动",
+      "title": "产业链传导：AI算力 — 算力, 存储已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -31,7 +37,29 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 材料, 设备, 芯片, 半导体已启动",
+      "title": "产业链传导：创新药 — 医药, 减肥药已启动",
+      "type": "chain_propagation",
+      "theme": "创新药",
+      "next": [
+        "创新药",
+        "CXO",
+        "CDMO"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：人形机器人 — 机器人已启动",
+      "type": "chain_propagation",
+      "theme": "人形机器人",
+      "next": [
+        "减速器",
+        "伺服电机",
+        "传感器"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 半导体, 芯片已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
@@ -42,72 +70,61 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 医药, 创新药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "CXO",
-        "CDMO",
-        "原料药"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "韩国将设立一项价值5万亿韩元新基金 重点投资于前景广阔的半导体材料、零部件和设备领域",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "阿里云计划将全球数据中心产能提升两倍以上",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "秒板、超70万手封单！创新药强势霸屏 三重利好持续发酵",
+      "title": "5连板！百花医药紧急提示",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨算力租赁&#x2B;AI应用&#x2B;跨境贸易 这家公司迎客户加价扩量 在手算力长期框架订单约151亿元",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "猛买半导体芯片 全球最大资管公司二季度持仓曝光",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "医药、农业、有色、消费集体爆发 科技股盘中大跌！今天A股发生了什么？",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "苹果被曝正测试长鑫存储芯片 用于在中国市场销售的设备",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "芯片股“霸屏”！一图速览贝莱德2026Q2持仓动向",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "宇树科技正式申购 人形机器人赛道迎来定价拐点",
+      "title": "机构调研丨人形机器人&#x2B;工业互联 这家公司海外业务有望明年上量 正与头部客户探索智能关节解决方案",
       "type": "news",
       "theme": "人形机器人",
       "urgency": "medium"
     },
     {
-      "title": "索尼与台积电拟合资建厂 1万亿日元布局下一代图像传感器芯片",
+      "title": "黄仁勋深度解读5000亿美元融资计划：AI算力是“投资级资产”",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄力下一代DRAM 存储龙头拟提升EUV光刻性能 相移掩模版成关键",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "午后20%涨停！超9亿抢筹！重大利好引爆机器人赛道",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "利好突袭！刚刚直线涨停！算力概念集体异动",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "中国减肥药出海！高盛看多全球市场",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "政策&#x2B;产业链景气传导！医药商业多股涨停 这些股2026预计高增长",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "【风口研报】中国厂商横扫全球97%份额! 宇树科技开启申购  人形机器人板块有望迎多重催化",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "非科技板块的春天？医药板块调研热度超越半导体",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
@@ -115,13 +132,24 @@
   ],
   "accumulation_signals": [
     {
-      "name": "半导体国产替代",
+      "name": "创新药",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及芯片, 半导体",
-        "示例：韩国将设立一项价值5万亿韩元新基金 重点投资于前景广阔的半导体材料、零部件和设备领域"
+        "新闻蓄势：5条相关新闻提及医药, 减肥药",
+        "示例：5连板！百花医药紧急提示"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "人形机器人",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：4条相关新闻提及机器人",
+        "示例：机构调研丨人形机器人&#x2B;工业互联 这家公司海外业务有望明年上量 正与头部客户探索智能关节解决"
       ],
       "level": "news"
     },
@@ -131,19 +159,19 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：6条相关新闻提及数据中心, 存储, 算力",
-        "示例：阿里云计划将全球数据中心产能提升两倍以上"
+        "新闻蓄势：6条相关新闻提及算力, 存储",
+        "示例：黄仁勋深度解读5000亿美元融资计划：AI算力是“投资级资产”"
       ],
       "level": "news"
     },
     {
-      "name": "创新药",
+      "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及医药, 创新药",
-        "示例：秒板、超70万手封单！创新药强势霸屏 三重利好持续发酵"
+        "新闻蓄势：2条相关新闻提及半导体, 芯片",
+        "示例：非科技板块的春天？医药板块调研热度超越半导体"
       ],
       "level": "news"
     }
@@ -154,15 +182,11 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "数据中心",
+          "name": "算力",
           "source": "news"
         },
         {
           "name": "存储",
-          "source": "news"
-        },
-        {
-          "name": "算力",
           "source": "news"
         }
       ],
@@ -183,23 +207,69 @@
       "news_count": 6
     },
     {
+      "theme": "创新药",
+      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "started": [
+        {
+          "name": "医药",
+          "source": "news"
+        },
+        {
+          "name": "减肥药",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "创新药",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "CXO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "CDMO",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 5
+    },
+    {
+      "theme": "人形机器人",
+      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
+      "started": [
+        {
+          "name": "机器人",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "减速器",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "伺服电机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "传感器",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 4
+    },
+    {
       "theme": "半导体国产替代",
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "材料",
-          "source": "news"
-        },
-        {
-          "name": "设备",
+          "name": "半导体",
           "source": "news"
         },
         {
           "name": "芯片",
-          "source": "news"
-        },
-        {
-          "name": "半导体",
           "source": "news"
         }
       ],
@@ -214,35 +284,6 @@
         },
         {
           "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 4
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "医药",
-          "source": "news"
-        },
-        {
-          "name": "创新药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
           "market_cap_yi": 0
         }
       ],
@@ -278,16 +319,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "欧菲光回应举报：已报案追责",
-    "摩尔线程上半年营收增长147%",
-    "频准激光中签率出炉",
-    "A股三大指数涨跌不一 沪指五连阳 超4000只股上涨",
-    "《煤炭工业发展“十五五”规划》印发：到2030年全国大型现代化煤矿产能比重提升至87%",
-    "高盛研判中国AI股：近期回调已释放核心风险 建议多元布局四大主线",
-    "韩国资金抢筹中际旭创！H股上市7天净买4339万美元",
-    "韩国将设立一项价值5万亿韩元新基金 重点投资于前景广阔的半导体材料、零部件和设备领域",
-    "阿里云计划将全球数据中心产能提升两倍以上",
-    "秒板、超70万手封单！创新药强势霸屏 三重利好持续发酵"
+    "5连板！百花医药紧急提示",
+    "宇树科技中签率创科创板新低",
+    "投行下调苹果股票评级",
+    "A股三大指数涨跌不一 MLCC与CRO概念股走强",
+    "A股又现“超级大肉签” 中一签最高赚超22万元",
+    "让“科味”更浓 恒生科技指数大调整 这一次有何不同？",
+    "机构调研丨人形机器人&#x2B;工业互联 这家公司海外业务有望明年上量 正与头部客户探索智能关节解决方案",
+    "7月全国乘用车市场零售146.1万辆 同比下降20.9%",
+    "黄仁勋深度解读5000亿美元融资计划：AI算力是“投资级资产”",
+    "蓄力下一代DRAM 存储龙头拟提升EUV光刻性能 相移掩模版成关键"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -295,8 +336,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
-    "news_catalysts": 14
+    "accumulation_signals": 4,
+    "chain_propagations": 4,
+    "news_catalysts": 18
   }
 }
