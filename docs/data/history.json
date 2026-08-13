@@ -1,6 +1,39 @@
 {
   "records": [
     {
+      "date": "2026-08-13",
+      "total_count": 4,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "半导体国产替代补涨与AI算力产业链传导",
+      "picks": [
+        {
+          "code": "002156",
+          "name": "通富微电",
+          "return": -1.2,
+          "status": "持有中"
+        },
+        {
+          "code": "300567",
+          "name": "精测电子",
+          "return": -0.8,
+          "status": "持有中"
+        },
+        {
+          "code": "603662",
+          "name": "柯力传感",
+          "return": -1.5,
+          "status": "持有中"
+        },
+        {
+          "code": "300101",
+          "name": "振芯科技",
+          "return": -0.7,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-08-12",
       "total_count": 4,
       "win_count": 0,

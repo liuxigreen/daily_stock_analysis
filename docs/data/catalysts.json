@@ -1,108 +1,109 @@
 {
-  "date": "2026-08-12",
+  "date": "2026-08-13",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：7条相关新闻提及存储, 算力；示例：国产算力基建加速落地！阿里云超节点实例上线 后续拟扩至多地域",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及医药, 创新药；示例：百花医药再发风险提示",
+      "type": "accumulation",
+      "theme": "创新药",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：6条相关新闻提及存储, 算力, 光模块；示例：腾讯Capex大增&#x2B;海外巨头业绩炸裂 算力租赁迎量价齐升 这5股业绩倍增可期(名单)",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及芯片, 材料, 设备；示例：龙头业绩爆表！通信设备强势拉升 融资客最新抢筹股曝光",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及机器人；示例：荣耀发布全球首款机器人手机",
       "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药, 创新药；示例：恒瑞医药：HRS-4729注射液获临床试验批准",
-      "type": "accumulation",
-      "theme": "创新药",
+      "theme": "人形机器人",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 存储, 算力已启动",
+      "title": "产业链传导：AI算力 — 存储, 算力, 光模块已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
-        "光模块",
-        "光芯片"
+        "光芯片",
+        "数据中心"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 芯片, 材料, 设备已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：创新药 — 医药, 创新药, CXO已启动",
+      "title": "产业链传导：创新药 — 医药, 创新药已启动",
       "type": "chain_propagation",
       "theme": "创新药",
       "next": [
+        "CXO",
         "CDMO",
         "原料药"
       ],
       "urgency": "medium"
     },
     {
-      "title": "国产算力基建加速落地！阿里云超节点实例上线 后续拟扩至多地域",
-      "type": "news",
-      "theme": "AI算力",
+      "title": "产业链传导：人形机器人 — 机器人已启动",
+      "type": "chain_propagation",
+      "theme": "人形机器人",
+      "next": [
+        "减速器",
+        "伺服电机",
+        "传感器"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "龙头业绩爆表！通信设备强势拉升 融资客最新抢筹股曝光",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "无惧硬件涨价压力！CoreWeave业绩会打消市场疑虑：算力收益涨得更快！",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "存储巨头业绩炸裂！大摩高喊“芯片通胀”",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "封禁3年后 美国政府设备重新允许使用TikTok",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "算力期货即将登场！巨头业绩验证算力租赁供需两旺 融资客提前布局多股(名单)",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "量化推波助澜？芯片股的“完美对冲”浮现了！",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "恒瑞医药：HRS-4729注射液获临床试验批准",
+      "title": "百花医药再发风险提示",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "晚报丨美国7月CPI明日公布，或成9月是否加息核心依据；沙特船只在曼德海峡遭袭；霍尔木兹短期难重开，铝价创七周新高；SK海力士拟将在中国NAND产能提高50%；Anthropic再掷91亿美元买算力",
+      "title": "荣耀发布全球首款机器人手机",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "A股三大指数集体收跌 创新药概念股逆市走强",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "创新药全球地位提升！CRO集体暴拉 融资客最新抢筹名单来了",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "腾讯Capex大增&#x2B;海外巨头业绩炸裂 算力租赁迎量价齐升 这5股业绩倍增可期(名单)",
       "type": "news",
       "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "午后爆发！600亿光模块龙头 1秒涨停后又炸板 网友：好深的套路 幸好没买",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "全线暴涨！存储芯片巨头重磅利好来袭！日韩股市大幅拉升",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "超节点实例上线、DeepSeek V4 Pro转正！国产算力生态加速成熟(附股)",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "【每日收评】三大指数午后回落全线收跌， 全市场超4300股飘绿，医药股持续活跃",
+      "type": "news",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
@@ -114,35 +115,35 @@
   ],
   "accumulation_signals": [
     {
+      "name": "创新药",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：4条相关新闻提及医药, 创新药",
+        "示例：百花医药再发风险提示"
+      ],
+      "level": "news"
+    },
+    {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：7条相关新闻提及存储, 算力",
-        "示例：国产算力基建加速落地！阿里云超节点实例上线 后续拟扩至多地域"
+        "新闻蓄势：6条相关新闻提及存储, 算力, 光模块",
+        "示例：腾讯Capex大增&#x2B;海外巨头业绩炸裂 算力租赁迎量价齐升 这5股业绩倍增可期(名单)"
       ],
       "level": "news"
     },
     {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：4条相关新闻提及芯片, 材料, 设备",
-        "示例：龙头业绩爆表！通信设备强势拉升 融资客最新抢筹股曝光"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "创新药",
+      "name": "人形机器人",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及医药, 创新药",
-        "示例：恒瑞医药：HRS-4729注射液获临床试验批准"
+        "新闻蓄势：2条相关新闻提及机器人",
+        "示例：荣耀发布全球首款机器人手机"
       ],
       "level": "news"
     }
@@ -159,6 +160,10 @@
         {
           "name": "算力",
           "source": "news"
+        },
+        {
+          "name": "光模块",
+          "source": "news"
         }
       ],
       "next_opportunities": [
@@ -167,48 +172,15 @@
           "market_cap_yi": 0
         },
         {
-          "name": "光模块",
-          "market_cap_yi": 0
-        },
-        {
           "name": "光芯片",
           "market_cap_yi": 0
-        }
-      ],
-      "news_count": 7
-    },
-    {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "芯片",
-          "source": "news"
         },
         {
-          "name": "材料",
-          "source": "news"
-        },
-        {
-          "name": "设备",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
+          "name": "数据中心",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 4
+      "news_count": 6
     },
     {
       "theme": "创新药",
@@ -221,19 +193,44 @@
         {
           "name": "创新药",
           "source": "news"
-        },
-        {
-          "name": "CXO",
-          "source": "news"
         }
       ],
       "next_opportunities": [
+        {
+          "name": "CXO",
+          "market_cap_yi": 0
+        },
         {
           "name": "CDMO",
           "market_cap_yi": 0
         },
         {
           "name": "原料药",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 4
+    },
+    {
+      "theme": "人形机器人",
+      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
+      "started": [
+        {
+          "name": "机器人",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "减速器",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "伺服电机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "传感器",
           "market_cap_yi": 0
         }
       ],
@@ -269,16 +266,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "中际旭创大举买入鹏鼎控股",
-    "工业富联上半年净利突破200亿",
-    "超微电脑盘后涨超10%",
-    "A股三大指数收涨 创业板指涨1.49% 超4100只股飘红",
-    "全球市场今晚屏息以待：美国CPI还能带来“鸽派惊喜”吗？",
-    "网传英伟达欲投资中际旭创、新易盛？公司紧急回应",
-    "国产算力基建加速落地！阿里云超节点实例上线 后续拟扩至多地域",
-    "腾讯控股：第二季度公司权益持有人应占盈利同比增长0.7%至560亿元",
-    "今年上半年全国结婚登记327.5万对 较去年同期减少26.4万对",
-    "13天9板传智教育：公司股票已被深交所重点监控 如股价进一步异常上涨可能申请停牌核查"
+    "百花医药再发风险提示",
+    "传智教育紧急提示风险",
+    "荣耀发布全球首款机器人手机",
+    "A股三大指数集体收跌 创新药概念股逆市走强",
+    "商务部：对原产于印度的进口单模光纤继续征收反倾销税",
+    "黑天鹅突袭！大宗商品集体跳水！日本加息突生大变数",
+    "AI“循环融资”越来越仰赖一件事：英伟达GPU能保值多久？",
+    "中芯国际：第二季度销售收入30.06亿美元 同比增长36.06%",
+    "重要指数调整！MLCC龙头、智谱等被纳入（附名单）",
+    "长鑫科技市值今日超越腾讯控股"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -288,6 +285,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 3,
     "chain_propagations": 3,
-    "news_catalysts": 14
+    "news_catalysts": 13
   }
 }
