@@ -1,149 +1,93 @@
 {
-  "date": "2026-08-13",
+  "date": "2026-08-14",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及医药, 创新药；示例：百花医药再发风险提示",
-      "type": "accumulation",
-      "theme": "创新药",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：6条相关新闻提及存储, 算力, 光模块；示例：腾讯Capex大增&#x2B;海外巨头业绩炸裂 算力租赁迎量价齐升 这5股业绩倍增可期(名单)",
+      "title": "蓄势信号：新闻蓄势：9条相关新闻提及算力, CPO, 存储；示例：创业板指涨超1% 稀土板块大涨 CPO概念股走强",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及机器人；示例：荣耀发布全球首款机器人手机",
-      "type": "accumulation",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 存储, 算力, 光模块已启动",
+      "title": "产业链传导：AI算力 — 算力, AI芯片, 硅光, CPO, 存储已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
-        "AI芯片",
+        "光模块",
         "光芯片",
         "数据中心"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 医药, 创新药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "CXO",
-        "CDMO",
-        "原料药"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：人形机器人 — 机器人已启动",
-      "type": "chain_propagation",
-      "theme": "人形机器人",
-      "next": [
-        "减速器",
-        "伺服电机",
-        "传感器"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "百花医药再发风险提示",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "荣耀发布全球首款机器人手机",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "A股三大指数集体收跌 创新药概念股逆市走强",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "创新药全球地位提升！CRO集体暴拉 融资客最新抢筹名单来了",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "腾讯Capex大增&#x2B;海外巨头业绩炸裂 算力租赁迎量价齐升 这5股业绩倍增可期(名单)",
+      "title": "创业板指涨超1% 稀土板块大涨 CPO概念股走强",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "午后爆发！600亿光模块龙头 1秒涨停后又炸板 网友：好深的套路 幸好没买",
+      "title": "20%涨停！万亿巨头17亿重仓杀入！26万手封单锁死 引爆算力硬件赛道",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "全线暴涨！存储芯片巨头重磅利好来袭！日韩股市大幅拉升",
+      "title": "英伟达官宣CPO交换机全面量产！硅光新时代来了？",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "超节点实例上线、DeepSeek V4 Pro转正！国产算力生态加速成熟(附股)",
+      "title": "闪迪释放炸裂长期指引 存储芯片逆势活跃 机构紧盯多只概念股(名单)",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "【每日收评】三大指数午后回落全线收跌， 全市场超4300股飘绿，医药股持续活跃",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "期权智投播报 | 应用材料盘前上涨 Bernstein将其目标价上调至675美元",
+      "title": "国产化拐点将至！AI通胀扩散至材料端",
       "type": "news",
       "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "DeepSeek正式涨价！算力供需缺口凸显 国产AI芯片或迎价值重估(附股)",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "尾盘突变 A股深“V”！CPO概念股走强 电力股集体调整",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "训练西迁、推理东沉 中国算力新版图正在形成",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "“国标”落地倒计时、多家上市公司扭亏为盈 氢燃料电池汽车进入产业新周期",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "直击中芯国际业绩会：Q2晶圆量价提升 算力配套芯片供不应求",
+      "type": "news",
+      "theme": "AI算力",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
-    {
-      "name": "创新药",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：4条相关新闻提及医药, 创新药",
-        "示例：百花医药再发风险提示"
-      ],
-      "level": "news"
-    },
     {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：6条相关新闻提及存储, 算力, 光模块",
-        "示例：腾讯Capex大增&#x2B;海外巨头业绩炸裂 算力租赁迎量价齐升 这5股业绩倍增可期(名单)"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "人形机器人",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及机器人",
-        "示例：荣耀发布全球首款机器人手机"
+        "新闻蓄势：9条相关新闻提及算力, CPO, 存储",
+        "示例：创业板指涨超1% 稀土板块大涨 CPO概念股走强"
       ],
       "level": "news"
     }
@@ -154,21 +98,29 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "存储",
-          "source": "news"
-        },
-        {
           "name": "算力",
           "source": "news"
         },
         {
-          "name": "光模块",
+          "name": "AI芯片",
+          "source": "news"
+        },
+        {
+          "name": "硅光",
+          "source": "news"
+        },
+        {
+          "name": "CPO",
+          "source": "news"
+        },
+        {
+          "name": "存储",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "AI芯片",
+          "name": "光模块",
           "market_cap_yi": 0
         },
         {
@@ -180,61 +132,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 6
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "医药",
-          "source": "news"
-        },
-        {
-          "name": "创新药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 4
-    },
-    {
-      "theme": "人形机器人",
-      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
-      "started": [
-        {
-          "name": "机器人",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "减速器",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "伺服电机",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "传感器",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
+      "news_count": 9
     }
   ],
   "forward_events": [
@@ -266,16 +164,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "百花医药再发风险提示",
-    "传智教育紧急提示风险",
-    "荣耀发布全球首款机器人手机",
-    "A股三大指数集体收跌 创新药概念股逆市走强",
-    "商务部：对原产于印度的进口单模光纤继续征收反倾销税",
-    "黑天鹅突袭！大宗商品集体跳水！日本加息突生大变数",
-    "AI“循环融资”越来越仰赖一件事：英伟达GPU能保值多久？",
-    "中芯国际：第二季度销售收入30.06亿美元 同比增长36.06%",
-    "重要指数调整！MLCC龙头、智谱等被纳入（附名单）",
-    "长鑫科技市值今日超越腾讯控股"
+    "高争民爆上半年净利润下降53%",
+    "德龙汇能凭什么10天拉了6个板",
+    "秦安股份自己“泼冷水”",
+    "央行：前七个月社会融资规模增量累计为22.25万亿元 人民币贷款增加10.38万亿元",
+    "创业板指涨超1% 稀土板块大涨 CPO概念股走强",
+    "四部门发布集成电路企业、工业母机企业非货币性资产交换企业所得税政策",
+    "油价今晚下调 加满一箱油能少花9元",
+    "史无前例！封锁、加息 两大利空突袭！亚太市场变数陡增",
+    "广东省首个词元经济专项金融产品“Token贷”在广州海珠发布",
+    "20%涨停！万亿巨头17亿重仓杀入！26万手封单锁死 引爆算力硬件赛道"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -283,8 +181,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
-    "news_catalysts": 13
+    "accumulation_signals": 1,
+    "chain_propagations": 1,
+    "news_catalysts": 11
   }
 }
