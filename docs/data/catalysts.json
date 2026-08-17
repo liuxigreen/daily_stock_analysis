@@ -1,79 +1,113 @@
 {
-  "date": "2026-08-14",
+  "date": "2026-08-17",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：9条相关新闻提及算力, CPO, 存储；示例：创业板指涨超1% 稀土板块大涨 CPO概念股走强",
+      "title": "蓄势信号：新闻蓄势：7条相关新闻提及算力, 存储；示例：狂欢与危机同在：AI算力盛宴 成了全球资本的“高利率毒药”？",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, AI芯片, 硅光, CPO, 存储已启动",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及机器人；示例：“人形机器人第一股”来袭",
+      "type": "accumulation",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及半导体, 材料；示例：机构调研丨培育钻石&#x2B;超硬材料 这家公司CVD金刚石进入头部客户验证 民用散热年内或小批量订",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：AI算力 — 算力, 存储已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
+        "AI芯片",
         "光模块",
-        "光芯片",
-        "数据中心"
+        "光芯片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "创业板指涨超1% 稀土板块大涨 CPO概念股走强",
-      "type": "news",
-      "theme": "AI算力",
+      "title": "产业链传导：人形机器人 — 机器人已启动",
+      "type": "chain_propagation",
+      "theme": "人形机器人",
+      "next": [
+        "减速器",
+        "伺服电机",
+        "传感器"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "20%涨停！万亿巨头17亿重仓杀入！26万手封单锁死 引爆算力硬件赛道",
-      "type": "news",
-      "theme": "AI算力",
+      "title": "产业链传导：半导体国产替代 — 半导体, 材料已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "英伟达官宣CPO交换机全面量产！硅光新时代来了？",
+      "title": "“人形机器人第一股”来袭",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "人形机器人",
       "urgency": "medium"
     },
     {
-      "title": "闪迪释放炸裂长期指引 存储芯片逆势活跃 机构紧盯多只概念股(名单)",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "国产化拐点将至！AI通胀扩散至材料端",
+      "title": "机构调研丨培育钻石&#x2B;超硬材料 这家公司CVD金刚石进入头部客户验证 民用散热年内或小批量订单落地",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "DeepSeek正式涨价！算力供需缺口凸显 国产AI芯片或迎价值重估(附股)",
+      "title": "狂暴拉升！半导体材料国产化或加速 主力抢筹这些票",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "狂欢与危机同在：AI算力盛宴 成了全球资本的“高利率毒药”？",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "尾盘突变 A股深“V”！CPO概念股走强 电力股集体调整",
+      "title": "大疆诉美国防部案赢得关键程序性胜利！美市场仍高度依赖大疆无人机",
+      "type": "news",
+      "theme": "低空经济",
+      "urgency": "medium"
+    },
+    {
+      "title": "【风口研报】SK海力士预警“缺口最大年”＋国产厂商份额攀升 国内存储产业链或迎成长窗口期",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "训练西迁、推理东沉 中国算力新版图正在形成",
+      "title": "贵不贵？买不买？“人形机器人第一股”来袭 五大基金经理最新研判来了",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "上海硅巷13小时激辩：当算力重返增长快车道 产业下一站锚定何方？",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "“国标”落地倒计时、多家上市公司扭亏为盈 氢燃料电池汽车进入产业新周期",
+      "title": "连板股追踪丨A股今日共110只个股涨停 算力硬件板块多股连板",
       "type": "news",
-      "theme": "新能源车",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "直击中芯国际业绩会：Q2晶圆量价提升 算力配套芯片供不应求",
+      "title": "美联储加息前景愈发渺茫 存储妖股继续走强 | 今夜看点",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
@@ -86,8 +120,30 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：9条相关新闻提及算力, CPO, 存储",
-        "示例：创业板指涨超1% 稀土板块大涨 CPO概念股走强"
+        "新闻蓄势：7条相关新闻提及算力, 存储",
+        "示例：狂欢与危机同在：AI算力盛宴 成了全球资本的“高利率毒药”？"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "人形机器人",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及机器人",
+        "示例：“人形机器人第一股”来袭"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及半导体, 材料",
+        "示例：机构调研丨培育钻石&#x2B;超硬材料 这家公司CVD金刚石进入头部客户验证 民用散热年内或小批量订"
       ],
       "level": "news"
     }
@@ -102,23 +158,15 @@
           "source": "news"
         },
         {
-          "name": "AI芯片",
-          "source": "news"
-        },
-        {
-          "name": "硅光",
-          "source": "news"
-        },
-        {
-          "name": "CPO",
-          "source": "news"
-        },
-        {
           "name": "存储",
           "source": "news"
         }
       ],
       "next_opportunities": [
+        {
+          "name": "AI芯片",
+          "market_cap_yi": 0
+        },
         {
           "name": "光模块",
           "market_cap_yi": 0
@@ -126,13 +174,63 @@
         {
           "name": "光芯片",
           "market_cap_yi": 0
+        }
+      ],
+      "news_count": 7
+    },
+    {
+      "theme": "人形机器人",
+      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
+      "started": [
+        {
+          "name": "机器人",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "减速器",
+          "market_cap_yi": 0
         },
         {
-          "name": "数据中心",
+          "name": "伺服电机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "传感器",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 9
+      "news_count": 2
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "材料",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
     }
   ],
   "forward_events": [
@@ -164,16 +262,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "高争民爆上半年净利润下降53%",
-    "德龙汇能凭什么10天拉了6个板",
-    "秦安股份自己“泼冷水”",
-    "央行：前七个月社会融资规模增量累计为22.25万亿元 人民币贷款增加10.38万亿元",
-    "创业板指涨超1% 稀土板块大涨 CPO概念股走强",
-    "四部门发布集成电路企业、工业母机企业非货币性资产交换企业所得税政策",
-    "油价今晚下调 加满一箱油能少花9元",
-    "史无前例！封锁、加息 两大利空突袭！亚太市场变数陡增",
-    "广东省首个词元经济专项金融产品“Token贷”在广州海珠发布",
-    "20%涨停！万亿巨头17亿重仓杀入！26万手封单锁死 引爆算力硬件赛道"
+    "“人形机器人第一股”来袭",
+    "贵州茅台护城河打开了一缺口",
+    "DeepSeek调价今日正式生效",
+    "1—7月份国民经济保持总体平稳、向新向优发展态势",
+    "创业板指涨逾3% 科创50指数涨超4% 逾4300只股飘红",
+    "7月份70个大中城市中一线城市商品住宅销售价格环比总体上涨",
+    "长鑫科技股价再创新高 市值重回4万亿以上 机构：三重利好共振打开业绩空间",
+    "国家发改委、国家能源局印发《石油天然气发展“十五五”规划》",
+    "机构调研丨培育钻石&#x2B;超硬材料 这家公司CVD金刚石进入头部客户验证 民用散热年内或小批量订单落地",
+    "尾盘突然拉升！最火赛道数十股涨停！4万亿巨头引爆行情"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -181,8 +279,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 1,
-    "chain_propagations": 1,
-    "news_catalysts": 11
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
+    "news_catalysts": 12
   }
 }
