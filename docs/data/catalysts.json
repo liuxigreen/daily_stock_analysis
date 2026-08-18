@@ -1,26 +1,20 @@
 {
-  "date": "2026-08-17",
+  "date": "2026-08-18",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：7条相关新闻提及算力, 存储；示例：狂欢与危机同在：AI算力盛宴 成了全球资本的“高利率毒药”？",
+      "title": "蓄势信号：新闻蓄势：9条相关新闻提及算力, CPO, 存储；示例：不装了！特朗普政府施压苹果不要买中国存储芯片 美商务部长：已直白告知苹果！",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及机器人；示例：“人形机器人第一股”来袭",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及电池；示例：工信部电池工作组启动钠电池针刺摸底测评 产业化进一步提速",
       "type": "accumulation",
-      "theme": "人形机器人",
+      "theme": "新能源车",
       "urgency": "medium"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及半导体, 材料；示例：机构调研丨培育钻石&#x2B;超硬材料 这家公司CVD金刚石进入头部客户验证 民用散热年内或小批量订",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 算力, 存储已启动",
+      "title": "产业链传导：AI算力 — 算力, CPO, 存储, 数据中心已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -31,83 +25,72 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：人形机器人 — 机器人已启动",
+      "title": "产业链传导：新能源车 — 电池已启动",
       "type": "chain_propagation",
-      "theme": "人形机器人",
+      "theme": "新能源车",
       "next": [
-        "减速器",
-        "伺服电机",
-        "传感器"
+        "隔膜",
+        "电解液",
+        "铜箔"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 半导体, 材料已启动",
-      "type": "chain_propagation",
+      "title": "不装了！特朗普政府施压苹果不要买中国存储芯片 美商务部长：已直白告知苹果！",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "工信部电池工作组启动钠电池针刺摸底测评 产业化进一步提速",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "20%直线跌停！外围利空突袭！创新药板块发生了什么？",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "阿里云官宣：又一数据中心上线！AI巨头纷纷加码 意义多大？",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨光通信&#x2B;CPO&#x2B;OCS交换机 这家公司卡位光互联关键器件 目前在手订单饱满正在加速扩产",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "台湾地区功率半导体厂商酝酿第三波涨价",
+      "type": "news",
       "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
       "urgency": "medium"
     },
     {
-      "title": "“人形机器人第一股”来袭",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨培育钻石&#x2B;超硬材料 这家公司CVD金刚石进入头部客户验证 民用散热年内或小批量订单落地",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "狂暴拉升！半导体材料国产化或加速 主力抢筹这些票",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "狂欢与危机同在：AI算力盛宴 成了全球资本的“高利率毒药”？",
+      "title": "费城半导体指数重返牛市及存储股强势反弹 谁是背后推手？一文读懂",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "大疆诉美国防部案赢得关键程序性胜利！美市场仍高度依赖大疆无人机",
+      "title": "【风口研报】朱雀三号复飞在即！江苏再出政策利好  国内商业航天产业有望加速突破",
       "type": "news",
-      "theme": "低空经济",
+      "theme": "军工航天",
       "urgency": "medium"
     },
     {
-      "title": "【风口研报】SK海力士预警“缺口最大年”＋国产厂商份额攀升 国内存储产业链或迎成长窗口期",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "贵不贵？买不买？“人形机器人第一股”来袭 五大基金经理最新研判来了",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "上海硅巷13小时激辩：当算力重返增长快车道 产业下一站锚定何方？",
+      "title": "5万亿新型电网 如何撑起“算力+绿电”新未来？",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "连板股追踪丨A股今日共110只个股涨停 算力硬件板块多股连板",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "美联储加息前景愈发渺茫 存储妖股继续走强 | 今夜看点",
+      "title": "美股盘前：三大股指期货涨跌不一 光通信、存储概念股盘前普涨 美股迎“零售财报周”",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
@@ -120,30 +103,19 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：7条相关新闻提及算力, 存储",
-        "示例：狂欢与危机同在：AI算力盛宴 成了全球资本的“高利率毒药”？"
+        "新闻蓄势：9条相关新闻提及算力, CPO, 存储",
+        "示例：不装了！特朗普政府施压苹果不要买中国存储芯片 美商务部长：已直白告知苹果！"
       ],
       "level": "news"
     },
     {
-      "name": "人形机器人",
+      "name": "新能源车",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及机器人",
-        "示例：“人形机器人第一股”来袭"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及半导体, 材料",
-        "示例：机构调研丨培育钻石&#x2B;超硬材料 这家公司CVD金刚石进入头部客户验证 民用散热年内或小批量订"
+        "新闻蓄势：2条相关新闻提及电池",
+        "示例：工信部电池工作组启动钠电池针刺摸底测评 产业化进一步提速"
       ],
       "level": "news"
     }
@@ -158,7 +130,15 @@
           "source": "news"
         },
         {
+          "name": "CPO",
+          "source": "news"
+        },
+        {
           "name": "存储",
+          "source": "news"
+        },
+        {
+          "name": "数据中心",
           "source": "news"
         }
       ],
@@ -176,57 +156,28 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 7
+      "news_count": 9
     },
     {
-      "theme": "人形机器人",
-      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
+      "theme": "新能源车",
+      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
       "started": [
         {
-          "name": "机器人",
+          "name": "电池",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "减速器",
+          "name": "隔膜",
           "market_cap_yi": 0
         },
         {
-          "name": "伺服电机",
+          "name": "电解液",
           "market_cap_yi": 0
         },
         {
-          "name": "传感器",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "材料",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
+          "name": "铜箔",
           "market_cap_yi": 0
         }
       ],
@@ -262,16 +213,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "“人形机器人第一股”来袭",
-    "贵州茅台护城河打开了一缺口",
-    "DeepSeek调价今日正式生效",
-    "1—7月份国民经济保持总体平稳、向新向优发展态势",
-    "创业板指涨逾3% 科创50指数涨超4% 逾4300只股飘红",
-    "7月份70个大中城市中一线城市商品住宅销售价格环比总体上涨",
-    "长鑫科技股价再创新高 市值重回4万亿以上 机构：三重利好共振打开业绩空间",
-    "国家发改委、国家能源局印发《石油天然气发展“十五五”规划》",
-    "机构调研丨培育钻石&#x2B;超硬材料 这家公司CVD金刚石进入头部客户验证 民用散热年内或小批量订单落地",
-    "尾盘突然拉升！最火赛道数十股涨停！4万亿巨头引爆行情"
+    "SpaceX本周将迎大波“解禁潮”",
+    "12天11板大牛股今起复牌！",
+    "寒武纪员工股权激励即将到账",
+    "A股三大指数收盘涨跌不一 农业板块掀起涨停潮",
+    "不装了！特朗普政府施压苹果不要买中国存储芯片 美商务部长：已直白告知苹果！",
+    "创历史纪录！暴涨超595%！中一签狂赚逾55万元！最贵新股来了",
+    "工信部电池工作组启动钠电池针刺摸底测评 产业化进一步提速",
+    "20%直线跌停！外围利空突袭！创新药板块发生了什么？",
+    "一则大消息 A股尾盘突变！背后发生了什么？",
+    "阿里云官宣：又一数据中心上线！AI巨头纷纷加码 意义多大？"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -279,8 +230,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
-    "news_catalysts": 12
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 14
   }
 }
