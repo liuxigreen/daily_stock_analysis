@@ -1,96 +1,113 @@
 {
-  "date": "2026-08-19",
+  "date": "2026-08-20",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：10条相关新闻提及算力, 存储；示例：韩股大跌触发熔断 “存储双雄”重挫！背后推手有哪些？",
+      "title": "蓄势信号：新闻蓄势：11条相关新闻提及算力, 光芯片, CPO；示例：存储芯片龙头三成利润靠炒股",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及芯片；示例：凌晨猛烈抛售！美股芯片全线大跌！发生了什么",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及医药, 创新药；示例：1分钟 30%涨停！创新药赛道“杀疯了”！两大利好引爆",
+      "type": "accumulation",
+      "theme": "创新药",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及芯片, 半导体；示例：寒武纪盘中跌破1000元关口！半导体持续走弱",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 存储已启动",
+      "title": "产业链传导：AI算力 — 算力, 光芯片, CPO, 存储已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
         "光模块",
-        "光芯片"
+        "数据中心"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 芯片已启动",
+      "title": "产业链传导：创新药 — 医药, 创新药已启动",
+      "type": "chain_propagation",
+      "theme": "创新药",
+      "next": [
+        "CXO",
+        "CDMO",
+        "原料药"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 芯片, 半导体已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
-        "半导体设备",
-        "半导体材料",
-        "EDA"
+        "EDA",
+        "光刻胶",
+        "先进封装"
       ],
       "urgency": "medium"
     },
     {
-      "title": "韩股大跌触发熔断 “存储双雄”重挫！背后推手有哪些？",
+      "title": "存储芯片龙头三成利润靠炒股",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "存储“双雄”会师A股进程加速！长存控股完成IPO辅导",
+      "title": "美方对无人机及零部件征收232关税 商务部回应",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "低空经济",
       "urgency": "medium"
     },
     {
-      "title": "凌晨猛烈抛售！美股芯片全线大跌！发生了什么",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "【风口研报】医保“十五五”规划发布叠加重要大会临近  医药板块景气逻辑有望持续夯实",
+      "title": "1分钟 30%涨停！创新药赛道“杀疯了”！两大利好引爆",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "长江存储IPO辅导状态变更为“辅导验收”",
+      "title": "涉100万亿韩元 三星重磅利好传出！韩股涨至熔断 存储双雄爆发",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "5万亿新型电网 如何撑起“算力+绿电”新未来？",
+      "title": "机构调研丨光芯片&#x2B;CPO概念 这家公司上半年海外收入实现倍增 100mW CW光源产品已批量出货",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "中信证券：算力新技术、微盘跨界、供电新架构、锂电的主题热情有望升温",
+      "title": "CPO或扩至内存接口？SK海力士顶刊发文 力推“以光为中心”架构",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "费城半导体指数重返牛市及存储股强势反弹 谁是背后推手？一文读懂",
+      "title": "20个20cm涨停 几乎全是医药股！如何理解大跌次日 A股仅缩量反弹？",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "油价与通胀担忧推升美债收益率 美股三大期指集体走低 芯片股回调 | 今夜看点",
+      "title": "宇树科技大跌超16%！王兴兴最新发声：正在推动物理AI机器人自进化",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "寒武纪盘中跌破1000元关口！半导体持续走弱",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "期权智投播报 |  存储板块盘前走弱 英伟达跌2% 奈飞获基金建仓盘前微涨",
+      "title": "5万亿新型电网 如何撑起“算力+绿电”新未来？",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
@@ -103,8 +120,19 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：10条相关新闻提及算力, 存储",
-        "示例：韩股大跌触发熔断 “存储双雄”重挫！背后推手有哪些？"
+        "新闻蓄势：11条相关新闻提及算力, 光芯片, CPO",
+        "示例：存储芯片龙头三成利润靠炒股"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "创新药",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 45,
+      "reasons": [
+        "新闻蓄势：3条相关新闻提及医药, 创新药",
+        "示例：1分钟 30%涨停！创新药赛道“杀疯了”！两大利好引爆"
       ],
       "level": "news"
     },
@@ -114,8 +142,8 @@
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及芯片",
-        "示例：凌晨猛烈抛售！美股芯片全线大跌！发生了什么"
+        "新闻蓄势：2条相关新闻提及芯片, 半导体",
+        "示例：寒武纪盘中跌破1000元关口！半导体持续走弱"
       ],
       "level": "news"
     }
@@ -127,6 +155,14 @@
       "started": [
         {
           "name": "算力",
+          "source": "news"
+        },
+        {
+          "name": "光芯片",
+          "source": "news"
+        },
+        {
+          "name": "CPO",
           "source": "news"
         },
         {
@@ -144,11 +180,40 @@
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
+          "name": "数据中心",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 10
+      "news_count": 11
+    },
+    {
+      "theme": "创新药",
+      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "started": [
+        {
+          "name": "医药",
+          "source": "news"
+        },
+        {
+          "name": "创新药",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "CXO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "CDMO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "原料药",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 3
     },
     {
       "theme": "半导体国产替代",
@@ -157,19 +222,23 @@
         {
           "name": "芯片",
           "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "半导体设备",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "半导体材料",
-          "market_cap_yi": 0
-        },
-        {
           "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
           "market_cap_yi": 0
         }
       ],
@@ -205,16 +274,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "SpaceX估值再引质疑？",
-    "爱丽家居股价多次异动",
-    "国泰海通上半年净利增28.74%",
-    "美要求各方在美中人工智能生态系统中“选边站队” 外交部：坚决反对搞阵营对抗",
-    "A股三大指数集体收跌 宇树科技上市首日大涨460%",
-    "就在今晚！美债又将迎“大考”",
-    "梁文锋打新宇树科技浮盈11亿 雷军赚152亿 美团系浮盈333亿 大疆痛失超250亿",
-    "SK海力士“救市”了！拟回购40万亿韩元股票 美股夜盘拉升",
-    "重大突破！我国首次实现火箭陆地回收",
-    "盘中集体跳水！多只牛股妖股封死跌停！这些个股已提前“预警”"
+    "存储芯片龙头三成利润靠炒股",
+    "兴业证券上半年净利增长60%",
+    "A股三大指数缩量收涨 近4100只股飘红 生物制品板块掀涨停潮",
+    "美方对无人机及零部件征收232关税 商务部回应",
+    "上海今出8条楼市新政：精准施策 “卖旧买新”阶段性最高补8万元",
+    "外交部回应美国宣布对伊朗实施“毁灭性经济行动”",
+    "mRNA癌症疫苗迎重磅突破！Moderna单日暴涨177% 多家A股公司也有相关布局",
+    "许家印被判处无期徒刑 恒大集团、恒大地产等案一审宣判",
+    "1分钟 30%涨停！创新药赛道“杀疯了”！两大利好引爆",
+    "上海市人民政府办公厅印发《上海市城市更新和住房发展“十五五”规划》"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -222,8 +291,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 2,
-    "chain_propagations": 2,
-    "news_catalysts": 14
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
+    "news_catalysts": 18
   }
 }
