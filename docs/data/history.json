@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-08-28",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "半导体国产替代传导至先进封装；房地产政策密集出台；AI算力产业链光模块/光芯片待补涨",
+      "picks": [
+        {
+          "code": "600584",
+          "name": "长电科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002281",
+          "name": "光迅科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "603667",
+          "name": "五洲新春",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "000786",
+          "name": "北新建材",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002185",
+          "name": "华天科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "300496",
+          "name": "中科创达",
+          "return": 0.0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-08-27",
       "total_count": 0,
       "win_count": 0,

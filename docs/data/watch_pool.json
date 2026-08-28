@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-27T18:26:49",
+  "last_updated": "2026-08-28T19:39:41",
   "stocks": [
     {
       "code": "688498",
@@ -228,6 +228,11 @@
         {
           "date": "2026-08-27",
           "price": 1630.99,
+          "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 1538.35,
           "note": ""
         }
       ],
@@ -462,6 +467,11 @@
           "date": "2026-08-27",
           "price": 375.0,
           "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 367.74,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -690,6 +700,11 @@
         {
           "date": "2026-08-27",
           "price": 221.8,
+          "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 215.6,
           "note": ""
         }
       ],
@@ -920,6 +935,11 @@
           "date": "2026-08-27",
           "price": 38.46,
           "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 39.46,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -1148,6 +1168,11 @@
         {
           "date": "2026-08-27",
           "price": 37.06,
+          "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 40.4,
           "note": ""
         }
       ],
@@ -1378,6 +1403,11 @@
           "date": "2026-08-27",
           "price": 299.3,
           "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 292.0,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -1606,6 +1636,11 @@
         {
           "date": "2026-08-27",
           "price": 63.73,
+          "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 63.75,
           "note": ""
         }
       ],
@@ -1836,6 +1871,11 @@
           "date": "2026-08-27",
           "price": 400.0,
           "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 389.03,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -2064,6 +2104,11 @@
         {
           "date": "2026-08-27",
           "price": 365.1,
+          "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 362.4,
           "note": ""
         }
       ],
@@ -2294,6 +2339,11 @@
           "date": "2026-08-27",
           "price": 49.66,
           "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 50.48,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -2523,6 +2573,98 @@
           "date": "2026-08-27",
           "price": 14.24,
           "note": ""
+        },
+        {
+          "date": "2026-08-28",
+          "price": 14.32,
+          "note": ""
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 70
+    },
+    {
+      "code": "600584",
+      "name": "长电科技",
+      "added_date": "2026-08-28",
+      "added_price": 74.93,
+      "thesis": "国产AI芯片（华为昇腾等）封装需求爆发,公司是国产最大封测厂商,2.5D/3D封装技术领先。股价在60日线附近蓄势2周,成交量温和放大。",
+      "supply_chain": "先进封装（产业链中游）",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "大基金三期资金到位,国产AI芯片封装订单落地",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分75，先进封装（产业链中游）"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-08-28",
+          "price": 16.7,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 75
+    },
+    {
+      "code": "002281",
+      "name": "光迅科技",
+      "added_date": "2026-08-28",
+      "added_price": 173.61,
+      "thesis": "AI大模型训练需求爆发→光互联先行。公司是国产光模块龙头,800G/1.6T产品量产,AI算力光模块存在补涨空间。股价横盘蓄势3周,量价配合良好。",
+      "supply_chain": "光模块（产业链中游）",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "AI大模型迭代加速,800G/1.6T光模块需求爆发",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分70，光模块（产业链中游）"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-08-28",
+          "price": 32.5,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 70
+    },
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "added_date": "2026-08-28",
+      "added_price": 16.92,
+      "thesis": "大基金三期重点投向先进封装,公司是国产第二大封测厂商,2.5D/3D封装技术成熟,承接华为/海思封装订单。股价在60日线蓄势,突破在即。",
+      "supply_chain": "先进封装（产业链中游）",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "大基金三期资金到位,国产AI芯片封装需求爆发",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分70，先进封装（产业链中游）"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-08-28",
+          "price": 8.9,
+          "note": "AI自动入池"
         }
       ],
       "risk_factors": [],

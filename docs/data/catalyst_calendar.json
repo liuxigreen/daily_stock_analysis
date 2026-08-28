@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-27",
+  "last_updated": "2026-08-28",
   "upcoming": [
     {
       "date": "2026-09",
@@ -105,6 +105,33 @@
       "stock_code": "300101",
       "stock_name": "振芯科技",
       "event": "低空经济政策持续出台，eVTOL/无人机监管放开",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "600584",
+      "stock_name": "长电科技",
+      "event": "大基金三期资金到位,国产AI芯片封装订单落地",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002281",
+      "stock_name": "光迅科技",
+      "event": "AI大模型迭代加速,800G/1.6T光模块需求爆发",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002185",
+      "stock_name": "华天科技",
+      "event": "大基金三期资金到位,国产AI芯片封装需求爆发",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"

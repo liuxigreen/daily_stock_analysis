@@ -1,37 +1,31 @@
 {
-  "date": "2026-08-27",
+  "date": "2026-08-28",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及设备, 半导体；示例：特朗普就美国电力电网中的外国制造设备宣布“国家紧急状态” 外交部回应",
+      "title": "蓄势信号：新闻蓄势：7条相关新闻提及数据中心, 存储, 算力；示例：存储芯片牛股公布“炸裂”业绩",
+      "type": "accumulation",
+      "theme": "AI算力",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及半导体, 材料, 设备；示例：PCB材料大厂建滔积层板即日对所有产品涨价10%-20%",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：6条相关新闻提及算力, 存储, 光模块；示例：利好突袭！美股集体拉升 两大存储巨头发布重要投资计划",
-      "type": "accumulation",
-      "theme": "AI算力",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药, 创新药；示例：行业再传利好 二十九只医药股市盈率低于三十倍",
-      "type": "accumulation",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 算力, 存储, 光模块, CPO已启动",
+      "title": "产业链传导：AI算力 — 数据中心, 存储, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
-        "光芯片",
-        "数据中心"
+        "光模块",
+        "光芯片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 设备, 半导体已启动",
+      "title": "产业链传导：半导体国产替代 — 半导体, 材料, 设备已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
@@ -42,56 +36,39 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 医药, 创新药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "CXO",
-        "CDMO",
-        "原料药"
-      ],
+      "title": "存储芯片牛股公布“炸裂”业绩",
+      "type": "news",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "特朗普就美国电力电网中的外国制造设备宣布“国家紧急状态” 外交部回应",
+      "title": "英伟达财报验证AI景气加速！算力金属概念梳理",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "全国一体化算力网加快构建 20余家算力调度主体入驻",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "PCB材料大厂建滔积层板即日对所有产品涨价10%-20%",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "利好突袭！美股集体拉升 两大存储巨头发布重要投资计划",
+      "title": "勿用短期K线定义人形机器人的未来",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "绿电托底与Token牵引 算力重镇探索模式进阶",
       "type": "news",
       "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨CPO&#x2B;NPO&#x2B;英伟达概念 这家公司是测试设备端核心支撑方 光电子业务在手订单创历史新高",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "中报业绩亮眼！光模块集体爆发 融资客抢筹24股过亿",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "中金：继续看好AI算力成长主线 建议关注两大机会",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "美债危机不足为惧？小摩：美股年末有望轮动上涨 看好优质成长与半导体",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "九部门加大支持力度 航空保税维修迎政策礼包",
-      "type": "news",
-      "theme": "军工航天",
       "urgency": "medium"
     },
     {
@@ -101,49 +78,44 @@
       "urgency": "medium"
     },
     {
-      "title": "亿航智能胡华智：低空商业化的窗口终将打开",
+      "title": "美国签令限制外国电网设备 多家上市公司回应",
       "type": "news",
-      "theme": "低空经济",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "行业再传利好 二十九只医药股市盈率低于三十倍",
+      "title": "华泰证券：CSP与运营商资本开支共振 关注国内算力基础设施链",
       "type": "news",
-      "theme": "创新药",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "AI服务器PCB的核心功能性材料 高端电子树脂需求持续爆发",
+      "type": "news",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：5条相关新闻提及设备, 半导体",
-        "示例：特朗普就美国电力电网中的外国制造设备宣布“国家紧急状态” 外交部回应"
-      ],
-      "level": "news"
-    },
     {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：6条相关新闻提及算力, 存储, 光模块",
-        "示例：利好突袭！美股集体拉升 两大存储巨头发布重要投资计划"
+        "新闻蓄势：7条相关新闻提及数据中心, 存储, 算力",
+        "示例：存储芯片牛股公布“炸裂”业绩"
       ],
       "level": "news"
     },
     {
-      "name": "创新药",
+      "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及医药, 创新药",
-        "示例：行业再传利好 二十九只医药股市盈率低于三十倍"
+        "新闻蓄势：4条相关新闻提及半导体, 材料, 设备",
+        "示例：PCB材料大厂建滔积层板即日对所有产品涨价10%-20%"
       ],
       "level": "news"
     }
@@ -154,7 +126,7 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "算力",
+          "name": "数据中心",
           "source": "news"
         },
         {
@@ -162,11 +134,7 @@
           "source": "news"
         },
         {
-          "name": "光模块",
-          "source": "news"
-        },
-        {
-          "name": "CPO",
+          "name": "算力",
           "source": "news"
         }
       ],
@@ -176,26 +144,30 @@
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
+          "name": "光模块",
           "market_cap_yi": 0
         },
         {
-          "name": "数据中心",
+          "name": "光芯片",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 6
+      "news_count": 7
     },
     {
       "theme": "半导体国产替代",
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "设备",
+          "name": "半导体",
           "source": "news"
         },
         {
-          "name": "半导体",
+          "name": "材料",
+          "source": "news"
+        },
+        {
+          "name": "设备",
           "source": "news"
         }
       ],
@@ -213,36 +185,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 5
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "医药",
-          "source": "news"
-        },
-        {
-          "name": "创新药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
+      "news_count": 4
     }
   ],
   "forward_events": [
@@ -274,16 +217,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "乳业龙头拟回购注销至多20亿元",
-    "大普微拿下34.91亿元大单",
-    "中际旭创被纳入港股通",
-    "外交部：中美双方就年内元首互动安排保持着沟通",
-    "商务部回应美考虑对华额外加征7.5%关税",
-    "特朗普就美国电力电网中的外国制造设备宣布“国家紧急状态” 外交部回应",
-    "美股三大指数走高 纳指涨超1% 英伟达涨逾8%",
-    "英伟达财报引爆目标价上调潮 已有机构喊出10万亿美元的目标估值",
-    "8月27日晚间上市公司利好消息一览(附名单)",
-    "中金公司：换股吸收合并东兴证券、信达证券事项获上交所审核通过"
+    "存储芯片牛股公布“炸裂”业绩",
+    "中国铝业上半年净利再创新高",
+    "天齐锂业半年净利暴增4925%",
+    "央行：将个人住房贷款期限由最长30年延长至最长40年",
+    "证监会发布《关于资本市场支持构建房地产发展新模式的意见》",
+    "三部门：完善商品住房销售制度 有力有序推行商品住房现房销售",
+    "美联储主席沃什：通胀数据并未显示通胀趋势出现显著改善",
+    "美股三大指数震荡整理 迈威尔科技股价大跌 国际贵金属走低",
+    "特朗普暗示可能制裁与伊朗保持业务往来的中资银行 外交部回应",
+    "8月28日晚间上市公司利好消息一览(附名单)"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -291,8 +234,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
-    "news_catalysts": 15
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 12
   }
 }
