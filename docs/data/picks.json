@@ -1,11 +1,69 @@
 {
-  "date": "2026-08-31",
+  "date": "2026-09-01",
   "market_context": {
-    "main_line": "AI分析失败，无数据",
-    "accumulating": "AI算力、半导体国产替代",
+    "main_line": "AI算力产业链传导与半导体国产替代补涨",
+    "accumulating": "AI算力",
     "overheated": "",
     "sentiment": "neutral",
     "policy": ""
   },
-  "picks": []
+  "picks": [
+    {
+      "code": "002281",
+      "name": "光迅科技",
+      "price": 180.72,
+      "change_pct": 0.0,
+      "score": 70,
+      "target": 200.0,
+      "stop_loss": 168.0,
+      "buy_range": "175-183",
+      "expected_return": "+11.2%",
+      "highlight": "国产光模块龙头,800G/1.6T量产,AI算力光互联核心",
+      "market_cap": "约140亿",
+      "sector": "通信-光模块",
+      "reason": "AI大模型迭代驱动800G/1.6T光模块需求。算力基建已涨,光互联环节蓄势待发。技术面横盘3周,量价配合,位于中期均线支撑。",
+      "catalyst": "全球AI大模型迭代周期加速,800G/1.6T光模块需求爆发 (TBD)",
+      "chain_position": "AI算力基础设施（光互联）,中游关键组件",
+      "risk": "海外需求波动；行业竞争加剧导致价格压力。止损条件:收盘价跌破年线（约168元）。",
+      "timeframe": "波段(2-4周)"
+    },
+    {
+      "code": "600584",
+      "name": "长电科技",
+      "price": 73.29,
+      "change_pct": 0.0,
+      "score": 65,
+      "target": 85.0,
+      "stop_loss": 70.0,
+      "buy_range": "74-77",
+      "expected_return": "+12.2%",
+      "highlight": "国产封测龙头,2.5D/3D封装技术领先,直接受益国产AI芯片",
+      "market_cap": "约430亿",
+      "sector": "半导体-封测",
+      "reason": "大基金三期重点投向先进封装。国产AI芯片（华为昇腾等）封装需求明确。股价在60日线附近蓄势2周,成交量温和放大,资金小幅流入。",
+      "catalyst": "大基金三期资金到位,国产AI芯片封装订单落地 (TBD)",
+      "chain_position": "半导体制造后道（先进封装）,产业链传导的补涨环节",
+      "risk": "全球半导体周期复苏不及预期；技术迭代风险。止损条件:收盘价跌破前期平台低点70元。",
+      "timeframe": "波段(3-4周)"
+    },
+    {
+      "code": "300101",
+      "name": "振芯科技",
+      "price": 14.59,
+      "change_pct": 0.0,
+      "score": 60,
+      "target": 16.5,
+      "stop_loss": 13.5,
+      "buy_range": "14.2-14.8",
+      "expected_return": "+13.8%",
+      "highlight": "北斗芯片核心供应商,低空经济政策催化,板块内部轮动补涨",
+      "market_cap": "约80亿",
+      "sector": "国防军工-北斗导航",
+      "reason": "低空经济政策持续出台,eVTOL/无人机需要高精度北斗定位。同板块华测导航已涨,存在内部轮动机会。股价处于低位,技术面有企稳迹象。",
+      "catalyst": "低空经济政策持续出台,eVTOL/无人机监管放开 (TBD)",
+      "chain_position": "低空经济/自动驾驶基础设施（高精度定位）,上游芯片环节",
+      "risk": "政策落地进度慢；民用市场拓展不及预期。止损条件:收盘价跌破前低13.5元。",
+      "timeframe": "波段(2-4周)"
+    }
+  ]
 }

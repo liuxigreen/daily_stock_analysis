@@ -1,6 +1,33 @@
 {
   "records": [
     {
+      "date": "2026-09-01",
+      "total_count": 3,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "AI算力产业链传导与半导体国产替代补涨",
+      "picks": [
+        {
+          "code": "002281",
+          "name": "光迅科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "600584",
+          "name": "长电科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "300101",
+          "name": "振芯科技",
+          "return": 0.0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-08-31",
       "total_count": 0,
       "win_count": 0,
