@@ -1,14 +1,20 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及算力, 存储；示例：存储缺货难解 三星70%产能锁定到2031年 HBM现货价已涨至合约价四倍",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及算力, 数据中心；示例：中国埃及联合声明：拓展数据中心、半导体、关键矿产供应链等领域合作",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 存储, 液冷已启动",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及军工；示例：军工逆势活跃！订单预付款同比大增",
+      "type": "accumulation",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：AI算力 — 算力, 数据中心已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -19,43 +25,48 @@
       "urgency": "medium"
     },
     {
-      "title": "存储缺货难解 三星70%产能锁定到2031年 HBM现货价已涨至合约价四倍",
+      "title": "产业链传导：军工航天 — 军工已启动",
+      "type": "chain_propagation",
+      "theme": "军工航天",
+      "next": [
+        "航空发动机",
+        "导弹",
+        "卫星"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "军工逆势活跃！订单预付款同比大增",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨AI设计&#x2B;半导体概念&#x2B;建筑装饰 这家公司跨界布局半导体赛道 已签约未完工订单达43亿元",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "今天全线大跌 军工板块逆市上涨 背后发生了什么？",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "中国埃及联合声明：拓展数据中心、半导体、关键矿产供应链等领域合作",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨绿电&#x2B;虚拟电厂&#x2B;储能概念 这家公司已签约63家零碳园区 正有序推进AIDC业务布局",
+      "title": "【风口研报】全球首款无方向盘汽车发布在即 智能驾驶有望迎发展拐点",
       "type": "news",
-      "theme": "储能",
+      "theme": "智能汽车",
       "urgency": "medium"
     },
     {
-      "title": "中信证券：AI液冷、测试设备、算力新技术、消费电子新品的主题热情有望升温",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "广东跑出机器人“大脑”供应商，让机器人听懂世界",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "高盛：存储价格仍处上行通道",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "【风口研报】新版基药目录正式施行!BD出海势头延续  创新药有望迎“下沉+出海”双轮驱动",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "电子布龙头9月提价落地 AI算力引爆上游“结构性紧缺” 融资客提前布局这5股",
+      "title": "“算力金属”价格狂飙，哪些上市公司受益？",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
@@ -72,10 +83,21 @@
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 60,
+      "score": 45,
       "reasons": [
-        "新闻蓄势：5条相关新闻提及算力, 存储",
-        "示例：存储缺货难解 三星70%产能锁定到2031年 HBM现货价已涨至合约价四倍"
+        "新闻蓄势：3条相关新闻提及算力, 数据中心",
+        "示例：中国埃及联合声明：拓展数据中心、半导体、关键矿产供应链等领域合作"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "军工航天",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及军工",
+        "示例：军工逆势活跃！订单预付款同比大增"
       ],
       "level": "news"
     }
@@ -90,11 +112,7 @@
           "source": "news"
         },
         {
-          "name": "存储",
-          "source": "news"
-        },
-        {
-          "name": "液冷",
+          "name": "数据中心",
           "source": "news"
         }
       ],
@@ -112,7 +130,32 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 5
+      "news_count": 3
+    },
+    {
+      "theme": "军工航天",
+      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
+      "started": [
+        {
+          "name": "军工",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "航空发动机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "导弹",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "卫星",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
     }
   ],
   "forward_events": [
@@ -144,16 +187,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "燧原科技周三申购！",
-    "苹果开启特努斯时代",
-    "5连板“大牛股”澄清",
-    "李强会见美中贸易全国委员会董事会代表团",
-    "“黑天鹅”突袭！全球债市猛烈抛售！美股、黄金集体跳水",
-    "两部门：9月1日起外籍个人股息红利不再免征个税",
-    "普京称俄愿意将中俄间的免签制度转为永久性安排 外交部回应",
-    "9月1日晚间上市公司利好消息一览(附名单)",
-    "基金完整持仓揭晓 四只“隐形重仓股”现身",
-    "首部AI长剧爆火！相关概念股梳理"
+    "“沪八条”效应显现！",
+    "江波龙折价45%招股",
+    "盛科通信拟定增募资48亿",
+    "中俄领导人讨论了中美俄三方在APEC会晤可能性？外交部回应",
+    "“词元通缩”发酵！Token支出指数创下历史新低 自峰值已腰斩",
+    "美国2-30年期国债收益率均大幅走低",
+    "潘功胜出席G20财长和央行行长会议：继续实施好适度宽松的货币政策",
+    "宇树股价腰斩！钱都被谁赚走了？",
+    "8月A股新开户239.73万户 同比下降近10%",
+    "燧原科技：科创板IPO网上发行最终中签率0.02455%"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -161,8 +204,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 1,
-    "chain_propagations": 1,
-    "news_catalysts": 8
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 7
   }
 }
