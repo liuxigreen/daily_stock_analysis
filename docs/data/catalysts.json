@@ -1,20 +1,31 @@
 {
-  "date": "2026-09-02",
+  "date": "2026-09-03",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及算力, 数据中心；示例：中国埃及联合声明：拓展数据中心、半导体、关键矿产供应链等领域合作",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 设备, 材料；示例：韩国总统府：政府将争取防止美半导体关税相关举措给韩企带来不利影响",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及算力, 液冷；示例：机构调研丨液冷概念&#x2B;连接器&#x2B;新能源车 这家公司液冷产线正有序扩产 马来西亚基地盈",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及军工；示例：军工逆势活跃！订单预付款同比大增",
-      "type": "accumulation",
-      "theme": "军工航天",
+      "title": "产业链传导：半导体国产替代 — 半导体, 设备, 材料已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 数据中心已启动",
+      "title": "产业链传导：AI算力 — 算力, 液冷已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -25,50 +36,57 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：军工航天 — 军工已启动",
-      "type": "chain_propagation",
-      "theme": "军工航天",
-      "next": [
-        "航空发动机",
-        "导弹",
-        "卫星"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "军工逆势活跃！订单预付款同比大增",
-      "type": "news",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨AI设计&#x2B;半导体概念&#x2B;建筑装饰 这家公司跨界布局半导体赛道 已签约未完工订单达43亿元",
+      "title": "韩国总统府：政府将争取防止美半导体关税相关举措给韩企带来不利影响",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "今天全线大跌 军工板块逆市上涨 背后发生了什么？",
+      "title": "台积电历史性扩张：全球在建晶圆工厂接近20座 设备采购预估值翻倍",
       "type": "news",
-      "theme": "军工航天",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "中国埃及联合声明：拓展数据中心、半导体、关键矿产供应链等领域合作",
+      "title": "机构调研丨液冷概念&#x2B;连接器&#x2B;新能源车 这家公司液冷产线正有序扩产 马来西亚基地盈利状况良好",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "【风口研报】全球首款无方向盘汽车发布在即 智能驾驶有望迎发展拐点",
+      "title": "美国电力衍生品交易所Nodal Exchange计划推出AI算力期货",
       "type": "news",
-      "theme": "智能汽车",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "“算力金属”价格狂飙，哪些上市公司受益？",
+      "title": "有研硅拟通过收购加码硅材料产业链布局",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "富时罗素调仓中国核心指数 多家科创板半导体龙头被纳入",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "【风口研报】马斯克10亿台预测!产业标准体系建设加速 人形机器人有望走向规模化落地",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "AI算力引爆MLCC需求 三星电机斩获史上最大长约 产业链景气或持续上行(附股)",
       "type": "news",
       "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "锂电正极材料行业上半年回暖 企业锚定高端化与差异化",
+      "type": "news",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
@@ -80,29 +98,62 @@
   ],
   "accumulation_signals": [
     {
-      "name": "AI算力",
+      "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 45,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：3条相关新闻提及算力, 数据中心",
-        "示例：中国埃及联合声明：拓展数据中心、半导体、关键矿产供应链等领域合作"
+        "新闻蓄势：5条相关新闻提及半导体, 设备, 材料",
+        "示例：韩国总统府：政府将争取防止美半导体关税相关举措给韩企带来不利影响"
       ],
       "level": "news"
     },
     {
-      "name": "军工航天",
+      "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及军工",
-        "示例：军工逆势活跃！订单预付款同比大增"
+        "新闻蓄势：4条相关新闻提及算力, 液冷",
+        "示例：机构调研丨液冷概念&#x2B;连接器&#x2B;新能源车 这家公司液冷产线正有序扩产 马来西亚基地盈"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "设备",
+          "source": "news"
+        },
+        {
+          "name": "材料",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 5
+    },
     {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
@@ -112,7 +163,7 @@
           "source": "news"
         },
         {
-          "name": "数据中心",
+          "name": "液冷",
           "source": "news"
         }
       ],
@@ -130,32 +181,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 3
-    },
-    {
-      "theme": "军工航天",
-      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
-      "started": [
-        {
-          "name": "军工",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "航空发动机",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "导弹",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "卫星",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
+      "news_count": 4
     }
   ],
   "forward_events": [
@@ -187,16 +213,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "“沪八条”效应显现！",
-    "江波龙折价45%招股",
-    "盛科通信拟定增募资48亿",
-    "中俄领导人讨论了中美俄三方在APEC会晤可能性？外交部回应",
-    "“词元通缩”发酵！Token支出指数创下历史新低 自峰值已腰斩",
-    "美国2-30年期国债收益率均大幅走低",
-    "潘功胜出席G20财长和央行行长会议：继续实施好适度宽松的货币政策",
-    "宇树股价腰斩！钱都被谁赚走了？",
-    "8月A股新开户239.73万户 同比下降近10%",
-    "燧原科技：科创板IPO网上发行最终中签率0.02455%"
+    "黄仁勋G20布道“AI经济学”",
+    "中际旭创前十大股东生变",
+    "寒武纪大举招聘软件人才",
+    "利好来了！十部门重磅发布 设立国家中小企业发展基金二期",
+    "商务部：中方敦促美方撤销对有关中国企业和公民的制裁",
+    "韩国总统府：政府将争取防止美半导体关税相关举措给韩企带来不利影响",
+    "燧原科技中签号出炉 共20657个",
+    "中际旭创大股东质押6亿还债！质押榜排第17名",
+    "“史诗级”大单吸睛！MLCC景气或延续",
+    "2026医保国谈将于9月5日举行"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -206,6 +232,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 2,
     "chain_propagations": 2,
-    "news_catalysts": 7
+    "news_catalysts": 10
   }
 }
