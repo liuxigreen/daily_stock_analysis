@@ -1,31 +1,14 @@
 {
-  "date": "2026-09-03",
+  "date": "2026-09-04",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 设备, 材料；示例：韩国总统府：政府将争取防止美半导体关税相关举措给韩企带来不利影响",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及算力, 液冷；示例：机构调研丨液冷概念&#x2B;连接器&#x2B;新能源车 这家公司液冷产线正有序扩产 马来西亚基地盈",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及算力；示例：事关人工智能、算力设施等 七部门最新部署",
       "type": "accumulation",
       "theme": "AI算力",
-      "urgency": "high"
-    },
-    {
-      "title": "产业链传导：半导体国产替代 — 半导体, 设备, 材料已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 液冷已启动",
+      "title": "产业链传导：AI算力 — 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -36,57 +19,39 @@
       "urgency": "medium"
     },
     {
-      "title": "韩国总统府：政府将争取防止美半导体关税相关举措给韩企带来不利影响",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "台积电历史性扩张：全球在建晶圆工厂接近20座 设备采购预估值翻倍",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨液冷概念&#x2B;连接器&#x2B;新能源车 这家公司液冷产线正有序扩产 马来西亚基地盈利状况良好",
+      "title": "事关人工智能、算力设施等 七部门最新部署",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "美国电力衍生品交易所Nodal Exchange计划推出AI算力期货",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "有研硅拟通过收购加码硅材料产业链布局",
+      "title": "养老理财产品新一轮扩围在即 有公司已上报材料",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "富时罗素调仓中国核心指数 多家科创板半导体龙头被纳入",
+      "title": "小米官宣中创新航、欣旺达动力两大电池战略合作伙伴",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "新能源车",
       "urgency": "medium"
     },
     {
-      "title": "【风口研报】马斯克10亿台预测!产业标准体系建设加速 人形机器人有望走向规模化落地",
+      "title": "“十五五”医保如何支持医药创新？国家医保局划出重点",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "开物·时代智造｜侯乃先：世界各国都在抢跑绿色航空，中国不能缺席",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "首届机器人及智能焊接学术交流会在京举行",
       "type": "news",
       "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "AI算力引爆MLCC需求 三星电机斩获史上最大长约 产业链景气或持续上行(附股)",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "锂电正极材料行业上半年回暖 企业锚定高端化与差异化",
-      "type": "news",
-      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
@@ -98,72 +63,24 @@
   ],
   "accumulation_signals": [
     {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：5条相关新闻提及半导体, 设备, 材料",
-        "示例：韩国总统府：政府将争取防止美半导体关税相关举措给韩企带来不利影响"
-      ],
-      "level": "news"
-    },
-    {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 60,
+      "score": 30,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及算力, 液冷",
-        "示例：机构调研丨液冷概念&#x2B;连接器&#x2B;新能源车 这家公司液冷产线正有序扩产 马来西亚基地盈"
+        "新闻蓄势：2条相关新闻提及算力",
+        "示例：事关人工智能、算力设施等 七部门最新部署"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "设备",
-          "source": "news"
-        },
-        {
-          "name": "材料",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 5
-    },
-    {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
           "name": "算力",
-          "source": "news"
-        },
-        {
-          "name": "液冷",
           "source": "news"
         }
       ],
@@ -181,7 +98,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 4
+      "news_count": 2
     }
   ],
   "forward_events": [
@@ -213,16 +130,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "黄仁勋G20布道“AI经济学”",
-    "中际旭创前十大股东生变",
-    "寒武纪大举招聘软件人才",
-    "利好来了！十部门重磅发布 设立国家中小企业发展基金二期",
-    "商务部：中方敦促美方撤销对有关中国企业和公民的制裁",
-    "韩国总统府：政府将争取防止美半导体关税相关举措给韩企带来不利影响",
-    "燧原科技中签号出炉 共20657个",
-    "中际旭创大股东质押6亿还债！质押榜排第17名",
-    "“史诗级”大单吸睛！MLCC景气或延续",
-    "2026医保国谈将于9月5日举行"
+    "英伟达发力“本地AI”！",
+    "集泰股份再发异动公告",
+    "长电科技拟定增募资不超65亿",
+    "华尔街迎来“非农夜”大考：今晚坏数据就是好消息？",
+    "首个针对私募募集的行业规范出台 让违规成本大幅提升",
+    "中美或将就农业及相关非关税壁垒发布声明？外交部：无信息提供",
+    "私募基金募集迎监管新规：细化合格投资者标准 明确资金监管要求",
+    "GPT-6引爆！新“易中天”领涨AI应用",
+    "七部门联合印发《促进数字化绿色化协同转型发展实施方案（2026-2030年）》",
+    "我国启动国际地月立方星座大科学计划"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -230,8 +147,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 2,
-    "chain_propagations": 2,
-    "news_catalysts": 10
+    "accumulation_signals": 1,
+    "chain_propagations": 1,
+    "news_catalysts": 7
   }
 }
