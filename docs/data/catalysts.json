@@ -1,75 +1,121 @@
 {
-  "date": "2026-09-04",
+  "date": "2026-09-07",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及算力；示例：事关人工智能、算力设施等 七部门最新部署",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及芯片, 半导体；示例：华为时隔六年再次发布高性能芯片",
       "type": "accumulation",
-      "theme": "AI算力",
-      "urgency": "medium"
+      "theme": "半导体国产替代",
+      "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 算力已启动",
+      "title": "蓄势信号：新闻蓄势：6条相关新闻提及数据中心, 算力, 光模块；示例：高盛大幅上调光模块市场预测：2028年规模或达1485亿美元",
+      "type": "accumulation",
+      "theme": "AI算力",
+      "urgency": "high"
+    },
+    {
+      "title": "产业链传导：AI算力 — 液冷, CPO, 光模块, 算力, 数据中心已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
-        "光模块",
-        "光芯片"
+        "光芯片",
+        "存储芯片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "事关人工智能、算力设施等 七部门最新部署",
-      "type": "news",
-      "theme": "AI算力",
+      "title": "产业链传导：半导体国产替代 — 芯片, 半导体, 设备已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "养老理财产品新一轮扩围在即 有公司已上报材料",
+      "title": "华为时隔六年再次发布高性能芯片",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "小米官宣中创新航、欣旺达动力两大电池战略合作伙伴",
+      "title": "高盛大幅上调光模块市场预测：2028年规模或达1485亿美元",
       "type": "news",
-      "theme": "新能源车",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "“十五五”医保如何支持医药创新？国家医保局划出重点",
+      "title": "行云科技：“算力卡被卡在海关”的相关传闻造谣者已被行政处罚",
       "type": "news",
-      "theme": "创新药",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "开物·时代智造｜侯乃先：世界各国都在抢跑绿色航空，中国不能缺席",
+      "title": "中际旭创目标价逼近3000元！光模块相关概念梳理",
       "type": "news",
-      "theme": "军工航天",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "首届机器人及智能焊接学术交流会在京举行",
+      "title": "麒麟9050 Pro芯片！华为三折叠新机 19999元起售",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨液冷&#x2B;CPO概念&#x2B;折叠屏 这家公司获行业龙头重金入股 数据中心散热等新业务正快速成长",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "工信部：到2030年信息基础设施累计投资3.8万亿元 智能算力规模达9800EFLOPS",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "芯片龙头20%跌停，科技类基金却集体爆发！近30亿资金提前抢筹",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "乐动机器人获纳入港股通",
       "type": "news",
       "theme": "人形机器人",
       "urgency": "medium"
     },
     {
-      "title": "告别算力内卷：AI基建狂潮下，铜、铝、稀土的下一站在哪？",
+      "title": "【风口研报】华为再论韬定律!Q2出货创历史新高  半导体设备景气度有望进一步抬升",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
     {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：4条相关新闻提及芯片, 半导体",
+        "示例：华为时隔六年再次发布高性能芯片"
+      ],
+      "level": "news"
+    },
+    {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及算力",
-        "示例：事关人工智能、算力设施等 七部门最新部署"
+        "新闻蓄势：6条相关新闻提及数据中心, 算力, 光模块",
+        "示例：高盛大幅上调光模块市场预测：2028年规模或达1485亿美元"
       ],
       "level": "news"
     }
@@ -80,7 +126,23 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
+          "name": "液冷",
+          "source": "news"
+        },
+        {
+          "name": "CPO",
+          "source": "news"
+        },
+        {
+          "name": "光模块",
+          "source": "news"
+        },
+        {
           "name": "算力",
+          "source": "news"
+        },
+        {
+          "name": "数据中心",
           "source": "news"
         }
       ],
@@ -90,15 +152,48 @@
           "market_cap_yi": 0
         },
         {
-          "name": "光模块",
+          "name": "光芯片",
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
+          "name": "存储芯片",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 2
+      "news_count": 6
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "芯片",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "设备",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 4
     }
   ],
   "forward_events": [
@@ -130,16 +225,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "英伟达发力“本地AI”！",
-    "集泰股份再发异动公告",
-    "长电科技拟定增募资不超65亿",
-    "华尔街迎来“非农夜”大考：今晚坏数据就是好消息？",
-    "首个针对私募募集的行业规范出台 让违规成本大幅提升",
-    "中美或将就农业及相关非关税壁垒发布声明？外交部：无信息提供",
-    "私募基金募集迎监管新规：细化合格投资者标准 明确资金监管要求",
-    "GPT-6引爆！新“易中天”领涨AI应用",
-    "七部门联合印发《促进数字化绿色化协同转型发展实施方案（2026-2030年）》",
-    "我国启动国际地月立方星座大科学计划"
+    "华为何庭波再论韬定律",
+    "爱仕达连续涨停后提示风险",
+    "宇邦新材控制权拟变更！",
+    "工信部：2030年全面建成性能领先的新一代通信网",
+    "华为时隔六年再次发布高性能芯片",
+    "高盛大幅上调光模块市场预测：2028年规模或达1485亿美元",
+    "中国证监会原副主席王建军一审被判无期徒刑",
+    "中美未来几周将举行人工智能对话？外交部：双方就AI问题保持沟通",
+    "9月7日晚间上市公司利好消息一览(附名单)",
+    "雷军发布小米目前最贵手机 起售价10999元"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -147,8 +242,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 1,
-    "chain_propagations": 1,
-    "news_catalysts": 7
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 12
   }
 }
