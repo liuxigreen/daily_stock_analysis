@@ -1,13 +1,13 @@
 {
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "summary": {
     "total": 14,
     "watching": 14,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "-11.51%",
-    "avg_pnl_pct": -11.51
+    "total_pnl": "+0.0%",
+    "avg_pnl_pct": 0.0
   },
   "stocks": [
     {
@@ -19,10 +19,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 1639.0,
-      "current_price": 1715.0,
-      "change_pct_today": 0.76,
-      "pnl_pct": 4.64,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "100G EML Q3小批量供货",
@@ -56,10 +56,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 360.0,
-      "current_price": 330.66,
-      "change_pct_today": -2.73,
-      "pnl_pct": -8.15,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "半导体国产替代专项政策即将出台，晶圆厂扩产带动硅片需求",
@@ -81,10 +81,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 269.95,
-      "current_price": 196.2,
-      "change_pct_today": -0.41,
-      "pnl_pct": -27.32,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "国产晶圆厂资本开支持续高增，设备国产化率提升",
@@ -106,10 +106,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 36.42,
-      "current_price": 42.0,
-      "change_pct_today": -0.14,
-      "pnl_pct": 15.32,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "存储芯片价格Q3触底反弹，AI端侧需求带动MCU增长",
@@ -131,10 +131,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 42.81,
-      "current_price": 37.61,
-      "change_pct_today": -2.77,
-      "pnl_pct": -12.15,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "低空经济政策持续出台，eVTOL/无人机监管放开",
@@ -156,10 +156,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 413.05,
-      "current_price": 292.54,
-      "change_pct_today": -0.82,
-      "pnl_pct": -29.18,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "Tesla Optimus Gen3量产预期，宇树科技/优必选等国产机器人厂商订单落地，机器人产业链从主题炒作进入业绩兑现期",
@@ -181,10 +181,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 67.37,
-      "current_price": 58.32,
-      "change_pct_today": -1.4,
-      "pnl_pct": -13.43,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "大基金三期资金到位，国产AI芯片（华为昇腾等）封装需求爆发，先进封装技术突破",
@@ -206,10 +206,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 450.0,
-      "current_price": 360.06,
-      "change_pct_today": -5.2,
-      "pnl_pct": -19.99,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "大基金三期资金到位，半导体材料专项扶持政策出台",
@@ -231,10 +231,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 454.48,
-      "current_price": 382.5,
-      "change_pct_today": 4.8,
-      "pnl_pct": -15.84,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "大基金三期投向先进封装，国产AI芯片封装订单落地",
@@ -256,10 +256,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 73.82,
-      "current_price": 49.95,
-      "change_pct_today": -1.67,
-      "pnl_pct": -32.34,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "Tesla Optimus Gen3量产，宇树科技/优必选订单落地",
@@ -281,10 +281,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 16.53,
-      "current_price": 14.49,
-      "change_pct_today": 0.42,
-      "pnl_pct": -12.34,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "低空经济政策持续出台，eVTOL/无人机监管放开",
@@ -306,10 +306,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-08-28",
       "added_price": 74.93,
-      "current_price": 68.6,
-      "change_pct_today": -0.58,
-      "pnl_pct": -8.45,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "大基金三期资金到位,国产AI芯片封装订单落地",
@@ -331,10 +331,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-08-28",
       "added_price": 173.61,
-      "current_price": 179.92,
-      "change_pct_today": -2.47,
-      "pnl_pct": 3.63,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "AI大模型迭代加速,800G/1.6T光模块需求爆发",
@@ -356,10 +356,10 @@
       "timeframe": "12-18个月",
       "added_date": "2026-08-28",
       "added_price": 16.92,
-      "current_price": 15.97,
-      "change_pct_today": -0.68,
-      "pnl_pct": -5.61,
-      "data_source": "tencent",
+      "current_price": 0.0,
+      "change_pct_today": 0.0,
+      "pnl_pct": 0.0,
+      "data_source": "unknown",
       "catalyst_alerts": [
         {
           "event": "大基金三期资金到位,国产AI芯片封装需求爆发",

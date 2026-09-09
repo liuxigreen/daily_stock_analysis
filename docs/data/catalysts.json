@@ -1,37 +1,107 @@
 {
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及算力, 存储；示例：存储芯片议价权生变：据称苹果罕见签下NAND长协 不设价格上限",
+      "title": "蓄势信号：新闻蓄势：8条相关新闻提及光模块, 数据中心, 算力；示例：盘后利好来了！北京重磅发文 提升十万卡算力集群建设能力",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 存储已启动",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及光刻, 半导体, 芯片；示例：【新华解读】8月PPI同比涨幅扩大 半导体行业进入新一轮成长期",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及卫星, 航天；示例：北京：加快发展商业航天产业 突破可重复使用火箭和大推力发动机技术",
+      "type": "accumulation",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：AI算力 — 光模块, 数据中心, 算力, 液冷已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
-        "光模块",
-        "光芯片"
+        "光芯片",
+        "存储芯片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "存储芯片议价权生变：据称苹果罕见签下NAND长协 不设价格上限",
+      "title": "产业链传导：半导体国产替代 — 光刻, 半导体, 芯片已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "先进封装",
+        "硅片"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：军工航天 — 卫星, 航天已启动",
+      "type": "chain_propagation",
+      "theme": "军工航天",
+      "next": [
+        "航空发动机",
+        "导弹",
+        "雷达"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "盘后利好来了！北京重磅发文 提升十万卡算力集群建设能力",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "海外巨头库存告急！存储芯片反复活跃 DRAM景气周期或延续？(附股)",
+      "title": "机构调研丨TGV&#x2B;激光设备&#x2B;液冷概念 这家公司上半年新增订单超百亿元 AI四大赛道均已实现订单落地",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "300964，拟砸20亿元布局AI算力PCB！上半年净利润近乎翻倍，股价年内涨逾五成",
+      "title": "AI算力革命拓展应用边界 培育钻石反复活跃 多股获杠杆资金加仓(名单)",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "光博会开幕&#x2B;高盛大调预期！光模块表现强势 融资客最新抢筹股曝光",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "北京：加快发展商业航天产业 突破可重复使用火箭和大推力发动机技术",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "储能扩产按下“暂停键”！储能电池新建项目审批或将收紧",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "【新华解读】8月PPI同比涨幅扩大 半导体行业进入新一轮成长期",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "北京印发重磅发展规划！事关人工智能、芯片、商业航天",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "北京科锐：子公司中标1.7亿元数据中心电力模块项目",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
@@ -40,12 +110,6 @@
       "title": "阿斯麦赢得台积电和三星承诺 新一代EUV光刻机获强力“护航”",
       "type": "news",
       "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "告别算力内卷：AI基建狂潮下，铜、铝、稀土的下一站在哪？",
-      "type": "news",
-      "theme": "AI算力",
       "urgency": "medium"
     }
   ],
@@ -56,8 +120,30 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及算力, 存储",
-        "示例：存储芯片议价权生变：据称苹果罕见签下NAND长协 不设价格上限"
+        "新闻蓄势：8条相关新闻提及光模块, 数据中心, 算力",
+        "示例：盘后利好来了！北京重磅发文 提升十万卡算力集群建设能力"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 45,
+      "reasons": [
+        "新闻蓄势：3条相关新闻提及光刻, 半导体, 芯片",
+        "示例：【新华解读】8月PPI同比涨幅扩大 半导体行业进入新一轮成长期"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "军工航天",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及卫星, 航天",
+        "示例：北京：加快发展商业航天产业 突破可重复使用火箭和大推力发动机技术"
       ],
       "level": "news"
     }
@@ -68,11 +154,19 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
+          "name": "光模块",
+          "source": "news"
+        },
+        {
+          "name": "数据中心",
+          "source": "news"
+        },
+        {
           "name": "算力",
           "source": "news"
         },
         {
-          "name": "存储",
+          "name": "液冷",
           "source": "news"
         }
       ],
@@ -82,15 +176,77 @@
           "market_cap_yi": 0
         },
         {
-          "name": "光模块",
+          "name": "光芯片",
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
+          "name": "存储芯片",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 4
+      "news_count": 8
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "光刻",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "硅片",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 3
+    },
+    {
+      "theme": "军工航天",
+      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
+      "started": [
+        {
+          "name": "卫星",
+          "source": "news"
+        },
+        {
+          "name": "航天",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "航空发动机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "导弹",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "雷达",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
     }
   ],
   "forward_events": [
@@ -122,16 +278,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "六连板龙版传媒紧急澄清",
-    "长鑫科技释放景气信号",
-    "好想来、鸣鸣很忙致歉",
-    "李强主持国务院第二十一次专题学习：坚持以人为本高质量推进城市更新",
-    "多部门印发通知 扩大灵活就业人员等群体基本医保参保规模",
-    "中东突发！沙特多处能源设施遭袭 胡塞武装：沙特“没有安全之地”！油价飙升",
-    "要站在田里 而不是光里？A股“0跌停” 农业板块再度爆发 原因找到了",
-    "习近平同英国首相伯纳姆通电话",
-    "江波龙首日破发！年内“A&#x2B;H”股已达34只 募资超前五年总和",
-    "AI龙头有哪些？机构最新产业链梳理"
+    "苹果新CEO迎来首秀",
+    "诺华制药遭遇重大挫败",
+    "江波龙港股“破发”！",
+    "美国指责中国AI公司蒸馏美企 外交部：中国AI发展是高水平科技自立自强的成果",
+    "消息称DeepSeek拟登陆科创板 聘请中信证券筹备IPO",
+    "苹果十余年来最重磅发布会：首款折叠iPhone即将亮相 新CEO首秀登场",
+    "燧原科技：将于9月11日在科创板上市",
+    "从“光”到“田”！A股风格迎来极致切换",
+    "Meta、亚马逊后 康宁又和Verizon签大单！光纤概念集体爆发",
+    "上交所向星宇股份下发监管工作函"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -139,8 +295,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 1,
-    "chain_propagations": 1,
-    "news_catalysts": 5
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
+    "news_catalysts": 14
   }
 }
