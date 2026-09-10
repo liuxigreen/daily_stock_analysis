@@ -1,115 +1,69 @@
 {
-  "date": "2026-09-09",
+  "date": "2026-09-10",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：8条相关新闻提及光模块, 数据中心, 算力；示例：盘后利好来了！北京重磅发文 提升十万卡算力集群建设能力",
+      "title": "蓄势信号：新闻蓄势：6条相关新闻提及光模块, 存储, AI芯片；示例：侨银股份跨界“卖算力”",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及光刻, 半导体, 芯片；示例：【新华解读】8月PPI同比涨幅扩大 半导体行业进入新一轮成长期",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及卫星, 航天；示例：北京：加快发展商业航天产业 突破可重复使用火箭和大推力发动机技术",
-      "type": "accumulation",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 光模块, 数据中心, 算力, 液冷已启动",
+      "title": "产业链传导：AI算力 — 光模块, 存储, AI芯片, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
-        "AI芯片",
         "光芯片",
-        "存储芯片"
+        "数据中心",
+        "液冷散热"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 光刻, 半导体, 芯片已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "先进封装",
-        "硅片"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：军工航天 — 卫星, 航天已启动",
-      "type": "chain_propagation",
-      "theme": "军工航天",
-      "next": [
-        "航空发动机",
-        "导弹",
-        "雷达"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "盘后利好来了！北京重磅发文 提升十万卡算力集群建设能力",
+      "title": "侨银股份跨界“卖算力”",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨TGV&#x2B;激光设备&#x2B;液冷概念 这家公司上半年新增订单超百亿元 AI四大赛道均已实现订单落地",
+      "title": "机构调研丨PCB&#x2B;铜箔&#x2B;锂电池 这家公司HVLP4产品良率持续提升 载体铜箔计划优先切入光模块市场",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "AI算力革命拓展应用边界 培育钻石反复活跃 多股获杠杆资金加仓(名单)",
+      "title": "存储涨价潮要降温？恐打击AI投资意愿 铠侠CEO称“价格已涨得够高”",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "光博会开幕&#x2B;高盛大调预期！光模块表现强势 融资客最新抢筹股曝光",
+      "title": "AI算力引爆供求缺口 PCB产业链涨价潮持续 最新融资客抢筹股名单出炉",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "北京：加快发展商业航天产业 突破可重复使用火箭和大推力发动机技术",
+      "title": "光伏史上最大硅料并购案，能成功吗？",
       "type": "news",
-      "theme": "军工航天",
+      "theme": "光伏风电",
       "urgency": "medium"
     },
     {
-      "title": "储能扩产按下“暂停键”！储能电池新建项目审批或将收紧",
-      "type": "news",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "【新华解读】8月PPI同比涨幅扩大 半导体行业进入新一轮成长期",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "北京印发重磅发展规划！事关人工智能、芯片、商业航天",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "北京科锐：子公司中标1.7亿元数据中心电力模块项目",
+      "title": "AI芯片需求持续旺盛！台积电8月营收同比猛增53% 创历史新高",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "阿斯麦赢得台积电和三星承诺 新一代EUV光刻机获强力“护航”",
+      "title": "竞逐人形机器人赛道 各地加速抢抓展会溢出效应",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "美存储股逆势大涨！高盛振臂高呼：最坏时期已过去 资金或正重新进场",
+      "type": "news",
+      "theme": "AI算力",
       "urgency": "medium"
     }
   ],
@@ -120,30 +74,8 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：8条相关新闻提及光模块, 数据中心, 算力",
-        "示例：盘后利好来了！北京重磅发文 提升十万卡算力集群建设能力"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 45,
-      "reasons": [
-        "新闻蓄势：3条相关新闻提及光刻, 半导体, 芯片",
-        "示例：【新华解读】8月PPI同比涨幅扩大 半导体行业进入新一轮成长期"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "军工航天",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及卫星, 航天",
-        "示例：北京：加快发展商业航天产业 突破可重复使用火箭和大推力发动机技术"
+        "新闻蓄势：6条相关新闻提及光模块, 存储, AI芯片",
+        "示例：侨银股份跨界“卖算力”"
       ],
       "level": "news"
     }
@@ -158,95 +90,33 @@
           "source": "news"
         },
         {
-          "name": "数据中心",
+          "name": "存储",
+          "source": "news"
+        },
+        {
+          "name": "AI芯片",
           "source": "news"
         },
         {
           "name": "算力",
           "source": "news"
-        },
-        {
-          "name": "液冷",
-          "source": "news"
         }
       ],
       "next_opportunities": [
-        {
-          "name": "AI芯片",
-          "market_cap_yi": 0
-        },
         {
           "name": "光芯片",
           "market_cap_yi": 0
         },
         {
-          "name": "存储芯片",
+          "name": "数据中心",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "液冷散热",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 8
-    },
-    {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "光刻",
-          "source": "news"
-        },
-        {
-          "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "芯片",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "硅片",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 3
-    },
-    {
-      "theme": "军工航天",
-      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
-      "started": [
-        {
-          "name": "卫星",
-          "source": "news"
-        },
-        {
-          "name": "航天",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "航空发动机",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "导弹",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "雷达",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
+      "news_count": 6
     }
   ],
   "forward_events": [
@@ -278,16 +148,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "苹果新CEO迎来首秀",
-    "诺华制药遭遇重大挫败",
-    "江波龙港股“破发”！",
-    "美国指责中国AI公司蒸馏美企 外交部：中国AI发展是高水平科技自立自强的成果",
-    "消息称DeepSeek拟登陆科创板 聘请中信证券筹备IPO",
-    "苹果十余年来最重磅发布会：首款折叠iPhone即将亮相 新CEO首秀登场",
-    "燧原科技：将于9月11日在科创板上市",
-    "从“光”到“田”！A股风格迎来极致切换",
-    "Meta、亚马逊后 康宁又和Verizon签大单！光纤概念集体爆发",
-    "上交所向星宇股份下发监管工作函"
+    "燧原科技周五登陆科创板",
+    "侨银股份跨界“卖算力”",
+    "301390筹划控制权变更",
+    "《金融强国建设“十五五”规划》正式出台",
+    "商务部：中美正就300亿美元对等降税框架安排进行磋商",
+    "外交部：中美双方就年内元首互动安排保持着沟通",
+    "欧洲央行将三大关键利率上调25个基点",
+    "新一批国家组织高值医用耗材集采纳入23个品种",
+    "传月之暗面拟赴香港、上海双重上市 知情人士：消息不实",
+    "一文看懂国新办新闻发布会 央行、证监会等最新发声"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -295,8 +165,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
-    "news_catalysts": 14
+    "accumulation_signals": 1,
+    "chain_propagations": 1,
+    "news_catalysts": 8
   }
 }
