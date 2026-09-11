@@ -1,6 +1,39 @@
 {
   "records": [
     {
+      "date": "2026-09-11",
+      "total_count": 4,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "AI算力基建与半导体国产替代传导",
+      "picks": [
+        {
+          "code": "002916",
+          "name": "深南电路",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002281",
+          "name": "光迅科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "300101",
+          "name": "振芯科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "603662",
+          "name": "柯力传感",
+          "return": 0.0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-09-10",
       "total_count": 0,
       "win_count": 0,
