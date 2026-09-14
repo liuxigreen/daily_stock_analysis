@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-11",
+  "last_updated": "2026-09-14",
   "upcoming": [
     {
       "date": "2026-09",
@@ -132,6 +132,24 @@
       "stock_code": "002185",
       "stock_name": "华天科技",
       "event": "大基金三期资金到位,国产AI芯片封装需求爆发",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "300620",
+      "stock_name": "光库科技",
+      "event": "全球AI大模型迭代加速,800G/1.6T光模块需求爆发；大基金三期可能投向光芯片材料领域。",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002413",
+      "stock_name": "雷科防务",
+      "event": "地缘局势紧张催化军工板块；军费预算增长,装备信息化采购放量；低轨卫星互联网建设加速。",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"

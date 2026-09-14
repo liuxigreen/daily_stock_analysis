@@ -1,61 +1,66 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-14",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及光模块, 算力, AI芯片；示例：国常会：进一步完善算力基础设施 积极推进关键技术和装备研发应用",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及航天, 导弹；示例：国际油价大涨超4% 布油逼近110美元 也门胡塞武装称向沙特空军基地发动导弹无人机袭击",
       "type": "accumulation",
-      "theme": "AI算力",
-      "urgency": "high"
+      "theme": "军工航天",
+      "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 光模块, 算力, AI芯片已启动",
-      "type": "chain_propagation",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及算力, 存储；示例：集体大跌！美股存储、光通信盘前交易来了",
+      "type": "accumulation",
       "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：军工航天 — 航天, 导弹已启动",
+      "type": "chain_propagation",
+      "theme": "军工航天",
       "next": [
-        "光芯片",
-        "数据中心",
-        "液冷散热"
+        "航空发动机",
+        "卫星",
+        "雷达"
       ],
       "urgency": "medium"
     },
     {
-      "title": "国常会：进一步完善算力基础设施 积极推进关键技术和装备研发应用",
+      "title": "产业链传导：AI算力 — 算力, 存储已启动",
+      "type": "chain_propagation",
+      "theme": "AI算力",
+      "next": [
+        "AI芯片",
+        "光模块",
+        "光芯片"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "国际油价大涨超4% 布油逼近110美元 也门胡塞武装称向沙特空军基地发动导弹无人机袭击",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "集体大跌！美股存储、光通信盘前交易来了",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "“FCC光模块禁令”虚惊一场！概念股逆势走强",
+      "title": "机构调研丨数据安全&#x2B;商业航天 这家公司坚持空天地一体化安全战略 AI安全网关产品已小规模商用部署",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "军工航天",
       "urgency": "medium"
     },
     {
-      "title": "阳光电源：光伏逆变器、储能变流器和储能系统向上调价5%-15%",
+      "title": "拿下6GWh储能大单，锂电巨头再突破",
       "type": "news",
-      "theme": "储能",
+      "theme": "新能源车",
       "urgency": "medium"
     },
     {
-      "title": "三部门：攻坚突破农业传感器与专用芯片、核心算法、机器人、智能设计育种工具等关键核心技术",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨MLCC&#x2B;商业航天&#x2B;军工电子 这家公司宇航级MLCC配套中国星网 算力服务器结构件已小批量供货",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "登陆A股25年后，天通股份筹划赴港上市，上半年亏损逾2.8亿，光伏装备板块拖累业绩",
-      "type": "news",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "AI芯片需求持续旺盛！台积电8月营收同比猛增53% 创历史新高",
+      "title": "词元消耗量将达10亿亿！算力租赁景气多点共振 机构重点关注这5股(名单)",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
@@ -63,50 +68,86 @@
   ],
   "accumulation_signals": [
     {
+      "name": "军工航天",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及航天, 导弹",
+        "示例：国际油价大涨超4% 布油逼近110美元 也门胡塞武装称向沙特空军基地发动导弹无人机袭击"
+      ],
+      "level": "news"
+    },
+    {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 60,
+      "score": 30,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及光模块, 算力, AI芯片",
-        "示例：国常会：进一步完善算力基础设施 积极推进关键技术和装备研发应用"
+        "新闻蓄势：2条相关新闻提及算力, 存储",
+        "示例：集体大跌！美股存储、光通信盘前交易来了"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "AI算力",
-      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
+      "theme": "军工航天",
+      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
       "started": [
         {
-          "name": "光模块",
+          "name": "航天",
           "source": "news"
         },
         {
-          "name": "算力",
-          "source": "news"
-        },
-        {
-          "name": "AI芯片",
+          "name": "导弹",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "光芯片",
+          "name": "航空发动机",
           "market_cap_yi": 0
         },
         {
-          "name": "数据中心",
+          "name": "卫星",
           "market_cap_yi": 0
         },
         {
-          "name": "液冷散热",
+          "name": "雷达",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 4
+      "news_count": 2
+    },
+    {
+      "theme": "AI算力",
+      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
+      "started": [
+        {
+          "name": "算力",
+          "source": "news"
+        },
+        {
+          "name": "存储",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "AI芯片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光模块",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光芯片",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
     }
   ],
   "forward_events": [
@@ -138,16 +179,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "甲骨文AI扩张高歌猛进",
-    "黄仁勋看好网络安全市场",
-    "桂林旅游：AI概念不赚钱",
-    "国常会：进一步完善算力基础设施 积极推进关键技术和装备研发应用",
-    "美联储下周是否加息？今晚20:30 市场迎来“终极一战”！",
-    "证券从业人员宗某编造、传播虚假信息 被证监会采取5年市场禁入措施",
-    "霍尔木兹传来新消息？伊朗与海湾六国下周会晤 油价应声走低",
-    "证监会发布《期货公司监督管理办法》及配套实施公告",
-    "证监会严肃查处*ST卓然严重财务造假案件 将依法启动退市程序",
-    "“FCC光模块禁令”虚惊一场！概念股逆势走强"
+    "两只PCB大牛股双双澄清",
+    "OpenAI将推迟上市",
+    "摩尔线程风光难再？",
+    "央行：前八个月社会融资规模增量累计为23.91万亿 人民币贷款增加10.44万亿",
+    "工信部召开部分省份工业经济运行座谈会：加快推动人工智能产业发展和赋能应用",
+    "美股三大指数集体下跌 国际油价大涨、金价走低",
+    "广汽集团：筹划购买一汽股份持有的某整车合资公司部分股权 股票停牌",
+    "9月14日晚间上市公司利好消息一览(附名单)",
+    "商务部等8部门印发《促进智能家居消费行动方案》",
+    "二十年一遇！美欧日三大央行将同步加息 这意味着什么？"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -155,8 +196,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 1,
-    "chain_propagations": 1,
-    "news_catalysts": 7
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 5
   }
 }

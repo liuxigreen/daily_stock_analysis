@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-09-14",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "产业链传导补涨:AI算力光模块→光芯片/材料,军工航天→航空发动机/卫星,半导体国产化→材料/封装基板",
+      "picks": [
+        {
+          "code": "300620",
+          "name": "光库科技",
+          "return": 0.8,
+          "status": "持有中"
+        },
+        {
+          "code": "002413",
+          "name": "雷科防务",
+          "return": -0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "300054",
+          "name": "鼎龙股份",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002916",
+          "name": "深南电路",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "600893",
+          "name": "航发动力",
+          "return": 0.3,
+          "status": "持有中"
+        },
+        {
+          "code": "300394",
+          "name": "天孚通信",
+          "return": 1.2,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-09-11",
       "total_count": 4,
       "win_count": 0,
