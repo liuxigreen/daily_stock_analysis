@@ -1,125 +1,126 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-15",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及航天, 导弹；示例：国际油价大涨超4% 布油逼近110美元 也门胡塞武装称向沙特空军基地发动导弹无人机袭击",
-      "type": "accumulation",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及算力, 存储；示例：集体大跌！美股存储、光通信盘前交易来了",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及算力, 光模块, 存储；示例：特朗普公开致电黄仁勋：AI风险是骗局 数据中心是未来石油！",
       "type": "accumulation",
       "theme": "AI算力",
-      "urgency": "medium"
+      "urgency": "high"
     },
     {
-      "title": "产业链传导：军工航天 — 航天, 导弹已启动",
-      "type": "chain_propagation",
-      "theme": "军工航天",
-      "next": [
-        "航空发动机",
-        "卫星",
-        "雷达"
-      ],
-      "urgency": "medium"
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及电池；示例：吉利内部正对电池板块进行新一轮整理",
+      "type": "accumulation",
+      "theme": "新能源车",
+      "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 存储已启动",
+      "title": "产业链传导：AI算力 — 算力, 光模块, 存储, 数据中心已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
-        "光模块",
-        "光芯片"
+        "光芯片",
+        "液冷散热"
       ],
       "urgency": "medium"
     },
     {
-      "title": "国际油价大涨超4% 布油逼近110美元 也门胡塞武装称向沙特空军基地发动导弹无人机袭击",
-      "type": "news",
-      "theme": "军工航天",
+      "title": "产业链传导：新能源车 — 电池, 固态电池已启动",
+      "type": "chain_propagation",
+      "theme": "新能源车",
+      "next": [
+        "隔膜",
+        "电解液",
+        "铜箔"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "集体大跌！美股存储、光通信盘前交易来了",
+      "title": "特朗普公开致电黄仁勋：AI风险是骗局 数据中心是未来石油！",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨数据安全&#x2B;商业航天 这家公司坚持空天地一体化安全战略 AI安全网关产品已小规模商用部署",
+      "title": "黄仁勋反对“AI降速”！存储芯片概念走强 融资客抢筹9股过亿",
       "type": "news",
-      "theme": "军工航天",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "拿下6GWh储能大单，锂电巨头再突破",
+      "title": "机构调研丨PCB&#x2B;EDA概念&#x2B;机器人 这家公司光模块PCBA业务已进入量产 ATE全年业务增速或超两倍",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "吉利内部正对电池板块进行新一轮整理",
       "type": "news",
       "theme": "新能源车",
       "urgency": "medium"
     },
     {
-      "title": "词元消耗量将达10亿亿！算力租赁景气多点共振 机构重点关注这5股(名单)",
+      "title": "30万亿蓝图出炉！AI算力链全线反弹 需求高景气有望延续？(附股)",
       "type": "news",
       "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "利空袭来！午后突变又跳水 风电板块逆市走强",
+      "type": "news",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "鼎泰高科：子公司拟7亿元投建先进新材料制造基地项目",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "理想汽车与小米汽车调整动力电池供应商",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "早盘异动！先进封装概念低开高走 AI算力驱动长期机遇",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "【风口研报】量产节点渐近与多项国标立项共振  固态电池商业化进程有望加速",
+      "type": "news",
+      "theme": "新能源车",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
     {
-      "name": "军工航天",
+      "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及航天, 导弹",
-        "示例：国际油价大涨超4% 布油逼近110美元 也门胡塞武装称向沙特空军基地发动导弹无人机袭击"
+        "新闻蓄势：5条相关新闻提及算力, 光模块, 存储",
+        "示例：特朗普公开致电黄仁勋：AI风险是骗局 数据中心是未来石油！"
       ],
       "level": "news"
     },
     {
-      "name": "AI算力",
+      "name": "新能源车",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 45,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及算力, 存储",
-        "示例：集体大跌！美股存储、光通信盘前交易来了"
+        "新闻蓄势：3条相关新闻提及电池",
+        "示例：吉利内部正对电池板块进行新一轮整理"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
-    {
-      "theme": "军工航天",
-      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
-      "started": [
-        {
-          "name": "航天",
-          "source": "news"
-        },
-        {
-          "name": "导弹",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "航空发动机",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "卫星",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "雷达",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
     {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
@@ -129,7 +130,15 @@
           "source": "news"
         },
         {
+          "name": "光模块",
+          "source": "news"
+        },
+        {
           "name": "存储",
+          "source": "news"
+        },
+        {
+          "name": "数据中心",
           "source": "news"
         }
       ],
@@ -139,15 +148,44 @@
           "market_cap_yi": 0
         },
         {
-          "name": "光模块",
+          "name": "光芯片",
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
+          "name": "液冷散热",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 2
+      "news_count": 5
+    },
+    {
+      "theme": "新能源车",
+      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
+      "started": [
+        {
+          "name": "电池",
+          "source": "news"
+        },
+        {
+          "name": "固态电池",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "隔膜",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "电解液",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "铜箔",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 3
     }
   ],
   "forward_events": [
@@ -179,16 +217,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "两只PCB大牛股双双澄清",
-    "OpenAI将推迟上市",
-    "摩尔线程风光难再？",
-    "央行：前八个月社会融资规模增量累计为23.91万亿 人民币贷款增加10.44万亿",
-    "工信部召开部分省份工业经济运行座谈会：加快推动人工智能产业发展和赋能应用",
-    "美股三大指数集体下跌 国际油价大涨、金价走低",
-    "广汽集团：筹划购买一汽股份持有的某整车合资公司部分股权 股票停牌",
-    "9月14日晚间上市公司利好消息一览(附名单)",
-    "商务部等8部门印发《促进智能家居消费行动方案》",
-    "二十年一遇！美欧日三大央行将同步加息 这意味着什么？"
+    "iPhone 18 Pro上市即破发！",
+    "苹果Siri AI终于来了！",
+    "甲骨文开启新一轮裁员",
+    "《求是》杂志发表习近平总书记重要文章《在加强基础研究座谈会上的讲话》",
+    "郑栅洁主持召开民营企业座谈会 围绕优化发展环境、拓展投资空间听取意见建议",
+    "9月15日晚间上市公司利好消息一览(附名单)",
+    "商业银行科技贷款统计口径面临收紧 新框架望年底落地",
+    "华为、赛力斯合作生变 赛力斯将全面主导问界汽车",
+    "美联储决议前夕 全球债市抛售加剧：10年期美债收益率创2007年来新高",
+    "历史罕见！一图看懂全球加息节奏"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -198,6 +236,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 2,
     "chain_propagations": 2,
-    "news_catalysts": 5
+    "news_catalysts": 10
   }
 }
