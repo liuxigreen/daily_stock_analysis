@@ -1,31 +1,48 @@
 {
-  "date": "2026-09-15",
+  "date": "2026-09-16",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及算力, 光模块, 存储；示例：特朗普公开致电黄仁勋：AI风险是骗局 数据中心是未来石油！",
+      "title": "蓄势信号：新闻蓄势：8条相关新闻提及CPO, 算力, 光模块；示例：光又回来了！高速光模块采购预测上修",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及电池；示例：吉利内部正对电池板块进行新一轮整理",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 封装, 芯片；示例：大幅拉升！芯片巨头突爆大消息",
       "type": "accumulation",
-      "theme": "新能源车",
+      "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 光模块, 存储, 数据中心已启动",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及电池；示例：汽车早报｜问界将由赛力斯主导 吉利内部正对电池板块进行新一轮整理",
+      "type": "accumulation",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：AI算力 — CPO, 算力, 光模块, 存储已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
         "光芯片",
-        "液冷散热"
+        "数据中心"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：新能源车 — 电池, 固态电池已启动",
+      "title": "产业链传导：半导体国产替代 — 半导体, 封装, 芯片, 材料已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "硅片"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：新能源车 — 电池已启动",
       "type": "chain_propagation",
       "theme": "新能源车",
       "next": [
@@ -36,63 +53,63 @@
       "urgency": "medium"
     },
     {
-      "title": "特朗普公开致电黄仁勋：AI风险是骗局 数据中心是未来石油！",
+      "title": "机器人商业化订单造假？数位知情人士称确实存三类注水订单",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "光又回来了！高速光模块采购预测上修",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "黄仁勋反对“AI降速”！存储芯片概念走强 融资客抢筹9股过亿",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨PCB&#x2B;EDA概念&#x2B;机器人 这家公司光模块PCBA业务已进入量产 ATE全年业务增速或超两倍",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "吉利内部正对电池板块进行新一轮整理",
-      "type": "news",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "30万亿蓝图出炉！AI算力链全线反弹 需求高景气有望延续？(附股)",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "利空袭来！午后突变又跳水 风电板块逆市走强",
-      "type": "news",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "鼎泰高科：子公司拟7亿元投建先进新材料制造基地项目",
+      "title": "大幅拉升！芯片巨头突爆大消息",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "理想汽车与小米汽车调整动力电池供应商",
+      "title": "全线大涨！多重利好突袭半导体！特朗普、马斯克接连出手",
       "type": "news",
-      "theme": "新能源车",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "早盘异动！先进封装概念低开高走 AI算力驱动长期机遇",
+      "title": "机构调研丨半导体概念&#x2B;光模块&#x2B;PCB 这家公司是锡膏印刷设备单项冠军 光模块自动化组装线持续出货",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "【风口研报】量产节点渐近与多项国标立项共振  固态电池商业化进程有望加速",
+      "title": "创业板指涨近2% 科创50指数涨超4% 半导体板块爆发",
       "type": "news",
-      "theme": "新能源车",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "AI“新物种”来了 长鑫存储提前“恭喜”",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "直线拉升！CPO概念股强势归来 黄仁勋、扎克伯格最新发声",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "华鲁恒升、鲁西化工、兖矿能源等差异化布局新材料赛道",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "电投能源：拟投资4.07亿元建设10万千瓦风电项目",
+      "type": "news",
+      "theme": "光伏风电",
       "urgency": "medium"
     }
   ],
@@ -103,8 +120,19 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：5条相关新闻提及算力, 光模块, 存储",
-        "示例：特朗普公开致电黄仁勋：AI风险是骗局 数据中心是未来石油！"
+        "新闻蓄势：8条相关新闻提及CPO, 算力, 光模块",
+        "示例：光又回来了！高速光模块采购预测上修"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：5条相关新闻提及半导体, 封装, 芯片",
+        "示例：大幅拉升！芯片巨头突爆大消息"
       ],
       "level": "news"
     },
@@ -112,10 +140,10 @@
       "name": "新能源车",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 45,
+      "score": 30,
       "reasons": [
-        "新闻蓄势：3条相关新闻提及电池",
-        "示例：吉利内部正对电池板块进行新一轮整理"
+        "新闻蓄势：2条相关新闻提及电池",
+        "示例：汽车早报｜问界将由赛力斯主导 吉利内部正对电池板块进行新一轮整理"
       ],
       "level": "news"
     }
@@ -126,6 +154,10 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
+          "name": "CPO",
+          "source": "news"
+        },
+        {
           "name": "算力",
           "source": "news"
         },
@@ -135,10 +167,6 @@
         },
         {
           "name": "存储",
-          "source": "news"
-        },
-        {
-          "name": "数据中心",
           "source": "news"
         }
       ],
@@ -152,7 +180,44 @@
           "market_cap_yi": 0
         },
         {
-          "name": "液冷散热",
+          "name": "数据中心",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 8
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "封装",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
+          "source": "news"
+        },
+        {
+          "name": "材料",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "硅片",
           "market_cap_yi": 0
         }
       ],
@@ -164,10 +229,6 @@
       "started": [
         {
           "name": "电池",
-          "source": "news"
-        },
-        {
-          "name": "固态电池",
           "source": "news"
         }
       ],
@@ -185,7 +246,7 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 3
+      "news_count": 2
     }
   ],
   "forward_events": [
@@ -217,16 +278,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "iPhone 18 Pro上市即破发！",
-    "苹果Siri AI终于来了！",
-    "甲骨文开启新一轮裁员",
-    "《求是》杂志发表习近平总书记重要文章《在加强基础研究座谈会上的讲话》",
-    "郑栅洁主持召开民营企业座谈会 围绕优化发展环境、拓展投资空间听取意见建议",
-    "9月15日晚间上市公司利好消息一览(附名单)",
-    "商业银行科技贷款统计口径面临收紧 新框架望年底落地",
-    "华为、赛力斯合作生变 赛力斯将全面主导问界汽车",
-    "美联储决议前夕 全球债市抛售加剧：10年期美债收益率创2007年来新高",
-    "历史罕见！一图看懂全球加息节奏"
+    "OpenAI据悉考虑新一轮融资",
+    "字节跳动净利同比下滑",
+    "携程集团净亏损约25亿元",
+    "就在今晚！美联储“加息之锤”即将落下？",
+    "王毅同伊朗外长阿拉格齐会谈",
+    "9月16日晚间上市公司利好消息一览(附名单)",
+    "机器人商业化订单造假？数位知情人士称确实存三类注水订单",
+    "《文化和旅游发展“十五五”规划》印发 部署八方面重点任务",
+    "HBM现货价格爆了！相关概念股梳理",
+    "宁德时代将于近日回应相关车企选择其他供应商传闻"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -234,8 +295,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 2,
-    "chain_propagations": 2,
-    "news_catalysts": 10
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
+    "news_catalysts": 17
   }
 }
