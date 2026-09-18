@@ -1,48 +1,36 @@
 {
-  "date": "2026-09-17",
+  "date": "2026-09-18",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及AI芯片, 存储, 算力；示例：“中药算力”康惠股份再签大单",
+      "title": "蓄势信号：新闻蓄势：7条相关新闻提及算力, 数据中心, AI芯片；示例：华为发布新一代AI算力底座",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及芯片, 半导体；示例：黄仁勋：英伟达明年芯片销量将是今年的两倍",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及医药, 创新药；示例：《医药工业发展“十五五”规划》发布 创新药产业规模年均增速将超20%",
+      "type": "accumulation",
+      "theme": "创新药",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及半导体；示例：全链条涨价！半导体设备供不应求",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及创新药, 医药；示例：我国今年以来已批准上市创新药59个",
-      "type": "accumulation",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — AI芯片, 存储, 算力已启动",
+      "title": "产业链传导：AI算力 — 液冷, 存储, 数据中心, 算力, AI芯片已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "光模块",
-        "光芯片",
-        "数据中心"
+        "光芯片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 设备, 芯片, 半导体已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：创新药 — 创新药, 医药已启动",
+      "title": "产业链传导：创新药 — 医药, 创新药已启动",
       "type": "chain_propagation",
       "theme": "创新药",
       "next": [
@@ -53,61 +41,72 @@
       "urgency": "medium"
     },
     {
-      "title": "“中药算力”康惠股份再签大单",
+      "title": "产业链传导：半导体国产替代 — 设备, 半导体已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "华为发布新一代AI算力底座",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "黄仁勋：英伟达明年芯片销量将是今年的两倍",
+      "title": "全链条涨价！半导体设备供不应求",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "华为新款AI芯片提前推出！相关概念股梳理",
+      "title": "华为大动作&#x2B;黄仁勋喊话 AI芯片彻底沸腾！最新高增长潜力股名单出炉",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "供应严重短缺！韩国半导体零部件交货周期拉长 有设备商或要等40个月",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "机构调研丨磷化铟&#x2B;光通信 这家公司深度布局AI算力金属 6英寸磷化铟衬底已获全球头部客户订单",
+      "title": "机构调研丨AI芯片&#x2B;算力概念&#x2B;国产替代 这家公司研发进展顺利 计划未来两年推出三款云端推理芯片",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "首个采用NPO的昇腾960超节点来了！华为新款AI芯片将提前推出",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "我国今年以来已批准上市创新药59个",
+      "title": "《医药工业发展“十五五”规划》发布 创新药产业规模年均增速将超20%",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "汽车早报｜问界将由赛力斯主导 吉利内部正对电池板块进行新一轮整理",
+      "title": "利好来了！十部门重磅发文！事关万亿赛道 积极培育壮大创新药械产业",
       "type": "news",
-      "theme": "新能源车",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "【财闻联播】5连板PCB概念牛股，紧急提示！医药龙头，出手回购",
+      "title": "“供应短缺”！全球半导体设备景气周期确认(附股)",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "深读“十五五”专项规划丨打造生物医药新兴支柱产业",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
       "title": "期权智投播报 | 英特尔盘前涨近5% SK海力士拟赴美生产存储芯片 联储决议引发指数波动",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "华为大动作+黄仁勋喊话 AI芯片彻底沸腾！最新高增长潜力股名单出炉",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
@@ -120,8 +119,19 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：5条相关新闻提及AI芯片, 存储, 算力",
-        "示例：“中药算力”康惠股份再签大单"
+        "新闻蓄势：7条相关新闻提及算力, 数据中心, AI芯片",
+        "示例：华为发布新一代AI算力底座"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "创新药",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 45,
+      "reasons": [
+        "新闻蓄势：3条相关新闻提及医药, 创新药",
+        "示例：《医药工业发展“十五五”规划》发布 创新药产业规模年均增速将超20%"
       ],
       "level": "news"
     },
@@ -131,19 +141,8 @@
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及芯片, 半导体",
-        "示例：黄仁勋：英伟达明年芯片销量将是今年的两倍"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "创新药",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及创新药, 医药",
-        "示例：我国今年以来已批准上市创新药59个"
+        "新闻蓄势：2条相关新闻提及半导体",
+        "示例：全链条涨价！半导体设备供不应求"
       ],
       "level": "news"
     }
@@ -154,7 +153,7 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "AI芯片",
+          "name": "液冷",
           "source": "news"
         },
         {
@@ -162,7 +161,15 @@
           "source": "news"
         },
         {
+          "name": "数据中心",
+          "source": "news"
+        },
+        {
           "name": "算力",
+          "source": "news"
+        },
+        {
+          "name": "AI芯片",
           "source": "news"
         }
       ],
@@ -174,13 +181,38 @@
         {
           "name": "光芯片",
           "market_cap_yi": 0
+        }
+      ],
+      "news_count": 7
+    },
+    {
+      "theme": "创新药",
+      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "started": [
+        {
+          "name": "医药",
+          "source": "news"
         },
         {
-          "name": "数据中心",
+          "name": "创新药",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "CXO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "CDMO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "原料药",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 5
+      "news_count": 3
     },
     {
       "theme": "半导体国产替代",
@@ -188,10 +220,6 @@
       "started": [
         {
           "name": "设备",
-          "source": "news"
-        },
-        {
-          "name": "芯片",
           "source": "news"
         },
         {
@@ -210,35 +238,6 @@
         },
         {
           "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "创新药",
-          "source": "news"
-        },
-        {
-          "name": "医药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
           "market_cap_yi": 0
         }
       ],
@@ -274,16 +273,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "白酒大商改“喝”黄酒？",
-    "6连板大牛股闽东电力紧急澄清",
-    "“中药算力”康惠股份再签大单",
-    "习近平就发展先进制造业作出重要指示",
-    "商务部：中美经贸团队正就降税等议题保持密切交流",
-    "美众议院授权特朗普对俄罗斯油气的主要买家征收高达100%的关税 外交部回应",
-    "9月17日晚间上市公司利好消息一览(附名单)",
-    "黄仁勋：英伟达明年芯片销量将是今年的两倍",
-    "华为新款AI芯片提前推出！相关概念股梳理",
-    "中国巨石：第二大股东振石集团9月15日至17日减持2833万股"
+    "五连板公司连发“降温令”",
+    "万向德农一个月五次触发异动",
+    "华为发布新一代AI算力底座",
+    "国常会：深入实施积极应对人口老龄化国家战略 推动老龄事业全面发展进步",
+    "中方领导人是否将访问美国？外交部：中美就年内元首互访保持着沟通",
+    "上交所：依规对沈鼓集团异常交易相关投资者采取暂停账户交易等自律监管措施",
+    "十部门联合发布《关于促进房车消费的若干措施》",
+    "暴拉超297%！沈鼓变“神鼓” 什么情况？",
+    "文化和旅游部发布《文化产业发展“十五五”规划》",
+    "中国证监会拟对17起案件线索的“吹哨人”给予奖励"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -293,6 +292,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 3,
     "chain_propagations": 3,
-    "news_catalysts": 10
+    "news_catalysts": 13
   }
 }
