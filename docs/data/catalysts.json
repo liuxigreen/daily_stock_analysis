@@ -1,121 +1,138 @@
 {
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及创新药；示例：机构调研丨AI制药&#x2B;创新药 这家公司上半年新签订单增超30% 已在多款工业级产品上完成AI",
+      "title": "蓄势信号：新闻蓄势：8条相关新闻提及数据中心, AI芯片, 存储；示例：阿里平头哥发布最强国产AI芯片！相关概念股梳理",
       "type": "accumulation",
-      "theme": "创新药",
+      "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及封装, 半导体；示例：美股三大指数集体上涨 国际油价大跌！超威半导体股价创历史新高",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及灵巧, 机器人；示例：宇树科技发布灵巧手",
+      "type": "accumulation",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及材料, 封装；示例：国资入主后加速扩产，杉杉股份拟51亿元投建15万吨锂电池负极材料一体化项目",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及算力；示例：湖北：发放“算力券”提升补贴比例 将模型、词元等服务模式纳入补贴范围",
-      "type": "accumulation",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：创新药 — 创新药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "CXO",
-        "CDMO",
-        "原料药"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：半导体国产替代 — 封装, 半导体已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "硅片"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 算力已启动",
+      "title": "产业链传导：AI算力 — 数据中心, AI芯片, 存储已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
-        "AI芯片",
         "光模块",
-        "光芯片"
+        "光芯片",
+        "算力服务器"
       ],
       "urgency": "medium"
     },
     {
-      "title": "美股三大指数集体上涨 国际油价大跌！超威半导体股价创历史新高",
-      "type": "news",
+      "title": "产业链传导：人形机器人 — 灵巧, 机器人已启动",
+      "type": "chain_propagation",
+      "theme": "人形机器人",
+      "next": [
+        "减速器",
+        "伺服电机",
+        "传感器"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 材料, 封装已启动",
+      "type": "chain_propagation",
       "theme": "半导体国产替代",
+      "next": [
+        "半导体设备",
+        "EDA",
+        "光刻胶"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨AI制药&#x2B;创新药 这家公司上半年新签订单增超30% 已在多款工业级产品上完成AI优化改造",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "A股三大指数收涨 超4500只股飘红 创新药概念股爆发",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "湖北：发放“算力券”提升补贴比例 将模型、词元等服务模式纳入补贴范围",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业催化密集落地，AI算力链行情聚焦“订单验证”",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "低空经济踩下“急刹车”？两大上市公司半年财报调整未来预期",
-      "type": "news",
-      "theme": "低空经济",
-      "urgency": "medium"
-    },
-    {
-      "title": "期权智投播报 | 英特尔盘前升逾5% 携手友达光电达成Micro LED封装合作",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "机器人IPO门槛收紧？投行一线求证",
+      "title": "宇树科技发布灵巧手",
       "type": "news",
       "theme": "人形机器人",
       "urgency": "medium"
     },
     {
-      "title": "【风口研报】据报美拟松绑中国药企许可!国内政策端持续催化 创新药行业高景气度有望持续",
+      "title": "阿里平头哥发布最强国产AI芯片！相关概念股梳理",
       "type": "news",
-      "theme": "创新药",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "佰维存储：拟投资45亿元建设晶圆级先进封测制造项目三期",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "3倍性能最强芯片、10万亿参数模型、20GW数据中心 阿里云栖大会“火力全开”",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "小鹏机器人已完成供应链审厂及核心零部件定点",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "阿里CEO吴泳铭：计划训练5万亿至10万亿参数新模型 2032年阿里云数据中心规模将超20GW",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "沪指震荡整理 创业板指冲高回落 AI芯片概念股走强",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "国资入主后加速扩产，杉杉股份拟51亿元投建15万吨锂电池负极材料一体化项目",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "东莞控股：拟605.42万元收购低空经济公司65%股权",
+      "type": "news",
+      "theme": "低空经济",
+      "urgency": "medium"
+    },
+    {
+      "title": "平头哥发布真武V900 AI芯片：性能提升至三倍，2027年第一季度量产",
+      "type": "news",
+      "theme": "AI算力",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
     {
-      "name": "创新药",
+      "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 45,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：3条相关新闻提及创新药",
-        "示例：机构调研丨AI制药&#x2B;创新药 这家公司上半年新签订单增超30% 已在多款工业级产品上完成AI"
+        "新闻蓄势：8条相关新闻提及数据中心, AI芯片, 存储",
+        "示例：阿里平头哥发布最强国产AI芯片！相关概念股梳理"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "人形机器人",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及灵巧, 机器人",
+        "示例：宇树科技发布灵巧手"
       ],
       "level": "news"
     },
@@ -125,98 +142,99 @@
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及封装, 半导体",
-        "示例：美股三大指数集体上涨 国际油价大跌！超威半导体股价创历史新高"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "AI算力",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及算力",
-        "示例：湖北：发放“算力券”提升补贴比例 将模型、词元等服务模式纳入补贴范围"
+        "新闻蓄势：2条相关新闻提及材料, 封装",
+        "示例：国资入主后加速扩产，杉杉股份拟51亿元投建15万吨锂电池负极材料一体化项目"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "创新药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 3
-    },
-    {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "封装",
-          "source": "news"
-        },
-        {
-          "name": "半导体",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "硅片",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "算力",
+          "name": "数据中心",
+          "source": "news"
+        },
+        {
+          "name": "AI芯片",
+          "source": "news"
+        },
+        {
+          "name": "存储",
           "source": "news"
         }
       ],
       "next_opportunities": [
-        {
-          "name": "AI芯片",
-          "market_cap_yi": 0
-        },
         {
           "name": "光模块",
           "market_cap_yi": 0
         },
         {
           "name": "光芯片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "算力服务器",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 8
+    },
+    {
+      "theme": "人形机器人",
+      "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
+      "started": [
+        {
+          "name": "灵巧",
+          "source": "news"
+        },
+        {
+          "name": "机器人",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "减速器",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "伺服电机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "传感器",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
+    },
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "材料",
+          "source": "news"
+        },
+        {
+          "name": "封装",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "半导体设备",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
           "market_cap_yi": 0
         }
       ],
@@ -253,15 +271,15 @@
   "fund_flow_top10": [],
   "top_headlines": [
     "江苏银行919财富节智选未来",
-    "春节前后猪价有望迎盘整拐点",
-    "股息率最高8.53%！红包雨来了",
-    "习近平将对美国进行国事访问",
-    "中国人民银行召开外资金融机构座谈会",
-    "美股三大指数集体上涨 国际油价大跌！超威半导体股价创历史新高",
-    "9月21日晚间上市公司利好消息一览(附名单)",
-    "突然下调！韩国股市利空突袭！发生了什么？",
-    "硬科技IPO或将收紧？年内总募资已超5000亿元",
-    "“924”行情两周年！超1400只个股翻倍"
+    "宇树科技发布灵巧手",
+    "海南瑞泽被央资举牌",
+    "李强在上海调研时强调 加快培育壮大新兴产业和未来产业 持续做大做强先进制造业",
+    "国际油价跳水 美股三大股指期货转涨 伊朗总统启程赴美",
+    "外交部：各方应该共同推动人工智能开放、包容、普惠、向善发展",
+    "9月22日晚间上市公司利好消息一览(附名单)",
+    "阿里平头哥发布最强国产AI芯片！相关概念股梳理",
+    "佰维存储：拟投资45亿元建设晶圆级先进封测制造项目三期",
+    "中金公司：A股股票将于9月23日复牌"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -271,6 +289,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 3,
     "chain_propagations": 3,
-    "news_catalysts": 9
+    "news_catalysts": 15
   }
 }
