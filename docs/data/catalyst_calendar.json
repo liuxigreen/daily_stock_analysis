@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22",
+  "last_updated": "2026-09-23",
   "upcoming": [
     {
       "date": "2026-09",
@@ -150,6 +150,15 @@
       "stock_code": "002413",
       "stock_name": "雷科防务",
       "event": "地缘局势紧张催化军工板块；军费预算增长,装备信息化采购放量；低轨卫星互联网建设加速。",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688206",
+      "stock_name": "概伦电子",
+      "event": "大基金三期资金到位,EDA专项扶持政策预期；半导体国产替代从设备向设计工具传导。",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"

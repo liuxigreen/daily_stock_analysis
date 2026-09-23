@@ -1,6 +1,45 @@
 {
   "records": [
     {
+      "date": "2026-09-23",
+      "total_count": 5,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "半导体国产替代补涨（EDA/光刻胶）+ 新能源装机旺季 + 低空经济政策催化 + AI算力散热",
+      "picks": [
+        {
+          "code": "688206",
+          "name": "概伦电子",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "300346",
+          "name": "南大光电",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "688390",
+          "name": "固德威",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "688568",
+          "name": "中科星图",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002837",
+          "name": "英维克",
+          "return": 0.0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-09-22",
       "total_count": 0,
       "win_count": 0,

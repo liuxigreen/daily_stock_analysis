@@ -1,37 +1,36 @@
 {
-  "date": "2026-09-22",
+  "date": "2026-09-23",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：8条相关新闻提及数据中心, AI芯片, 存储；示例：阿里平头哥发布最强国产AI芯片！相关概念股梳理",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 封装, 芯片；示例：高通发布2纳米旗舰芯片",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及机器人；示例：1000亿台人形机器人？马斯克新表态 产业链个股梳理",
+      "type": "accumulation",
+      "theme": "人形机器人",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及存储, 算力；示例：机构调研丨磷化铟&#x2B;MLCC&#x2B;先进封装 这家公司算力相关新增订单增近350% ML",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及灵巧, 机器人；示例：宇树科技发布灵巧手",
-      "type": "accumulation",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及材料, 封装；示例：国资入主后加速扩产，杉杉股份拟51亿元投建15万吨锂电池负极材料一体化项目",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 数据中心, AI芯片, 存储已启动",
+      "title": "产业链传导：半导体国产替代 — 半导体, 硅片, 封装, 芯片已启动",
       "type": "chain_propagation",
-      "theme": "AI算力",
+      "theme": "半导体国产替代",
       "next": [
-        "光模块",
-        "光芯片",
-        "算力服务器"
+        "EDA",
+        "光刻胶"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：人形机器人 — 灵巧, 机器人已启动",
+      "title": "产业链传导：人形机器人 — 机器人已启动",
       "type": "chain_propagation",
       "theme": "人形机器人",
       "next": [
@@ -42,86 +41,86 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 材料, 封装已启动",
+      "title": "产业链传导：AI算力 — 存储, 算力已启动",
       "type": "chain_propagation",
-      "theme": "半导体国产替代",
+      "theme": "AI算力",
       "next": [
-        "半导体设备",
-        "EDA",
-        "光刻胶"
+        "AI芯片",
+        "光模块",
+        "光芯片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "宇树科技发布灵巧手",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "阿里平头哥发布最强国产AI芯片！相关概念股梳理",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "佰维存储：拟投资45亿元建设晶圆级先进封测制造项目三期",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "3倍性能最强芯片、10万亿参数模型、20GW数据中心 阿里云栖大会“火力全开”",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "小鹏机器人已完成供应链审厂及核心零部件定点",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "阿里CEO吴泳铭：计划训练5万亿至10万亿参数新模型 2032年阿里云数据中心规模将超20GW",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "沪指震荡整理 创业板指冲高回落 AI芯片概念股走强",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "国资入主后加速扩产，杉杉股份拟51亿元投建15万吨锂电池负极材料一体化项目",
+      "title": "高通发布2纳米旗舰芯片",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "东莞控股：拟605.42万元收购低空经济公司65%股权",
+      "title": "海光信息发布新芯片",
       "type": "news",
-      "theme": "低空经济",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "平头哥发布真武V900 AI芯片：性能提升至三倍，2027年第一季度量产",
+      "title": "1000亿台人形机器人？马斯克新表态 产业链个股梳理",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "马斯克预测未来世界：20年后可能有1000亿台人形机器人",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨磷化铟&#x2B;MLCC&#x2B;先进封装 这家公司算力相关新增订单增近350% MLCC设备海外拓展取得实质突破",
       "type": "news",
       "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "部分涨幅或超50%！半导体12英寸硅片长约“涨声”起",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "“存储荒”不会持续太久？宏碁CEO发出警告后 “大空头”加码做空美光",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "晚报丨特朗普称支持美国柴油出口禁令；金价正与利率逐步脱钩；马斯克：20年后或有1000亿台人形机器人；阿里减持中通快递套现5亿美元，持续加码全栈式AI布局；Anthropic拟绕开云服务商直接租赁1吉瓦算力",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "天域半导体：9月23日斥资79.98万港元回购1.9万股",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "期权智投播报 | 英特尔盘前升逾5% 携手友达光电达成Micro LED封装合作",
+      "type": "news",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
     {
-      "name": "AI算力",
+      "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：8条相关新闻提及数据中心, AI芯片, 存储",
-        "示例：阿里平头哥发布最强国产AI芯片！相关概念股梳理"
+        "新闻蓄势：5条相关新闻提及半导体, 封装, 芯片",
+        "示例：高通发布2纳米旗舰芯片"
       ],
       "level": "news"
     },
@@ -129,67 +128,63 @@
       "name": "人形机器人",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 45,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及灵巧, 机器人",
-        "示例：宇树科技发布灵巧手"
+        "新闻蓄势：3条相关新闻提及机器人",
+        "示例：1000亿台人形机器人？马斯克新表态 产业链个股梳理"
       ],
       "level": "news"
     },
     {
-      "name": "半导体国产替代",
+      "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 45,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及材料, 封装",
-        "示例：国资入主后加速扩产，杉杉股份拟51亿元投建15万吨锂电池负极材料一体化项目"
+        "新闻蓄势：3条相关新闻提及存储, 算力",
+        "示例：机构调研丨磷化铟&#x2B;MLCC&#x2B;先进封装 这家公司算力相关新增订单增近350% ML"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "AI算力",
-      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "数据中心",
+          "name": "半导体",
           "source": "news"
         },
         {
-          "name": "AI芯片",
+          "name": "硅片",
           "source": "news"
         },
         {
-          "name": "存储",
+          "name": "封装",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "光模块",
+          "name": "EDA",
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "算力服务器",
+          "name": "光刻胶",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 8
+      "news_count": 5
     },
     {
       "theme": "人形机器人",
       "logic": "Tesla Optimus + 宇树科技量产 → 核心零部件需求爆发",
       "started": [
-        {
-          "name": "灵巧",
-          "source": "news"
-        },
         {
           "name": "机器人",
           "source": "news"
@@ -209,36 +204,36 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 2
+      "news_count": 3
     },
     {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "theme": "AI算力",
+      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "材料",
+          "name": "存储",
           "source": "news"
         },
         {
-          "name": "封装",
+          "name": "算力",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "半导体设备",
+          "name": "AI芯片",
           "market_cap_yi": 0
         },
         {
-          "name": "EDA",
+          "name": "光模块",
           "market_cap_yi": 0
         },
         {
-          "name": "光刻胶",
+          "name": "光芯片",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 2
+      "news_count": 3
     }
   ],
   "forward_events": [
@@ -271,15 +266,15 @@
   "fund_flow_top10": [],
   "top_headlines": [
     "江苏银行919财富节智选未来",
-    "宇树科技发布灵巧手",
-    "海南瑞泽被央资举牌",
-    "李强在上海调研时强调 加快培育壮大新兴产业和未来产业 持续做大做强先进制造业",
-    "国际油价跳水 美股三大股指期货转涨 伊朗总统启程赴美",
-    "外交部：各方应该共同推动人工智能开放、包容、普惠、向善发展",
-    "9月22日晚间上市公司利好消息一览(附名单)",
-    "阿里平头哥发布最强国产AI芯片！相关概念股梳理",
-    "佰维存储：拟投资45亿元建设晶圆级先进封测制造项目三期",
-    "中金公司：A股股票将于9月23日复牌"
+    "高通发布2纳米旗舰芯片",
+    "海光信息发布新芯片",
+    "习近平离京对美国进行国事访问",
+    "央行将在9月28日至10月8日开展隔夜逆回购操作 每日操作量不超过10000亿元",
+    "我国将适度超前、系统推进新一代通信网建设",
+    "突然大涨！巴菲特再度加仓住宅建筑商！A股地产集体狂飙",
+    "9月23日晚间上市公司利好消息一览(附名单)",
+    "中国民企500强榜单出炉！各省第一都是谁？",
+    "1000亿台人形机器人？马斯克新表态 产业链个股梳理"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -289,6 +284,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 3,
     "chain_propagations": 3,
-    "news_catalysts": 15
+    "news_catalysts": 14
   }
 }
