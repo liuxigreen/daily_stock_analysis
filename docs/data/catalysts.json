@@ -1,37 +1,43 @@
 {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及材料, 设备；示例：“十五五”海风装机剑指翻番 风电设备逆势走高 最新绩优&#x2B;融资客抢筹股名单来了",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及封装, 半导体, 材料；示例：突发公告！A股万亿巨头大动作！加码AI、半导体",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及存储, 液冷, 算力；示例：美国ITC正式对动态随机存取存储器（DRAM）设备及其下游产品和组件（III）启动337调查",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及算力；示例：Meta Muse用户规模十天冲上70万 但已出现算力不足导致的故障",
       "type": "accumulation",
       "theme": "AI算力",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及航天；示例：围绕集成电路、航空航天、生物医药等重点产业，市场监管总局今年以来批准新建计量标准装置176项",
-      "type": "accumulation",
-      "theme": "军工航天",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 材料, 设备已启动",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及电池；示例：新突破！隆基绿能晶硅电池效率再破世界纪录 逼近极限",
+      "type": "accumulation",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及创新药, 医药；示例：医药工业“十五五”规划重磅发布！产业链这条赛道，核心标的净利增长2160%",
+      "type": "accumulation",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 封装, 半导体, 材料, 芯片已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
         "EDA",
         "光刻胶",
-        "先进封装"
+        "硅片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：AI算力 — 存储, 液冷, 算力已启动",
+      "title": "产业链传导：AI算力 — 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -42,72 +48,83 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：军工航天 — 航天, 航空已启动",
+      "title": "产业链传导：新能源车 — 电池已启动",
       "type": "chain_propagation",
-      "theme": "军工航天",
+      "theme": "新能源车",
       "next": [
-        "导弹",
-        "卫星",
-        "雷达"
+        "隔膜",
+        "电解液",
+        "铜箔"
       ],
       "urgency": "medium"
     },
     {
-      "title": "美国ITC正式对动态随机存取存储器（DRAM）设备及其下游产品和组件（III）启动337调查",
+      "title": "产业链传导：创新药 — 创新药, 医药已启动",
+      "type": "chain_propagation",
+      "theme": "创新药",
+      "next": [
+        "CXO",
+        "CDMO",
+        "原料药"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "Meta Muse用户规模十天冲上70万 但已出现算力不足导致的故障",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "风电新增装机料5年翻倍！相关概念股梳理",
+      "title": "新突破！隆基绿能晶硅电池效率再破世界纪录 逼近极限",
       "type": "news",
-      "theme": "光伏风电",
+      "theme": "新能源车",
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨液冷散热&#x2B;绝缘材料 这家公司今日逆势大涨 通过产业投资切入浸没式液冷赛道",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "“十五五”海风装机剑指翻番 风电设备逆势走高 最新绩优&#x2B;融资客抢筹股名单来了",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "主力复盘：7.55亿流入国瓷材料 17.84亿流出中际旭创",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "围绕集成电路、航空航天、生物医药等重点产业，市场监管总局今年以来批准新建计量标准装置176项",
+      "title": "太空AI卫星科技巨头大动作！发射时间确定（附股）",
       "type": "news",
       "theme": "军工航天",
       "urgency": "medium"
     },
     {
-      "title": "从拼算力到拼落地，安富利研判AI下半场",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "从“生态包袱”到高端新材料 湖北石首深挖芦苇价值 | 活力中国调研行",
+      "title": "突发公告！A股万亿巨头大动作！加码AI、半导体",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "多地卡位商业航天蓝海 “万亿之城”宁波加码细分赛道",
+      "title": "苹果与高通续签专利协议：芯片可以不用 专利仍绕不开",
       "type": "news",
-      "theme": "军工航天",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "“十五五”海风装机剑指翻番 风电设备逆势走高 最新绩优+融资客抢筹股名单来了",
+      "title": "太空算力产业面消息不断 上半年实现盈利的太空算力概念股梳理",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "亿纬锂能拟11.5亿元转让湖北恩捷新材料45%股权，聚焦主业再落一子，股价年内跌约25%",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "医药工业“十五五”规划重磅发布！产业链这条赛道，核心标的净利增长2160%",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "港股全天缩量调整 恒指收盘跌超1% 创新药板块逆势走强",
+      "type": "news",
+      "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "9月25日每日研选丨玻璃基板催化密集先进封装打开增量空间",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
@@ -120,8 +137,8 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及材料, 设备",
-        "示例：“十五五”海风装机剑指翻番 风电设备逆势走高 最新绩优&#x2B;融资客抢筹股名单来了"
+        "新闻蓄势：4条相关新闻提及封装, 半导体, 材料",
+        "示例：突发公告！A股万亿巨头大动作！加码AI、半导体"
       ],
       "level": "news"
     },
@@ -129,21 +146,32 @@
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 45,
+      "score": 30,
       "reasons": [
-        "新闻蓄势：3条相关新闻提及存储, 液冷, 算力",
-        "示例：美国ITC正式对动态随机存取存储器（DRAM）设备及其下游产品和组件（III）启动337调查"
+        "新闻蓄势：2条相关新闻提及算力",
+        "示例：Meta Muse用户规模十天冲上70万 但已出现算力不足导致的故障"
       ],
       "level": "news"
     },
     {
-      "name": "军工航天",
+      "name": "新能源车",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及航天",
-        "示例：围绕集成电路、航空航天、生物医药等重点产业，市场监管总局今年以来批准新建计量标准装置176项"
+        "新闻蓄势：2条相关新闻提及电池",
+        "示例：新突破！隆基绿能晶硅电池效率再破世界纪录 逼近极限"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "创新药",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及创新药, 医药",
+        "示例：医药工业“十五五”规划重磅发布！产业链这条赛道，核心标的净利增长2160%"
       ],
       "level": "news"
     }
@@ -154,11 +182,19 @@
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
+          "name": "封装",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
           "name": "材料",
           "source": "news"
         },
         {
-          "name": "设备",
+          "name": "芯片",
           "source": "news"
         }
       ],
@@ -172,7 +208,7 @@
           "market_cap_yi": 0
         },
         {
-          "name": "先进封装",
+          "name": "硅片",
           "market_cap_yi": 0
         }
       ],
@@ -182,14 +218,6 @@
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
-        {
-          "name": "存储",
-          "source": "news"
-        },
-        {
-          "name": "液冷",
-          "source": "news"
-        },
         {
           "name": "算力",
           "source": "news"
@@ -209,32 +237,57 @@
           "market_cap_yi": 0
         }
       ],
-      "news_count": 3
+      "news_count": 2
     },
     {
-      "theme": "军工航天",
-      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
+      "theme": "新能源车",
+      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
       "started": [
         {
-          "name": "航天",
-          "source": "news"
-        },
-        {
-          "name": "航空",
+          "name": "电池",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "导弹",
+          "name": "隔膜",
           "market_cap_yi": 0
         },
         {
-          "name": "卫星",
+          "name": "电解液",
           "market_cap_yi": 0
         },
         {
-          "name": "雷达",
+          "name": "铜箔",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
+    },
+    {
+      "theme": "创新药",
+      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "started": [
+        {
+          "name": "创新药",
+          "source": "news"
+        },
+        {
+          "name": "医药",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "CXO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "CDMO",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "原料药",
           "market_cap_yi": 0
         }
       ],
@@ -273,13 +326,13 @@
     "江苏银行919财富节智选未来",
     "行云科技年内股价涨了586%",
     "磷化工龙头加码磷酸铁锂",
-    "商务部：中美第八轮经贸磋商达成多项共识",
-    "美财长称中美已同意将贸易休战协议延长至明年1月 外交部回应",
-    "9月24日晚间上市公司利好消息一览(附名单)",
-    "美国ITC正式对动态随机存取存储器（DRAM）设备及其下游产品和组件（III）启动337调查",
-    "央行：综合运用并适时调整货币政策工具 保持流动性充裕",
-    "924行情两周年 各行业指数走到了哪里？",
-    "国家继续实施调控 成品油价格适当调整"
+    "习近平同美国总统特朗普会谈",
+    "利好来了！欧美股市全线拉升！美国、伊朗传出大消息",
+    "“双节”后行情怎么看？反弹仍待四大变量验证",
+    "伊朗总统：伊朗不想拥有核武器 愿推进与美谈判",
+    "Meta Muse用户规模十天冲上70万 但已出现算力不足导致的故障",
+    "9月25日港股收盘：恒指跌1.01% 潍柴动力领跌成分股",
+    "新突破！隆基绿能晶硅电池效率再破世界纪录 逼近极限"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -287,8 +340,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 3,
-    "chain_propagations": 3,
+    "accumulation_signals": 4,
+    "chain_propagations": 4,
     "news_catalysts": 11
   }
 }
