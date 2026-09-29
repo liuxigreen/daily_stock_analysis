@@ -1,13 +1,13 @@
 {
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "summary": {
     "total": 17,
     "watching": 17,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "-10.42%",
-    "avg_pnl_pct": -10.42
+    "total_pnl": "-9.8%",
+    "avg_pnl_pct": -9.8
   },
   "stocks": [
     {
@@ -19,9 +19,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 1639.0,
-      "current_price": 1591.43,
-      "change_pct_today": -6.39,
-      "pnl_pct": -2.9,
+      "current_price": 1638.5,
+      "change_pct_today": 2.96,
+      "pnl_pct": -0.03,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -56,9 +56,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 360.0,
-      "current_price": 340.18,
-      "change_pct_today": -1.39,
-      "pnl_pct": -5.51,
+      "current_price": 340.63,
+      "change_pct_today": 0.13,
+      "pnl_pct": -5.38,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -81,9 +81,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 269.95,
-      "current_price": 194.15,
-      "change_pct_today": -4.22,
-      "pnl_pct": -28.08,
+      "current_price": 197.1,
+      "change_pct_today": 1.52,
+      "pnl_pct": -26.99,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -106,9 +106,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 36.42,
-      "current_price": 48.01,
-      "change_pct_today": 0.23,
-      "pnl_pct": 31.82,
+      "current_price": 47.47,
+      "change_pct_today": -1.12,
+      "pnl_pct": 30.34,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -131,9 +131,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 42.81,
-      "current_price": 35.05,
-      "change_pct_today": -6.63,
-      "pnl_pct": -18.13,
+      "current_price": 36.38,
+      "change_pct_today": 3.79,
+      "pnl_pct": -15.02,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -156,9 +156,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 413.05,
-      "current_price": 274.62,
-      "change_pct_today": -3.42,
-      "pnl_pct": -33.51,
+      "current_price": 275.6,
+      "change_pct_today": 0.36,
+      "pnl_pct": -33.28,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -181,9 +181,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 67.37,
-      "current_price": 58.9,
-      "change_pct_today": -3.47,
-      "pnl_pct": -12.57,
+      "current_price": 60.36,
+      "change_pct_today": 2.48,
+      "pnl_pct": -10.41,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -206,9 +206,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 450.0,
-      "current_price": 388.88,
-      "change_pct_today": -2.31,
-      "pnl_pct": -13.58,
+      "current_price": 398.99,
+      "change_pct_today": 2.6,
+      "pnl_pct": -11.34,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -231,9 +231,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 454.48,
-      "current_price": 370.98,
-      "change_pct_today": -5.96,
-      "pnl_pct": -18.37,
+      "current_price": 375.6,
+      "change_pct_today": 1.25,
+      "pnl_pct": -17.36,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -256,9 +256,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 73.82,
-      "current_price": 48.19,
-      "change_pct_today": -2.27,
-      "pnl_pct": -34.72,
+      "current_price": 48.15,
+      "change_pct_today": -0.08,
+      "pnl_pct": -34.77,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -281,9 +281,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-07-02",
       "added_price": 16.53,
-      "current_price": 13.82,
-      "change_pct_today": -4.76,
-      "pnl_pct": -16.39,
+      "current_price": 13.86,
+      "change_pct_today": 0.29,
+      "pnl_pct": -16.15,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -306,9 +306,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-08-28",
       "added_price": 74.93,
-      "current_price": 65.43,
-      "change_pct_today": -4.87,
-      "pnl_pct": -12.68,
+      "current_price": 65.7,
+      "change_pct_today": 0.41,
+      "pnl_pct": -12.32,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -331,9 +331,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-08-28",
       "added_price": 173.61,
-      "current_price": 163.8,
-      "change_pct_today": -10.0,
-      "pnl_pct": -5.65,
+      "current_price": 166.9,
+      "change_pct_today": 1.89,
+      "pnl_pct": -3.86,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -356,9 +356,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-08-28",
       "added_price": 16.92,
-      "current_price": 16.99,
-      "change_pct_today": -3.36,
-      "pnl_pct": 0.41,
+      "current_price": 17.02,
+      "change_pct_today": 0.18,
+      "pnl_pct": 0.59,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -381,9 +381,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-09-14",
       "added_price": 288.33,
-      "current_price": 255.27,
-      "change_pct_today": -8.18,
-      "pnl_pct": -11.47,
+      "current_price": 261.03,
+      "change_pct_today": 2.26,
+      "pnl_pct": -9.47,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -406,9 +406,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-09-14",
       "added_price": 8.3,
-      "current_price": 9.18,
-      "change_pct_today": 2.34,
-      "pnl_pct": 10.6,
+      "current_price": 8.78,
+      "change_pct_today": -4.36,
+      "pnl_pct": 5.78,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -431,9 +431,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-09-23",
       "added_price": 37.84,
-      "current_price": 35.39,
-      "change_pct_today": -3.81,
-      "pnl_pct": -6.47,
+      "current_price": 35.18,
+      "change_pct_today": -0.59,
+      "pnl_pct": -7.03,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
