@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "summary": {
     "total": 17,
     "watching": 17,
@@ -27,7 +27,7 @@
         {
           "event": "100G EML Q3小批量供货",
           "expected_date": "2026-09",
-          "auto_status": "due_soon",
+          "auto_status": "overdue",
           "user_status": "pending"
         },
         {

@@ -1,49 +1,14 @@
 {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：6条相关新闻提及算力, 数据中心, 光模块；示例：海外研选 | 法巴：AI数据中心投资面临三种路径 2030年前或相差5万亿美元",
-      "type": "accumulation",
-      "theme": "AI算力",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及医药, 创新药；示例：“明星双抗”引爆！创新药概念梳理",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及创新药, 医药；示例：锚定3.5万亿目标 哪些创新药企业 将取得突破！",
       "type": "accumulation",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及封装, 半导体；示例：沪指收涨0.31% 医药股走强 半导体板块跌幅居前",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及组件, 光伏；示例：剑指英伟达CUDA！DeepSeek开源华为昇腾全套组件",
-      "type": "accumulation",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及电池；示例：新型电池首次单列进国家顶层设计",
-      "type": "accumulation",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 算力, 数据中心, 光模块, 存储已启动",
-      "type": "chain_propagation",
-      "theme": "AI算力",
-      "next": [
-        "AI芯片",
-        "光芯片",
-        "液冷散热"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：创新药 — 医药, 创新药已启动",
+      "title": "产业链传导：创新药 — 创新药, 医药已启动",
       "type": "chain_propagation",
       "theme": "创新药",
       "next": [
@@ -54,204 +19,66 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 封装, 半导体已启动",
-      "type": "chain_propagation",
+      "title": "美光财报炸裂：手握26份长协 料“存储荒”持续至2028年",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "最贵18999元！华为Mate 90今日开售！全系列搭载旗舰韬芯片",
+      "type": "news",
       "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "硅片"
-      ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：光伏风电 — 组件, 光伏已启动",
-      "type": "chain_propagation",
-      "theme": "光伏风电",
-      "next": [
-        "硅料",
-        "电池片",
-        "逆变器"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：新能源车 — 固态电池, 电池已启动",
-      "type": "chain_propagation",
-      "theme": "新能源车",
-      "next": [
-        "隔膜",
-        "电解液",
-        "铜箔"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "“明星双抗”引爆！创新药概念梳理",
+      "title": "锚定3.5万亿目标 哪些创新药企业 将取得突破！",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "沪指收涨0.31% 医药股走强 半导体板块跌幅居前",
+      "title": "国庆科创集市点亮江西南昌 低空经济与智能穿戴产业蓄势腾飞",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "低空经济",
       "urgency": "medium"
     },
     {
-      "title": "剑指英伟达CUDA！DeepSeek开源华为昇腾全套组件",
+      "title": "10月金股出炉！通信板块热度抬升，有色金属、医药生物人气不减",
       "type": "news",
-      "theme": "光伏风电",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "海外研选 | 法巴：AI数据中心投资面临三种路径 2030年前或相差5万亿美元",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "【e公司观察】算力产业下一程：从“千人一面”走向“千行千算”",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "新型电池首次单列进国家顶层设计",
+      "title": "11.5亿收购合资股权 恩捷股份全资拿下湖北16亿平方米隔膜产能",
       "type": "news",
       "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "美股开盘：三大指数集体高开，存储芯片板块上涨，美光科技涨超1%，英特尔涨近1%",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "固态电池概念火爆 603200收获“2连板” 最新回应来了",
-      "type": "news",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "美股开盘集体高开 半导体、存储芯片和互联网科技板块权重股普涨",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "美股开盘丨纳指涨0.36% 存储芯片板块上涨",
-      "type": "news",
-      "theme": "AI算力",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
-    {
-      "name": "AI算力",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：6条相关新闻提及算力, 数据中心, 光模块",
-        "示例：海外研选 | 法巴：AI数据中心投资面临三种路径 2030年前或相差5万亿美元"
-      ],
-      "level": "news"
-    },
     {
       "name": "创新药",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及医药, 创新药",
-        "示例：“明星双抗”引爆！创新药概念梳理"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及封装, 半导体",
-        "示例：沪指收涨0.31% 医药股走强 半导体板块跌幅居前"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "光伏风电",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及组件, 光伏",
-        "示例：剑指英伟达CUDA！DeepSeek开源华为昇腾全套组件"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "新能源车",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及电池",
-        "示例：新型电池首次单列进国家顶层设计"
+        "新闻蓄势：2条相关新闻提及创新药, 医药",
+        "示例：锚定3.5万亿目标 哪些创新药企业 将取得突破！"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "AI算力",
-      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
-      "started": [
-        {
-          "name": "算力",
-          "source": "news"
-        },
-        {
-          "name": "数据中心",
-          "source": "news"
-        },
-        {
-          "name": "光模块",
-          "source": "news"
-        },
-        {
-          "name": "存储",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "AI芯片",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光芯片",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "液冷散热",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 6
-    },
-    {
       "theme": "创新药",
       "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
       "started": [
         {
-          "name": "医药",
+          "name": "创新药",
           "source": "news"
         },
         {
-          "name": "创新药",
+          "name": "医药",
           "source": "news"
         }
       ],
@@ -270,96 +97,15 @@
         }
       ],
       "news_count": 2
-    },
-    {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "封装",
-          "source": "news"
-        },
-        {
-          "name": "半导体",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "硅片",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
-      "theme": "光伏风电",
-      "logic": "产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
-      "started": [
-        {
-          "name": "组件",
-          "source": "news"
-        },
-        {
-          "name": "光伏",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "硅料",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "电池片",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "逆变器",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
-      "theme": "新能源车",
-      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
-      "started": [
-        {
-          "name": "固态电池",
-          "source": "news"
-        },
-        {
-          "name": "电池",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "隔膜",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "电解液",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "铜箔",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
     }
   ],
   "forward_events": [
+    {
+      "title": "Q4财报季",
+      "affected": [
+        "全行业"
+      ]
+    },
     {
       "title": "大基金三期投资节奏",
       "affected": [
@@ -391,13 +137,13 @@
     "苹果新CEO据称启动大改革",
     "英伟达创纪录回购背后",
     "30年期美债收益率连涨6日",
-    "《求是》杂志发表习近平总书记重要文章《加强普惠性、基础性、兜底性民生建设》",
-    "加息突变！美联储最新发声！三大变数突袭",
-    "加息预期降温！纳斯达克指数涨幅扩大至1% 布油涨超2%",
-    "今夜！多只A股利好来袭！多家A股公司披露大单",
-    "9月30日晚间上市公司利好消息一览(附名单)",
-    "央行：10月8日将开展12000亿元买断式逆回购操作 期限为3个月",
-    "9月30日东方财富财经晚报（附新闻联播）"
+    "财政部部长蓝佛安：要研究制定针对性强的增量政策 更加注重扩大国内有效需求",
+    "问界汽车：华为与赛力斯达成新五年合作",
+    "美光财报炸裂：手握26份长协 料“存储荒”持续至2028年",
+    "突变！油价直线飙升 欧股重挫！美伊大消息",
+    "最贵18999元！华为Mate 90今日开售！全系列搭载旗舰韬芯片",
+    "10月1日晚间央视新闻联播要闻集锦",
+    "新势力“金九”成色不一：零跑连续三月破10万 “蔚小理”聚焦产品迭代加速出海"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -405,8 +151,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 5,
-    "chain_propagations": 5,
-    "news_catalysts": 15
+    "accumulation_signals": 1,
+    "chain_propagations": 1,
+    "news_catalysts": 6
   }
 }
