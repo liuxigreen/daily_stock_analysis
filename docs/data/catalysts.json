@@ -1,10 +1,39 @@
 {
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及创新药, 医药；示例：锚定3.5万亿目标 哪些创新药企业 将取得突破！",
+      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 材料, 设备；示例：亚马逊探索“表外”融资：拟将80亿美元英伟达芯片剥离至SPV再租回",
+      "type": "accumulation",
+      "theme": "半导体国产替代",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及创新药；示例：港股创新药集体下挫！公募：下跌或失真 10月迎来重磅催化",
       "type": "accumulation",
       "theme": "创新药",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及组件, 风电；示例：装机回暖、收入增长，风电的拐点来了吗？",
+      "type": "accumulation",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及存储；示例：数据爆冷！美股拉升，英伟达创新高；存储巨头，突发跳水",
+      "type": "accumulation",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "产业链传导：半导体国产替代 — 半导体, 材料, 设备, 芯片已启动",
+      "type": "chain_propagation",
+      "theme": "半导体国产替代",
+      "next": [
+        "EDA",
+        "光刻胶",
+        "先进封装"
+      ],
       "urgency": "medium"
     },
     {
@@ -19,56 +48,172 @@
       "urgency": "medium"
     },
     {
-      "title": "美光财报炸裂：手握26份长协 料“存储荒”持续至2028年",
-      "type": "news",
-      "theme": "AI算力",
+      "title": "产业链传导：光伏风电 — 组件, 风电已启动",
+      "type": "chain_propagation",
+      "theme": "光伏风电",
+      "next": [
+        "硅料",
+        "电池片",
+        "逆变器"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "最贵18999元！华为Mate 90今日开售！全系列搭载旗舰韬芯片",
+      "title": "产业链传导：AI算力 — 存储已启动",
+      "type": "chain_propagation",
+      "theme": "AI算力",
+      "next": [
+        "AI芯片",
+        "光模块",
+        "光芯片"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "亚马逊探索“表外”融资：拟将80亿美元英伟达芯片剥离至SPV再租回",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "锚定3.5万亿目标 哪些创新药企业 将取得突破！",
+      "title": "港股创新药集体下挫！公募：下跌或失真 10月迎来重磅催化",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "国庆科创集市点亮江西南昌 低空经济与智能穿戴产业蓄势腾飞",
+      "title": "锂电池如何兼顾快充与稳定？中国团队提出正极材料设计新标尺",
       "type": "news",
-      "theme": "低空经济",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "10月金股出炉！通信板块热度抬升，有色金属、医药生物人气不减",
+      "title": "装机回暖、收入增长，风电的拐点来了吗？",
+      "type": "news",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "数据爆冷！美股拉升，英伟达创新高；存储巨头，突发跳水",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "美联储加息预期降温，纳指高开1.2% ；全国铁路单日旅客发送量创新高；去哪儿旅行：亚马逊计划出售价值80亿美元的英伟达芯片丨每经晚参",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "深夜，美股费城半导体指数大涨3%，安森半导体涨超6%，ARM涨近5%，迈威尔涨超4%，超威半导体、英特尔涨超3%；希捷、西部数据狂跌超10%",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "对标英伟达平台，DeepSeek开源华为昇腾全套基础设施组件",
+      "type": "news",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "龙岗扛AI与机器人应用改革大旗 前瞻布局词元经济",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "大盘走弱医药走出独立行情，三季度医药逆势上涨10.12%：创新药出海与利润修复托举行业，个股暴涨暴跌凸显业绩兑现难题",
       "type": "news",
       "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "11.5亿收购合资股权 恩捷股份全资拿下湖北16亿平方米隔膜产能",
-      "type": "news",
-      "theme": "新能源车",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
+    {
+      "name": "半导体国产替代",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：5条相关新闻提及半导体, 材料, 设备",
+        "示例：亚马逊探索“表外”融资：拟将80亿美元英伟达芯片剥离至SPV再租回"
+      ],
+      "level": "news"
+    },
     {
       "name": "创新药",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及创新药, 医药",
-        "示例：锚定3.5万亿目标 哪些创新药企业 将取得突破！"
+        "新闻蓄势：2条相关新闻提及创新药",
+        "示例：港股创新药集体下挫！公募：下跌或失真 10月迎来重磅催化"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "光伏风电",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及组件, 风电",
+        "示例：装机回暖、收入增长，风电的拐点来了吗？"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "AI算力",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及存储",
+        "示例：数据爆冷！美股拉升，英伟达创新高；存储巨头，突发跳水"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
+    {
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "started": [
+        {
+          "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "材料",
+          "source": "news"
+        },
+        {
+          "name": "设备",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "EDA",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光刻胶",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "先进封装",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 5
+    },
     {
       "theme": "创新药",
       "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
@@ -93,6 +238,60 @@
         },
         {
           "name": "原料药",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
+    },
+    {
+      "theme": "光伏风电",
+      "logic": "产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
+      "started": [
+        {
+          "name": "组件",
+          "source": "news"
+        },
+        {
+          "name": "风电",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "硅料",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "电池片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "逆变器",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
+    },
+    {
+      "theme": "AI算力",
+      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
+      "started": [
+        {
+          "name": "存储",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "AI芯片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光模块",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光芯片",
           "market_cap_yi": 0
         }
       ],
@@ -137,13 +336,13 @@
     "苹果新CEO据称启动大改革",
     "英伟达创纪录回购背后",
     "30年期美债收益率连涨6日",
-    "财政部部长蓝佛安：要研究制定针对性强的增量政策 更加注重扩大国内有效需求",
-    "问界汽车：华为与赛力斯达成新五年合作",
-    "美光财报炸裂：手握26份长协 料“存储荒”持续至2028年",
-    "突变！油价直线飙升 欧股重挫！美伊大消息",
-    "最贵18999元！华为Mate 90今日开售！全系列搭载旗舰韬芯片",
-    "10月1日晚间央视新闻联播要闻集锦",
-    "新势力“金九”成色不一：零跑连续三月破10万 “蔚小理”聚焦产品迭代加速出海"
+    "美联储本月加不加息？美国9月非农今晚揭晓 全球市场严阵以待",
+    "局势升级！特朗普称中期选举后或加大对伊轰炸 美军大举增兵中东",
+    "10月2日晚间央视新闻联播要闻集锦",
+    "“史上最大IPO”有新消息！Anthropic被曝感恩节前上市 估值剑指2万亿美元",
+    "柴油危机撞上中期选举！美国施压欧洲盟友释放储备“救急”",
+    "普京：很快所有人都得开中国车",
+    "恒生指数下跌2.6% 金融股跌幅居前"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -151,8 +350,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 1,
-    "chain_propagations": 1,
-    "news_catalysts": 6
+    "accumulation_signals": 4,
+    "chain_propagations": 4,
+    "news_catalysts": 12
   }
 }
