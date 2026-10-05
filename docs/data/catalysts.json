@@ -1,65 +1,20 @@
 {
-  "date": "2026-10-02",
+  "date": "2026-10-05",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：5条相关新闻提及半导体, 材料, 设备；示例：亚马逊探索“表外”融资：拟将80亿美元英伟达芯片剥离至SPV再租回",
-      "type": "accumulation",
-      "theme": "半导体国产替代",
-      "urgency": "high"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及创新药；示例：港股创新药集体下挫！公募：下跌或失真 10月迎来重磅催化",
-      "type": "accumulation",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及组件, 风电；示例：装机回暖、收入增长，风电的拐点来了吗？",
-      "type": "accumulation",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及存储；示例：数据爆冷！美股拉升，英伟达创新高；存储巨头，突发跳水",
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及算力, 数据中心；示例：港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 半导体, 材料, 设备, 芯片已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
+      "title": "蓄势信号：新闻蓄势：2条相关新闻提及无人机, 低空；示例：突破3.5万亿元！低空经济迎政策&#x2B;出海双重共振 高成长潜力股出炉",
+      "type": "accumulation",
+      "theme": "低空经济",
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 创新药, 医药已启动",
-      "type": "chain_propagation",
-      "theme": "创新药",
-      "next": [
-        "CXO",
-        "CDMO",
-        "原料药"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：光伏风电 — 组件, 风电已启动",
-      "type": "chain_propagation",
-      "theme": "光伏风电",
-      "next": [
-        "硅料",
-        "电池片",
-        "逆变器"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 存储已启动",
+      "title": "产业链传导：AI算力 — 算力, 数据中心已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
@@ -70,214 +25,100 @@
       "urgency": "medium"
     },
     {
-      "title": "亚马逊探索“表外”融资：拟将80亿美元英伟达芯片剥离至SPV再租回",
-      "type": "news",
-      "theme": "半导体国产替代",
+      "title": "产业链传导：低空经济 — 无人机, 低空已启动",
+      "type": "chain_propagation",
+      "theme": "低空经济",
+      "next": [
+        "eVTOL整机",
+        "飞控系统",
+        "动力电池"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "港股创新药集体下挫！公募：下跌或失真 10月迎来重磅催化",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "锂电池如何兼顾快充与稳定？中国团队提出正极材料设计新标尺",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "装机回暖、收入增长，风电的拐点来了吗？",
-      "type": "news",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "数据爆冷！美股拉升，英伟达创新高；存储巨头，突发跳水",
+      "title": "港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "美联储加息预期降温，纳指高开1.2% ；全国铁路单日旅客发送量创新高；去哪儿旅行：亚马逊计划出售价值80亿美元的英伟达芯片丨每经晚参",
+      "title": "美国数据中心抵制声浪愈演愈烈？高盛：到2027年增长前景基本不变",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "供需缺口或延续至2027年！PCB关键材料紧缺蔓延 建滔系两股均涨超7%",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "深夜，美股费城半导体指数大涨3%，安森半导体涨超6%，ARM涨近5%，迈威尔涨超4%，超威半导体、英特尔涨超3%；希捷、西部数据狂跌超10%",
+      "title": "突破3.5万亿元！低空经济迎政策&#x2B;出海双重共振 高成长潜力股出炉",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "低空经济",
       "urgency": "medium"
     },
     {
-      "title": "对标英伟达平台，DeepSeek开源华为昇腾全套基础设施组件",
+      "title": "年年喊“元年” 钠电池这次有何不一样？",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "乌称人工智能炮塔首次成功拦截俄无人机",
+      "type": "news",
+      "theme": "低空经济",
+      "urgency": "medium"
+    },
+    {
+      "title": "三季度光伏股价图鉴：指数跑输沪深300 个股涨跌幅差距接近百点",
       "type": "news",
       "theme": "光伏风电",
       "urgency": "medium"
     },
     {
-      "title": "龙岗扛AI与机器人应用改革大旗 前瞻布局词元经济",
+      "title": "新型储能迎来政策利好 低PE+高增长潜力股出炉",
       "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "大盘走弱医药走出独立行情，三季度医药逆势上涨10.12%：创新药出海与利润修复托举行业，个股暴涨暴跌凸显业绩兑现难题",
-      "type": "news",
-      "theme": "创新药",
+      "theme": "储能",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
-    {
-      "name": "半导体国产替代",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 60,
-      "reasons": [
-        "新闻蓄势：5条相关新闻提及半导体, 材料, 设备",
-        "示例：亚马逊探索“表外”融资：拟将80亿美元英伟达芯片剥离至SPV再租回"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "创新药",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及创新药",
-        "示例：港股创新药集体下挫！公募：下跌或失真 10月迎来重磅催化"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "光伏风电",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及组件, 风电",
-        "示例：装机回暖、收入增长，风电的拐点来了吗？"
-      ],
-      "level": "news"
-    },
     {
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 30,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及存储",
-        "示例：数据爆冷！美股拉升，英伟达创新高；存储巨头，突发跳水"
+        "新闻蓄势：2条相关新闻提及算力, 数据中心",
+        "示例：港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "低空经济",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 30,
+      "reasons": [
+        "新闻蓄势：2条相关新闻提及无人机, 低空",
+        "示例：突破3.5万亿元！低空经济迎政策&#x2B;出海双重共振 高成长潜力股出炉"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "半导体国产替代",
-      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "started": [
-        {
-          "name": "半导体",
-          "source": "news"
-        },
-        {
-          "name": "材料",
-          "source": "news"
-        },
-        {
-          "name": "设备",
-          "source": "news"
-        },
-        {
-          "name": "芯片",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "EDA",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光刻胶",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 5
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "name": "创新药",
-          "source": "news"
-        },
-        {
-          "name": "医药",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "CXO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "CDMO",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "原料药",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
-      "theme": "光伏风电",
-      "logic": "产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
-      "started": [
-        {
-          "name": "组件",
-          "source": "news"
-        },
-        {
-          "name": "风电",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "硅料",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "电池片",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "逆变器",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
-    },
-    {
       "theme": "AI算力",
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "存储",
+          "name": "算力",
+          "source": "news"
+        },
+        {
+          "name": "数据中心",
           "source": "news"
         }
       ],
@@ -292,6 +133,35 @@
         },
         {
           "name": "光芯片",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 2
+    },
+    {
+      "theme": "低空经济",
+      "logic": "政策推动低空开放 → eVTOL适航认证 → 供应链受益",
+      "started": [
+        {
+          "name": "无人机",
+          "source": "news"
+        },
+        {
+          "name": "低空",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "eVTOL整机",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "飞控系统",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "动力电池",
           "market_cap_yi": 0
         }
       ],
@@ -336,13 +206,13 @@
     "苹果新CEO据称启动大改革",
     "英伟达创纪录回购背后",
     "30年期美债收益率连涨6日",
-    "美联储本月加不加息？美国9月非农今晚揭晓 全球市场严阵以待",
-    "局势升级！特朗普称中期选举后或加大对伊轰炸 美军大举增兵中东",
-    "10月2日晚间央视新闻联播要闻集锦",
-    "“史上最大IPO”有新消息！Anthropic被曝感恩节前上市 估值剑指2万亿美元",
-    "柴油危机撞上中期选举！美国施压欧洲盟友释放储备“救急”",
-    "普京：很快所有人都得开中国车",
-    "恒生指数下跌2.6% 金融股跌幅居前"
+    "官宣！华为和美国高通达成重磅协议",
+    "纳指盘中创新高 大型科技股集体走强 台积电股价刷新纪录高位",
+    "2026年诺贝尔生理学或医学奖揭晓 这些A股公司布局相关领域",
+    "总统选举首轮结果出炉 巴西史诗级暴涨",
+    "港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨",
+    "美国数据中心抵制声浪愈演愈烈？高盛：到2027年增长前景基本不变",
+    "2026年诺贝尔生理学或医学奖揭晓"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -350,8 +220,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 4,
-    "chain_propagations": 4,
-    "news_catalysts": 12
+    "accumulation_signals": 2,
+    "chain_propagations": 2,
+    "news_catalysts": 8
   }
 }
