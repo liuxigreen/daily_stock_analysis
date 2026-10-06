@@ -1,171 +1,183 @@
 {
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及算力, 数据中心；示例：港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及芯片, 设备, 半导体；示例：华为徐直军：昇腾中国市场份额已超英伟达 中国芯片自主化是必然之路",
       "type": "accumulation",
-      "theme": "AI算力",
-      "urgency": "medium"
+      "theme": "半导体国产替代",
+      "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及无人机, 低空；示例：突破3.5万亿元！低空经济迎政策&#x2B;出海双重共振 高成长潜力股出炉",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及医药；示例：港股三大指数集体上涨 医药股大爆发",
       "type": "accumulation",
-      "theme": "低空经济",
-      "urgency": "medium"
+      "theme": "创新药",
+      "urgency": "high"
     },
     {
-      "title": "产业链传导：AI算力 — 算力, 数据中心已启动",
+      "title": "产业链传导：半导体国产替代 — 芯片, 设备, 半导体已启动",
       "type": "chain_propagation",
-      "theme": "AI算力",
+      "theme": "半导体国产替代",
       "next": [
-        "AI芯片",
-        "光模块",
-        "光芯片"
+        "EDA",
+        "光刻胶",
+        "先进封装"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：低空经济 — 无人机, 低空已启动",
+      "title": "产业链传导：创新药 — 医药已启动",
       "type": "chain_propagation",
-      "theme": "低空经济",
+      "theme": "创新药",
       "next": [
-        "eVTOL整机",
-        "飞控系统",
-        "动力电池"
+        "创新药",
+        "CXO",
+        "CDMO"
       ],
       "urgency": "medium"
     },
     {
-      "title": "港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨",
+      "title": "港股三大指数集体上涨 医药股大爆发",
       "type": "news",
-      "theme": "AI算力",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "美国数据中心抵制声浪愈演愈烈？高盛：到2027年增长前景基本不变",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "供需缺口或延续至2027年！PCB关键材料紧缺蔓延 建滔系两股均涨超7%",
+      "title": "华为徐直军：昇腾中国市场份额已超英伟达 中国芯片自主化是必然之路",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "突破3.5万亿元！低空经济迎政策&#x2B;出海双重共振 高成长潜力股出炉",
+      "title": "机构调研超600家公司！电子、半导体成主攻方向",
       "type": "news",
-      "theme": "低空经济",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "年年喊“元年” 钠电池这次有何不一样？",
+      "title": "2026年诺贝尔生理学或医学奖花落“光遗传学”，复星医药、昭衍新药等都有布局",
       "type": "news",
-      "theme": "新能源车",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "乌称人工智能炮塔首次成功拦截俄无人机",
+      "title": "港股三大指数全线收涨：医药板块领跑 科网股表现强势",
       "type": "news",
-      "theme": "低空经济",
+      "theme": "创新药",
       "urgency": "medium"
     },
     {
-      "title": "三季度光伏股价图鉴：指数跑输沪深300 个股涨跌幅差距接近百点",
+      "title": "ST瑞贝卡业绩会回应投资者：国外销售占比约80%，拟新增可穿戴智能设备等新业务",
       "type": "news",
-      "theme": "光伏风电",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "新型储能迎来政策利好 低PE+高增长潜力股出炉",
+      "title": "无人驾驶车车门夹住乘客手指 小马智行：系同行人手动关门所致",
       "type": "news",
-      "theme": "储能",
+      "theme": "智能汽车",
+      "urgency": "medium"
+    },
+    {
+      "title": "美股深夜 纳指开盘续创新高 标普500开盘后快速冲高创新高；英伟达涨超1%创新高；存储芯片快速跳水 西部数据跌超5% 希捷科技跌超6%",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "商业航天驶入快车道，21股净利润有望高增长",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "下半年装机旺季叠加毛利率修复 这几家风电设备公司被机构加仓",
+      "type": "news",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     }
   ],
   "accumulation_signals": [
     {
-      "name": "AI算力",
+      "name": "半导体国产替代",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及算力, 数据中心",
-        "示例：港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨"
+        "新闻蓄势：4条相关新闻提及芯片, 设备, 半导体",
+        "示例：华为徐直军：昇腾中国市场份额已超英伟达 中国芯片自主化是必然之路"
       ],
       "level": "news"
     },
     {
-      "name": "低空经济",
+      "name": "创新药",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 45,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及无人机, 低空",
-        "示例：突破3.5万亿元！低空经济迎政策&#x2B;出海双重共振 高成长潜力股出炉"
+        "新闻蓄势：3条相关新闻提及医药",
+        "示例：港股三大指数集体上涨 医药股大爆发"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
-      "theme": "AI算力",
-      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
+      "theme": "半导体国产替代",
+      "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "算力",
+          "name": "芯片",
           "source": "news"
         },
         {
-          "name": "数据中心",
+          "name": "设备",
+          "source": "news"
+        },
+        {
+          "name": "半导体",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "AI芯片",
+          "name": "EDA",
           "market_cap_yi": 0
         },
         {
-          "name": "光模块",
+          "name": "光刻胶",
           "market_cap_yi": 0
         },
         {
-          "name": "光芯片",
+          "name": "先进封装",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 2
+      "news_count": 4
     },
     {
-      "theme": "低空经济",
-      "logic": "政策推动低空开放 → eVTOL适航认证 → 供应链受益",
+      "theme": "创新药",
+      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
       "started": [
         {
-          "name": "无人机",
-          "source": "news"
-        },
-        {
-          "name": "低空",
+          "name": "医药",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "eVTOL整机",
+          "name": "创新药",
           "market_cap_yi": 0
         },
         {
-          "name": "飞控系统",
+          "name": "CXO",
           "market_cap_yi": 0
         },
         {
-          "name": "动力电池",
+          "name": "CDMO",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 2
+      "news_count": 3
     }
   ],
   "forward_events": [
@@ -206,13 +218,13 @@
     "苹果新CEO据称启动大改革",
     "英伟达创纪录回购背后",
     "30年期美债收益率连涨6日",
-    "官宣！华为和美国高通达成重磅协议",
-    "纳指盘中创新高 大型科技股集体走强 台积电股价刷新纪录高位",
-    "2026年诺贝尔生理学或医学奖揭晓 这些A股公司布局相关领域",
-    "总统选举首轮结果出炉 巴西史诗级暴涨",
-    "港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨",
-    "美国数据中心抵制声浪愈演愈烈？高盛：到2027年增长前景基本不变",
-    "2026年诺贝尔生理学或医学奖揭晓"
+    "美股三大指数集体上涨 纳指、标普500创新高",
+    "商务部就法德要求欧盟强化贸易防御等保护主义工具答记者问",
+    "2026年诺贝尔物理学奖揭晓",
+    "浙商策略：节日效应影响明显 中线底部迁延 继续保持耐心",
+    "10月6日港股收盘：恒指涨1% 恒生科技指数涨0.94%",
+    "港股三大指数集体上涨 医药股大爆发",
+    "10月6日港股午盘：恒指涨0.78% 恒生科技指数涨0.87%"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -222,6 +234,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 2,
     "chain_propagations": 2,
-    "news_catalysts": 8
+    "news_catalysts": 10
   }
 }
