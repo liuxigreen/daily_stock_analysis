@@ -1,20 +1,26 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及芯片, 设备, 半导体；示例：华为徐直军：昇腾中国市场份额已超英伟达 中国芯片自主化是必然之路",
+      "title": "蓄势信号：新闻蓄势：9条相关新闻提及半导体, 芯片；示例：美股三大指数集体下跌 道指跌超1% 芯片股走低",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及医药；示例：港股三大指数集体上涨 医药股大爆发",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及存储, 数据中心；示例：美股存储芯片板块拉升 闪迪涨超2%",
+      "type": "accumulation",
+      "theme": "AI算力",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及医药, CXO；示例：9月制造业PMI重返扩张区间 农副食品加工、医药等行业产需活跃",
       "type": "accumulation",
       "theme": "创新药",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 芯片, 设备, 半导体已启动",
+      "title": "产业链传导：半导体国产替代 — 半导体, 芯片已启动",
       "type": "chain_propagation",
       "theme": "半导体国产替代",
       "next": [
@@ -25,24 +31,65 @@
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 医药已启动",
+      "title": "产业链传导：AI算力 — 存储, 数据中心已启动",
       "type": "chain_propagation",
-      "theme": "创新药",
+      "theme": "AI算力",
       "next": [
-        "创新药",
-        "CXO",
-        "CDMO"
+        "AI芯片",
+        "光模块",
+        "光芯片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "港股三大指数集体上涨 医药股大爆发",
-      "type": "news",
+      "title": "产业链传导：创新药 — 医药, CXO已启动",
+      "type": "chain_propagation",
       "theme": "创新药",
+      "next": [
+        "创新药",
+        "CDMO",
+        "原料药"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "华为徐直军：昇腾中国市场份额已超英伟达 中国芯片自主化是必然之路",
+      "title": "美股三大指数集体下跌 道指跌超1% 芯片股走低",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "港股下挫！半导体、生物科技、科网股集体下跌",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "50多岁夫妇在上海为80岁独居老人买机器人 具身智能成国庆长假消费新亮点",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "港股半导体概念大跌 阿里巴巴、百度、小米、快手集体下挫 “猴茅”重挫超10%",
+      "type": "news",
+      "theme": "半导体国产替代",
+      "urgency": "medium"
+    },
+    {
+      "title": "美股存储芯片板块拉升 闪迪涨超2%",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "俄回应法国试射导弹：欧洲执着于军事化想法",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "SpaceX计划通过阿波罗主导的融资筹集400亿美元 以采购英伟达芯片",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
@@ -54,43 +101,13 @@
       "urgency": "medium"
     },
     {
-      "title": "2026年诺贝尔生理学或医学奖花落“光遗传学”，复星医药、昭衍新药等都有布局",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "港股三大指数全线收涨：医药板块领跑 科网股表现强势",
-      "type": "news",
-      "theme": "创新药",
-      "urgency": "medium"
-    },
-    {
-      "title": "ST瑞贝卡业绩会回应投资者：国外销售占比约80%，拟新增可穿戴智能设备等新业务",
+      "title": "粤芯半导体：拟创业板IPO募资75亿元 发行价12.01元/股",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "无人驾驶车车门夹住乘客手指 小马智行：系同行人手动关门所致",
-      "type": "news",
-      "theme": "智能汽车",
-      "urgency": "medium"
-    },
-    {
-      "title": "美股深夜 纳指开盘续创新高 标普500开盘后快速冲高创新高；英伟达涨超1%创新高；存储芯片快速跳水 西部数据跌超5% 希捷科技跌超6%",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "商业航天驶入快车道，21股净利润有望高增长",
-      "type": "news",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "下半年装机旺季叠加毛利率修复 这几家风电设备公司被机构加仓",
+      "title": "美股深夜，半导体跳水，迈威尔科技跌超2%；中国资产下跌，阿里、百度、霸王茶姬飘绿；医药股逆市走高，礼来涨超2%，艾伯维公司股价创新高",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
@@ -103,8 +120,19 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及芯片, 设备, 半导体",
-        "示例：华为徐直军：昇腾中国市场份额已超英伟达 中国芯片自主化是必然之路"
+        "新闻蓄势：9条相关新闻提及半导体, 芯片",
+        "示例：美股三大指数集体下跌 道指跌超1% 芯片股走低"
+      ],
+      "level": "news"
+    },
+    {
+      "name": "AI算力",
+      "change_pct": 0,
+      "market_cap_yi": 0,
+      "score": 60,
+      "reasons": [
+        "新闻蓄势：4条相关新闻提及存储, 数据中心",
+        "示例：美股存储芯片板块拉升 闪迪涨超2%"
       ],
       "level": "news"
     },
@@ -114,8 +142,8 @@
       "market_cap_yi": 0,
       "score": 45,
       "reasons": [
-        "新闻蓄势：3条相关新闻提及医药",
-        "示例：港股三大指数集体上涨 医药股大爆发"
+        "新闻蓄势：3条相关新闻提及医药, CXO",
+        "示例：9月制造业PMI重返扩张区间 农副食品加工、医药等行业产需活跃"
       ],
       "level": "news"
     }
@@ -126,15 +154,11 @@
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "name": "芯片",
-          "source": "news"
-        },
-        {
-          "name": "设备",
-          "source": "news"
-        },
-        {
           "name": "半导体",
+          "source": "news"
+        },
+        {
+          "name": "芯片",
           "source": "news"
         }
       ],
@@ -152,6 +176,35 @@
           "market_cap_yi": 0
         }
       ],
+      "news_count": 9
+    },
+    {
+      "theme": "AI算力",
+      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
+      "started": [
+        {
+          "name": "存储",
+          "source": "news"
+        },
+        {
+          "name": "数据中心",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "AI芯片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光模块",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光芯片",
+          "market_cap_yi": 0
+        }
+      ],
       "news_count": 4
     },
     {
@@ -161,6 +214,10 @@
         {
           "name": "医药",
           "source": "news"
+        },
+        {
+          "name": "CXO",
+          "source": "news"
         }
       ],
       "next_opportunities": [
@@ -169,11 +226,11 @@
           "market_cap_yi": 0
         },
         {
-          "name": "CXO",
+          "name": "CDMO",
           "market_cap_yi": 0
         },
         {
-          "name": "CDMO",
+          "name": "原料药",
           "market_cap_yi": 0
         }
       ],
@@ -218,13 +275,13 @@
     "苹果新CEO据称启动大改革",
     "英伟达创纪录回购背后",
     "30年期美债收益率连涨6日",
-    "美股三大指数集体上涨 纳指、标普500创新高",
-    "商务部就法德要求欧盟强化贸易防御等保护主义工具答记者问",
-    "2026年诺贝尔物理学奖揭晓",
-    "浙商策略：节日效应影响明显 中线底部迁延 继续保持耐心",
-    "10月6日港股收盘：恒指涨1% 恒生科技指数涨0.94%",
-    "港股三大指数集体上涨 医药股大爆发",
-    "10月6日港股午盘：恒指涨0.78% 恒生科技指数涨0.87%"
+    "假期要闻汇总：非农数据意外“爆冷” 美联储10月加息概率骤降",
+    "美股三大指数集体下跌 道指跌超1% 芯片股走低",
+    "10月7日晚间上市公司利好消息一览(附名单)",
+    "十大机构论市：节后A股有望“量价齐升”",
+    "光大策略：节后市场表现或更加积极",
+    "购金力度创新高！央行再出手 连续23个月增持黄金",
+    "历史大数据揭秘 国庆节后A股这样走？这个冷门行业胜率最高"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -232,8 +289,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 2,
-    "chain_propagations": 2,
-    "news_catalysts": 10
+    "accumulation_signals": 3,
+    "chain_propagations": 3,
+    "news_catalysts": 19
   }
 }
