@@ -1,115 +1,115 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：9条相关新闻提及半导体, 芯片；示例：美股三大指数集体下跌 道指跌超1% 芯片股走低",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及封装, 半导体, 芯片；示例：半导体设备龙头大秀订单",
       "type": "accumulation",
       "theme": "半导体国产替代",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：4条相关新闻提及存储, 数据中心；示例：美股存储芯片板块拉升 闪迪涨超2%",
+      "title": "蓄势信号：新闻蓄势：8条相关新闻提及光芯片, 算力；示例：算力大单上演“纸面狂欢”！多数合同“爽约”",
       "type": "accumulation",
       "theme": "AI算力",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：3条相关新闻提及医药, CXO；示例：9月制造业PMI重返扩张区间 农副食品加工、医药等行业产需活跃",
+      "title": "蓄势信号：新闻蓄势：3条相关新闻提及电池；示例：全固态电池迎重要时间节点！相关概念股梳理",
       "type": "accumulation",
-      "theme": "创新药",
+      "theme": "新能源车",
       "urgency": "high"
     },
     {
-      "title": "产业链传导：半导体国产替代 — 半导体, 芯片已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "EDA",
-        "光刻胶",
-        "先进封装"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 存储, 数据中心已启动",
+      "title": "产业链传导：AI算力 — 光芯片, 算力已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
         "光模块",
-        "光芯片"
+        "数据中心"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 医药, CXO已启动",
+      "title": "产业链传导：半导体国产替代 — 设备, 封装, 半导体, 芯片已启动",
       "type": "chain_propagation",
-      "theme": "创新药",
+      "theme": "半导体国产替代",
       "next": [
-        "创新药",
-        "CDMO",
-        "原料药"
+        "EDA",
+        "光刻胶",
+        "硅片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "美股三大指数集体下跌 道指跌超1% 芯片股走低",
+      "title": "产业链传导：新能源车 — 锂电, 固态电池, 电池已启动",
+      "type": "chain_propagation",
+      "theme": "新能源车",
+      "next": [
+        "隔膜",
+        "电解液",
+        "铜箔"
+      ],
+      "urgency": "medium"
+    },
+    {
+      "title": "半导体设备龙头大秀订单",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "港股下挫！半导体、生物科技、科网股集体下跌",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "50多岁夫妇在上海为80岁独居老人买机器人 具身智能成国庆长假消费新亮点",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "港股半导体概念大跌 阿里巴巴、百度、小米、快手集体下挫 “猴茅”重挫超10%",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "美股存储芯片板块拉升 闪迪涨超2%",
+      "title": "算力大单上演“纸面狂欢”！多数合同“爽约”",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "俄回应法国试射导弹：欧洲执着于军事化想法",
+      "title": "传闻引发光芯片概念板块大幅下跌 多家A股公司回应",
       "type": "news",
-      "theme": "军工航天",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "SpaceX计划通过阿波罗主导的融资筹集400亿美元 以采购英伟达芯片",
+      "title": "全固态电池迎重要时间节点！相关概念股梳理",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "光芯片巨头集体跌停！竟是一则研报惹的祸？",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "机构调研丨锂电池概念&#x2B;工业母机 这家公司在手订单充足 核心产品产能处于满负荷状态",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "长光华芯：大摩相关报告非正式法规 国内800G/1.6T光芯片短期内仍极度紧缺",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "英伟达欲加码玻璃基板决战AI先进封装 A股相关企业抢先布局",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "机构调研超600家公司！电子、半导体成主攻方向",
+      "title": "科创板晚报|源杰科技、长光华芯回应光芯片传闻 晶晨股份Q3净利润同比预增至高248%",
       "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "粤芯半导体：拟创业板IPO募资75亿元 发行价12.01元/股",
+      "title": "三季报业绩预计扭亏 行云科技AI算力布局加速兑现",
       "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "美股深夜，半导体跳水，迈威尔科技跌超2%；中国资产下跌，阿里、百度、霸王茶姬飘绿；医药股逆市走高，礼来涨超2%，艾伯维公司股价创新高",
-      "type": "news",
-      "theme": "半导体国产替代",
+      "theme": "AI算力",
       "urgency": "medium"
     }
   ],
@@ -120,8 +120,8 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：9条相关新闻提及半导体, 芯片",
-        "示例：美股三大指数集体下跌 道指跌超1% 芯片股走低"
+        "新闻蓄势：4条相关新闻提及封装, 半导体, 芯片",
+        "示例：半导体设备龙头大秀订单"
       ],
       "level": "news"
     },
@@ -131,28 +131,65 @@
       "market_cap_yi": 0,
       "score": 60,
       "reasons": [
-        "新闻蓄势：4条相关新闻提及存储, 数据中心",
-        "示例：美股存储芯片板块拉升 闪迪涨超2%"
+        "新闻蓄势：8条相关新闻提及光芯片, 算力",
+        "示例：算力大单上演“纸面狂欢”！多数合同“爽约”"
       ],
       "level": "news"
     },
     {
-      "name": "创新药",
+      "name": "新能源车",
       "change_pct": 0,
       "market_cap_yi": 0,
       "score": 45,
       "reasons": [
-        "新闻蓄势：3条相关新闻提及医药, CXO",
-        "示例：9月制造业PMI重返扩张区间 农副食品加工、医药等行业产需活跃"
+        "新闻蓄势：3条相关新闻提及电池",
+        "示例：全固态电池迎重要时间节点！相关概念股梳理"
       ],
       "level": "news"
     }
   ],
   "chain_propagations": [
     {
+      "theme": "AI算力",
+      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
+      "started": [
+        {
+          "name": "光芯片",
+          "source": "news"
+        },
+        {
+          "name": "算力",
+          "source": "news"
+        }
+      ],
+      "next_opportunities": [
+        {
+          "name": "AI芯片",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "光模块",
+          "market_cap_yi": 0
+        },
+        {
+          "name": "数据中心",
+          "market_cap_yi": 0
+        }
+      ],
+      "news_count": 8
+    },
+    {
       "theme": "半导体国产替代",
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
+        {
+          "name": "设备",
+          "source": "news"
+        },
+        {
+          "name": "封装",
+          "source": "news"
+        },
         {
           "name": "半导体",
           "source": "news"
@@ -172,65 +209,40 @@
           "market_cap_yi": 0
         },
         {
-          "name": "先进封装",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 9
-    },
-    {
-      "theme": "AI算力",
-      "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
-      "started": [
-        {
-          "name": "存储",
-          "source": "news"
-        },
-        {
-          "name": "数据中心",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "AI芯片",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光模块",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "光芯片",
+          "name": "硅片",
           "market_cap_yi": 0
         }
       ],
       "news_count": 4
     },
     {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "theme": "新能源车",
+      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
       "started": [
         {
-          "name": "医药",
+          "name": "锂电",
           "source": "news"
         },
         {
-          "name": "CXO",
+          "name": "固态电池",
+          "source": "news"
+        },
+        {
+          "name": "电池",
           "source": "news"
         }
       ],
       "next_opportunities": [
         {
-          "name": "创新药",
+          "name": "隔膜",
           "market_cap_yi": 0
         },
         {
-          "name": "CDMO",
+          "name": "电解液",
           "market_cap_yi": 0
         },
         {
-          "name": "原料药",
+          "name": "铜箔",
           "market_cap_yi": 0
         }
       ],
@@ -272,16 +284,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "苹果新CEO据称启动大改革",
-    "英伟达创纪录回购背后",
-    "30年期美债收益率连涨6日",
-    "假期要闻汇总：非农数据意外“爆冷” 美联储10月加息概率骤降",
-    "美股三大指数集体下跌 道指跌超1% 芯片股走低",
-    "10月7日晚间上市公司利好消息一览(附名单)",
-    "十大机构论市：节后A股有望“量价齐升”",
-    "光大策略：节后市场表现或更加积极",
-    "购金力度创新高！央行再出手 连续23个月增持黄金",
-    "历史大数据揭秘 国庆节后A股这样走？这个冷门行业胜率最高"
+    "3倍大牛股提示风险",
+    "半导体设备龙头大秀订单",
+    "段永平出手 布局腾讯",
+    "央行阐明人民币汇率政策立场：中国从不搞竞争性货币贬值",
+    "如何看待节后A股调整？机构：海外研报系假设推演",
+    "10月8日晚间上市公司利好消息一览(附名单)",
+    "美股三大指数震荡整理 国际油价大涨",
+    "算力大单上演“纸面狂欢”！多数合同“爽约”",
+    "尊界汽车回应“刹车时踏板断裂”：将进一步优化该部件设计",
+    "传闻引发光芯片概念板块大幅下跌 多家A股公司回应"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -291,6 +303,6 @@
     "stocks_scanned": 0,
     "accumulation_signals": 3,
     "chain_propagations": 3,
-    "news_catalysts": 19
+    "news_catalysts": 16
   }
 }
