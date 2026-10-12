@@ -70,105 +70,47 @@ def read_catalysts(verbose=False):
 
 
 def get_all_stocks_efinance(verbose=False):
-    """用 efinance 获取全市场 A 股实时行情。"""
+    """全市场 A 股实时行情（改用新浪源，efinance/eastmoney 已失效）。"""
     try:
-        import efinance as ef
-        log("efinance: 获取全市场行情...", verbose)
-        df = ef.stock.get_realtime_quotes()
-        if df is None or df.empty:
+        import market_source as ms
+        log("market_source(新浪): 获取全市场行情...", verbose)
+        stocks = ms.get_all_stocks(max_pages=60, verbose=verbose)
+        if not stocks:
+            log("⚠️ 新浪返回空数据", verbose)
             return []
-
-        # 动态检测列名（efinance 不同版本列名可能不同）
-        cols = set(df.columns)
-        code_col = next((c for c in ["股票代码", "代码", "code"] if c in cols), None)
-        name_col = next((c for c in ["股票名称", "名称", "name"] if c in cols), None)
-        cap_col = next((c for c in ["总市值", "总市值(元)", "market_cap"] if c in cols), None)
-        change_col = next((c for c in ["涨跌幅", "change_pct"] if c in cols), None)
-        amount_col = next((c for c in ["成交额", "amount"] if c in cols), None)
-        pe_col = next((c for c in ["市盈率(动)", "市盈率TTM", "pe", "市盈率"] if c in cols), None)
-        pb_col = next((c for c in ["市净率", "pb", "市净率(MRQ)"] if c in cols), None)
-
-        if not code_col or not name_col:
-            log(f"⚠️ efinance 列名不匹配: {list(cols)[:10]}", verbose)
-            return []
-
-        stocks = []
-        for _, row in df.iterrows():
-            code = str(row.get(code_col, ""))
-            name = str(row.get(name_col, ""))
-            if not code or not name:
-                continue
-            try:
-                cap = float(row.get(cap_col, 0) or 0) if cap_col else 0
-                cap_yi = round(cap / 1e8, 0) if cap > 0 else 0
-            except (ValueError, TypeError):
-                cap_yi = 0
-            try:
-                change = round(float(row.get(change_col, 0) or 0), 2) if change_col else 0
-            except (ValueError, TypeError):
-                change = 0
-            try:
-                amount = float(row.get(amount_col, 0) or 0) if amount_col else 0
-                amount_yi = round(amount / 1e8, 2)
-            except (ValueError, TypeError):
-                amount_yi = 0
-            try:
-                pe = round(float(row.get(pe_col, 0) or 0), 2) if pe_col else None
-            except (ValueError, TypeError):
-                pe = None
-            try:
-                pb = round(float(row.get(pb_col, 0) or 0), 2) if pb_col else None
-            except (ValueError, TypeError):
-                pb = None
-
-            stocks.append({
-                "code": code, "name": name,
-                "change_pct": change,
-                "market_cap_yi": cap_yi,
-                "amount_yi": amount_yi,
-                "pe": pe,
-                "pb": pb,
-            })
+        # 字段已由 market_source 归一化，直接返回
         log(f"  获取 {len(stocks)} 只 A 股", verbose)
         return stocks
     except ImportError:
-        log("⚠️ efinance 未安装", verbose)
+        log("⚠️ market_source 未找到", verbose)
         return []
     except Exception as e:
-        log(f"⚠️ efinance 失败: {e}", verbose)
+        log(f"⚠️ 行情获取失败: {e}", verbose)
         return []
 
 
 def get_fund_flow(verbose=False):
-    """获取个股资金流入 Top 40。"""
+    """获取资金流入标的（改用新浪行业板块领涨股，eastmoney 已失效）。"""
     log("获取资金流向...", verbose)
-    url = (
-        "https://push2.eastmoney.com/api/qt/clist/get?"
-        "pn=1&pz=40&po=1&np=1&fltt=2&invt=2"
-        "&fid=f62&fs=m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23"
-        "&fields=f12,f14,f3,f8,f62,f20"
-    )
-    text = curl_get(url, timeout=8)
-    if not text:
-        return []
     try:
-        data = json.loads(text)
-        diffs = data.get("data", {}).get("diff", [])
+        import market_source as ms
+        sectors = ms.get_sector_flow()
+        # 用板块领涨股作为资金关注标的
         stocks = []
-        for item in diffs:
-            code = item.get("f12", "")
-            name = item.get("f14", "")
-            if not code or not name:
+        for s in sectors:
+            leader = s.get("leader", "")
+            if not leader:
                 continue
-            mc = item.get("f20", 0) or 0
             stocks.append({
-                "code": code, "name": name,
-                "change_pct": round(item.get("f3", 0) or 0, 2),
-                "turnover": round(item.get("f8", 0) or 0, 2),
-                "net_inflow_yi": round((item.get("f62", 0) or 0) / 1e8, 2),
-                "market_cap_yi": round(mc / 1e8, 0) if mc else 0,
+                "code": "",  # 新浪板块接口只给名称，代码由 all_stocks 索引补
+                "name": leader,
+                "change_pct": s.get("change_pct", 0),
+                "turnover": 0,
+                "net_inflow_yi": s.get("amount_yi", 0),
+                "market_cap_yi": 0,
+                "sector": s.get("name", ""),
             })
-        log(f"  获取 {len(stocks)} 只资金流向标的", verbose)
+        log(f"  获取 {len(stocks)} 个板块领涨标的", verbose)
         return stocks
     except Exception:
         return []

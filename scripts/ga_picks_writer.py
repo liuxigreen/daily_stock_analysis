@@ -75,12 +75,12 @@ def main():
     # 验证并修正AI给出的价格
     for pick in picks_data["picks"]:
         code = pick.get("code", "")
-        ai_price = pick.get("price", 0)
+        ai_price = pick.get("price") or 0  # None 保护
         if code:
             real = get_real_price(code)
             if real > 0:
                 pick["price"] = real
-                if ai_price > 0 and abs(real - ai_price) / ai_price > 0.03:
+                if ai_price and ai_price > 0 and abs(real - ai_price) / ai_price > 0.03:
                     print(f"  ⚠️ {code} AI价格{ai_price}→修正为{real}", flush=True)
 
     # 写入 picks.json

@@ -113,18 +113,24 @@ def call_llm(prompt, max_tokens=16000):
         "-d", payload,
     ]
 
-    # H6: 添加 3 次重试，每次间隔 2 秒
-    max_retries = 3
+    # 重试：上游 9Router/组合模型偶发 503(empty response content)，间隔递增
+    max_retries = 5
     for attempt in range(max_retries):
         try:
             r = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
             raw = r.stdout.strip()
+            # 空响应（如上游 503）→ 视为失败，重试
+            if not raw:
+                raise ValueError("空响应（上游可能 503/超时）")
             # 9Router 可能返回 SSE 尾巴（"data: [DONE]"），先剥掉
             if "\ndata:" in raw:
                 raw = raw.split("\ndata:")[0].strip()
             elif raw.endswith("data: [DONE]"):
                 raw = raw[: raw.rfind("data:")].strip()
             resp = json.loads(raw)
+            # 上游错误对象 → 重试
+            if isinstance(resp, dict) and resp.get("error"):
+                raise ValueError(f"上游错误: {str(resp['error'])[:150]}")
             # 兼容两种结构：顶层 choices，或 {"data": {"choices": ...}}（9Router）
             choices = None
             if isinstance(resp, dict):
@@ -132,14 +138,16 @@ def call_llm(prompt, max_tokens=16000):
                 if not choices and isinstance(resp.get("data"), dict):
                     choices = resp["data"].get("choices")
             if choices:
-                return choices[0]["message"]["content"]
-            else:
-                print(f"⚠️ API 响应异常: {raw[:300]}", file=sys.stderr)
-                return None
+                content = choices[0]["message"]["content"]
+                if content:
+                    return content
+                raise ValueError("choices 内容为空")
+            raise ValueError(f"响应无 choices: {raw[:200]}")
         except Exception as e:
             if attempt < max_retries - 1:
-                print(f"⚠️ LLM 调用失败(尝试 {attempt + 1}/{max_retries}): {e}，2秒后重试", file=sys.stderr)
-                time.sleep(2)
+                wait = min(2 * (attempt + 1), 15)  # 2,4,6,8... 递增，封顶15s
+                print(f"⚠️ LLM 调用失败(尝试 {attempt + 1}/{max_retries}): {e}，{wait}秒后重试", file=sys.stderr)
+                time.sleep(wait)
             else:
                 print(f"❌ LLM 调用失败(已重试 {max_retries} 次): {e}", file=sys.stderr)
                 return None
@@ -166,37 +174,29 @@ def load_data():
 
 
 def get_market_environment():
-    """获取市场环境：上证指数近5日涨跌。"""
+    """获取市场环境：上证指数近5日涨跌（改用新浪源，efinance 已失效）。"""
     try:
-        import efinance as ef
-        df = ef.stock.get_quote_history("000001", klt=101)  # 日线
-        if df is not None and not df.empty:
-            # 取最近5个交易日
-            recent = df.tail(5)
-            cols = set(recent.columns)
-            close_col = next((c for c in ["收盘", "close", "收盘价"] if c in cols), None)
-            if close_col and len(recent) >= 2:
-                closes = recent[close_col].astype(float).tolist()
-                start_price = closes[0]
-                end_price = closes[-1]
-                change_pct = (end_price - start_price) / start_price * 100 if start_price > 0 else 0
-                # 判断市场阶段：用MA5和MA20的关系
-                all_closes = df[close_col].astype(float).tolist()
-                if len(all_closes) >= 20:
-                    ma5 = sum(all_closes[-5:]) / 5
-                    ma20 = sum(all_closes[-20:]) / 20
-                    if ma5 > ma20:
-                        phase = "牛市（MA5>MA20）"
-                    elif ma5 < ma20:
-                        phase = "熊市（MA5<MA20）"
-                    else:
-                        phase = "震荡（MA5≈MA20）"
+        import market_source as ms
+        hist = ms.get_index_daily("sh000001", days=30)  # [(date, close), ...]
+        if hist and len(hist) >= 2:
+            closes = [c for _, c in hist]
+            recent = closes[-5:]
+            start_price = recent[0]
+            end_price = recent[-1]
+            change_pct = (end_price - start_price) / start_price * 100 if start_price > 0 else 0
+            if len(closes) >= 20:
+                ma5 = sum(closes[-5:]) / 5
+                ma20 = sum(closes[-20:]) / 20
+                if ma5 > ma20:
+                    phase = "牛市（MA5>MA20）"
+                elif ma5 < ma20:
+                    phase = "熊市（MA5<MA20）"
                 else:
-                    phase = "数据不足"
-                start_str = f"{start_price:.2f}"
-                end_str = f"{end_price:.2f}"
-                sign = "+" if change_pct >= 0 else ""
-                return f"## 市场环境\n上证指数近5日：{start_str} → {end_str}（{sign}{change_pct:.1f}%）\n当前阶段：{phase}\n"
+                    phase = "震荡（MA5≈MA20）"
+            else:
+                phase = "数据不足"
+            sign = "+" if change_pct >= 0 else ""
+            return f"## 市场环境\n上证指数近5日：{start_price:.2f} → {end_price:.2f}（{sign}{change_pct:.1f}%）\n当前阶段：{phase}\n"
     except Exception:
         pass
     return ""

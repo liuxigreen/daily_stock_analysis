@@ -1,112 +1,34 @@
 #!/usr/bin/env python3
 """
-市场数据采集脚本 — 从 efinance 获取板块+个股+概念数据。
+市场数据采集脚本 — 从新浪/腾讯获取板块+个股+概念数据。
 
+数据源：market_source（新浪+腾讯），替代挂掉的 eastmoney/efinance。
 输出：docs/data/screener_data.json
 """
 import json
-import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import market_source as ms
+
 DOCS_DATA = Path(__file__).resolve().parent.parent / "docs" / "data"
 
 
-def curl_get(url, timeout=10):
-    try:
-        r = subprocess.run(
-            ["curl", "-s", "--max-time", str(timeout), url],
-            capture_output=True, text=True, timeout=timeout + 5
-        )
-        return r.stdout if r.returncode == 0 else ""
-    except Exception:
-        return ""
-
-
 def get_sector_flow():
-    """获取板块资金流向 Top 15。efinance 无法直接获取板块流向，使用 curl。"""
-    url = (
-        "https://push2.eastmoney.com/api/qt/clist/get?"
-        "pn=1&pz=15&po=1&np=1&fltt=2&invt=2"
-        "&fid=f62&fs=m:90+t:2+f:!50"
-        "&fields=f12,f14,f3,f62,f184"
-    )
-    text = curl_get(url)
-    if not text:
-        return []
-    try:
-        data = json.loads(text)
-        return data.get("data", {}).get("diff", [])
-    except Exception:
-        return []
+    """行业板块资金流/涨幅 Top 15（新浪）。"""
+    return ms.get_sector_flow()
 
 
 def get_top_gainers():
-    """获取 A 股涨幅前 20。优先 efinance，回退 curl。"""
-    try:
-        import efinance as ef
-        df = ef.stock.get_realtime_quotes()
-        if df is not None and not df.empty:
-            # 按涨跌幅排序取前20
-            df_sorted = df.sort_values("涨跌幅", ascending=False).head(20)
-            gainers = []
-            for _, row in df_sorted.iterrows():
-                gainers.append({
-                    "code": str(row.get("股票代码", "")),
-                    "name": str(row.get("股票名称", "")),
-                    "change_pct": round(float(row.get("涨跌幅", 0) or 0), 2),
-                    "turnover": round(float(row.get("换手率", 0) or 0), 2),
-                    "high": float(row.get("最高", 0) or 0),
-                    "low": float(row.get("最低", 0) or 0),
-                    "open": float(row.get("开盘", 0) or 0),
-                })
-            if gainers:
-                return gainers
-    except Exception:
-        pass
-
-    # 回退 curl
-    url = (
-        "https://push2.eastmoney.com/api/qt/clist/get?"
-        "pn=1&pz=20&po=1&np=1&fltt=2&invt=2"
-        "&fid=f3&fs=m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23"
-        "&fields=f12,f14,f3,f8,f62,f15,f16,f17"
-    )
-    text = curl_get(url)
-    if not text:
-        return []
-    try:
-        data = json.loads(text)
-        return data.get("data", {}).get("diff", [])
-    except Exception:
-        return []
+    """A 股涨幅前 20（新浪）。"""
+    return ms.get_top_gainers(20)
 
 
 def get_concept_flow():
-    """获取概念板块资金流向 Top 10。优先 efinance，回退 curl。"""
-    try:
-        import efinance as ef
-        # 概念板块 — 尝试通过 board 接口
-        # efinance 没有直接的概念板块 API，跳过
-    except Exception:
-        pass
-
-    # curl
-    url = (
-        "https://push2.eastmoney.com/api/qt/clist/get?"
-        "pn=1&pz=10&po=1&np=1&fltt=2&invt=2"
-        "&fid=f62&fs=m:90+t:3+f:!50"
-        "&fields=f12,f14,f3,f62"
-    )
-    text = curl_get(url)
-    if not text:
-        return []
-    try:
-        data = json.loads(text)
-        return data.get("data", {}).get("diff", [])
-    except Exception:
-        return []
+    """概念板块（新浪行业板块作为近似，取涨幅前 10）。"""
+    return ms.get_sector_flow()[:10]
 
 
 def main():
@@ -128,33 +50,32 @@ def main():
         "concept_flow": [],
     }
 
-    for s in sectors:
+    for s in sectors[:15]:
         output["sector_flow"].append({
-            "code": s.get("code", s.get("f12", "")),
-            "name": s.get("name", s.get("f14", "")),
-            "change_pct": s.get("change_pct", s.get("f3", 0)),
-            "net_inflow_yi": s.get("net_inflow_yi",
-                round(s.get("f62", 0) / 1e8, 2) if s.get("f62") else 0),
+            "code": s.get("code", ""),
+            "name": s.get("name", ""),
+            "change_pct": s.get("change_pct", 0),
+            "net_inflow_yi": s.get("amount_yi", 0),
+            "leader": s.get("leader", ""),
         })
 
-    for g in gainers:
+    for g in gainers[:20]:
         output["top_gainers"].append({
-            "code": g.get("code", g.get("f12", "")),
-            "name": g.get("name", g.get("f14", "")),
-            "change_pct": g.get("change_pct", g.get("f3", 0)),
-            "turnover": g.get("turnover", g.get("f8", 0)),
-            "high": g.get("high", g.get("f15", 0)),
-            "low": g.get("low", g.get("f16", 0)),
-            "open": g.get("open", g.get("f17", 0)),
+            "code": g.get("code", ""),
+            "name": g.get("name", ""),
+            "change_pct": g.get("change_pct", 0),
+            "turnover": g.get("turnover", 0),
+            "high": g.get("high", 0),
+            "low": g.get("low", 0),
+            "open": g.get("open", 0),
         })
 
     for c in concepts:
         output["concept_flow"].append({
-            "code": c.get("code", c.get("f12", "")),
-            "name": c.get("name", c.get("f14", "")),
-            "change_pct": c.get("change_pct", c.get("f3", 0)),
-            "net_inflow_yi": c.get("net_inflow_yi",
-                round(c.get("f62", 0) / 1e8, 2) if c.get("f62") else 0),
+            "code": c.get("code", ""),
+            "name": c.get("name", ""),
+            "change_pct": c.get("change_pct", 0),
+            "net_inflow_yi": c.get("amount_yi", 0),
         })
 
     DOCS_DATA.mkdir(parents=True, exist_ok=True)

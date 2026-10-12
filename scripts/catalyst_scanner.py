@@ -97,166 +97,73 @@ def log(msg, verbose=False):
 
 # ─── 数据源 1: 板块数据 ────────────────────────────────
 def get_sector_flow_efinance(verbose=False):
-    """用 efinance 获取板块资金流向。"""
+    """获取行业板块涨幅/资金流（改用新浪源，eastmoney 已失效）。"""
     try:
-        import efinance as ef
-        log("efinance: 获取板块资金流向...", verbose)
-        # 东方财富板块资金流向
-        df = ef.stock.get_belong_board("000001")
-        log(f"  board data columns: {list(df.columns) if df is not None else 'None'}", verbose)
-    except Exception:
-        pass
-
-    # 回退：用 curl 试试带 Referer 的请求
-    log("curl: 尝试板块资金流向...", verbose)
-    url = (
-        "https://push2.eastmoney.com/api/qt/clist/get?"
-        "pn=1&pz=30&po=1&np=1&fltt=2&invt=2"
-        "&fid=f62&fs=m:90+t:2+f:!50"
-        "&fields=f12,f14,f3,f62,f184,f104,f105"
-    )
-    text = curl_get(url, timeout=8, referer="https://quote.eastmoney.com/")
-    if not text:
-        log("⚠️ 板块资金流向 API 无响应", verbose)
-        return []
-
-    try:
-        data = json.loads(text)
-        diffs = data.get("data", {}).get("diff", [])
-        sectors = []
-        for item in diffs:
-            name = item.get("f14", "")
-            if not name:
-                continue
-            sectors.append({
-                "code": item.get("f12", ""),
-                "name": name,
-                "change_pct": round(item.get("f3", 0) or 0, 2),
-                "net_inflow_yi": round((item.get("f62", 0) or 0) / 1e8, 2),
-                "up_count": item.get("f104", 0),
-                "down_count": item.get("f105", 0),
-            })
-        log(f"  获取 {len(sectors)} 个板块", verbose)
-        return sectors
-    except (json.JSONDecodeError, KeyError):
+        import market_source as ms
+        log("market_source(新浪): 获取板块数据...", verbose)
+        sectors = ms.get_sector_flow()
+        out = [{
+            "code": s.get("code", ""),
+            "name": s.get("name", ""),
+            "change_pct": s.get("change_pct", 0),
+            "net_inflow_yi": s.get("amount_yi", 0),
+            "up_count": 0,
+            "down_count": 0,
+            "leader": s.get("leader", ""),
+        } for s in sectors if s.get("name")]
+        log(f"  获取 {len(out)} 个板块", verbose)
+        return out
+    except Exception as e:
+        log(f"⚠️ 板块获取失败: {e}", verbose)
         return []
 
 
-# ─── 数据源 2: efinance 个股数据 ────────────────────────────────
+# ─── 数据源 2: 全市场个股数据 ────────────────────────────────
 def get_all_stocks_efinance(verbose=False):
-    """用 efinance 获取全市场 A 股实时行情（含市值）。"""
+    """全市场 A 股实时行情（改用新浪源，efinance/eastmoney 已失效）。"""
     try:
-        import efinance as ef
-        log("efinance: 获取全市场 A 股行情...", verbose)
-        df = ef.stock.get_realtime_quotes()
-        if df is None or df.empty:
-            log("⚠️ efinance 返回空数据", verbose)
+        import market_source as ms
+        log("market_source(新浪): 获取全市场 A 股行情...", verbose)
+        stocks = ms.get_all_stocks(max_pages=60, verbose=verbose)
+        if not stocks:
+            log("⚠️ 新浪返回空数据", verbose)
             return []
-
-        # 动态检测列名
-        cols = set(df.columns)
-        code_col = next((c for c in ["股票代码", "代码", "code"] if c in cols), None)
-        name_col = next((c for c in ["股票名称", "名称", "name"] if c in cols), None)
-        cap_col = next((c for c in ["总市值", "总市值(元)", "market_cap"] if c in cols), None)
-        change_col = next((c for c in ["涨跌幅", "change_pct"] if c in cols), None)
-        amount_col = next((c for c in ["成交额", "amount"] if c in cols), None)
-
-        if not code_col or not name_col:
-            log(f"⚠️ efinance 列名不匹配: {list(cols)[:10]}", verbose)
-            return []
-
-        stocks = []
-        for _, row in df.iterrows():
-            code = str(row.get(code_col, ""))
-            name = str(row.get(name_col, ""))
-            if not code or not name:
-                continue
-
-            # 市值
-            cap = row.get(cap_col, 0) if cap_col else 0
-            try:
-                cap_yi = round(float(cap) / 1e8, 0) if cap and float(cap) > 0 else 0
-            except (ValueError, TypeError):
-                cap_yi = 0
-
-            # 涨跌幅
-            try:
-                change = round(float(row.get(change_col, 0) or 0), 2) if change_col else 0
-            except (ValueError, TypeError):
-                change = 0
-
-            # 成交额
-            try:
-                amount = float(row.get(amount_col, 0) or 0) if amount_col else 0
-                amount_yi = round(amount / 1e8, 2)
-            except (ValueError, TypeError):
-                amount_yi = 0
-
-            stocks.append({
-                "code": code,
-                "name": name,
-                "change_pct": change,
-                "market_cap_yi": cap_yi,
-                "amount_yi": amount_yi,
-            })
-
-        log(f"  获取 {len(stocks)} 只 A 股", verbose)
-        return stocks
+        # market_source 已返回 code/name/change_pct/market_cap_yi/amount_yi
+        out = [{
+            "code": s["code"], "name": s["name"],
+            "change_pct": s.get("change_pct", 0),
+            "market_cap_yi": s.get("market_cap_yi", 0),
+            "amount_yi": s.get("amount_yi", 0),
+        } for s in stocks]
+        log(f"  获取 {len(out)} 只 A 股", verbose)
+        return out
     except ImportError:
-        log("⚠️ efinance 未安装", verbose)
+        log("⚠️ market_source 未找到", verbose)
         return []
     except Exception as e:
-        log(f"⚠️ efinance 失败: {e}", verbose)
+        log(f"⚠️ 行情获取失败: {e}", verbose)
         return []
 
 
 def get_fund_flow_efinance(verbose=False):
-    """用 efinance 获取个股资金流向 Top 30。"""
+    """获取资金流向标的（改用新浪行业板块领涨股，eastmoney 已失效）。"""
     try:
-        import efinance as ef
-        log("efinance: 获取个股资金流向...", verbose)
-        # 东方财富个股资金流向
-        df = ef.stock.get_latest_entrust()
-        if df is not None and not df.empty:
-            log(f"  资金流向: {len(df)} 条", verbose)
-            # 转为 list[dict]，避免下游 isinstance(list) 检查失败
-            return df.to_dict("records")
-    except Exception:
-        pass
-
-    # 回退到 curl
-    log("curl: 尝试个股资金流向...", verbose)
-    url = (
-        "https://push2.eastmoney.com/api/qt/clist/get?"
-        "pn=1&pz=30&po=1&np=1&fltt=2&invt=2"
-        "&fid=f62&fs=m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23"
-        "&fields=f12,f14,f3,f8,f62,f20"
-    )
-    text = curl_get(url, timeout=8, referer="https://quote.eastmoney.com/")
-    if not text:
-        return []
-
-    try:
-        data = json.loads(text)
-        diffs = data.get("data", {}).get("diff", [])
-        stocks = []
-        for item in diffs:
-            code = item.get("f12", "")
-            name = item.get("f14", "")
-            if not code or not name:
-                continue
-            market_cap = item.get("f20", 0) or 0
-            stocks.append({
-                "code": code,
-                "name": name,
-                "change_pct": round(item.get("f3", 0) or 0, 2),
-                "turnover": round(item.get("f8", 0) or 0, 2),
-                "net_inflow_yi": round((item.get("f62", 0) or 0) / 1e8, 2),
-                "market_cap_yi": round(market_cap / 1e8, 0) if market_cap else 0,
-            })
-        log(f"  获取 {len(stocks)} 只资金流向标的", verbose)
+        import market_source as ms
+        log("market_source(新浪): 获取资金流向...", verbose)
+        sectors = ms.get_sector_flow()
+        stocks = [{
+            "code": "",
+            "name": s.get("leader", ""),
+            "change_pct": s.get("change_pct", 0),
+            "turnover": 0,
+            "net_inflow_yi": s.get("amount_yi", 0),
+            "market_cap_yi": 0,
+            "sector": s.get("name", ""),
+        } for s in sectors if s.get("leader")]
+        log(f"  获取 {len(stocks)} 个板块领涨标的", verbose)
         return stocks
-    except (json.JSONDecodeError, KeyError):
+    except Exception as e:
+        log(f"⚠️ 资金流向获取失败: {e}", verbose)
         return []
 
 
@@ -501,68 +408,9 @@ def detect_chain_from_news(headlines, verbose=False):
 
 # ─── 早期信号：北向资金 ────────────────────────────────────────
 def get_northbound_flow(verbose=False):
-    """获取北向资金（沪股通+深股通）当日净流入。"""
-    try:
-        import efinance as ef
-        log("efinance: 获取北向资金...", verbose)
-        # 尝试 efinance 接口
-        try:
-            df = ef.stock_em_hsgt_north_net_flow_in()
-            if df is not None and not df.empty:
-                log(f"  efinance 北向资金数据: {len(df)} 条", verbose)
-                # 取最新一条
-                latest = df.iloc[-1]
-                cols = set(df.columns)
-                # 动态列名匹配
-                net_col = next((c for c in cols if "净流入" in str(c) or "net" in str(c).lower()), None)
-                sh_col = next((c for c in cols if "沪" in str(c) or "sh" in str(c).lower()), None)
-                sz_col = next((c for c in cols if "深" in str(c) or "sz" in str(c).lower()), None)
-                try:
-                    net = float(latest[net_col]) / 1e8 if net_col else 0
-                    sh = float(latest[sh_col]) / 1e8 if sh_col else 0
-                    sz = float(latest[sz_col]) / 1e8 if sz_col else 0
-                    return {"net_flow_yi": round(net, 2), "sh_flow_yi": round(sh, 2), "sz_flow_yi": round(sz, 2)}
-                except (ValueError, TypeError):
-                    return {"net_flow_yi": 0, "sh_flow_yi": 0, "sz_flow_yi": 0}
-        except Exception:
-            pass
-    except ImportError:
-        pass
-
-    # 回退：用 curl 从东方财富获取
-    log("curl: 尝试北向资金...", verbose)
-    url = "https://push2.eastmoney.com/api/qt/kamtbs.wss?fields1=f1,f2,f3,f4&fields2=f51,f52,f53,f54,f55,f56"
-    text = curl_get(url, timeout=8, referer="https://quote.eastmoney.com/")
-    if not text:
-        return {}
-    try:
-        data = json.loads(text)
-        # 东方财富北向资金接口格式：s2n 为沪股通，s3n 为深股通
-        s2n = data.get("data", {}).get("s2n", [])
-        s3n = data.get("data", {}).get("s3n", [])
-        # 取最新日期的数据
-        net_flow_yi = 0
-        sh_flow_yi = 0
-        sz_flow_yi = 0
-        if s2n:
-            # s2n 格式: [{f51: date, f52: sh_net, ...}]
-            for item in reversed(s2n):
-                try:
-                    sh_val = float(item.get("f52", 0) or 0)
-                    sz_val = float(item.get("f53", 0) or 0)
-                    net_val = float(item.get("f54", 0) or 0)
-                    if net_val != 0 or sh_val != 0 or sz_val != 0:
-                        net_flow_yi = round(net_val / 1e8, 2)
-                        sh_flow_yi = round(sh_val / 1e8, 2)
-                        sz_flow_yi = round(sz_val / 1e8, 2)
-                        break
-                except (ValueError, TypeError):
-                    continue
-        result = {"net_flow_yi": net_flow_yi, "sh_flow_yi": sh_flow_yi, "sz_flow_yi": sz_flow_yi}
-        log(f"  北向资金: 净流入{net_flow_yi:.2f}亿（沪{sh_flow_yi:.2f}/深{sz_flow_yi:.2f}）", verbose)
-        return result
-    except Exception:
-        return {}
+    """北向资金 — eastmoney 接口已失效，且北向资金实时数据官方已停止公布。返回空 dict（优雅降级）。"""
+    log("北向资金：数据源不可用（eastmoney 失效 + 官方停止实时公布），跳过", verbose)
+    return {}
 
 
 # ─── 早期信号：融资融券 ────────────────────────────────────────
