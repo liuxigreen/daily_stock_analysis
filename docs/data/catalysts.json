@@ -1,80 +1,69 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-12",
   "catalysts": [
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及光芯片；示例：2029年之前产能已卖光！光芯片概念梳理",
+      "title": "蓄势信号：新闻蓄势：4条相关新闻提及存储, 算力, 液冷；示例：美股三大指数走势分化 存储板块走弱 国际油价走高",
       "type": "accumulation",
       "theme": "AI算力",
-      "urgency": "medium"
+      "urgency": "high"
     },
     {
-      "title": "蓄势信号：新闻蓄势：2条相关新闻提及航空；示例：埃塞航空宣布恢复飞往该国提格雷州首府的航班",
-      "type": "accumulation",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：AI算力 — 光芯片已启动",
+      "title": "产业链传导：AI算力 — 存储, 算力, 液冷已启动",
       "type": "chain_propagation",
       "theme": "AI算力",
       "next": [
         "AI芯片",
         "光模块",
-        "数据中心"
+        "光芯片"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：军工航天 — 航空已启动",
-      "type": "chain_propagation",
-      "theme": "军工航天",
-      "next": [
-        "导弹",
-        "卫星",
-        "雷达"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "2029年之前产能已卖光！光芯片概念梳理",
+      "title": "美股三大指数走势分化 存储板块走弱 国际油价走高",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "埃塞航空宣布恢复飞往该国提格雷州首府的航班",
-      "type": "news",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "美股深夜，半导体、芯片走低；中国资产大涨，理想汽车涨超7%，阿里、网易、小鹏涨超4%；苹果跌超2%；现货白银涨幅扩大至3%",
+      "title": "粤芯半导体明日上市！一图速览A股5大晶圆代工厂",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "达美航空预计，其燃油成本将增加60亿美元",
-      "type": "news",
-      "theme": "军工航天",
-      "urgency": "medium"
-    },
-    {
-      "title": "“固态电池”火热，两家公司紧急“降温”",
-      "type": "news",
-      "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "光芯片板块两日跌近9%，券商：短期扰动后可布局年末“吃饭行情”",
+      "title": "A股“股王”易位！算力硬件集体大跌 银行股却扎堆新高 发生了什么？",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "券商10月金股出炉：电子、医药和银行增配居前，药明康德最热",
+      "title": "一则调查传闻，为何“吓跌”风电股？",
       "type": "news",
-      "theme": "创新药",
+      "theme": "光伏风电",
+      "urgency": "medium"
+    },
+    {
+      "title": "固态电池炙手可热！注意 还有三道难关有待攻克",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "300亿液冷牛股苏州天脉，152倍溢价扩张版图",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "蓝芯算力完成近20亿元B轮融资 创始人系前字节跳动服务器芯片研发负责人",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "新双派机器人完成A+轮融资 道生资本领投",
+      "type": "news",
+      "theme": "人形机器人",
       "urgency": "medium"
     }
   ],
@@ -83,21 +72,10 @@
       "name": "AI算力",
       "change_pct": 0,
       "market_cap_yi": 0,
-      "score": 30,
+      "score": 60,
       "reasons": [
-        "新闻蓄势：2条相关新闻提及光芯片",
-        "示例：2029年之前产能已卖光！光芯片概念梳理"
-      ],
-      "level": "news"
-    },
-    {
-      "name": "军工航天",
-      "change_pct": 0,
-      "market_cap_yi": 0,
-      "score": 30,
-      "reasons": [
-        "新闻蓄势：2条相关新闻提及航空",
-        "示例：埃塞航空宣布恢复飞往该国提格雷州首府的航班"
+        "新闻蓄势：4条相关新闻提及存储, 算力, 液冷",
+        "示例：美股三大指数走势分化 存储板块走弱 国际油价走高"
       ],
       "level": "news"
     }
@@ -108,7 +86,15 @@
       "logic": "AI大模型训练需求爆发 → 算力基建先行 → 光互联 → 散热 → 存储",
       "started": [
         {
-          "name": "光芯片",
+          "name": "存储",
+          "source": "news"
+        },
+        {
+          "name": "算力",
+          "source": "news"
+        },
+        {
+          "name": "液冷",
           "source": "news"
         }
       ],
@@ -122,36 +108,11 @@
           "market_cap_yi": 0
         },
         {
-          "name": "数据中心",
+          "name": "光芯片",
           "market_cap_yi": 0
         }
       ],
-      "news_count": 2
-    },
-    {
-      "theme": "军工航天",
-      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
-      "started": [
-        {
-          "name": "航空",
-          "source": "news"
-        }
-      ],
-      "next_opportunities": [
-        {
-          "name": "导弹",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "卫星",
-          "market_cap_yi": 0
-        },
-        {
-          "name": "雷达",
-          "market_cap_yi": 0
-        }
-      ],
-      "news_count": 2
+      "news_count": 4
     }
   ],
   "forward_events": [
@@ -189,16 +150,16 @@
   "sectors": [],
   "fund_flow_top10": [],
   "top_headlines": [
-    "“8连板”牛股新华传媒喊话",
-    "四连板九阳股份紧急提示",
-    "特朗普8月证券交易流水出炉",
-    "中共中央、国务院印发《关于发展新质生产力的意见》",
-    "时隔12年 公募基金运作办法修订 十大亮点看变化 多举措支持逆周期布局",
-    "商务部就美国召集部分经济体发布应对所谓“结构性产能和生产过剩”问题部长级联合声明答问",
-    "中欧贸易投资磋商机制第二次例会联合声明",
-    "美股三大指数集体上涨 美国三大电信运营商股价大跌",
-    "财政部：有力有效实施更加积极的财政政策 支持全方位扩大国内需求 推动科技创新和产业创新",
-    "10月9日晚间上市公司利好消息一览(附名单)"
+    "万亿巨头回应美国337调查",
+    "广州第一芯周二上市！",
+    "联创光电董事会“大换血”",
+    "吴清将参加2026金融街论坛年会并发表主题演讲 国家金融管理部门将发布系列金融改革发展政策",
+    "两部门：自2027年4月1日起将新能源汽车的增值税出口退税率由13%下调至9%",
+    "科技大跌谁在砸盘？百亿级私募创始人暗示",
+    "10月12日晚间上市公司利好消息一览(附名单)",
+    "美股三大指数走势分化 存储板块走弱 国际油价走高",
+    "源杰科技：预计第三季度净利润同比增长579%-660%",
+    "联讯仪器：预计前三季度净利润同比增长1866%-2073%"
   ],
   "northbound_flow": {},
   "margin_data": {},
@@ -206,8 +167,8 @@
   "stats": {
     "sectors_scanned": 0,
     "stocks_scanned": 0,
-    "accumulation_signals": 2,
-    "chain_propagations": 2,
-    "news_catalysts": 7
+    "accumulation_signals": 1,
+    "chain_propagations": 1,
+    "news_catalysts": 8
   }
 }
