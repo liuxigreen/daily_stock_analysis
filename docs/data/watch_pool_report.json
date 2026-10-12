@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "summary": {
     "total": 18,
     "watching": 18,
@@ -470,7 +470,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": ""
     }
   ]
 }

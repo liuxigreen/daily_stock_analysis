@@ -28,7 +28,7 @@ def analyze():
             all_picks.append({
                 "name": p.get("name", p.get("code", "?")),
                 "code": p.get("code", ""),
-                "return": float(p.get("return", 0)),
+                "return": float(p.get("return") or 0),
                 "date": r.get("date", ""),
                 "review": r.get("review", ""),
                 "total_count": r.get("total_count", 0),

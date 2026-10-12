@@ -1,17 +1,18 @@
 {
   "records": [
     {
-      "date": "2026-10-12",
+      "date": "2026-10-13",
       "total_count": 5,
       "win_count": 0,
       "avg_return": 0,
-<<<<<<< Updated upstream
-      "review": "政策预期（金融街论坛）+ 新能源装机旺季,市场处熊市(MA5<MA20),只做逆市吸筹与产业链补涨",
+      "review": "回避半导体补涨链（连续亏损）,转向风电装机旺季+低位破净+传媒资金主线",
       "picks": [
         {
-=======
-      "review": "大基金三期半导体补涨 + 十五五新能源装机旺季,熊市偏防御蓄势",
-      "picks": [
+          "code": "601218",
+          "name": "吉鑫科技",
+          "return": 0.7,
+          "status": "持有中"
+        },
         {
           "code": "601016",
           "name": "节能风电",
@@ -19,28 +20,42 @@
           "status": "持有中"
         },
         {
->>>>>>> Stashed changes
-          "code": "601218",
-          "name": "吉鑫科技",
-          "return": 0.7,
+          "code": "300182",
+          "name": "捷成股份",
+          "return": 1.8,
           "status": "持有中"
         },
         {
-<<<<<<< Updated upstream
-          "code": "601016",
-          "name": "节能风电",
-          "return": null,
-=======
           "code": "002733",
           "name": "雄韬股份",
           "return": 2.1,
           "status": "持有中"
         },
         {
-          "code": "300182",
-          "name": "捷成股份",
-          "return": 1.8,
->>>>>>> Stashed changes
+          "code": "002212",
+          "name": "天融信",
+          "return": 0.9,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "total_count": 5,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "政策预期（金融街论坛）+ 新能源装机旺季,市场处熊市(MA5<MA20),只做逆市吸筹与产业链补涨",
+      "picks": [
+        {
+          "code": "601218",
+          "name": "吉鑫科技",
+          "return": 0.7,
+          "status": "持有中"
+        },
+        {
+          "code": "601016",
+          "name": "节能风电",
+          "return": null,
           "status": "持有中"
         },
         {
@@ -50,7 +65,6 @@
           "status": "持有中"
         },
         {
-<<<<<<< Updated upstream
           "code": "002733",
           "name": "雄韬股份",
           "return": 2.1,
@@ -60,11 +74,6 @@
           "code": "002119",
           "name": "康强电子",
           "return": 1.2,
-=======
-          "code": "000672",
-          "name": "上峰材料",
-          "return": 0.0,
->>>>>>> Stashed changes
           "status": "持有中"
         }
       ]
