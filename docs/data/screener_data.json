@@ -1,6 +1,10 @@
 {
   "date": "2026-10-12",
+<<<<<<< Updated upstream
   "time": "16:56",
+=======
+  "time": "17:05",
+>>>>>>> Stashed changes
   "sector_flow": [
     {
       "code": "new_cmyl",

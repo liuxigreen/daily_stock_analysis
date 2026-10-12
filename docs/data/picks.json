@@ -1,7 +1,11 @@
 {
   "date": "2026-10-12",
   "market_context": {
+<<<<<<< Updated upstream
     "main_line": "政策预期（金融街论坛）+ 新能源装机旺季,市场处熊市(MA5<MA20),只做逆市吸筹与产业链补涨",
+=======
+    "main_line": "大基金三期半导体补涨 + 十五五新能源装机旺季,熊市偏防御蓄势",
+>>>>>>> Stashed changes
     "accumulating": "发电设备、开发区、电器行业",
     "overheated": "",
     "sentiment": "neutral",
@@ -9,10 +13,33 @@
   },
   "picks": [
     {
+<<<<<<< Updated upstream
+=======
+      "code": "601016",
+      "name": "节能风电",
+      "price": 3.22,
+      "change_pct": -0.9,
+      "score": 68,
+      "target": 5.85,
+      "stop_loss": 4.9,
+      "buy_range": "5.05-5.25",
+      "expected_return": "+12%",
+      "highlight": "风电运营龙头,PB1.17破净边缘,电力板块逆市吸筹204.7亿",
+      "market_cap": "211亿",
+      "sector": "风电运营",
+      "reason": "电力行业跌-0.9%但主力204.7亿逆市吸筹。上游风电设备（海力风电/金刚光伏）已涨,运营商待补涨。低估值+高股息防御,熊市抗跌",
+      "catalyst": "十五五新能源规划出台,Q3-Q4装机旺季,电价机制改革",
+      "chain_position": "风电下游运营（后受益,装机确认收入）",
+      "risk": "装机不及预期、补贴拖欠。跌破4.9或主力转出止损",
+      "timeframe": "波段(3-4周)"
+    },
+    {
+>>>>>>> Stashed changes
       "code": "601218",
       "name": "吉鑫科技",
       "price": 5.84,
       "change_pct": 0.7,
+<<<<<<< Updated upstream
       "score": 65,
       "target": null,
       "stop_loss": null,
@@ -45,6 +72,59 @@
       "chain_position": "风电运营（产业链最下游,最后受益）",
       "risk": "来风偏弱、补贴应收。跌破-7%止损",
       "timeframe": "波段(4周)"
+=======
+      "score": 66,
+      "target": 6.67,
+      "stop_loss": 5.4,
+      "buy_range": "5.6-5.85",
+      "expected_return": "+15%",
+      "highlight": "风电铸件中小盘57亿,弹性好于整机大票",
+      "market_cap": "57亿",
+      "sector": "风电零部件",
+      "reason": "风电铸件上游,产能出清→价格企稳→整机排产回暖传导至零部件。57亿小盘弹性优于金风/明阳千亿整机",
+      "catalyst": "十五五新能源规划,装机旺季带动铸件排产",
+      "chain_position": "风电中游铸件（先行受益于排产）",
+      "risk": "铸件价格战、原材料生铁涨价。跌破5.4止损",
+      "timeframe": "波段(3-4周)"
+    },
+    {
+      "code": "002733",
+      "name": "雄韬股份",
+      "price": 21.22,
+      "change_pct": 2.1,
+      "score": 62,
+      "target": 15.4,
+      "stop_loss": 12.55,
+      "buy_range": "13.1-13.6",
+      "expected_return": "+14%",
+      "highlight": "储能+氢燃料双线,活跃度22.7%资金活跃",
+      "market_cap": "82亿",
+      "sector": "储能电池",
+      "reason": "储能装机旺季Q3-Q4,氢燃料政策预期。活跃度22.7%说明资金关注但价格未大涨,蓄势充分",
+      "catalyst": "新能源装机旺季,储能招标放量,氢能政策",
+      "chain_position": "储能中游电池（受益装机）",
+      "risk": "锂电产能过剩、氢业务亏损扩大。跌破12.55止损",
+      "timeframe": "波段(3-4周)"
+    },
+    {
+      "code": "300182",
+      "name": "捷成股份",
+      "price": 5.66,
+      "change_pct": 1.8,
+      "score": 63,
+      "target": 6.73,
+      "stop_loss": 5.25,
+      "buy_range": "5.55-5.75",
+      "expected_return": "+18%",
+      "highlight": "传媒娱乐板块今日领涨+1.9%主力195.8亿,AI+版权",
+      "market_cap": "151亿",
+      "sector": "传媒娱乐",
+      "reason": "传媒娱乐+1.9%居首,主力195.8亿。AI大模型迭代→影视版权/内容生成重估。板块刚启动,个股未涨停",
+      "catalyst": "AI大模型迭代,影视版权AIGC重估,Q4内容旺季",
+      "chain_position": "AI应用下游内容（后受益但弹性大）",
+      "risk": "主题炒作回落、版权变现慢。跌破5.25止损",
+      "timeframe": "波段(2-3周)"
+>>>>>>> Stashed changes
     },
     {
       "code": "002212",
@@ -52,6 +132,7 @@
       "price": 7.63,
       "change_pct": 0.9,
       "score": 60,
+<<<<<<< Updated upstream
       "target": null,
       "stop_loss": null,
       "buy_range": "现价±1%",
@@ -102,6 +183,39 @@
       "chain_position": "封测材料（产业链末端,最后补涨）",
       "risk": "半导体补涨已连续失败（002156/300567/300101）。跌破-7%止损,不摊平",
       "timeframe": "波段(2-3周)"
+=======
+      "target": 9.78,
+      "stop_loss": 7.9,
+      "buy_range": "8.3-8.55",
+      "expected_return": "+15%",
+      "highlight": "PB0.97破净,网安信创,金融街论坛金融科技政策",
+      "market_cap": "90亿",
+      "sector": "网络安全",
+      "reason": "PB0.97破净提供安全垫。吴清金融街论坛将发布金融改革发展政策,金融科技/数据安全受益。蓄势+0.9%未动",
+      "catalyst": "金融街论坛金融改革政策,数据安全法规,信创招标",
+      "chain_position": "金融科技下游安全（政策直接受益）",
+      "risk": "网安订单回款慢、商誉减值。跌破7.9止损",
+      "timeframe": "波段(3-4周)"
+    },
+    {
+      "code": "000672",
+      "name": "上峰材料",
+      "price": 14.73,
+      "change_pct": 0.0,
+      "score": 61,
+      "target": 13.56,
+      "stop_loss": 11.15,
+      "buy_range": "11.7-12.1",
+      "expected_return": "+13%",
+      "highlight": "半导体材料补涨,PE21.79 PB1.43估值合理",
+      "market_cap": "143亿",
+      "sector": "半导体材料",
+      "reason": "大基金三期设备国产化→材料配套补涨。同链东方材料/聚和材料已涨,本票未动。估值偏低提供缓冲（仅配1只半导体,控回撤风险）",
+      "catalyst": "大基金三期投向半导体材料,国产替代加速",
+      "chain_position": "半导体材料（后受益补涨环节）",
+      "risk": "半导体板块整体回调（近期多票连败）。跌破11.15坚决止损",
+      "timeframe": "波段(2-4周)"
+>>>>>>> Stashed changes
     }
   ]
 }

@@ -171,12 +171,15 @@
       "type": "news",
       "theme": "新能源车",
       "urgency": "medium"
+<<<<<<< Updated upstream
     },
     {
       "title": "蓝芯算力完成近20亿元B轮融资 创始人系前字节跳动服务器芯片研发负责人",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
+=======
+>>>>>>> Stashed changes
     }
   ],
   "accumulation_signals": [
@@ -833,6 +836,10 @@
     "stocks_scanned": 5572,
     "accumulation_signals": 20,
     "chain_propagations": 2,
+<<<<<<< Updated upstream
     "news_catalysts": 6
+=======
+    "news_catalysts": 5
+>>>>>>> Stashed changes
   }
 }
