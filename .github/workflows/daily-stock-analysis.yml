@@ -94,7 +94,7 @@ jobs:
         if: always()
         run: |
           curl -s -X POST \
-            "${{ github.server_url }}/repos/${{ github.repository }}/actions/workflows/deploy-pages.yml/dispatches" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy-pages.yml/dispatches" \
             -H "Authorization: Bearer ${{ github.token }}" \
             -H "Accept: application/vnd.github.v3+json" \
             -d '{"ref":"main"}' && echo "Pages deploy triggered" || echo "Pages deploy trigger failed (non-blocking)"

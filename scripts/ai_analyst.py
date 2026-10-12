@@ -20,7 +20,7 @@ from pathlib import Path
 DOCS_DATA = Path(__file__).resolve().parent.parent / "docs" / "data"
 API_KEY = os.environ.get("ROUTER_API_KEY", "")
 API_URL = "https://9router.opspilot.me/v1/chat/completions"
-MODEL = "edgen"
+MODEL = os.environ.get("AI_MODEL", "gupiao")
 
 
 def validate_picks(picks):
@@ -92,7 +92,7 @@ def _try_repair_json(text):
     return None
 
 
-def call_llm(prompt, max_tokens=4000):
+def call_llm(prompt, max_tokens=16000):
     """调用 DeepSeek via 9Router。"""
     if not API_KEY:
         print("⚠️ ROUTER_API_KEY 未设置，跳过 AI 分析", file=sys.stderr)
@@ -119,21 +119,20 @@ def call_llm(prompt, max_tokens=4000):
         try:
             r = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
             raw = r.stdout.strip()
-            # 尝试提取第一个完整的 JSON 对象
-            depth = 0
-            end = 0
-            for i, c in enumerate(raw):
-                if c == '{':
-                    depth += 1
-                elif c == '}':
-                    depth -= 1
-                    if depth == 0:
-                        end = i + 1
-                        break
-            json_str = raw[:end] if end else raw
-            resp = json.loads(json_str)
-            if "choices" in resp and resp["choices"]:
-                return resp["choices"][0]["message"]["content"]
+            # 9Router 可能返回 SSE 尾巴（"data: [DONE]"），先剥掉
+            if "\ndata:" in raw:
+                raw = raw.split("\ndata:")[0].strip()
+            elif raw.endswith("data: [DONE]"):
+                raw = raw[: raw.rfind("data:")].strip()
+            resp = json.loads(raw)
+            # 兼容两种结构：顶层 choices，或 {"data": {"choices": ...}}（9Router）
+            choices = None
+            if isinstance(resp, dict):
+                choices = resp.get("choices")
+                if not choices and isinstance(resp.get("data"), dict):
+                    choices = resp["data"].get("choices")
+            if choices:
+                return choices[0]["message"]["content"]
             else:
                 print(f"⚠️ API 响应异常: {raw[:300]}", file=sys.stderr)
                 return None
