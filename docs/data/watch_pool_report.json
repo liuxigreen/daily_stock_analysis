@@ -1,13 +1,13 @@
 {
   "date": "2026-10-12",
   "summary": {
-    "total": 17,
-    "watching": 17,
+    "total": 18,
+    "watching": 18,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "-18.83%",
-    "avg_pnl_pct": -18.83
+    "total_pnl": "-17.78%",
+    "avg_pnl_pct": -17.78
   },
   "stocks": [
     {
@@ -446,6 +446,31 @@
       "risk_factors": [],
       "exit_conditions": [],
       "latest_price_note": ""
+    },
+    {
+      "code": "002353",
+      "name": "杰瑞股份",
+      "status": "watching",
+      "thesis": "国际油价走高,油服资本开支滞后于油价1-2个季度,Q4是设备交付确认窗口。公司压裂设备国内市占率第一,海外（中东、北美）订单占比持续提升,是油价上行最直接的中盘标的。中海油服等大票弹性不足。",
+      "supply_chain": "油服设备（上游资本开支直接承接方）,先于油气开采兑现",
+      "timeframe": "12-18个月",
+      "added_date": "2026-10-12",
+      "added_price": 99.3,
+      "current_price": 99.3,
+      "change_pct_today": -4.43,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "国际油价走高；中东/北美油气资本开支上升；Q4订单交付与业绩确认",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
     }
   ]
 }

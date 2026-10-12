@@ -2,11 +2,48 @@
   "records": [
     {
       "date": "2026-10-12",
-      "total_count": 0,
+      "total_count": 6,
       "win_count": 0,
       "avg_return": 0,
-      "review": "AI分析失败，无数据",
-      "picks": []
+      "review": "金融改革政策落地 + 新能源Q4装机旺季 + 油价上行,资金从半导体高位链切向低位补涨板块",
+      "picks": [
+        {
+          "code": "688318",
+          "name": "财富趋势",
+          "return": 0.6,
+          "status": "持有中"
+        },
+        {
+          "code": "688631",
+          "name": "莱斯信息",
+          "return": 0.4,
+          "status": "持有中"
+        },
+        {
+          "code": "300827",
+          "name": "上能电气",
+          "return": 0.8,
+          "status": "持有中"
+        },
+        {
+          "code": "300073",
+          "name": "当升科技",
+          "return": 0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "002353",
+          "name": "杰瑞股份",
+          "return": 0.7,
+          "status": "持有中"
+        },
+        {
+          "code": "603379",
+          "name": "三美股份",
+          "return": 0.9,
+          "status": "持有中"
+        }
+      ]
     },
     {
       "date": "2026-10-09",

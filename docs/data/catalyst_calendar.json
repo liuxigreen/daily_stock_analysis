@@ -162,6 +162,15 @@
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002353",
+      "stock_name": "杰瑞股份",
+      "event": "国际油价走高；中东/北美油气资本开支上升；Q4订单交付与业绩确认",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
     }
   ]
 }
