@@ -79,16 +79,23 @@ jobs:
           git add docs/data/
           if git diff --cached --quiet; then
             echo "No changes"
-          else
-            git stash --include-untracked
-            git pull --rebase origin main
-            git stash pop || true
-            git add docs/data/
-            DATE=$(date +%Y-%m-%d)
-            git commit -m "chore: daily stock analysis $DATE"
-            git push origin main
-            echo "Done"
+            exit 0
           fi
+          DATE=$(date +%Y-%m-%d)
+          # 先提交本地新生成的数据
+          git commit -m "chore: daily stock analysis $DATE"
+          # 与远端合并：docs/data 每次重新生成，冲突时以本地为准（-X ours）
+          # 不要用 git stash pop —— 冲突时会写入 <<<<<<< 标记污染 JSON
+          for i in 1 2 3; do
+            git pull --no-rebase -X ours origin main && break
+            echo "⚠️ pull 失败，第 $i 次重试"; sleep 5
+          done
+          # 防御：绝不推送含 git 冲突标记的数据文件
+          if grep -rl '<<<<<<<' docs/data/ 2>/dev/null; then
+            echo "❌ docs/data 含冲突标记，中止推送"; exit 1
+          fi
+          git push origin main
+          echo "Done"
 
       - name: Trigger Pages deploy
         if: always()
