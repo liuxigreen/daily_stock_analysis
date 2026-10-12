@@ -76,12 +76,38 @@ def main():
     for pick in picks_data["picks"]:
         code = pick.get("code", "")
         ai_price = pick.get("price") or 0  # None 保护
+        real = 0
         if code:
             real = get_real_price(code)
             if real > 0:
                 pick["price"] = real
                 if ai_price and ai_price > 0 and abs(real - ai_price) / ai_price > 0.03:
                     print(f"  ⚠️ {code} AI价格{ai_price}→修正为{real}", flush=True)
+
+        # 归一化 target / stop_loss：把 "现价+18%" 这类描述换算成数字
+        base = pick.get("price") or real
+        if base and base > 0:
+            for field, default_pct in (("target", 15), ("stop_loss", -8)):
+                v = pick.get(field)
+                if v is None:
+                    continue
+                if isinstance(v, str):
+                    import re as _re
+                    m = _re.search(r"([+-]?\d+(?:\.\d+)?)\s*%", v)
+                    if m:
+                        pct = float(m.group(1))
+                        pick[field] = round(base * (1 + pct / 100), 2)
+                    else:
+                        try:
+                            pick[field] = round(float(_re.sub(r"[^\d.]", "", v)), 2)
+                        except (ValueError, TypeError):
+                            pick[field] = None
+                elif isinstance(v, (int, float)):
+                    # 明显不合理的（目标低于现价）→ 用默认百分比
+                    if field == "target" and v < base:
+                        pick[field] = round(base * (1 + default_pct / 100), 2)
+                    elif field == "stop_loss" and v > base:
+                        pick[field] = round(base * (1 + default_pct / 100), 2)
 
     # 写入 picks.json
     picks_path = DOCS_DATA / "picks.json"
