@@ -1,10 +1,164 @@
 {
   "date": "2026-10-12",
-  "candidates": [],
+  "candidates": [
+    {
+      "code": "000672",
+      "name": "上峰材料",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 143.0,
+      "score": 90.0,
+      "pe": 21.79,
+      "pb": 1.43
+    },
+    {
+      "code": "688135",
+      "name": "利扬芯片",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 81.0,
+      "score": 90.0,
+      "pe": -693.8,
+      "pb": 5.06
+    },
+    {
+      "code": "001369",
+      "name": "双欣材料",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 138.0,
+      "score": 90.0,
+      "pe": 19.43,
+      "pb": 1.96
+    },
+    {
+      "code": "301090",
+      "name": "华润材料",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 103.0,
+      "score": 90.0,
+      "pe": -120.41,
+      "pb": 1.61
+    },
+    {
+      "code": "600877",
+      "name": "电科芯片",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 128.0,
+      "score": 90.0,
+      "pe": 271.0,
+      "pb": 5.15
+    },
+    {
+      "code": "688660",
+      "name": "电气风电",
+      "source": "chain",
+      "reason": "产业链传导(光伏风电): 待补涨，产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
+      "market_cap_yi": 113.0,
+      "score": 90.0,
+      "pe": -11.49,
+      "pb": 3.14
+    },
+    {
+      "code": "601016",
+      "name": "节能风电",
+      "source": "chain",
+      "reason": "产业链传导(光伏风电): 待补涨，产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
+      "market_cap_yi": 211.0,
+      "score": 87.0,
+      "pe": 30.38,
+      "pb": 1.17
+    },
+    {
+      "code": "601218",
+      "name": "吉鑫科技",
+      "source": "screening",
+      "reason": "中盘蓄势：57亿，涨+0.7%，活跃度17.4%",
+      "market_cap_yi": 57.0,
+      "score": 75.0,
+      "pe": 41.86,
+      "pb": 1.85
+    },
+    {
+      "code": "603200",
+      "name": "上海洗霸",
+      "source": "screening",
+      "reason": "中盘蓄势：95亿，涨+0.2%，活跃度18.1%",
+      "market_cap_yi": 95.0,
+      "score": 75.0,
+      "pe": 105.34,
+      "pb": 8.73
+    },
+    {
+      "code": "000993",
+      "name": "闽东电力",
+      "source": "screening",
+      "reason": "中盘蓄势：83亿，涨+1.8%，活跃度16.8%",
+      "market_cap_yi": 83.0,
+      "score": 75.0,
+      "pe": 140.08,
+      "pb": 3.3
+    },
+    {
+      "code": "002119",
+      "name": "康强电子",
+      "source": "screening",
+      "reason": "中盘蓄势：88亿，涨+1.2%，活跃度16.0%",
+      "market_cap_yi": 88.0,
+      "score": 75.0,
+      "pe": 75.77,
+      "pb": 6.13
+    },
+    {
+      "code": "002212",
+      "name": "天融信",
+      "source": "screening",
+      "reason": "中盘蓄势：90亿，涨+0.9%，活跃度17.6%",
+      "market_cap_yi": 90.0,
+      "score": 75.0,
+      "pe": 118.66,
+      "pb": 0.97
+    },
+    {
+      "code": "002733",
+      "name": "雄韬股份",
+      "source": "screening",
+      "reason": "中盘蓄势：82亿，涨+2.1%，活跃度22.7%",
+      "market_cap_yi": 82.0,
+      "score": 75.0,
+      "pe": 101.05,
+      "pb": 3.03
+    },
+    {
+      "code": "300182",
+      "name": "捷成股份",
+      "source": "screening",
+      "reason": "中盘蓄势：151亿，涨+1.8%，活跃度16.0%",
+      "market_cap_yi": 151.0,
+      "score": 75.0,
+      "pe": 78.83,
+      "pb": 1.76
+    },
+    {
+      "code": "300530",
+      "name": "领湃科技",
+      "source": "screening",
+      "reason": "中盘蓄势：51亿，涨+2.3%，活跃度16.8%",
+      "market_cap_yi": 51.0,
+      "score": 75.0,
+      "pe": -41.63,
+      "pb": 58.12
+    }
+  ],
   "stats": {
-    "total": 0,
-    "by_source": {},
-    "avg_market_cap": 0,
-    "data_source_status": "no_data"
+    "total": 15,
+    "by_source": {
+      "chain": 7,
+      "screening": 8
+    },
+    "avg_market_cap": 108,
+    "data_source_status": "ok"
   }
 }
