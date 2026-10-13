@@ -2,39 +2,45 @@
   "records": [
     {
       "date": "2026-10-13",
-      "total_count": 5,
+      "total_count": 6,
       "win_count": 0,
       "avg_return": 0,
-      "review": "回避半导体补涨链（连续亏损）,转向风电装机旺季+低位破净+传媒资金主线",
+      "review": "熊市蓄势,资金弃高就低；半导体材料+创新药+军工三条传导链",
       "picks": [
         {
-          "code": "601218",
-          "name": "吉鑫科技",
-          "return": 0.7,
+          "code": "300398",
+          "name": "飞凯材料",
+          "return": null,
           "status": "持有中"
         },
         {
-          "code": "601016",
-          "name": "节能风电",
-          "return": -0.9,
+          "code": "300727",
+          "name": "润禾材料",
+          "return": null,
           "status": "持有中"
         },
         {
-          "code": "300182",
-          "name": "捷成股份",
-          "return": 1.8,
+          "code": "600343",
+          "name": "航天动力",
+          "return": null,
           "status": "持有中"
         },
         {
-          "code": "002733",
-          "name": "雄韬股份",
-          "return": 2.1,
+          "code": "300900",
+          "name": "广联航空",
+          "return": null,
           "status": "持有中"
         },
         {
-          "code": "002212",
-          "name": "天融信",
-          "return": 0.9,
+          "code": "600713",
+          "name": "南京医药",
+          "return": null,
+          "status": "持有中"
+        },
+        {
+          "code": "000049",
+          "name": "德赛电池",
+          "return": null,
           "status": "持有中"
         }
       ]
