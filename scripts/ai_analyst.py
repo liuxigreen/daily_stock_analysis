@@ -54,6 +54,55 @@ def validate_picks(picks):
     return valid
 
 
+def _fetch_real_price(code):
+    """从腾讯获取真实价格，失败返回 0。"""
+    if not code:
+        return 0
+    symbol = f"sh{code}" if code.startswith(("6", "9")) else f"sz{code}"
+    try:
+        r = subprocess.run(
+            ["curl", "-s", "--max-time", "5", f"https://qt.gtimg.cn/q={symbol}"],
+            capture_output=True, timeout=10,
+        )
+        parts = r.stdout.decode("gbk", errors="ignore").split("~")
+        if len(parts) > 3:
+            price = float(parts[3])
+            if price > 0:
+                return price
+    except Exception:
+        pass
+    return 0
+
+
+def normalize_price_fields(picks):
+    """把 target/stop_loss 的 '现价+18%' 之类描述换算成数字，避免页面显示 NaN。"""
+    for pick in picks:
+        code = pick.get("code", "")
+        base = _fetch_real_price(code) or (pick.get("price") if isinstance(pick.get("price"), (int, float)) else 0)
+        if not base or base <= 0:
+            continue
+        # 回填 price 为真实值
+        pick["price"] = base
+        for field, default_pct in (("target", 15), ("stop_loss", -8)):
+            v = pick.get(field)
+            if v is None:
+                continue
+            if isinstance(v, str):
+                m = re.search(r"([+-]?\d+(?:\.\d+)?)\s*%", v)
+                if m:
+                    pick[field] = round(base * (1 + float(m.group(1)) / 100), 2)
+                else:
+                    try:
+                        pick[field] = round(float(re.sub(r"[^\d.]", "", v)), 2)
+                    except (ValueError, TypeError):
+                        pick[field] = None
+            elif isinstance(v, (int, float)):
+                if field == "target" and v < base:
+                    pick[field] = round(base * (1 + default_pct / 100), 2)
+                elif field == "stop_loss" and v > base:
+                    pick[field] = round(base * (1 + default_pct / 100), 2)
+
+
 def _try_repair_json(text):
     """H1: 尝试从 LLM 文本中提取 JSON，支持 json_repair 和正则回退。"""
     # 预处理：全角冒号/逗号/引号→半角（LLM 输出常见问题）
@@ -428,6 +477,9 @@ def main():
     raw_picks = analysis.get("picks", [])
     if raw_picks:
         analysis["picks"] = validate_picks(raw_picks)
+
+    # 归一化价格字段：把 "现价+18%" 这类描述换算成数字（否则页面显示 NaN）
+    normalize_price_fields(analysis.get("picks", []))
 
     # 写入文件
     DOCS_DATA.mkdir(parents=True, exist_ok=True)
