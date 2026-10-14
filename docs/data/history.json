@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-15",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御——北向加仓银行/公用,主力潜伏传媒·医药·交运；军工航空链上游已动、下游待补涨",
+      "picks": [
+        {
+          "code": "600501",
+          "name": "航天晨光",
+          "return": null,
+          "status": "持有中"
+        },
+        {
+          "code": "601021",
+          "name": "春秋航空",
+          "return": null,
+          "status": "持有中"
+        },
+        {
+          "code": "300182",
+          "name": "捷成股份",
+          "return": 2.4,
+          "status": "持有中"
+        },
+        {
+          "code": "300369",
+          "name": "绿盟科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "600812",
+          "name": "华北制药",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "001330",
+          "name": "博纳影业",
+          "return": 1.6,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-14",
       "total_count": 6,
       "win_count": 0,
