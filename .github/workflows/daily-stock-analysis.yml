@@ -2,7 +2,11 @@ name: Daily Stock Analysis
 
 on:
   schedule:
-    - cron: '0 8 * * 1-5'
+    # cron 按 UTC 计。GitHub 免费 runner 的 schedule 实测延迟 6.5~9h，
+    # 故 UTC 15:00(周日~周四) 实际落在北京 05:30~08:00(周一~周五清晨，盘前)。
+    # 好处：无论延迟大小，运行都落在北京 23:00~08:00 之间，早上看必是当天数据。
+    # 周日~周四 → 北京周一~周五（0=周日，4=周四）。
+    - cron: '0 15 * * 0-4'
   workflow_dispatch:
     inputs:
       mode:
@@ -18,6 +22,10 @@ permissions:
   contents: write
   pages: write
   actions: write
+
+env:
+  # runner 默认 UTC；强制北京时间，使数据日期与 A 股交易日一致
+  TZ: Asia/Shanghai
 
 concurrency:
   group: stock-analysis
