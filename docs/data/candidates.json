@@ -1,164 +1,164 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "candidates": [
     {
-      "code": "300006",
-      "name": "莱美药业",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值24.8%，涨+0.3%",
-      "market_cap_yi": 69.0,
-      "score": 100.0,
-      "pe": -51.57,
-      "pb": 4.01
-    },
-    {
-      "code": "300727",
-      "name": "润禾材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 51.0,
-      "score": 90.0,
-      "pe": 41.69,
-      "pb": 3.77
-    },
-    {
-      "code": "002149",
-      "name": "西部材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 151.0,
-      "score": 90.0,
-      "pe": 146.43,
-      "pb": 2.29
-    },
-    {
-      "code": "000672",
-      "name": "上峰材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 142.0,
-      "score": 90.0,
-      "pe": 21.72,
-      "pb": 1.43
-    },
-    {
-      "code": "300398",
-      "name": "飞凯材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 167.0,
-      "score": 90.0,
-      "pe": 41.27,
-      "pb": 3.19
-    },
-    {
-      "code": "600343",
-      "name": "航天动力",
+      "code": "600501",
+      "name": "航天晨光",
       "source": "chain",
       "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 116.0,
+      "market_cap_yi": 62.0,
       "score": 90.0,
-      "pe": -60.44,
-      "pb": 9.39
+      "pe": -29.08,
+      "pb": 4.1
     },
     {
-      "code": "300900",
-      "name": "广联航空",
+      "code": "600271",
+      "name": "航天信息",
       "source": "chain",
       "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 66.0,
+      "market_cap_yi": 126.0,
       "score": 90.0,
-      "pe": -57.97,
-      "pb": 3.42
+      "pe": -16.95,
+      "pb": 0.98
     },
     {
-      "code": "300455",
-      "name": "航天智装",
+      "code": "601021",
+      "name": "春秋航空",
       "source": "chain",
       "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 117.0,
-      "score": 90.0,
-      "pe": -65.14,
-      "pb": 7.02
+      "market_cap_yi": 378.0,
+      "score": 87.0,
+      "pe": 16.22,
+      "pb": 2.13
     },
     {
-      "code": "600855",
-      "name": "航天长峰",
+      "code": "002648",
+      "name": "卫星化学",
       "source": "chain",
       "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 58.0,
-      "score": 90.0,
-      "pe": -33.89,
-      "pb": 4.21
+      "market_cap_yi": 883.0,
+      "score": 75.0,
+      "pe": 16.58,
+      "pb": 2.32
     },
     {
-      "code": "301015",
-      "name": "百洋医药",
+      "code": "600029",
+      "name": "南方航空",
       "source": "chain",
-      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 139.0,
-      "score": 90.0,
-      "pe": 29.44,
-      "pb": 6.07
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 864.0,
+      "score": 75.0,
+      "pe": 95.4,
+      "pb": 2.87
     },
     {
-      "code": "301520",
-      "name": "万邦医药",
-      "source": "chain",
-      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 61.0,
-      "score": 90.0,
-      "pe": 118.2,
-      "pb": 4.05
+      "code": "600127",
+      "name": "金健米业",
+      "source": "screening",
+      "reason": "中盘蓄势：95亿，涨+1.4%，活跃度37.6%",
+      "market_cap_yi": 95.0,
+      "score": 75.0,
+      "pe": 2501.7,
+      "pb": 14.32
     },
     {
-      "code": "688176",
-      "name": "亚虹医药",
-      "source": "chain",
-      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 74.0,
-      "score": 90.0,
-      "pe": -17.5,
-      "pb": 5.47
+      "code": "600693",
+      "name": "东百集团",
+      "source": "screening",
+      "reason": "中盘蓄势：106亿，涨-0.9%，活跃度27.5%",
+      "market_cap_yi": 106.0,
+      "score": 75.0,
+      "pe": 231.75,
+      "pb": 2.94
     },
     {
-      "code": "600713",
-      "name": "南京医药",
-      "source": "chain",
-      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 68.0,
-      "score": 90.0,
-      "pe": 10.85,
-      "pb": 0.94
+      "code": "600812",
+      "name": "华北制药",
+      "source": "screening",
+      "reason": "中盘蓄势：102亿，涨+0.0%，活跃度15.6%",
+      "market_cap_yi": 102.0,
+      "score": 75.0,
+      "pe": 55.79,
+      "pb": 1.86
     },
     {
-      "code": "000049",
-      "name": "德赛电池",
-      "source": "chain",
-      "reason": "产业链传导(新能源车): 待补涨，渗透率50%+ → 固态电池突破 → 电池材料升级",
-      "market_cap_yi": 83.0,
-      "score": 90.0,
-      "pe": 28.35,
-      "pb": 1.21
+      "code": "603466",
+      "name": "风语筑",
+      "source": "screening",
+      "reason": "中盘蓄势：80亿，涨-0.4%，活跃度25.6%",
+      "market_cap_yi": 80.0,
+      "score": 75.0,
+      "pe": -450.33,
+      "pb": 3.79
     },
     {
-      "code": "688353",
-      "name": "华盛锂电",
-      "source": "chain",
-      "reason": "产业链传导(新能源车): 待补涨，渗透率50%+ → 固态电池突破 → 电池材料升级",
-      "market_cap_yi": 134.0,
-      "score": 90.0,
-      "pe": 933.0,
-      "pb": 3.67
+      "code": "000892",
+      "name": "欢瑞世纪",
+      "source": "screening",
+      "reason": "中盘蓄势：50亿，涨-0.2%，活跃度21.6%",
+      "market_cap_yi": 50.0,
+      "score": 75.0,
+      "pe": -19.74,
+      "pb": 9.95
+    },
+    {
+      "code": "001330",
+      "name": "博纳影业",
+      "source": "screening",
+      "reason": "中盘蓄势：103亿，涨+1.6%，活跃度21.8%",
+      "market_cap_yi": 103.0,
+      "score": 75.0,
+      "pe": -7.03,
+      "pb": 2.79
+    },
+    {
+      "code": "002354",
+      "name": "天娱数科",
+      "source": "screening",
+      "reason": "中盘蓄势：127亿，涨-1.5%，活跃度19.5%",
+      "market_cap_yi": 127.0,
+      "score": 75.0,
+      "pe": -259.32,
+      "pb": 7.33
+    },
+    {
+      "code": "002579",
+      "name": "中京电子",
+      "source": "screening",
+      "reason": "中盘蓄势：101亿，涨+0.7%，活跃度22.6%",
+      "market_cap_yi": 101.0,
+      "score": 75.0,
+      "pe": 413.75,
+      "pb": 4.41
+    },
+    {
+      "code": "300182",
+      "name": "捷成股份",
+      "source": "screening",
+      "reason": "中盘蓄势：157亿，涨+2.4%，活跃度15.7%",
+      "market_cap_yi": 157.0,
+      "score": 75.0,
+      "pe": 82.03,
+      "pb": 1.83
+    },
+    {
+      "code": "300369",
+      "name": "绿盟科技",
+      "source": "screening",
+      "reason": "中盘蓄势：90亿，涨+0.0%，活跃度16.5%",
+      "market_cap_yi": 90.0,
+      "score": 75.0,
+      "pe": -195.92,
+      "pb": 3.52
     }
   ],
   "stats": {
     "total": 15,
     "by_source": {
-      "accumulation": 1,
-      "chain": 14
+      "chain": 5,
+      "screening": 10
     },
-    "avg_market_cap": 100,
+    "avg_market_cap": 222,
     "data_source_status": "ok"
   }
 }

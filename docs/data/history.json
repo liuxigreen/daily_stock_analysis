@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-14",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "军工链传导 + 传媒娱乐资金潜伏（沪指熊市,防御为主）",
+      "picks": [
+        {
+          "code": "600271",
+          "name": "航天信息",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "300182",
+          "name": "捷成股份",
+          "return": 2.4,
+          "status": "持有中"
+        },
+        {
+          "code": "600812",
+          "name": "华北制药",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002579",
+          "name": "中京电子",
+          "return": 0.7,
+          "status": "持有中"
+        },
+        {
+          "code": "300369",
+          "name": "绿盟科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "600693",
+          "name": "东百集团",
+          "return": -0.9,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-13",
       "total_count": 6,
       "win_count": 0,
