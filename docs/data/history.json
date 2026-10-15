@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-16",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御 + 逆市蓄势吸筹（医药流通/生物制药/半导体材料）",
+      "picks": [
+        {
+          "code": "600713",
+          "name": "南京医药",
+          "return": -1.0,
+          "status": "持有中"
+        },
+        {
+          "code": "000963",
+          "name": "华东医药",
+          "return": -1.2,
+          "status": "持有中"
+        },
+        {
+          "code": "605507",
+          "name": "国邦医药",
+          "return": -1.1,
+          "status": "持有中"
+        },
+        {
+          "code": "300398",
+          "name": "飞凯材料",
+          "return": -1.7,
+          "status": "持有中"
+        },
+        {
+          "code": "002756",
+          "name": "永兴材料",
+          "return": -1.5,
+          "status": "持有中"
+        },
+        {
+          "code": "603885",
+          "name": "吉祥航空",
+          "return": -1.0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-15",
       "total_count": 6,
       "win_count": 0,

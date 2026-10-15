@@ -1,11 +1,39 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-16",
   "summary": {
-    "total": 0,
-    "watching": 0,
+    "total": 1,
+    "watching": 1,
     "buying": 0,
     "holding": 0,
-    "exited": 0
+    "exited": 0,
+    "total_pnl": "+0.0%",
+    "avg_pnl_pct": 0.0
   },
-  "stocks": []
+  "stocks": [
+    {
+      "code": "000963",
+      "name": "华东医药",
+      "status": "watching",
+      "thesis": "市值461亿在上限内。创新药出海+GLP-1减重+医美三条赛道。PE13.5远低于创新药同行,估值安全边际厚。确定性高于中小票,熊市适合当底仓。",
+      "supply_chain": "创新药（研发+商业化,核心环节）",
+      "timeframe": "12-18个月",
+      "added_date": "2026-10-16",
+      "added_price": 26.3,
+      "current_price": 26.3,
+      "change_pct_today": -0.04,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "创新药出海放量 + 医保谈判 + 全球减重药景气",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    }
+  ]
 }

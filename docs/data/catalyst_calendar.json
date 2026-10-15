@@ -1,4 +1,14 @@
 {
-  "last_updated": "2026-10-13",
-  "upcoming": []
+  "last_updated": "2026-10-16",
+  "upcoming": [
+    {
+      "date": "TBD",
+      "stock_code": "000963",
+      "stock_name": "华东医药",
+      "event": "创新药出海放量 + 医保谈判 + 全球减重药景气",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    }
+  ]
 }
