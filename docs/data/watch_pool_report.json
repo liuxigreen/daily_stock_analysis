@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "summary": {
     "total": 1,
     "watching": 1,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "-0.19%",
-    "avg_pnl_pct": -0.19
+    "total_pnl": "+0.72%",
+    "avg_pnl_pct": 0.72
   },
   "stocks": [
     {
@@ -19,9 +19,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-16",
       "added_price": 26.3,
-      "current_price": 26.25,
-      "change_pct_today": -0.19,
-      "pnl_pct": -0.19,
+      "current_price": 26.49,
+      "change_pct_today": 0.91,
+      "pnl_pct": 0.72,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
