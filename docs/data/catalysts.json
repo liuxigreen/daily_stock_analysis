@@ -193,21 +193,27 @@
       "urgency": "medium"
     },
     {
-      "title": "沙特主导联军称在利雅得拦截并摧毁一架无人机",
+      "title": "向“两地三场”演变 时隔22年 上海国际航空枢纽新规划发布",
       "type": "news",
-      "theme": "低空经济",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "净利预增超27倍！锂电龙头天齐锂业 前三季度业绩“炸裂” 股价却从年内高点回撤56%",
+      "type": "news",
+      "theme": "新能源车",
+      "urgency": "medium"
+    },
+    {
+      "title": "国际油价大跌，美油跌破96美元，美股芯片股反弹拉升，热门中概股走高，小鹏大涨7%",
+      "type": "news",
+      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
       "title": "理想汽车推“连山”电动技术体系：自研5C电池上车，电池自燃报废可赔新车",
       "type": "news",
       "theme": "新能源车",
-      "urgency": "medium"
-    },
-    {
-      "title": "中国资产逆势上涨，小i机器人狂飙36%，美股市值前十公司全线下挫，芯片股走低，国际油价短线跳水",
-      "type": "news",
-      "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
@@ -224,12 +230,6 @@
     },
     {
       "title": "人形机器人概念板块涨3.12% 机构看好三条投资主线",
-      "type": "news",
-      "theme": "人形机器人",
-      "urgency": "medium"
-    },
-    {
-      "title": "人形机器人：超热门的产业，超难买的股票？",
       "type": "news",
       "theme": "人形机器人",
       "urgency": "medium"
@@ -1029,6 +1029,6 @@
     "stocks_scanned": 5574,
     "accumulation_signals": 20,
     "chain_propagations": 5,
-    "news_catalysts": 12
+    "news_catalysts": 14
   }
 }
