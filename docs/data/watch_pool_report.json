@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "summary": {
-    "total": 5,
-    "watching": 5,
+    "total": 6,
+    "watching": 6,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "+0.31%",
-    "avg_pnl_pct": 0.31
+    "total_pnl": "+0.26%",
+    "avg_pnl_pct": 0.26
   },
   "stocks": [
     {
@@ -58,7 +58,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": ""
     },
     {
       "code": "002149",
@@ -83,7 +83,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": ""
     },
     {
       "code": "688562",
@@ -108,7 +108,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": ""
     },
     {
       "code": "688552",
@@ -126,6 +126,31 @@
       "catalyst_alerts": [
         {
           "event": "军费预算增长 + 装备采购放量 + 十五五军工规划预期",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": ""
+    },
+    {
+      "code": "600877",
+      "name": "电科芯片",
+      "status": "watching",
+      "thesis": "半导体国产替代链中,上游设备材料已启动,芯片设计环节待补涨。公司市值126亿弹性大,主力资金近期持续流入,技术面处于蓄势平台",
+      "supply_chain": "芯片设计（中游）",
+      "timeframe": "12-18个月",
+      "added_date": "2026-10-21",
+      "added_price": 10.61,
+      "current_price": 10.61,
+      "change_pct_today": 1.63,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "大基金三期投资节奏加快 + 半导体三季报业绩预增潮",
           "expected_date": "TBD",
           "auto_status": "unknown",
           "user_status": "pending"

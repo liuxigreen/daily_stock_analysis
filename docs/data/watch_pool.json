@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20",
+  "last_updated": "2026-10-21T02:55:03",
   "stocks": [
     {
       "code": "000963",
@@ -33,6 +33,11 @@
           "date": "2026-10-20",
           "price": 26.49,
           "note": ""
+        },
+        {
+          "date": "2026-10-21",
+          "price": 26.71,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -62,6 +67,11 @@
           "date": "2026-10-20",
           "price": 31.41,
           "note": "AI自动入池"
+        },
+        {
+          "date": "2026-10-21",
+          "price": 31.41,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -91,6 +101,11 @@
           "date": "2026-10-20",
           "price": 30.26,
           "note": "AI自动入池"
+        },
+        {
+          "date": "2026-10-21",
+          "price": 30.26,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -120,6 +135,11 @@
           "date": "2026-10-20",
           "price": 14.91,
           "note": "AI自动入池"
+        },
+        {
+          "date": "2026-10-21",
+          "price": 14.91,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -149,12 +169,46 @@
           "date": "2026-10-20",
           "price": 35.27,
           "note": "AI自动入池"
+        },
+        {
+          "date": "2026-10-21",
+          "price": 35.27,
+          "note": ""
         }
       ],
       "risk_factors": [],
       "exit_conditions": [],
       "source": "ai_daily_pick",
       "ai_score": 70
+    },
+    {
+      "code": "600877",
+      "name": "电科芯片",
+      "added_date": "2026-10-21",
+      "added_price": 10.61,
+      "thesis": "半导体国产替代链中,上游设备材料已启动,芯片设计环节待补涨。公司市值126亿弹性大,主力资金近期持续流入,技术面处于蓄势平台",
+      "supply_chain": "芯片设计（中游）",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "大基金三期投资节奏加快 + 半导体三季报业绩预增潮",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分75，芯片设计（中游）"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-10-21",
+          "price": 10.61,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 75
     }
   ]
 }

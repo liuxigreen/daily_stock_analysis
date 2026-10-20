@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-21",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "半导体国产替代+军工信息化蓄势待发",
+      "picks": [
+        {
+          "code": "600877",
+          "name": "电科芯片",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "688552",
+          "name": "航天南湖",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "000049",
+          "name": "德赛电池",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002019",
+          "name": "亿帆医药",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "300093",
+          "name": "金刚光伏",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "603698",
+          "name": "航天工程",
+          "return": 0.0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-20",
       "total_count": 6,
       "win_count": 0,
