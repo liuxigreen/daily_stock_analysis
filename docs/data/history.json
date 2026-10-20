@@ -2,11 +2,48 @@
   "records": [
     {
       "date": "2026-10-20",
-      "total_count": 0,
+      "total_count": 6,
       "win_count": 0,
       "avg_return": 0,
-      "review": "AI分析失败，无数据",
-      "picks": []
+      "review": "半导体国产替代与军工航天蓄势待发",
+      "picks": [
+        {
+          "code": "688135",
+          "name": "利扬芯片",
+          "return": 0.8,
+          "status": "持有中"
+        },
+        {
+          "code": "002149",
+          "name": "西部材料",
+          "return": 1.2,
+          "status": "持有中"
+        },
+        {
+          "code": "688562",
+          "name": "航天软件",
+          "return": 0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "688552",
+          "name": "航天南湖",
+          "return": 0.9,
+          "status": "持有中"
+        },
+        {
+          "code": "000049",
+          "name": "德赛电池",
+          "return": 0.6,
+          "status": "持有中"
+        },
+        {
+          "code": "601089",
+          "name": "福元医药",
+          "return": 0.4,
+          "status": "持有中"
+        }
+      ]
     },
     {
       "date": "2026-10-19",

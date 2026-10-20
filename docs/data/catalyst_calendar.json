@@ -9,6 +9,42 @@
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688135",
+      "stock_name": "利扬芯片",
+      "event": "大基金三期投资节奏加快 + 半导体三季报业绩预增潮",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002149",
+      "stock_name": "西部材料",
+      "event": "大基金三期投资节奏 + 半导体材料国产替代加速",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688562",
+      "stock_name": "航天软件",
+      "event": "军费预算增长 + 装备采购放量 + 军工信息化政策支持",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688552",
+      "stock_name": "航天南湖",
+      "event": "军费预算增长 + 装备采购放量 + 十五五军工规划预期",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
     }
   ]
 }

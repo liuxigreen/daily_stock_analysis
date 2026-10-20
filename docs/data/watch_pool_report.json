@@ -1,13 +1,13 @@
 {
   "date": "2026-10-20",
   "summary": {
-    "total": 1,
-    "watching": 1,
+    "total": 5,
+    "watching": 5,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "+1.56%",
-    "avg_pnl_pct": 1.56
+    "total_pnl": "+0.31%",
+    "avg_pnl_pct": 0.31
   },
   "stocks": [
     {
@@ -34,6 +34,106 @@
       "risk_factors": [],
       "exit_conditions": [],
       "latest_price_note": ""
+    },
+    {
+      "code": "688135",
+      "name": "利扬芯片",
+      "status": "watching",
+      "thesis": "大基金三期催化下,设备已涨而封测环节尚未启动。公司为第三方芯片测试龙头,市值小弹性大,主力资金近期持续流入。",
+      "supply_chain": "封测环节（后受益）,上游设备已启动,材料配套正在传导",
+      "timeframe": "12-18个月",
+      "added_date": "2026-10-20",
+      "added_price": 31.41,
+      "current_price": 31.41,
+      "change_pct_today": 1.98,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "大基金三期投资节奏加快 + 半导体三季报业绩预增潮",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    },
+    {
+      "code": "002149",
+      "name": "西部材料",
+      "status": "watching",
+      "thesis": "半导体材料环节尚未充分反应大基金三期利好。公司为国内钛材龙头,同时布局半导体靶材,市值适中,主力资金近期逆市吸筹明显。",
+      "supply_chain": "材料配套环节（中游）,设备国产化后材料需求确定性提升",
+      "timeframe": "12-18个月",
+      "added_date": "2026-10-20",
+      "added_price": 30.26,
+      "current_price": 30.26,
+      "change_pct_today": 1.85,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "大基金三期投资节奏 + 半导体材料国产替代加速",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    },
+    {
+      "code": "688562",
+      "name": "航天软件",
+      "status": "watching",
+      "thesis": "军工航天板块中航天智装、航天环宇已涨,软件环节尚未启动。公司为航天科技集团旗下信息化平台,市值小弹性大,主力资金近期持续吸筹。",
+      "supply_chain": "军工信息化（下游软件）,硬件先行后软件补涨",
+      "timeframe": "12-18个月",
+      "added_date": "2026-10-20",
+      "added_price": 14.91,
+      "current_price": 14.91,
+      "change_pct_today": 1.98,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "军费预算增长 + 装备采购放量 + 军工信息化政策支持",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    },
+    {
+      "code": "688552",
+      "name": "航天南湖",
+      "status": "watching",
+      "thesis": "军工航天板块中上游已启动,公司作为雷达装备核心供应商尚未充分反应。市值适中,主力资金近期持续流入,技术面处于蓄势平台。",
+      "supply_chain": "军工装备（中游）,上游材料已涨,装备制造补涨",
+      "timeframe": "12-18个月",
+      "added_date": "2026-10-20",
+      "added_price": 35.27,
+      "current_price": 35.27,
+      "change_pct_today": 1.79,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "军费预算增长 + 装备采购放量 + 十五五军工规划预期",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
     }
   ]
 }
