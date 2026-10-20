@@ -6,8 +6,8 @@
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "+0.72%",
-    "avg_pnl_pct": 0.72
+    "total_pnl": "+1.56%",
+    "avg_pnl_pct": 1.56
   },
   "stocks": [
     {
@@ -19,9 +19,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-16",
       "added_price": 26.3,
-      "current_price": 26.49,
-      "change_pct_today": 0.91,
-      "pnl_pct": 0.72,
+      "current_price": 26.71,
+      "change_pct_today": 0.83,
+      "pnl_pct": 1.56,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
