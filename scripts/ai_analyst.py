@@ -3,7 +3,9 @@
 AI 分析师 — 用 DeepSeek (via 9Router) 分析市场数据，选出 5-6 只标的。
 
 环境变量：
-  ROUTER_API_KEY - 9Router API key
+  ROUTER_API_KEY - LLM 网关 API key（magpie）
+  AI_BASE_URL    - 网关 chat/completions 地址（默认 magpie）
+  AI_MODEL       - 模型 ID（默认 discovery-api-intern-ai-org/deepseek-v4-flash-0731）
 
 输入：docs/data/screener_data.json + docs/data/catalysts.json
 输出：docs/data/ai_analysis.json
@@ -19,8 +21,12 @@ from pathlib import Path
 
 DOCS_DATA = Path(__file__).resolve().parent.parent / "docs" / "data"
 API_KEY = os.environ.get("ROUTER_API_KEY", "")
-API_URL = "https://9router.opspilot.me/v1/chat/completions"
-MODEL = os.environ.get("AI_MODEL", "gupiao")
+API_URL = os.environ.get(
+    "AI_BASE_URL", "https://lx.mulan.dpdns.org:43430/v1/chat/completions"
+)
+MODEL = os.environ.get(
+    "AI_MODEL", "discovery-api-intern-ai-org/deepseek-v4-flash-0731"
+)
 
 
 def validate_picks(picks):
@@ -142,7 +148,7 @@ def _try_repair_json(text):
 
 
 def call_llm(prompt, max_tokens=16000):
-    """调用 DeepSeek via 9Router。"""
+    """调用 LLM 网关（默认 magpie）。"""
     if not API_KEY:
         print("⚠️ ROUTER_API_KEY 未设置，跳过 AI 分析", file=sys.stderr)
         return None
