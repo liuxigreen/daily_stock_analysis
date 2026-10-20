@@ -158,6 +158,8 @@ def call_llm(prompt, max_tokens=16000):
         "messages": [{"role": "user", "content": prompt}],
         "max_tokens": max_tokens,
         "temperature": 0.3,
+        # 关闭思维链：deepseek-v4-flash 默认先输出 reasoning，16k 预算会被大量消耗
+        "chat_template_kwargs": {"enable_thinking": False},
     })
 
     cmd = [
