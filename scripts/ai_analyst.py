@@ -161,7 +161,7 @@ def call_llm(prompt, max_tokens=16000):
     })
 
     cmd = [
-        "curl", "-s", "--max-time", "60",
+        "curl", "-s", "--max-time", "180",
         "-X", "POST", API_URL,
         "-H", "Content-Type: application/json",
         "-H", f"Authorization: Bearer {API_KEY}",
@@ -172,7 +172,7 @@ def call_llm(prompt, max_tokens=16000):
     max_retries = 5
     for attempt in range(max_retries):
         try:
-            r = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
+            r = subprocess.run(cmd, capture_output=True, text=True, timeout=200)
             raw = r.stdout.strip()
             # 空响应（如上游 503）→ 视为失败，重试
             if not raw:
