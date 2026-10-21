@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21T02:55:03",
+  "last_updated": "2026-10-22T03:08:14",
   "stocks": [
     {
       "code": "000963",
@@ -38,6 +38,11 @@
           "date": "2026-10-21",
           "price": 26.71,
           "note": ""
+        },
+        {
+          "date": "2026-10-22",
+          "price": 26.59,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -71,6 +76,11 @@
         {
           "date": "2026-10-21",
           "price": 31.41,
+          "note": ""
+        },
+        {
+          "date": "2026-10-22",
+          "price": 31.37,
           "note": ""
         }
       ],
@@ -106,6 +116,11 @@
           "date": "2026-10-21",
           "price": 30.26,
           "note": ""
+        },
+        {
+          "date": "2026-10-22",
+          "price": 30.22,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -138,6 +153,11 @@
         },
         {
           "date": "2026-10-21",
+          "price": 14.91,
+          "note": ""
+        },
+        {
+          "date": "2026-10-22",
           "price": 14.91,
           "note": ""
         }
@@ -174,6 +194,11 @@
           "date": "2026-10-21",
           "price": 35.27,
           "note": ""
+        },
+        {
+          "date": "2026-10-22",
+          "price": 35.2,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -203,12 +228,75 @@
           "date": "2026-10-21",
           "price": 10.61,
           "note": "AI自动入池"
+        },
+        {
+          "date": "2026-10-22",
+          "price": 10.66,
+          "note": ""
         }
       ],
       "risk_factors": [],
       "exit_conditions": [],
       "source": "ai_daily_pick",
       "ai_score": 75
+    },
+    {
+      "code": "688523",
+      "name": "航天环宇",
+      "added_date": "2026-10-22",
+      "added_price": 36.2,
+      "thesis": "航天信息、航天晨光、广联航空已涨,公司作为航天科技集团配套商尚未充分反应。中办国办科技创新意见强化军工信息化预期,Q4装备采购订单集中释放。市值147亿弹性适中,主力近期逆市吸筹。",
+      "supply_chain": "军工航天中游（结构件/微波载荷配套）,后受益于总装放量",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "军费预算增长+十五五军工规划预期+Q4装备采购放量",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分72，军工航天中游（结构件/微波载荷配套）,后受益于总装放量"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-10-22",
+          "price": 36.2,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 72
+    },
+    {
+      "code": "301230",
+      "name": "泓博医药",
+      "added_date": "2026-10-22",
+      "added_price": 36.48,
+      "thesis": "北大医药、恩威医药已涨,CXO环节尚未启动。医保谈判常态化+创新药出海带动CXO订单回暖,公司为小分子CDMO+原料药一体化企业,市值66亿在候选池中最小、弹性最大。生物制药板块主力逆市吸筹316.7亿。",
+      "supply_chain": "CXO中游（小分子CDMO）,后受益于创新药研发投入回暖",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "医保谈判结果落地+创新药出海订单+Q3财报季CXO订单回暖验证",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分70，CXO中游（小分子CDMO）,后受益于创新药研发投入回暖"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-10-22",
+          "price": 36.48,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 70
     }
   ]
 }

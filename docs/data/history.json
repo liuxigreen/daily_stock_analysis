@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-22",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "科技创新政策落地+军工/创新药产业链补涨+半导体封测材料轮动",
+      "picks": [
+        {
+          "code": "688523",
+          "name": "航天环宇",
+          "return": 0,
+          "status": "持有中"
+        },
+        {
+          "code": "000547",
+          "name": "航天发展",
+          "return": 0,
+          "status": "持有中"
+        },
+        {
+          "code": "301230",
+          "name": "泓博医药",
+          "return": 0,
+          "status": "持有中"
+        },
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "return": 0,
+          "status": "持有中"
+        },
+        {
+          "code": "600879",
+          "name": "航天电子",
+          "return": 0,
+          "status": "持有中"
+        },
+        {
+          "code": "002376",
+          "name": "新北洋",
+          "return": 0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-21",
       "total_count": 6,
       "win_count": 0,

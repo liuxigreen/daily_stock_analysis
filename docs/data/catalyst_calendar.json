@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21",
+  "last_updated": "2026-10-22",
   "upcoming": [
     {
       "date": "TBD",
@@ -51,6 +51,24 @@
       "stock_code": "600877",
       "stock_name": "电科芯片",
       "event": "大基金三期投资节奏加快 + 半导体三季报业绩预增潮",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688523",
+      "stock_name": "航天环宇",
+      "event": "军费预算增长+十五五军工规划预期+Q4装备采购放量",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "301230",
+      "stock_name": "泓博医药",
+      "event": "医保谈判结果落地+创新药出海订单+Q3财报季CXO订单回暖验证",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
