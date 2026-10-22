@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "summary": {
-    "total": 8,
-    "watching": 8,
+    "total": 10,
+    "watching": 10,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "+0.14%",
-    "avg_pnl_pct": 0.14
+    "total_pnl": "-2.73%",
+    "avg_pnl_pct": -2.73
   },
   "stocks": [
     {
@@ -19,9 +19,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-16",
       "added_price": 26.3,
-      "current_price": 26.59,
-      "change_pct_today": -0.45,
-      "pnl_pct": 1.1,
+      "current_price": 26.0,
+      "change_pct_today": -2.22,
+      "pnl_pct": -1.14,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -44,9 +44,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 31.41,
-      "current_price": 31.37,
-      "change_pct_today": -0.13,
-      "pnl_pct": -0.13,
+      "current_price": 30.08,
+      "change_pct_today": -4.11,
+      "pnl_pct": -4.23,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -69,9 +69,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 30.26,
-      "current_price": 30.22,
-      "change_pct_today": -0.13,
-      "pnl_pct": -0.13,
+      "current_price": 28.73,
+      "change_pct_today": -4.93,
+      "pnl_pct": -5.06,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -94,9 +94,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 14.91,
-      "current_price": 14.91,
-      "change_pct_today": 0,
-      "pnl_pct": 0.0,
+      "current_price": 14.41,
+      "change_pct_today": -3.35,
+      "pnl_pct": -3.35,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -119,9 +119,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 35.27,
-      "current_price": 35.2,
-      "change_pct_today": -0.2,
-      "pnl_pct": -0.2,
+      "current_price": 34.25,
+      "change_pct_today": -2.7,
+      "pnl_pct": -2.89,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -144,9 +144,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-21",
       "added_price": 10.61,
-      "current_price": 10.66,
-      "change_pct_today": 0.47,
-      "pnl_pct": 0.47,
+      "current_price": 10.53,
+      "change_pct_today": -1.22,
+      "pnl_pct": -0.75,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -169,9 +169,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-22",
       "added_price": 36.2,
-      "current_price": 36.2,
-      "change_pct_today": 1.12,
-      "pnl_pct": 0.0,
+      "current_price": 35.08,
+      "change_pct_today": -3.09,
+      "pnl_pct": -3.09,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -183,7 +183,7 @@
       ],
       "risk_factors": [],
       "exit_conditions": [],
-      "latest_price_note": "AI自动入池"
+      "latest_price_note": ""
     },
     {
       "code": "301230",
@@ -194,8 +194,58 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-22",
       "added_price": 36.48,
-      "current_price": 36.48,
-      "change_pct_today": 1.96,
+      "current_price": 34.01,
+      "change_pct_today": -6.77,
+      "pnl_pct": -6.77,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "医保谈判结果落地+创新药出海订单+Q3财报季CXO订单回暖验证",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": ""
+    },
+    {
+      "code": "001369",
+      "name": "双欣材料",
+      "status": "watching",
+      "thesis": "大基金三期投资节奏加快,设备环节已启动而材料配套尚未充分反应。公司为半导体材料配套企业,PE18.19在候选池中估值最低之一,PB1.84提供安全边际。熊市环境下低估值+明确催化剂是稀缺组合。主力资金近期逆市吸筹,技术面处于平台蓄势。",
+      "supply_chain": "半导体材料（上游配套）,设备国产化后的第二波受益环节",
+      "timeframe": "12-18个月",
+      "added_date": "2026-10-23",
+      "added_price": 11.28,
+      "current_price": 11.28,
+      "change_pct_today": -2.0,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "大基金三期投资节奏加快+半导体三季报业绩预增潮+材料国产替代加速",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
+    },
+    {
+      "code": "605507",
+      "name": "国邦医药",
+      "status": "watching",
+      "thesis": "恩威医药已涨,创新药链CXO环节尚未启动。医保谈判常态化+创新药出海带动CXO订单回暖,公司为小分子CDMO+原料药一体化企业。PE10.32为候选池最低,PB1.42,熊市中极强防御性。市值120亿弹性适中,主力资金逆市吸筹。",
+      "supply_chain": "CXO/原料药（创新药产业链中游）,订单回暖第二波受益",
+      "timeframe": "12-18个月",
+      "added_date": "2026-10-23",
+      "added_price": 15.28,
+      "current_price": 15.28,
+      "change_pct_today": -1.23,
       "pnl_pct": 0.0,
       "data_source": "tencent",
       "catalyst_alerts": [

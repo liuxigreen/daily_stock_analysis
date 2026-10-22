@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-22",
+  "last_updated": "2026-10-23",
   "upcoming": [
     {
       "date": "TBD",
@@ -68,6 +68,24 @@
       "date": "TBD",
       "stock_code": "301230",
       "stock_name": "泓博医药",
+      "event": "医保谈判结果落地+创新药出海订单+Q3财报季CXO订单回暖验证",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "001369",
+      "stock_name": "双欣材料",
+      "event": "大基金三期投资节奏加快+半导体三季报业绩预增潮+材料国产替代加速",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "605507",
+      "stock_name": "国邦医药",
       "event": "医保谈判结果落地+创新药出海订单+Q3财报季CXO订单回暖验证",
       "importance": "high",
       "status": "pending",

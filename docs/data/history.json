@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-23",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御为主,聚焦大基金三期半导体材料补涨+军工航天信息化传导+创新药CXO订单回暖,回避已爆发热点,寻找蓄势待发的中盘弹性股",
+      "picks": [
+        {
+          "code": "001369",
+          "name": "双欣材料",
+          "return": -1.2,
+          "status": "持有中"
+        },
+        {
+          "code": "605507",
+          "name": "国邦医药",
+          "return": -0.8,
+          "status": "持有中"
+        },
+        {
+          "code": "688543",
+          "name": "国科军工",
+          "return": -1.5,
+          "status": "持有中"
+        },
+        {
+          "code": "002019",
+          "name": "亿帆医药",
+          "return": -1.0,
+          "status": "持有中"
+        },
+        {
+          "code": "600271",
+          "name": "航天信息",
+          "return": -1.3,
+          "status": "持有中"
+        },
+        {
+          "code": "000672",
+          "name": "上峰材料",
+          "return": -0.9,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-22",
       "total_count": 6,
       "win_count": 0,

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-22T03:08:14",
+  "last_updated": "2026-10-23T03:04:12",
   "stocks": [
     {
       "code": "000963",
@@ -43,6 +43,11 @@
           "date": "2026-10-22",
           "price": 26.59,
           "note": ""
+        },
+        {
+          "date": "2026-10-23",
+          "price": 26.0,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -81,6 +86,11 @@
         {
           "date": "2026-10-22",
           "price": 31.37,
+          "note": ""
+        },
+        {
+          "date": "2026-10-23",
+          "price": 30.08,
           "note": ""
         }
       ],
@@ -121,6 +131,11 @@
           "date": "2026-10-22",
           "price": 30.22,
           "note": ""
+        },
+        {
+          "date": "2026-10-23",
+          "price": 28.73,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -159,6 +174,11 @@
         {
           "date": "2026-10-22",
           "price": 14.91,
+          "note": ""
+        },
+        {
+          "date": "2026-10-23",
+          "price": 14.41,
           "note": ""
         }
       ],
@@ -199,6 +219,11 @@
           "date": "2026-10-22",
           "price": 35.2,
           "note": ""
+        },
+        {
+          "date": "2026-10-23",
+          "price": 34.25,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -233,6 +258,11 @@
           "date": "2026-10-22",
           "price": 10.66,
           "note": ""
+        },
+        {
+          "date": "2026-10-23",
+          "price": 10.53,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -262,6 +292,11 @@
           "date": "2026-10-22",
           "price": 36.2,
           "note": "AI自动入池"
+        },
+        {
+          "date": "2026-10-23",
+          "price": 35.08,
+          "note": ""
         }
       ],
       "risk_factors": [],
@@ -290,6 +325,69 @@
         {
           "date": "2026-10-22",
           "price": 36.48,
+          "note": "AI自动入池"
+        },
+        {
+          "date": "2026-10-23",
+          "price": 34.01,
+          "note": ""
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 70
+    },
+    {
+      "code": "001369",
+      "name": "双欣材料",
+      "added_date": "2026-10-23",
+      "added_price": 11.28,
+      "thesis": "大基金三期投资节奏加快,设备环节已启动而材料配套尚未充分反应。公司为半导体材料配套企业,PE18.19在候选池中估值最低之一,PB1.84提供安全边际。熊市环境下低估值+明确催化剂是稀缺组合。主力资金近期逆市吸筹,技术面处于平台蓄势。",
+      "supply_chain": "半导体材料（上游配套）,设备国产化后的第二波受益环节",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "大基金三期投资节奏加快+半导体三季报业绩预增潮+材料国产替代加速",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分72，半导体材料（上游配套）,设备国产化后的第二波受益环节"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-10-23",
+          "price": 11.28,
+          "note": "AI自动入池"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "source": "ai_daily_pick",
+      "ai_score": 72
+    },
+    {
+      "code": "605507",
+      "name": "国邦医药",
+      "added_date": "2026-10-23",
+      "added_price": 15.28,
+      "thesis": "恩威医药已涨,创新药链CXO环节尚未启动。医保谈判常态化+创新药出海带动CXO订单回暖,公司为小分子CDMO+原料药一体化企业。PE10.32为候选池最低,PB1.42,熊市中极强防御性。市值120亿弹性适中,主力资金逆市吸筹。",
+      "supply_chain": "CXO/原料药（创新药产业链中游）,订单回暖第二波受益",
+      "timeframe": "12-18个月",
+      "status": "watching",
+      "catalysts": [
+        {
+          "event": "医保谈判结果落地+创新药出海订单+Q3财报季CXO订单回暖验证",
+          "expected_date": "TBD",
+          "status": "pending",
+          "notes": "AI评分70，CXO/原料药（创新药产业链中游）,订单回暖第二波受益"
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2026-10-23",
+          "price": 15.28,
           "note": "AI自动入池"
         }
       ],
