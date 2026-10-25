@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-26",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御下的结构性蓄势:半导体材料补涨 + 军工航天传导 + 逆市吸筹板块",
+      "picks": [
+        {
+          "code": "300446",
+          "name": "航天智造",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "688503",
+          "name": "聚和材料",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002119",
+          "name": "康强电子",
+          "return": 1.7,
+          "status": "持有中"
+        },
+        {
+          "code": "600855",
+          "name": "航天长峰",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "001369",
+          "name": "双欣材料",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "301282",
+          "name": "金禄电子",
+          "return": 1.5,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-23",
       "total_count": 6,
       "win_count": 0,
