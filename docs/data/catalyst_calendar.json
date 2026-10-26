@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "upcoming": [
     {
       "date": "TBD",
@@ -96,6 +96,15 @@
       "stock_code": "300446",
       "stock_name": "航天智造",
       "event": "军费预算增长 + 十五五军工规划预期 + Q4装备采购订单集中释放",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "600216",
+      "stock_name": "浙江医药",
+      "event": "医保谈判常态化+创新药出海+Q3财报季维生素价格回暖验证",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
