@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "upcoming": [
     {
       "date": "TBD",
@@ -105,6 +105,24 @@
       "stock_code": "600216",
       "stock_name": "浙江医药",
       "event": "医保谈判常态化+创新药出海+Q3财报季维生素价格回暖验证",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "000672",
+      "stock_name": "上峰材料",
+      "event": "大基金三期投资节奏加快+半导体三季报业绩预增潮+材料国产替代加速",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002077",
+      "stock_name": "大港股份",
+      "event": "大基金三期投资节奏加快+半导体三季报业绩预增潮+封测环节补涨",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"

@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-28",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御为主,聚焦大基金三期半导体材料补涨+军工航天信息化传导+逆市蓄势吸筹的消费/金融中盘股,回避已爆发热点",
+      "picks": [
+        {
+          "code": "000672",
+          "name": "上峰材料",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002077",
+          "name": "大港股份",
+          "return": -1.9,
+          "status": "持有中"
+        },
+        {
+          "code": "002149",
+          "name": "西部材料",
+          "return": -0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "002242",
+          "name": "九阳股份",
+          "return": -0.8,
+          "status": "持有中"
+        },
+        {
+          "code": "000993",
+          "name": "闽东电力",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "603683",
+          "name": "晶华新材",
+          "return": 0.8,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-27",
       "total_count": 6,
       "win_count": 0,
