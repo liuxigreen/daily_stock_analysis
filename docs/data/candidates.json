@@ -1,15 +1,105 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "candidates": [
     {
-      "code": "603196",
-      "name": "璞源材料",
+      "code": "688787",
+      "name": "海天瑞声",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值18.2%，涨+0.1%",
+      "market_cap_yi": 82.0,
+      "score": 100.0,
+      "pe": 564.88,
+      "pb": 11.19
+    },
+    {
+      "code": "002009",
+      "name": "天奇股份",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值15.6%，涨+1.0%",
+      "market_cap_yi": 71.0,
+      "score": 100.0,
+      "pe": 125.86,
+      "pb": 3.45
+    },
+    {
+      "code": "002421",
+      "name": "达实智能",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值13.4%，涨+0.3%",
+      "market_cap_yi": 69.0,
+      "score": 100.0,
+      "pe": -10.58,
+      "pb": 2.58
+    },
+    {
+      "code": "300839",
+      "name": "博汇股份",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值13.2%，涨+0.2%",
+      "market_cap_yi": 58.0,
+      "score": 100.0,
+      "pe": -87.17,
+      "pb": 7.04
+    },
+    {
+      "code": "600825",
+      "name": "新华传媒",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值12.4%，涨+1.6%",
+      "market_cap_yi": 155.0,
+      "score": 100.0,
+      "pe": 370.25,
+      "pb": 6.15
+    },
+    {
+      "code": "002093",
+      "name": "国脉科技",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值12.1%，涨+1.3%",
+      "market_cap_yi": 81.0,
+      "score": 100.0,
+      "pe": 45.19,
+      "pb": 2.15
+    },
+    {
+      "code": "688507",
+      "name": "索辰科技",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值12.0%，涨+1.2%",
+      "market_cap_yi": 143.0,
+      "score": 100.0,
+      "pe": 447.03,
+      "pb": 5.29
+    },
+    {
+      "code": "603186",
+      "name": "华正新材",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值14.9%，涨+0.2%",
+      "market_cap_yi": 257.0,
+      "score": 97.0,
+      "pe": 83.97,
+      "pb": 8.31
+    },
+    {
+      "code": "002756",
+      "name": "永兴材料",
       "source": "chain",
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 67.0,
+      "market_cap_yi": 200.0,
       "score": 90.0,
-      "pe": 209.88,
-      "pb": 3.2
+      "pe": 29.63,
+      "pb": 1.44
+    },
+    {
+      "code": "600255",
+      "name": "鑫科材料",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 55.0,
+      "score": 90.0,
+      "pe": 151.0,
+      "pb": 3.63
     },
     {
       "code": "001369",
@@ -18,147 +108,57 @@
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "market_cap_yi": 129.0,
       "score": 90.0,
-      "pe": 18.18,
-      "pb": 1.84
+      "pe": 18.13,
+      "pb": 1.83
     },
     {
-      "code": "000672",
-      "name": "上峰材料",
+      "code": "603196",
+      "name": "璞源材料",
       "source": "chain",
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 129.0,
+      "market_cap_yi": 66.0,
       "score": 90.0,
-      "pe": 19.63,
-      "pb": 1.29
+      "pe": 206.46,
+      "pb": 3.14
     },
     {
-      "code": "002149",
-      "name": "西部材料",
+      "code": "000697",
+      "name": "炼石航空",
       "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 133.0,
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 120.0,
       "score": 90.0,
-      "pe": 128.58,
-      "pb": 2.01
+      "pe": -16.91,
+      "pb": 3.7
     },
     {
-      "code": "600255",
-      "name": "鑫科材料",
+      "code": "000901",
+      "name": "航天科技",
       "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 54.0,
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 107.0,
       "score": 90.0,
-      "pe": 149.0,
-      "pb": 3.58
+      "pe": 152.96,
+      "pb": 2.54
     },
     {
-      "code": "603278",
-      "name": "大业股份",
-      "source": "screening",
-      "reason": "中盘蓄势：59亿，涨+0.9%，活跃度31.4%",
-      "market_cap_yi": 59.0,
-      "score": 75.0,
-      "pe": -435.0,
-      "pb": 3.13
-    },
-    {
-      "code": "603683",
-      "name": "晶华新材",
-      "source": "screening",
-      "reason": "中盘蓄势：50亿，涨+0.8%，活跃度24.7%",
-      "market_cap_yi": 50.0,
-      "score": 75.0,
-      "pe": 52.42,
-      "pb": 2.93
-    },
-    {
-      "code": "002009",
-      "name": "天奇股份",
-      "source": "screening",
-      "reason": "中盘蓄势：70亿，涨+1.6%，活跃度16.2%",
-      "market_cap_yi": 70.0,
-      "score": 75.0,
-      "pe": 124.64,
-      "pb": 3.41
-    },
-    {
-      "code": "002242",
-      "name": "九阳股份",
-      "source": "screening",
-      "reason": "中盘蓄势：163亿，涨-0.8%，活跃度17.1%",
-      "market_cap_yi": 163.0,
-      "score": 75.0,
-      "pe": 133.38,
-      "pb": 5.05
-    },
-    {
-      "code": "002354",
-      "name": "天娱数科",
-      "source": "screening",
-      "reason": "中盘蓄势：136亿，涨+1.1%，活跃度34.3%",
-      "market_cap_yi": 136.0,
-      "score": 75.0,
-      "pe": -279.32,
-      "pb": 7.9
-    },
-    {
-      "code": "300829",
-      "name": "金丹科技",
-      "source": "screening",
-      "reason": "中盘蓄势：50亿，涨-1.8%，活跃度14.9%",
-      "market_cap_yi": 50.0,
-      "score": 74.88,
-      "pe": 40.33,
-      "pb": 2.04
-    },
-    {
-      "code": "000993",
-      "name": "闽东电力",
-      "source": "screening",
-      "reason": "中盘蓄势：54亿，涨+0.0%，活跃度14.2%",
-      "market_cap_yi": 54.0,
-      "score": 74.24074074074075,
-      "pe": 90.31,
-      "pb": 2.06
-    },
-    {
-      "code": "300364",
-      "name": "中文在线",
-      "source": "screening",
-      "reason": "中盘蓄势：171亿，涨+0.3%，活跃度14.1%",
-      "market_cap_yi": 171.0,
-      "score": 74.12865497076024,
-      "pe": -25.46,
-      "pb": 97.5
-    },
-    {
-      "code": "300300",
-      "name": "海峡创新",
-      "source": "screening",
-      "reason": "中盘蓄势：64亿，涨+0.3%，活跃度13.1%",
-      "market_cap_yi": 64.0,
-      "score": 73.125,
-      "pe": 45.57,
-      "pb": 25.69
-    },
-    {
-      "code": "002077",
-      "name": "大港股份",
-      "source": "screening",
-      "reason": "中盘蓄势：73亿，涨-1.9%，活跃度11.9%",
-      "market_cap_yi": 73.0,
-      "score": 71.9041095890411,
-      "pe": 140.0,
-      "pb": 2.14
+      "code": "300446",
+      "name": "航天智造",
+      "source": "chain",
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 98.0,
+      "score": 90.0,
+      "pe": 11.08,
+      "pb": 1.66
     }
   ],
   "stats": {
     "total": 15,
     "by_source": {
-      "chain": 5,
-      "screening": 10
+      "accumulation": 8,
+      "chain": 7
     },
-    "avg_market_cap": 93,
+    "avg_market_cap": 113,
     "data_source_status": "ok"
   }
 }

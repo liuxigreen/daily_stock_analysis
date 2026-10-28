@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-29",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御+逆市蓄势吸筹,聚焦半导体材料/封测补涨、军工航天信息化传导、低估值消费与金融蓄势",
+      "picks": [
+        {
+          "code": "002009",
+          "name": "天奇股份",
+          "return": 1.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002421",
+          "name": "达实智能",
+          "return": 0.3,
+          "status": "持有中"
+        },
+        {
+          "code": "002093",
+          "name": "国脉科技",
+          "return": 1.3,
+          "status": "持有中"
+        },
+        {
+          "code": "600255",
+          "name": "鑫科材料",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "000901",
+          "name": "航天科技",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "300446",
+          "name": "航天智造",
+          "return": 0.0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-28",
       "total_count": 6,
       "win_count": 0,
