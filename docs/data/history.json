@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-10-30",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御为主,聚焦大基金三期半导体材料/封测补涨 + 军工航天信息化传导 + 风电装机旺季,回避已爆发热点,寻找逆市蓄势的中盘弹性股",
+      "picks": [
+        {
+          "code": "600855",
+          "name": "航天长峰",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "301090",
+          "name": "华润材料",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "600877",
+          "name": "电科芯片",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "688660",
+          "name": "电气风电",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "601016",
+          "name": "节能风电",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "603278",
+          "name": "大业股份",
+          "return": -0.2,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-29",
       "total_count": 6,
       "win_count": 0,

@@ -1,164 +1,164 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "candidates": [
     {
-      "code": "688787",
-      "name": "海天瑞声",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值18.2%，涨+0.1%",
-      "market_cap_yi": 82.0,
-      "score": 100.0,
-      "pe": 564.88,
-      "pb": 11.19
+      "code": "600855",
+      "name": "航天长峰",
+      "source": "chain",
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 57.0,
+      "score": 90.0,
+      "pe": -33.45,
+      "pb": 4.15
     },
     {
-      "code": "002009",
-      "name": "天奇股份",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值15.6%，涨+1.0%",
-      "market_cap_yi": 71.0,
-      "score": 100.0,
-      "pe": 125.86,
-      "pb": 3.45
-    },
-    {
-      "code": "002421",
-      "name": "达实智能",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值13.4%，涨+0.3%",
-      "market_cap_yi": 69.0,
-      "score": 100.0,
-      "pe": -10.58,
-      "pb": 2.58
-    },
-    {
-      "code": "300839",
-      "name": "博汇股份",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值13.2%，涨+0.2%",
+      "code": "300581",
+      "name": "晨曦航空",
+      "source": "chain",
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
       "market_cap_yi": 58.0,
-      "score": 100.0,
-      "pe": -87.17,
-      "pb": 7.04
+      "score": 90.0,
+      "pe": -80.0,
+      "pb": 6.69
     },
     {
-      "code": "600825",
-      "name": "新华传媒",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值12.4%，涨+1.6%",
-      "market_cap_yi": 155.0,
-      "score": 100.0,
-      "pe": 370.25,
-      "pb": 6.15
-    },
-    {
-      "code": "002093",
-      "name": "国脉科技",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值12.1%，涨+1.3%",
-      "market_cap_yi": 81.0,
-      "score": 100.0,
-      "pe": 45.19,
-      "pb": 2.15
-    },
-    {
-      "code": "688507",
-      "name": "索辰科技",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值12.0%，涨+1.2%",
-      "market_cap_yi": 143.0,
-      "score": 100.0,
-      "pe": 447.03,
-      "pb": 5.29
-    },
-    {
-      "code": "603186",
-      "name": "华正新材",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值14.9%，涨+0.2%",
-      "market_cap_yi": 257.0,
-      "score": 97.0,
-      "pe": 83.97,
-      "pb": 8.31
-    },
-    {
-      "code": "002756",
-      "name": "永兴材料",
+      "code": "600877",
+      "name": "电科芯片",
       "source": "chain",
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 200.0,
+      "market_cap_yi": 125.0,
       "score": 90.0,
-      "pe": 29.63,
-      "pb": 1.44
+      "pe": 264.5,
+      "pb": 5.03
+    },
+    {
+      "code": "301090",
+      "name": "华润材料",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 91.0,
+      "score": 90.0,
+      "pe": -106.17,
+      "pb": 1.37
     },
     {
       "code": "600255",
       "name": "鑫科材料",
       "source": "chain",
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 55.0,
+      "market_cap_yi": 53.0,
       "score": 90.0,
-      "pe": 151.0,
-      "pb": 3.63
-    },
-    {
-      "code": "001369",
-      "name": "双欣材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 129.0,
-      "score": 90.0,
-      "pe": 18.13,
-      "pb": 1.83
+      "pe": 147.5,
+      "pb": 3.55
     },
     {
       "code": "603196",
       "name": "璞源材料",
       "source": "chain",
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 66.0,
+      "market_cap_yi": 64.0,
       "score": 90.0,
-      "pe": 206.46,
-      "pb": 3.14
+      "pe": 200.26,
+      "pb": 3.05
     },
     {
-      "code": "000697",
-      "name": "炼石航空",
+      "code": "688660",
+      "name": "电气风电",
       "source": "chain",
-      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 120.0,
+      "reason": "产业链传导(光伏风电): 待补涨，产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
+      "market_cap_yi": 97.0,
       "score": 90.0,
-      "pe": -16.91,
-      "pb": 3.7
+      "pe": -9.8,
+      "pb": 2.94
     },
     {
-      "code": "000901",
-      "name": "航天科技",
+      "code": "601016",
+      "name": "节能风电",
       "source": "chain",
-      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 107.0,
+      "reason": "产业链传导(光伏风电): 待补涨，产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
+      "market_cap_yi": 195.0,
       "score": 90.0,
-      "pe": 152.96,
-      "pb": 2.54
+      "pe": 28.11,
+      "pb": 1.09
     },
     {
-      "code": "300446",
-      "name": "航天智造",
+      "code": "300093",
+      "name": "金刚光伏",
+      "source": "chain",
+      "reason": "产业链传导(光伏风电): 待补涨，产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
+      "market_cap_yi": 93.0,
+      "score": 90.0,
+      "pe": 19.92,
+      "pb": 4.83
+    },
+    {
+      "code": "601021",
+      "name": "春秋航空",
       "source": "chain",
       "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 98.0,
-      "score": 90.0,
-      "pe": 11.08,
-      "pb": 1.66
+      "market_cap_yi": 378.0,
+      "score": 87.0,
+      "pe": 16.24,
+      "pb": 2.14
+    },
+    {
+      "code": "603885",
+      "name": "吉祥航空",
+      "source": "chain",
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 206.0,
+      "score": 87.0,
+      "pe": 19.75,
+      "pb": 2.38
+    },
+    {
+      "code": "002648",
+      "name": "卫星化学",
+      "source": "chain",
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 864.0,
+      "score": 75.0,
+      "pe": 16.23,
+      "pb": 2.12
+    },
+    {
+      "code": "002709",
+      "name": "天赐材料",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 527.0,
+      "score": 75.0,
+      "pe": 36.41,
+      "pb": 2.6
+    },
+    {
+      "code": "603278",
+      "name": "大业股份",
+      "source": "screening",
+      "reason": "中盘蓄势：61亿，涨-0.2%，活跃度23.2%",
+      "market_cap_yi": 61.0,
+      "score": 75.0,
+      "pe": -447.0,
+      "pb": 3.22
+    },
+    {
+      "code": "688137",
+      "name": "近岸蛋白",
+      "source": "screening",
+      "reason": "中盘蓄势：91亿，涨+1.8%，活跃度15.3%",
+      "market_cap_yi": 91.0,
+      "score": 75.0,
+      "pe": -116.67,
+      "pb": 4.53
     }
   ],
   "stats": {
     "total": 15,
     "by_source": {
-      "accumulation": 8,
-      "chain": 7
+      "chain": 13,
+      "screening": 2
     },
-    "avg_market_cap": 113,
+    "avg_market_cap": 197,
     "data_source_status": "ok"
   }
 }
