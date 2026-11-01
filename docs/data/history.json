@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-11-02",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市底部蓄势,聚焦逆市吸筹的金融/交运/消费防御链 + 创新药与半导体材料补涨",
+      "picks": [
+        {
+          "code": "600713",
+          "name": "南京医药",
+          "return": -0.4,
+          "status": "持有中"
+        },
+        {
+          "code": "601089",
+          "name": "福元医药",
+          "return": -0.3,
+          "status": "持有中"
+        },
+        {
+          "code": "002928",
+          "name": "华夏航空",
+          "return": -0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "300398",
+          "name": "飞凯材料",
+          "return": -0.6,
+          "status": "持有中"
+        },
+        {
+          "code": "002019",
+          "name": "亿帆医药",
+          "return": -0.4,
+          "status": "持有中"
+        },
+        {
+          "code": "600271",
+          "name": "航天信息",
+          "return": -0.3,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-10-30",
       "total_count": 6,
       "win_count": 0,

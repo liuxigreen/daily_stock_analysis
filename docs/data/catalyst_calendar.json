@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30",
+  "last_updated": "2026-11-02",
   "upcoming": [
     {
       "date": "TBD",
@@ -123,6 +123,15 @@
       "stock_code": "002077",
       "stock_name": "大港股份",
       "event": "大基金三期投资节奏加快+半导体三季报业绩预增潮+封测环节补涨",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "600713",
+      "stock_name": "南京医药",
+      "event": "医保谈判常态化落地 + 创新药出海放量带动流通配送需求 + 11月医保目录调整结果公布",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"

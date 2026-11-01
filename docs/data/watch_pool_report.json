@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-02",
   "summary": {
-    "total": 14,
-    "watching": 14,
+    "total": 15,
+    "watching": 15,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "-5.69%",
-    "avg_pnl_pct": -5.69
+    "total_pnl": "-6.96%",
+    "avg_pnl_pct": -6.96
   },
   "stocks": [
     {
@@ -19,9 +19,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-16",
       "added_price": 26.3,
-      "current_price": 25.88,
-      "change_pct_today": -0.96,
-      "pnl_pct": -1.6,
+      "current_price": 26.62,
+      "change_pct_today": 2.86,
+      "pnl_pct": 1.22,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -44,9 +44,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 31.41,
-      "current_price": 26.21,
-      "change_pct_today": -5.04,
-      "pnl_pct": -16.56,
+      "current_price": 24.9,
+      "change_pct_today": -5.0,
+      "pnl_pct": -20.73,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -69,9 +69,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 30.26,
-      "current_price": 32.31,
-      "change_pct_today": 10.01,
-      "pnl_pct": 6.77,
+      "current_price": 33.57,
+      "change_pct_today": 3.9,
+      "pnl_pct": 10.94,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -94,9 +94,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 14.91,
-      "current_price": 14.55,
-      "change_pct_today": -0.55,
-      "pnl_pct": -2.41,
+      "current_price": 14.24,
+      "change_pct_today": -2.13,
+      "pnl_pct": -4.49,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -119,9 +119,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 35.27,
-      "current_price": 30.93,
-      "change_pct_today": -2.0,
-      "pnl_pct": -12.31,
+      "current_price": 28.04,
+      "change_pct_today": -9.34,
+      "pnl_pct": -20.5,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -144,9 +144,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-21",
       "added_price": 10.61,
-      "current_price": 10.58,
-      "change_pct_today": 0.09,
-      "pnl_pct": -0.28,
+      "current_price": 10.06,
+      "change_pct_today": -4.91,
+      "pnl_pct": -5.18,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -169,9 +169,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-22",
       "added_price": 36.2,
-      "current_price": 35.92,
-      "change_pct_today": 2.63,
-      "pnl_pct": -0.77,
+      "current_price": 34.0,
+      "change_pct_today": -5.35,
+      "pnl_pct": -6.08,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -194,9 +194,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-22",
       "added_price": 36.48,
-      "current_price": 29.88,
-      "change_pct_today": -2.96,
-      "pnl_pct": -18.09,
+      "current_price": 29.95,
+      "change_pct_today": 0.23,
+      "pnl_pct": -17.9,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -219,9 +219,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-23",
       "added_price": 11.28,
-      "current_price": 10.67,
-      "change_pct_today": -5.07,
-      "pnl_pct": -5.41,
+      "current_price": 10.45,
+      "change_pct_today": -2.06,
+      "pnl_pct": -7.36,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -244,9 +244,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-23",
       "added_price": 15.28,
-      "current_price": 14.5,
-      "change_pct_today": -2.09,
-      "pnl_pct": -5.1,
+      "current_price": 15.04,
+      "change_pct_today": 3.72,
+      "pnl_pct": -1.57,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -269,9 +269,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-26",
       "added_price": 11.9,
-      "current_price": 11.58,
-      "change_pct_today": 0.26,
-      "pnl_pct": -2.69,
+      "current_price": 11.41,
+      "change_pct_today": -1.47,
+      "pnl_pct": -4.12,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -294,9 +294,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-27",
       "added_price": 12.03,
-      "current_price": 10.61,
-      "change_pct_today": -2.66,
-      "pnl_pct": -11.8,
+      "current_price": 10.63,
+      "change_pct_today": 0.19,
+      "pnl_pct": -11.64,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -319,9 +319,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-28",
       "added_price": 13.27,
-      "current_price": 13.02,
-      "change_pct_today": -6.33,
-      "pnl_pct": -1.88,
+      "current_price": 12.83,
+      "change_pct_today": -1.46,
+      "pnl_pct": -3.32,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -344,9 +344,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-28",
       "added_price": 12.6,
-      "current_price": 11.65,
-      "change_pct_today": -9.83,
-      "pnl_pct": -7.54,
+      "current_price": 10.88,
+      "change_pct_today": -6.61,
+      "pnl_pct": -13.65,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -359,6 +359,31 @@
       "risk_factors": [],
       "exit_conditions": [],
       "latest_price_note": ""
+    },
+    {
+      "code": "600713",
+      "name": "南京医药",
+      "status": "watching",
+      "thesis": "创新药链上游万邦医药、毕得医药、百洋医药已连续大涨,医药流通作为最下游尚未启动。公司PB0.92破净、PE10.6为候选池最低之一,67亿小盘弹性足。生物制药板块主力净流入369亿居前,资金外溢至流通环节概率大。熊市环境下低估值+破净提供厚安全垫,符合'蓄势待发'特征。",
+      "supply_chain": "创新药产业链最下游（医药流通配送）,后受益环节,上游CXO/创新药已涨后的补涨位",
+      "timeframe": "12-18个月",
+      "added_date": "2026-11-02",
+      "added_price": 5.1,
+      "current_price": 5.1,
+      "change_pct_today": 1.39,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "医保谈判常态化落地 + 创新药出海放量带动流通配送需求 + 11月医保目录调整结果公布",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": "AI自动入池"
     }
   ]
 }
