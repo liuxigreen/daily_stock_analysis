@@ -1,163 +1,164 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "candidates": [
     {
-      "code": "002019",
-      "name": "亿帆医药",
-      "source": "chain",
-      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 112.0,
-      "score": 90.0,
-      "pe": 27.97,
-      "pb": 1.26
+      "code": "000823",
+      "name": "超声电子",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值20.9%，涨+0.5%",
+      "market_cap_yi": 103.0,
+      "score": 100.0,
+      "pe": 41.71,
+      "pb": 1.76
     },
     {
-      "code": "600713",
-      "name": "南京医药",
-      "source": "chain",
-      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 67.0,
-      "score": 90.0,
-      "pe": 10.62,
-      "pb": 0.92
+      "code": "603200",
+      "name": "上海洗霸",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值14.1%，涨+0.6%",
+      "market_cap_yi": 91.0,
+      "score": 100.0,
+      "pe": 101.52,
+      "pb": 8.52
     },
     {
-      "code": "601089",
-      "name": "福元医药",
-      "source": "chain",
-      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 73.0,
-      "score": 90.0,
-      "pe": 15.22,
-      "pb": 1.91
+      "code": "002639",
+      "name": "雪人集团",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值12.4%，涨+0.1%",
+      "market_cap_yi": 108.0,
+      "score": 100.0,
+      "pe": 292.39,
+      "pb": 4.2
     },
     {
-      "code": "600789",
-      "name": "鲁抗医药",
-      "source": "chain",
-      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 71.0,
-      "score": 90.0,
-      "pe": 56.75,
-      "pb": 1.36
+      "code": "300725",
+      "name": "药石科技",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值12.2%，涨+1.0%",
+      "market_cap_yi": 106.0,
+      "score": 100.0,
+      "pe": 51.42,
+      "pb": 2.31
     },
     {
-      "code": "002756",
-      "name": "永兴材料",
+      "code": "002565",
+      "name": "顺灏股份",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值10.9%，涨+0.4%",
+      "market_cap_yi": 87.0,
+      "score": 100.0,
+      "pe": 136.83,
+      "pb": 4.77
+    },
+    {
+      "code": "002636",
+      "name": "金安国纪",
+      "source": "accumulation",
+      "reason": "蓄势信号：活跃蓄势：成交/市值11.5%，涨+0.0%",
+      "market_cap_yi": 464.0,
+      "score": 97.0,
+      "pe": 154.24,
+      "pb": 8.52
+    },
+    {
+      "code": "600255",
+      "name": "鑫科材料",
       "source": "chain",
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 188.0,
+      "market_cap_yi": 51.0,
       "score": 90.0,
-      "pe": 27.93,
-      "pb": 1.35
-    },
-    {
-      "code": "300398",
-      "name": "飞凯材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 150.0,
-      "score": 90.0,
-      "pe": 37.1,
-      "pb": 2.81
-    },
-    {
-      "code": "000672",
-      "name": "上峰材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 124.0,
-      "score": 90.0,
-      "pe": 18.98,
-      "pb": 1.06
+      "pe": 142.5,
+      "pb": 3.44
     },
     {
       "code": "001369",
       "name": "双欣材料",
       "source": "chain",
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 120.0,
+      "market_cap_yi": 122.0,
       "score": 90.0,
-      "pe": 16.86,
-      "pb": 1.68
+      "pe": 17.13,
+      "pb": 1.71
     },
     {
-      "code": "002928",
-      "name": "华夏航空",
-      "source": "chain",
-      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 75.0,
-      "score": 90.0,
-      "pe": 11.99,
-      "pb": 1.89
-    },
-    {
-      "code": "600271",
-      "name": "航天信息",
-      "source": "chain",
-      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 131.0,
-      "score": 90.0,
-      "pe": -17.65,
-      "pb": 1.02
-    },
-    {
-      "code": "300455",
-      "name": "航天智装",
-      "source": "chain",
-      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 119.0,
-      "score": 90.0,
-      "pe": -66.14,
-      "pb": 7.12
-    },
-    {
-      "code": "600196",
-      "name": "复星医药",
-      "source": "chain",
-      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 605.0,
-      "score": 75.0,
-      "pe": 17.84,
-      "pb": 1.2
-    },
-    {
-      "code": "002709",
-      "name": "天赐材料",
+      "code": "002756",
+      "name": "永兴材料",
       "source": "chain",
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 532.0,
-      "score": 75.0,
-      "pe": 36.79,
-      "pb": 2.53
+      "market_cap_yi": 189.0,
+      "score": 90.0,
+      "pe": 28.0,
+      "pb": 1.36
     },
     {
-      "code": "600029",
-      "name": "南方航空",
+      "code": "301090",
+      "name": "华润材料",
       "source": "chain",
-      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 881.0,
-      "score": 75.0,
-      "pe": 97.2,
-      "pb": 2.92
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 89.0,
+      "score": 90.0,
+      "pe": -103.6,
+      "pb": 1.34
     },
     {
-      "code": "600118",
-      "name": "中国卫星",
+      "code": "600343",
+      "name": "航天动力",
       "source": "chain",
       "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 661.0,
-      "score": 75.0,
-      "pe": 1863.67,
-      "pb": 10.26
+      "market_cap_yi": 108.0,
+      "score": 90.0,
+      "pe": -55.83,
+      "pb": 8.96
+    },
+    {
+      "code": "300446",
+      "name": "航天智造",
+      "source": "chain",
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 98.0,
+      "score": 90.0,
+      "pe": 11.14,
+      "pb": 1.66
+    },
+    {
+      "code": "000901",
+      "name": "航天科技",
+      "source": "chain",
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 108.0,
+      "score": 90.0,
+      "pe": 153.64,
+      "pb": 2.56
+    },
+    {
+      "code": "688131",
+      "name": "皓元医药",
+      "source": "chain",
+      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "market_cap_yi": 200.0,
+      "score": 90.0,
+      "pe": 82.92,
+      "pb": 5.98
+    },
+    {
+      "code": "605507",
+      "name": "国邦医药",
+      "source": "chain",
+      "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
+      "market_cap_yi": 119.0,
+      "score": 90.0,
+      "pe": 10.28,
+      "pb": 1.4
     }
   ],
   "stats": {
     "total": 15,
     "by_source": {
-      "chain": 15
+      "accumulation": 6,
+      "chain": 9
     },
-    "avg_market_cap": 261,
+    "avg_market_cap": 136,
     "data_source_status": "ok"
   }
 }

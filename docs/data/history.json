@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-11-03",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御下的产业链补涨:半导体材料/封测、军工航天配套、创新药CXO三条传导链的低位蓄势标的",
+      "picks": [
+        {
+          "code": "300446",
+          "name": "航天智造",
+          "return": -4.1,
+          "status": "持有中"
+        },
+        {
+          "code": "605507",
+          "name": "国邦医药",
+          "return": -1.6,
+          "status": "持有中"
+        },
+        {
+          "code": "002636",
+          "name": "金安国纪",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002756",
+          "name": "永兴材料",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "300725",
+          "name": "药石科技",
+          "return": 1.0,
+          "status": "持有中"
+        },
+        {
+          "code": "600343",
+          "name": "航天动力",
+          "return": 0.0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-11-02",
       "total_count": 6,
       "win_count": 0,
