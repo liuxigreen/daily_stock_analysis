@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-11-04",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御下的产业链补涨:军工航天配套、创新药CXO、半导体材料/封测三条传导链的低位蓄势标的,回避已爆发热点",
+      "picks": [
+        {
+          "code": "002389",
+          "name": "航天彩虹",
+          "return": -0.6,
+          "status": "持有中"
+        },
+        {
+          "code": "688543",
+          "name": "国科军工",
+          "return": -0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "002019",
+          "name": "亿帆医药",
+          "return": -0.4,
+          "status": "持有中"
+        },
+        {
+          "code": "600056",
+          "name": "中国医药",
+          "return": -0.3,
+          "status": "持有中"
+        },
+        {
+          "code": "000049",
+          "name": "德赛电池",
+          "return": -0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "301155",
+          "name": "海力风电",
+          "return": -0.6,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-11-03",
       "total_count": 6,
       "win_count": 0,
