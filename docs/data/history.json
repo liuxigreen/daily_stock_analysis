@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-11-05",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御下的产业链补涨:半导体材料/封测、光伏风电运营、军工航天配套三条传导链的低位蓄势标的",
+      "picks": [
+        {
+          "code": "600255",
+          "name": "鑫科材料",
+          "return": 0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "601016",
+          "name": "节能风电",
+          "return": 0.3,
+          "status": "持有中"
+        },
+        {
+          "code": "600216",
+          "name": "浙江医药",
+          "return": 0.2,
+          "status": "持有中"
+        },
+        {
+          "code": "600855",
+          "name": "航天长峰",
+          "return": 0.8,
+          "status": "持有中"
+        },
+        {
+          "code": "301262",
+          "name": "海看股份",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "002929",
+          "name": "润建股份",
+          "return": 1.3,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-11-04",
       "total_count": 6,
       "win_count": 0,

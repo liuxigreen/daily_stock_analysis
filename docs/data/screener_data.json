@@ -1,355 +1,355 @@
 {
-  "date": "2026-11-04",
-  "time": "04:44",
+  "date": "2026-11-05",
+  "time": "05:01",
   "sector_flow": [
     {
-      "code": "new_ljhy",
-      "name": "酿酒行业",
-      "change_pct": 2.39,
-      "net_inflow_yi": 245.48,
-      "leader": "皇台酒业"
+      "code": "new_stock",
+      "name": "次新股",
+      "change_pct": 9.4,
+      "net_inflow_yi": 717.64,
+      "leader": "N腾信"
     },
     {
-      "code": "new_cbzz",
-      "name": "船舶制造",
-      "change_pct": 2.18,
-      "net_inflow_yi": 43.95,
-      "leader": "中国船舶"
+      "code": "new_dzqj",
+      "name": "电子器件",
+      "change_pct": 7.44,
+      "net_inflow_yi": 1430.72,
+      "leader": "晓程科技"
     },
     {
-      "code": "new_jdly",
-      "name": "酒店旅游",
-      "change_pct": 1.63,
-      "net_inflow_yi": 88.54,
-      "leader": "国旅联合"
+      "code": "new_tchy",
+      "name": "陶瓷行业",
+      "change_pct": 6.91,
+      "net_inflow_yi": 19.22,
+      "leader": "松发股份"
     },
     {
-      "code": "new_nlmy",
-      "name": "农林牧渔",
-      "change_pct": 1.55,
-      "net_inflow_yi": 187.01,
-      "leader": "东方海洋"
+      "code": "new_blhy",
+      "name": "玻璃行业",
+      "change_pct": 5.55,
+      "net_inflow_yi": 109.16,
+      "leader": "菲利华"
     },
     {
-      "code": "new_nyhf",
-      "name": "农药化肥",
-      "change_pct": 1.31,
-      "net_inflow_yi": 81.82,
-      "leader": "新洋丰"
+      "code": "new_ysjs",
+      "name": "有色金属",
+      "change_pct": 5.39,
+      "net_inflow_yi": 642.41,
+      "leader": "闽发铝业"
+    },
+    {
+      "code": "new_jxhy",
+      "name": "机械行业",
+      "change_pct": 4.78,
+      "net_inflow_yi": 912.26,
+      "leader": "新莱应材"
+    },
+    {
+      "code": "new_hghy",
+      "name": "化工行业",
+      "change_pct": 4.22,
+      "net_inflow_yi": 479.73,
+      "leader": "上海新阳"
+    },
+    {
+      "code": "new_yqyb",
+      "name": "仪器仪表",
+      "change_pct": 4.22,
+      "net_inflow_yi": 190.9,
+      "leader": "大族激光"
+    },
+    {
+      "code": "new_fjzz",
+      "name": "飞机制造",
+      "change_pct": 4.09,
+      "net_inflow_yi": 98.01,
+      "leader": "航发科技"
+    },
+    {
+      "code": "new_dzxx",
+      "name": "电子信息",
+      "change_pct": 4.04,
+      "net_inflow_yi": 1560.39,
+      "leader": "掌趣科技"
+    },
+    {
+      "code": "new_jjhy",
+      "name": "家具行业",
+      "change_pct": 3.29,
+      "net_inflow_yi": 21.47,
+      "leader": "友邦吊顶"
+    },
+    {
+      "code": "new_dqhy",
+      "name": "电器行业",
+      "change_pct": 2.97,
+      "net_inflow_yi": 280.27,
+      "leader": "中恒电气"
     },
     {
       "code": "new_fdsb",
       "name": "发电设备",
-      "change_pct": 1.28,
-      "net_inflow_yi": 191.92,
-      "leader": "太阳电缆"
+      "change_pct": 2.91,
+      "net_inflow_yi": 226.43,
+      "leader": "科泰电源"
     },
     {
-      "code": "new_fzxl",
-      "name": "服装鞋类",
-      "change_pct": 1.26,
-      "net_inflow_yi": 94.44,
-      "leader": "七 匹 狼"
+      "code": "new_cmyl",
+      "name": "传媒娱乐",
+      "change_pct": 2.54,
+      "net_inflow_yi": 192.25,
+      "leader": "华智数媒"
     },
     {
-      "code": "new_jrhy",
-      "name": "金融行业",
-      "change_pct": 1.09,
-      "net_inflow_yi": 670.05,
-      "leader": "中国太保"
-    },
-    {
-      "code": "new_wzwm",
-      "name": "物资外贸",
-      "change_pct": 1.04,
-      "net_inflow_yi": 26.05,
-      "leader": "时代万恒"
-    },
-    {
-      "code": "new_jzjc",
-      "name": "建筑建材",
-      "change_pct": 0.99,
-      "net_inflow_yi": 148.8,
-      "leader": "扬子新材"
-    },
-    {
-      "code": "new_mtc",
-      "name": "摩托车",
-      "change_pct": 0.9,
-      "net_inflow_yi": 9.87,
-      "leader": "隆鑫通用"
-    },
-    {
-      "code": "new_gthy",
-      "name": "钢铁行业",
-      "change_pct": 0.82,
-      "net_inflow_yi": 81.49,
-      "leader": "大西洋"
-    },
-    {
-      "code": "new_sphy",
-      "name": "食品行业",
-      "change_pct": 0.82,
-      "net_inflow_yi": 132.83,
-      "leader": "保龄宝"
-    },
-    {
-      "code": "new_sybh",
-      "name": "商业百货",
-      "change_pct": 0.79,
-      "net_inflow_yi": 209.96,
-      "leader": "大东方"
-    },
-    {
-      "code": "new_snhy",
-      "name": "水泥行业",
-      "change_pct": 0.78,
-      "net_inflow_yi": 33.55,
-      "leader": "福建水泥"
+      "code": "new_hqhy",
+      "name": "化纤行业",
+      "change_pct": 2.54,
+      "net_inflow_yi": 82.98,
+      "leader": "中材科技"
     }
   ],
   "top_gainers": [
     {
-      "code": "001381",
-      "name": "N皇冠",
-      "change_pct": 397.94,
-      "turnover": 87.33,
-      "high": 150.58,
-      "low": 56.0,
-      "open": 56.0
+      "code": "920298",
+      "name": "腾信精密",
+      "change_pct": 30.0,
+      "turnover": 24.35,
+      "high": 94.6,
+      "low": 72.36,
+      "open": 73.0
     },
     {
-      "code": "301513",
-      "name": "尚水智能",
+      "code": "920770",
+      "name": "艾能聚",
+      "change_pct": 29.99,
+      "turnover": 23.41,
+      "high": 11.92,
+      "low": 8.87,
+      "open": 9.19
+    },
+    {
+      "code": "920045",
+      "name": "蘅东光",
+      "change_pct": 21.8,
+      "turnover": 10.96,
+      "high": 368.0,
+      "low": 298.86,
+      "open": 298.86
+    },
+    {
+      "code": "688517",
+      "name": "金冠电气",
+      "change_pct": 20.02,
+      "turnover": 12.58,
+      "high": 21.46,
+      "low": 18.02,
+      "open": 18.18
+    },
+    {
+      "code": "300943",
+      "name": "春晖智控",
+      "change_pct": 20.02,
+      "turnover": 15.87,
+      "high": 25.78,
+      "low": 20.28,
+      "open": 21.74
+    },
+    {
+      "code": "301697",
+      "name": "贝特利",
+      "change_pct": 20.02,
+      "turnover": 38.62,
+      "high": 25.42,
+      "low": 22.01,
+      "open": 22.01
+    },
+    {
+      "code": "688507",
+      "name": "索辰科技",
       "change_pct": 20.0,
-      "turnover": 27.95,
-      "high": 54.78,
-      "low": 44.4,
-      "open": 44.97
+      "turnover": 13.11,
+      "high": 171.16,
+      "low": 139.78,
+      "open": 144.66
     },
     {
-      "code": "300010",
-      "name": "ST豆神",
-      "change_pct": 19.94,
-      "turnover": 10.75,
-      "high": 3.79,
-      "low": 3.2,
-      "open": 3.25
+      "code": "688652",
+      "name": "京仪装备",
+      "change_pct": 20.0,
+      "turnover": 6.84,
+      "high": 94.13,
+      "low": 77.13,
+      "open": 79.98
     },
     {
-      "code": "301311",
-      "name": "昆船智能",
-      "change_pct": 18.08,
-      "turnover": 14.92,
-      "high": 18.98,
-      "low": 15.2,
-      "open": 15.82
+      "code": "300489",
+      "name": "光智科技",
+      "change_pct": 20.0,
+      "turnover": 9.84,
+      "high": 190.3,
+      "low": 160.8,
+      "open": 162.76
     },
     {
-      "code": "920627",
-      "name": "力王股份",
-      "change_pct": 17.5,
-      "turnover": 23.24,
-      "high": 20.3,
-      "low": 15.84,
-      "open": 16.12
+      "code": "688835",
+      "name": "高凯技术",
+      "change_pct": 20.0,
+      "turnover": 13.89,
+      "high": 297.28,
+      "low": 246.23,
+      "open": 248.74
     },
     {
-      "code": "300426",
-      "name": "华智数媒",
-      "change_pct": 16.28,
-      "turnover": 24.74,
-      "high": 9.29,
-      "low": 7.71,
-      "open": 7.85
+      "code": "688037",
+      "name": "芯源微",
+      "change_pct": 20.0,
+      "turnover": 3.73,
+      "high": 211.37,
+      "low": 173.51,
+      "open": 178.93
     },
     {
-      "code": "301487",
-      "name": "盟固利",
-      "change_pct": 13.51,
-      "turnover": 17.3,
-      "high": 21.67,
-      "low": 17.8,
-      "open": 17.8
+      "code": "688809",
+      "name": "强一股份",
+      "change_pct": 20.0,
+      "turnover": 10.76,
+      "high": 223.91,
+      "low": 187.01,
+      "open": 189.66
     },
     {
-      "code": "300338",
-      "name": "*ST开元",
-      "change_pct": 12.5,
-      "turnover": 10.67,
-      "high": 2.1,
-      "low": 1.75,
-      "open": 1.76
+      "code": "688072",
+      "name": "拓荆科技",
+      "change_pct": 20.0,
+      "turnover": 3.79,
+      "high": 487.79,
+      "low": 396.04,
+      "open": 410.21
     },
     {
-      "code": "300739",
-      "name": "明阳电路",
-      "change_pct": 12.46,
-      "turnover": 18.09,
-      "high": 27.74,
-      "low": 22.4,
-      "open": 22.63
+      "code": "688409",
+      "name": "富创精密",
+      "change_pct": 20.0,
+      "turnover": 4.05,
+      "high": 121.2,
+      "low": 99.56,
+      "open": 101.39
     },
     {
-      "code": "688556",
-      "name": "高测股份",
-      "change_pct": 11.61,
-      "turnover": 8.14,
-      "high": 7.42,
-      "low": 6.7,
-      "open": 6.73
+      "code": "688596",
+      "name": "正帆科技",
+      "change_pct": 20.0,
+      "turnover": 12.75,
+      "high": 50.64,
+      "low": 42.09,
+      "open": 42.8
     },
     {
-      "code": "600327",
-      "name": "大东方",
-      "change_pct": 10.13,
-      "turnover": 5.5,
-      "high": 4.35,
-      "low": 3.88,
-      "open": 3.91
+      "code": "300788",
+      "name": "中信出版",
+      "change_pct": 20.0,
+      "turnover": 9.21,
+      "high": 36.06,
+      "low": 29.9,
+      "open": 29.9
     },
     {
-      "code": "601188",
-      "name": "龙江交通",
-      "change_pct": 10.12,
-      "turnover": 18.86,
-      "high": 3.7,
-      "low": 3.26,
-      "open": 3.3
+      "code": "301070",
+      "name": "开勒股份",
+      "change_pct": 20.0,
+      "turnover": 7.05,
+      "high": 44.46,
+      "low": 35.9,
+      "open": 37.0
     },
     {
-      "code": "002105",
-      "name": "信隆健康",
-      "change_pct": 10.1,
-      "turnover": 2.27,
-      "high": 5.56,
-      "low": 5.18,
-      "open": 5.18
+      "code": "688200",
+      "name": "华峰测控",
+      "change_pct": 20.0,
+      "turnover": 4.77,
+      "high": 218.53,
+      "low": 179.94,
+      "open": 185.37
     },
     {
-      "code": "601599",
-      "name": "浙文影业",
-      "change_pct": 10.09,
-      "turnover": 2.15,
-      "high": 3.82,
-      "low": 3.82,
-      "open": 3.82
+      "code": "300666",
+      "name": "江丰电子",
+      "change_pct": 20.0,
+      "turnover": 11.06,
+      "high": 185.53,
+      "low": 154.08,
+      "open": 157.08
     },
     {
-      "code": "600358",
-      "name": "国旅联合",
-      "change_pct": 10.08,
-      "turnover": 3.89,
-      "high": 5.57,
-      "low": 5.04,
-      "open": 5.04
-    },
-    {
-      "code": "000591",
-      "name": "太阳能",
-      "change_pct": 10.07,
-      "turnover": 4.37,
-      "high": 4.59,
-      "low": 4.09,
-      "open": 4.13
-    },
-    {
-      "code": "600892",
-      "name": "大晟文化",
-      "change_pct": 10.07,
-      "turnover": 1.26,
-      "high": 4.81,
-      "low": 4.81,
-      "open": 4.81
-    },
-    {
-      "code": "600558",
-      "name": "大西洋",
-      "change_pct": 10.05,
-      "turnover": 8.16,
-      "high": 6.24,
-      "low": 5.54,
-      "open": 5.63
-    },
-    {
-      "code": "002088",
-      "name": "鲁阳节能",
-      "change_pct": 10.04,
-      "turnover": 2.81,
-      "high": 8.33,
-      "low": 7.37,
-      "open": 7.42
-    },
-    {
-      "code": "605378",
-      "name": "野马电池",
-      "change_pct": 10.04,
-      "turnover": 2.6,
-      "high": 14.36,
-      "low": 12.92,
-      "open": 12.97
+      "code": "688361",
+      "name": "中科飞测",
+      "change_pct": 20.0,
+      "turnover": 4.08,
+      "high": 246.74,
+      "low": 200.57,
+      "open": 204.0
     }
   ],
   "concept_flow": [
     {
-      "code": "new_ljhy",
-      "name": "酿酒行业",
-      "change_pct": 2.39,
-      "net_inflow_yi": 245.48
+      "code": "new_stock",
+      "name": "次新股",
+      "change_pct": 9.4,
+      "net_inflow_yi": 717.64
     },
     {
-      "code": "new_cbzz",
-      "name": "船舶制造",
-      "change_pct": 2.18,
-      "net_inflow_yi": 43.95
+      "code": "new_dzqj",
+      "name": "电子器件",
+      "change_pct": 7.44,
+      "net_inflow_yi": 1430.72
     },
     {
-      "code": "new_jdly",
-      "name": "酒店旅游",
-      "change_pct": 1.63,
-      "net_inflow_yi": 88.54
+      "code": "new_tchy",
+      "name": "陶瓷行业",
+      "change_pct": 6.91,
+      "net_inflow_yi": 19.22
     },
     {
-      "code": "new_nlmy",
-      "name": "农林牧渔",
-      "change_pct": 1.55,
-      "net_inflow_yi": 187.01
+      "code": "new_blhy",
+      "name": "玻璃行业",
+      "change_pct": 5.55,
+      "net_inflow_yi": 109.16
     },
     {
-      "code": "new_nyhf",
-      "name": "农药化肥",
-      "change_pct": 1.31,
-      "net_inflow_yi": 81.82
+      "code": "new_ysjs",
+      "name": "有色金属",
+      "change_pct": 5.39,
+      "net_inflow_yi": 642.41
     },
     {
-      "code": "new_fdsb",
-      "name": "发电设备",
-      "change_pct": 1.28,
-      "net_inflow_yi": 191.92
+      "code": "new_jxhy",
+      "name": "机械行业",
+      "change_pct": 4.78,
+      "net_inflow_yi": 912.26
     },
     {
-      "code": "new_fzxl",
-      "name": "服装鞋类",
-      "change_pct": 1.26,
-      "net_inflow_yi": 94.44
+      "code": "new_hghy",
+      "name": "化工行业",
+      "change_pct": 4.22,
+      "net_inflow_yi": 479.73
     },
     {
-      "code": "new_jrhy",
-      "name": "金融行业",
-      "change_pct": 1.09,
-      "net_inflow_yi": 670.05
+      "code": "new_yqyb",
+      "name": "仪器仪表",
+      "change_pct": 4.22,
+      "net_inflow_yi": 190.9
     },
     {
-      "code": "new_wzwm",
-      "name": "物资外贸",
-      "change_pct": 1.04,
-      "net_inflow_yi": 26.05
+      "code": "new_fjzz",
+      "name": "飞机制造",
+      "change_pct": 4.09,
+      "net_inflow_yi": 98.01
     },
     {
-      "code": "new_jzjc",
-      "name": "建筑建材",
-      "change_pct": 0.99,
-      "net_inflow_yi": 148.8
+      "code": "new_dzxx",
+      "name": "电子信息",
+      "change_pct": 4.04,
+      "net_inflow_yi": 1560.39
     }
   ]
 }

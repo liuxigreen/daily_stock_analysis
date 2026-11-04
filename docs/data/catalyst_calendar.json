@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-05",
   "upcoming": [
     {
       "date": "TBD",
@@ -132,6 +132,15 @@
       "stock_code": "600713",
       "stock_name": "南京医药",
       "event": "医保谈判常态化落地 + 创新药出海放量带动流通配送需求 + 11月医保目录调整结果公布",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "601016",
+      "stock_name": "节能风电",
+      "event": "Q3-Q4新能源装机旺季 + 十五五新能源规划预期 + 产能出清后电价企稳",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
