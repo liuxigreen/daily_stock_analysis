@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-11-06",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御下的低位蓄势补涨:半导体材料/封测传导、新能源运营端补涨、医药低估值修复,回避已爆发热点与AI高位链",
+      "picks": [
+        {
+          "code": "300725",
+          "name": "药石科技",
+          "return": 1.5,
+          "status": "持有中"
+        },
+        {
+          "code": "002300",
+          "name": "太阳电缆",
+          "return": 1.2,
+          "status": "持有中"
+        },
+        {
+          "code": "002580",
+          "name": "圣阳股份",
+          "return": 0.9,
+          "status": "持有中"
+        },
+        {
+          "code": "002275",
+          "name": "桂林三金",
+          "return": 1.0,
+          "status": "持有中"
+        },
+        {
+          "code": "301487",
+          "name": "盟固利",
+          "return": 0.1,
+          "status": "持有中"
+        },
+        {
+          "code": "600664",
+          "name": "哈药股份",
+          "return": 1.0,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-11-05",
       "total_count": 6,
       "win_count": 0,

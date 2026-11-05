@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05",
+  "last_updated": "2026-11-06",
   "upcoming": [
     {
       "date": "TBD",
@@ -141,6 +141,24 @@
       "stock_code": "601016",
       "stock_name": "节能风电",
       "event": "Q3-Q4新能源装机旺季 + 十五五新能源规划预期 + 产能出清后电价企稳",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "300725",
+      "stock_name": "药石科技",
+      "event": "11月医保目录调整结果公布 + 创新药出海订单回暖 + Q3财报季CXO订单验证",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "002275",
+      "stock_name": "桂林三金",
+      "event": "医保谈判常态化下中药独家品种受益 + 冬季呼吸道疾病高发季 + 中药OTC提价预期",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
