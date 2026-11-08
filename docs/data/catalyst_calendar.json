@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-09",
   "upcoming": [
     {
       "date": "TBD",
@@ -159,6 +159,15 @@
       "stock_code": "002275",
       "stock_name": "桂林三金",
       "event": "医保谈判常态化下中药独家品种受益 + 冬季呼吸道疾病高发季 + 中药OTC提价预期",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "301155",
+      "stock_name": "海力风电",
+      "event": "Q3-Q4海上风电装机旺季+十五五新能源规划+海风招标放量（广东、江苏项目集中开工）",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"

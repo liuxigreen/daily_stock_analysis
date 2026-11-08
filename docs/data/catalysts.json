@@ -1,222 +1,191 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "catalysts": [
     {
-      "title": "蓄势信号：逆市吸筹：跌-0.0%但主力719.9亿",
+      "title": "蓄势信号：逆市吸筹：跌-0.1%但主力392.9亿",
       "type": "accumulation",
-      "theme": "次新股",
+      "theme": "金融行业",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：逆市吸筹：跌-0.2%但主力92.3亿",
+      "title": "蓄势信号：逆市吸筹：跌-0.3%但主力159.1亿",
       "type": "accumulation",
-      "theme": "石油行业",
+      "theme": "酿酒行业",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：逆市吸筹：跌-1.0%但主力23.6亿",
+      "title": "蓄势信号：逆市吸筹：跌-0.3%但主力27.8亿",
       "type": "accumulation",
-      "theme": "公路桥梁",
+      "theme": "船舶制造",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：逆市吸筹：跌-2.1%但主力171.1亿",
+      "title": "蓄势信号：逆市吸筹：跌-0.5%但主力27.6亿",
+      "type": "accumulation",
+      "theme": "物资外贸",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：逆市吸筹：跌-0.5%但主力62.9亿",
+      "type": "accumulation",
+      "theme": "农药化肥",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：逆市吸筹：跌-0.6%但主力18.2亿",
+      "type": "accumulation",
+      "theme": "供水供气",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：逆市吸筹：跌-0.7%但主力19.6亿",
+      "type": "accumulation",
+      "theme": "环保行业",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：逆市吸筹：跌-0.8%但主力74.8亿",
+      "type": "accumulation",
+      "theme": "飞机制造",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：逆市吸筹：跌-0.8%但主力40.9亿",
+      "type": "accumulation",
+      "theme": "纺织行业",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：逆市吸筹：跌-0.8%但主力100.8亿",
+      "type": "accumulation",
+      "theme": "食品行业",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：逆市吸筹：跌-0.9%但主力84.1亿",
+      "type": "accumulation",
+      "theme": "服装鞋类",
+      "urgency": "high"
+    },
+    {
+      "title": "蓄势信号：逆市吸筹：跌-0.9%但主力112.0亿",
       "type": "accumulation",
       "theme": "煤炭行业",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：逆市吸筹：跌-6.2%但主力27.0亿",
+      "title": "蓄势信号：逆市吸筹：跌-0.9%但主力306.4亿",
       "type": "accumulation",
-      "theme": "陶瓷行业",
+      "theme": "生物制药",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：活跃蓄势：成交/市值32.3%，涨+1.3%",
+      "title": "蓄势信号：逆市吸筹：跌-1.0%但主力27.4亿",
       "type": "accumulation",
-      "theme": "襄阳轴承",
+      "theme": "水泥行业",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：活跃蓄势：成交/市值26.2%，涨+0.9%",
+      "title": "蓄势信号：逆市吸筹：跌-1.1%但主力145.0亿",
       "type": "accumulation",
-      "theme": "圣阳股份",
+      "theme": "建筑建材",
       "urgency": "high"
     },
     {
-      "title": "蓄势信号：活跃蓄势：成交/市值16.4%，涨+0.8%",
+      "title": "蓄势信号：逆市吸筹：跌-1.1%但主力173.0亿",
       "type": "accumulation",
-      "theme": "神农种业",
-      "urgency": "medium"
+      "theme": "传媒娱乐",
+      "urgency": "high"
     },
     {
-      "title": "蓄势信号：活跃蓄势：成交/市值14.8%，涨+0.1%",
+      "title": "蓄势信号：逆市吸筹：跌-1.2%但主力164.2亿",
       "type": "accumulation",
-      "theme": "盟固利",
-      "urgency": "medium"
+      "theme": "交通运输",
+      "urgency": "high"
     },
     {
-      "title": "蓄势信号：活跃蓄势：成交/市值13.9%，涨+1.0%",
+      "title": "蓄势信号：逆市吸筹：跌-1.2%但主力62.9亿",
       "type": "accumulation",
-      "theme": "上海洗霸",
-      "urgency": "medium"
+      "theme": "塑料制品",
+      "urgency": "high"
     },
     {
-      "title": "蓄势信号：活跃蓄势：成交/市值13.7%，涨+1.2%",
+      "title": "蓄势信号：逆市吸筹：跌-1.2%但主力8.2亿",
       "type": "accumulation",
-      "theme": "太阳电缆",
-      "urgency": "medium"
+      "theme": "摩托车",
+      "urgency": "high"
     },
     {
-      "title": "蓄势信号：活跃蓄势：成交/市值12.3%，涨+1.5%",
+      "title": "蓄势信号：逆市吸筹：跌-1.2%但主力79.2亿",
       "type": "accumulation",
-      "theme": "药石科技",
-      "urgency": "medium"
+      "theme": "钢铁行业",
+      "urgency": "high"
     },
     {
-      "title": "蓄势信号：活跃蓄势：成交/市值12.1%，涨+1.0%",
-      "type": "accumulation",
-      "theme": "桂林三金",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：活跃蓄势：成交/市值11.9%，涨+1.8%",
-      "type": "accumulation",
-      "theme": "百普赛斯",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：活跃蓄势：成交/市值11.8%，涨+1.1%",
-      "type": "accumulation",
-      "theme": "九牧王",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：活跃蓄势：成交/市值11.6%，涨+1.2%",
-      "type": "accumulation",
-      "theme": "掌趣科技",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：活跃蓄势：成交/市值11.3%，涨+1.0%",
-      "type": "accumulation",
-      "theme": "哈药股份",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：活跃蓄势：成交/市值11.3%，涨+1.1%",
-      "type": "accumulation",
-      "theme": "海洋王",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：活跃蓄势：成交/市值10.9%，涨+0.5%",
-      "type": "accumulation",
-      "theme": "黄河旋风",
-      "urgency": "medium"
-    },
-    {
-      "title": "蓄势信号：活跃蓄势：成交/市值10.1%，涨+1.9%",
-      "type": "accumulation",
-      "theme": "神剑股份",
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：半导体国产替代 — 聚和材料, 东方材料, 科马材料已启动",
-      "type": "chain_propagation",
-      "theme": "半导体国产替代",
-      "next": [
-        "璞源材料",
-        "国瓷材料",
-        "双欣材料"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：新能源车 — 华盛锂电, 天宏锂电, 德瑞锂电已启动",
-      "type": "chain_propagation",
-      "theme": "新能源车",
-      "next": [
-        "德赛电池",
-        "铜冠铜箔"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：光伏风电 — 金刚光伏, 海力风电, 电气风电已启动",
-      "type": "chain_propagation",
-      "theme": "光伏风电",
-      "next": [
-        "节能风电"
-      ],
-      "urgency": "medium"
-    },
-    {
-      "title": "产业链传导：军工航天 — 航天彩虹, 华夏航空, 春秋航空已启动",
+      "title": "产业链传导：军工航天 — 航天电器, 航天南湖, 航天晨光已启动",
       "type": "chain_propagation",
       "theme": "军工航天",
       "next": [
-        "纳睿雷达",
-        "航天电器",
-        "航天机电"
+        "炼石航空",
+        "航天彩虹",
+        "吉祥航空"
       ],
       "urgency": "medium"
     },
     {
-      "title": "产业链传导：创新药 — 泓博医药, 多瑞医药, 迪哲医药已启动",
+      "title": "产业链传导：半导体国产替代 — 西部材料, 利扬芯片已启动",
       "type": "chain_propagation",
-      "theme": "创新药",
+      "theme": "半导体国产替代",
       "next": [
-        "复星医药",
-        "国邦医药",
-        "华东医药"
+        "双欣材料",
+        "天赐材料",
+        "华润材料"
       ],
       "urgency": "medium"
     },
     {
-      "title": "谷歌将投资170亿美元 在怀俄明州建设其首个数据中心",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "算力巨头超聚变下周四上会！“国家队”云集的股东阵容",
-      "type": "news",
-      "theme": "AI算力",
-      "urgency": "medium"
-    },
-    {
-      "title": "民主党横扫美国会两院！光伏板块迎政策暖风 产业链修复可期(名单)",
-      "type": "news",
+      "title": "产业链传导：光伏风电 — 金刚光伏已启动",
+      "type": "chain_propagation",
       "theme": "光伏风电",
+      "next": [
+        "海力风电",
+        "节能风电",
+        "电气风电"
+      ],
       "urgency": "medium"
     },
     {
-      "title": "机构调研丨光伏概念&#x2B;新材料 这家公司20cm两连板 铜浆产品已在多个光伏电池客户端完成可靠性验证",
+      "title": "重大突破！我国新一代光刻机模型亮相",
       "type": "news",
       "theme": "半导体国产替代",
       "urgency": "medium"
     },
     {
-      "title": "费城半导体指数跌幅扩大至12% 报9035.38点",
-      "type": "news",
-      "theme": "半导体国产替代",
-      "urgency": "medium"
-    },
-    {
-      "title": "连续两日站稳2万亿元成交额 光伏与AI应用双主线领涨",
-      "type": "news",
-      "theme": "光伏风电",
-      "urgency": "medium"
-    },
-    {
-      "title": "“算力金属” 价格大涨！",
+      "title": "AI基建狂潮遭遇现实阻力！欧洲多国爆发抗议 要求暂停数据中心建设",
       "type": "news",
       "theme": "AI算力",
       "urgency": "medium"
     },
     {
-      "title": "多家公司在手订单充裕 CXO行业景气度有望延续",
+      "title": "沙特主导的联军表示：已在萨那摧毁一处胡塞武装的导弹发射装置",
+      "type": "news",
+      "theme": "军工航天",
+      "urgency": "medium"
+    },
+    {
+      "title": "算力需求驱动电子树脂走俏 技术迭代能力关乎业绩兑现成色",
+      "type": "news",
+      "theme": "AI算力",
+      "urgency": "medium"
+    },
+    {
+      "title": "机器人“大脑”进化的拐点 可能比想象中更近",
+      "type": "news",
+      "theme": "人形机器人",
+      "urgency": "medium"
+    },
+    {
+      "title": "相关主题基金规模攀升 机构：医药行业景气修复有望延续",
       "type": "news",
       "theme": "创新药",
       "urgency": "medium"
@@ -224,335 +193,393 @@
   ],
   "accumulation_signals": [
     {
-      "code": "new_stock",
-      "name": "次新股",
-      "change_pct": -0.02,
-      "net_inflow_yi": 719.88,
+      "code": "new_jrhy",
+      "name": "金融行业",
+      "change_pct": -0.14,
+      "net_inflow_yi": 392.91,
       "up_count": 0,
       "down_count": 0,
-      "leader": "贝特利",
+      "leader": "建设银行",
       "score": 40,
       "reasons": [
-        "逆市吸筹：跌-0.0%但主力719.9亿"
+        "逆市吸筹：跌-0.1%但主力392.9亿"
       ],
       "level": "sector"
     },
     {
-      "code": "new_syhy",
-      "name": "石油行业",
-      "change_pct": -0.21,
-      "net_inflow_yi": 92.32,
+      "code": "new_ljhy",
+      "name": "酿酒行业",
+      "change_pct": -0.28,
+      "net_inflow_yi": 159.14,
       "up_count": 0,
       "down_count": 0,
-      "leader": "国际实业",
+      "leader": "山西汾酒",
       "score": 40,
       "reasons": [
-        "逆市吸筹：跌-0.2%但主力92.3亿"
+        "逆市吸筹：跌-0.3%但主力159.1亿"
       ],
       "level": "sector"
     },
     {
-      "code": "new_glql",
-      "name": "公路桥梁",
-      "change_pct": -0.98,
-      "net_inflow_yi": 23.59,
+      "code": "new_cbzz",
+      "name": "船舶制造",
+      "change_pct": -0.34,
+      "net_inflow_yi": 27.79,
       "up_count": 0,
       "down_count": 0,
-      "leader": "重庆路桥",
+      "leader": "ST亚光",
       "score": 40,
       "reasons": [
-        "逆市吸筹：跌-1.0%但主力23.6亿"
+        "逆市吸筹：跌-0.3%但主力27.8亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "new_wzwm",
+      "name": "物资外贸",
+      "change_pct": -0.5,
+      "net_inflow_yi": 27.62,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "东方创业",
+      "score": 40,
+      "reasons": [
+        "逆市吸筹：跌-0.5%但主力27.6亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "new_nyhf",
+      "name": "农药化肥",
+      "change_pct": -0.51,
+      "net_inflow_yi": 62.87,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "红太阳",
+      "score": 40,
+      "reasons": [
+        "逆市吸筹：跌-0.5%但主力62.9亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "new_gsgq",
+      "name": "供水供气",
+      "change_pct": -0.63,
+      "net_inflow_yi": 18.16,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "武汉控股",
+      "score": 40,
+      "reasons": [
+        "逆市吸筹：跌-0.6%但主力18.2亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "new_hbhy",
+      "name": "环保行业",
+      "change_pct": -0.73,
+      "net_inflow_yi": 19.64,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "*ST启环",
+      "score": 40,
+      "reasons": [
+        "逆市吸筹：跌-0.7%但主力19.6亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "new_fjzz",
+      "name": "飞机制造",
+      "change_pct": -0.8,
+      "net_inflow_yi": 74.75,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "中直股份",
+      "score": 40,
+      "reasons": [
+        "逆市吸筹：跌-0.8%但主力74.8亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "new_fzhy",
+      "name": "纺织行业",
+      "change_pct": -0.8,
+      "net_inflow_yi": 40.92,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "浙文影业",
+      "score": 40,
+      "reasons": [
+        "逆市吸筹：跌-0.8%但主力40.9亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "new_sphy",
+      "name": "食品行业",
+      "change_pct": -0.8,
+      "net_inflow_yi": 100.85,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "ST龙大",
+      "score": 40,
+      "reasons": [
+        "逆市吸筹：跌-0.8%但主力100.8亿"
+      ],
+      "level": "sector"
+    },
+    {
+      "code": "new_fzxl",
+      "name": "服装鞋类",
+      "change_pct": -0.88,
+      "net_inflow_yi": 84.06,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "朗姿股份",
+      "score": 40,
+      "reasons": [
+        "逆市吸筹：跌-0.9%但主力84.1亿"
       ],
       "level": "sector"
     },
     {
       "code": "new_mthy",
       "name": "煤炭行业",
-      "change_pct": -2.11,
-      "net_inflow_yi": 171.07,
+      "change_pct": -0.91,
+      "net_inflow_yi": 111.99,
       "up_count": 0,
       "down_count": 0,
-      "leader": "*ST春天",
+      "leader": "中国神华",
       "score": 40,
       "reasons": [
-        "逆市吸筹：跌-2.1%但主力171.1亿"
+        "逆市吸筹：跌-0.9%但主力112.0亿"
       ],
       "level": "sector"
     },
     {
-      "code": "new_tchy",
-      "name": "陶瓷行业",
-      "change_pct": -6.21,
-      "net_inflow_yi": 27.02,
+      "code": "new_swzz",
+      "name": "生物制药",
+      "change_pct": -0.92,
+      "net_inflow_yi": 306.41,
       "up_count": 0,
       "down_count": 0,
-      "leader": "道氏技术",
+      "leader": "*ST香雪",
       "score": 40,
       "reasons": [
-        "逆市吸筹：跌-6.2%但主力27.0亿"
+        "逆市吸筹：跌-0.9%但主力306.4亿"
       ],
       "level": "sector"
     },
     {
-      "code": "000678",
-      "name": "襄阳轴承",
-      "change_pct": 1.33,
-      "market_cap_yi": 91.0,
+      "code": "new_snhy",
+      "name": "水泥行业",
+      "change_pct": -1.0,
+      "net_inflow_yi": 27.44,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "ST金顶",
       "score": 40,
       "reasons": [
-        "活跃蓄势：成交/市值32.3%，涨+1.3%"
+        "逆市吸筹：跌-1.0%但主力27.4亿"
       ],
-      "level": "stock"
+      "level": "sector"
     },
     {
-      "code": "002580",
-      "name": "圣阳股份",
-      "change_pct": 0.94,
-      "market_cap_yi": 87.0,
+      "code": "new_jzjc",
+      "name": "建筑建材",
+      "change_pct": -1.06,
+      "net_inflow_yi": 145.0,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "东方新能",
       "score": 40,
       "reasons": [
-        "活跃蓄势：成交/市值26.2%，涨+0.9%"
+        "逆市吸筹：跌-1.1%但主力145.0亿"
       ],
-      "level": "stock"
+      "level": "sector"
     },
     {
-      "code": "300189",
-      "name": "神农种业",
-      "change_pct": 0.78,
-      "market_cap_yi": 53.0,
-      "score": 36.39622641509434,
+      "code": "new_cmyl",
+      "name": "传媒娱乐",
+      "change_pct": -1.12,
+      "net_inflow_yi": 173.0,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "思美传媒",
+      "score": 40,
       "reasons": [
-        "活跃蓄势：成交/市值16.4%，涨+0.8%"
+        "逆市吸筹：跌-1.1%但主力173.0亿"
       ],
-      "level": "stock"
+      "level": "sector"
     },
     {
-      "code": "301487",
-      "name": "盟固利",
-      "change_pct": 0.1,
-      "market_cap_yi": 96.0,
-      "score": 34.833333333333336,
+      "code": "new_jtys",
+      "name": "交通运输",
+      "change_pct": -1.16,
+      "net_inflow_yi": 164.21,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "锦江在线",
+      "score": 40,
       "reasons": [
-        "活跃蓄势：成交/市值14.8%，涨+0.1%"
+        "逆市吸筹：跌-1.2%但主力164.2亿"
       ],
-      "level": "stock"
+      "level": "sector"
     },
     {
-      "code": "603200",
-      "name": "上海洗霸",
-      "change_pct": 1.04,
-      "market_cap_yi": 95.0,
-      "score": 33.94736842105263,
+      "code": "new_slzp",
+      "name": "塑料制品",
+      "change_pct": -1.2,
+      "net_inflow_yi": 62.94,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "公元股份",
+      "score": 40,
       "reasons": [
-        "活跃蓄势：成交/市值13.9%，涨+1.0%"
+        "逆市吸筹：跌-1.2%但主力62.9亿"
       ],
-      "level": "stock"
+      "level": "sector"
     },
     {
-      "code": "002300",
-      "name": "太阳电缆",
-      "change_pct": 1.22,
-      "market_cap_yi": 60.0,
-      "score": 33.71666666666667,
+      "code": "new_mtc",
+      "name": "摩托车",
+      "change_pct": -1.24,
+      "net_inflow_yi": 8.22,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "隆鑫通用",
+      "score": 40,
       "reasons": [
-        "活跃蓄势：成交/市值13.7%，涨+1.2%"
+        "逆市吸筹：跌-1.2%但主力8.2亿"
       ],
-      "level": "stock"
+      "level": "sector"
     },
     {
-      "code": "300725",
-      "name": "药石科技",
-      "change_pct": 1.5,
-      "market_cap_yi": 112.0,
-      "score": 32.285714285714285,
+      "code": "new_gthy",
+      "name": "钢铁行业",
+      "change_pct": -1.25,
+      "net_inflow_yi": 79.22,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "久立特材",
+      "score": 40,
       "reasons": [
-        "活跃蓄势：成交/市值12.3%，涨+1.5%"
+        "逆市吸筹：跌-1.2%但主力79.2亿"
       ],
-      "level": "stock"
-    },
-    {
-      "code": "002275",
-      "name": "桂林三金",
-      "change_pct": 1.04,
-      "market_cap_yi": 103.0,
-      "score": 32.116504854368934,
-      "reasons": [
-        "活跃蓄势：成交/市值12.1%，涨+1.0%"
-      ],
-      "level": "stock"
-    },
-    {
-      "code": "301080",
-      "name": "百普赛斯",
-      "change_pct": 1.77,
-      "market_cap_yi": 162.0,
-      "score": 31.901234567901234,
-      "reasons": [
-        "活跃蓄势：成交/市值11.9%，涨+1.8%"
-      ],
-      "level": "stock"
-    },
-    {
-      "code": "601566",
-      "name": "九牧王",
-      "change_pct": 1.1,
-      "market_cap_yi": 64.0,
-      "score": 31.75,
-      "reasons": [
-        "活跃蓄势：成交/市值11.8%，涨+1.1%"
-      ],
-      "level": "stock"
-    },
-    {
-      "code": "300315",
-      "name": "掌趣科技",
-      "change_pct": 1.2,
-      "market_cap_yi": 137.0,
-      "score": 31.55474452554745,
-      "reasons": [
-        "活跃蓄势：成交/市值11.6%，涨+1.2%"
-      ],
-      "level": "stock"
-    },
-    {
-      "code": "600664",
-      "name": "哈药股份",
-      "change_pct": 1.04,
-      "market_cap_yi": 146.0,
-      "score": 31.32876712328767,
-      "reasons": [
-        "活跃蓄势：成交/市值11.3%，涨+1.0%"
-      ],
-      "level": "stock"
-    },
-    {
-      "code": "002724",
-      "name": "海洋王",
-      "change_pct": 1.11,
-      "market_cap_yi": 91.0,
-      "score": 31.252747252747252,
-      "reasons": [
-        "活跃蓄势：成交/市值11.3%，涨+1.1%"
-      ],
-      "level": "stock"
-    },
-    {
-      "code": "600172",
-      "name": "黄河旋风",
-      "change_pct": 0.52,
-      "market_cap_yi": 167.0,
-      "score": 30.86826347305389,
-      "reasons": [
-        "活跃蓄势：成交/市值10.9%，涨+0.5%"
-      ],
-      "level": "stock"
-    },
-    {
-      "code": "002361",
-      "name": "神剑股份",
-      "change_pct": 1.9,
-      "market_cap_yi": 92.0,
-      "score": 30.065217391304348,
-      "reasons": [
-        "活跃蓄势：成交/市值10.1%，涨+1.9%"
-      ],
-      "level": "stock"
+      "level": "sector"
     }
   ],
   "chain_propagations": [
+    {
+      "theme": "军工航天",
+      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
+      "started": [
+        {
+          "code": "002025",
+          "name": "航天电器",
+          "change_pct": 3.94
+        },
+        {
+          "code": "688552",
+          "name": "航天南湖",
+          "change_pct": 2.24
+        },
+        {
+          "code": "600501",
+          "name": "航天晨光",
+          "change_pct": 2.09
+        }
+      ],
+      "next_opportunities": [
+        {
+          "code": "000697",
+          "name": "炼石航空",
+          "market_cap_yi": 129.0,
+          "change_pct": 0.33
+        },
+        {
+          "code": "002389",
+          "name": "航天彩虹",
+          "market_cap_yi": 179.0,
+          "change_pct": 0.11
+        },
+        {
+          "code": "603885",
+          "name": "吉祥航空",
+          "market_cap_yi": 228.0,
+          "change_pct": -0.19
+        },
+        {
+          "code": "300581",
+          "name": "晨曦航空",
+          "market_cap_yi": 60.0,
+          "change_pct": -0.27
+        },
+        {
+          "code": "688543",
+          "name": "国科军工",
+          "market_cap_yi": 123.0,
+          "change_pct": -0.69
+        }
+      ],
+      "average_change": 2.76,
+      "not_started_count": 26,
+      "total_market_cap_yi": 5955.0
+    },
     {
       "theme": "半导体国产替代",
       "logic": "大基金三期 → 设备国产化 → 材料配套 → 封测升级",
       "started": [
         {
-          "code": "688503",
-          "name": "聚和材料",
-          "change_pct": 11.27
+          "code": "002149",
+          "name": "西部材料",
+          "change_pct": 3.54
         },
         {
-          "code": "603110",
-          "name": "东方材料",
-          "change_pct": 7.89
-        },
-        {
-          "code": "920086",
-          "name": "科马材料",
-          "change_pct": 6.79
+          "code": "688135",
+          "name": "利扬芯片",
+          "change_pct": 3.13
         }
       ],
       "next_opportunities": [
         {
-          "code": "603196",
-          "name": "璞源材料",
-          "market_cap_yi": 66.0,
-          "change_pct": 1.87
-        },
-        {
-          "code": "300285",
-          "name": "国瓷材料",
-          "market_cap_yi": 409.0,
-          "change_pct": 1.69
-        },
-        {
           "code": "001369",
           "name": "双欣材料",
-          "market_cap_yi": 126.0,
-          "change_pct": 1.38
+          "market_cap_yi": 125.0,
+          "change_pct": -1.09
+        },
+        {
+          "code": "002709",
+          "name": "天赐材料",
+          "market_cap_yi": 584.0,
+          "change_pct": -1.27
         },
         {
           "code": "301090",
           "name": "华润材料",
-          "market_cap_yi": 91.0,
-          "change_pct": 1.3
+          "market_cap_yi": 90.0,
+          "change_pct": -1.29
         },
         {
-          "code": "000672",
-          "name": "上峰材料",
-          "market_cap_yi": 134.0,
-          "change_pct": 0.51
+          "code": "603196",
+          "name": "璞源材料",
+          "market_cap_yi": 65.0,
+          "change_pct": -1.84
+        },
+        {
+          "code": "600255",
+          "name": "鑫科材料",
+          "market_cap_yi": 52.0,
+          "change_pct": -2.04
         }
       ],
-      "average_change": 5.18,
-      "not_started_count": 8,
-      "total_market_cap_yi": 1188.0
-    },
-    {
-      "theme": "新能源车",
-      "logic": "渗透率50%+ → 固态电池突破 → 电池材料升级",
-      "started": [
-        {
-          "code": "688353",
-          "name": "华盛锂电",
-          "change_pct": 11.43
-        },
-        {
-          "code": "920252",
-          "name": "天宏锂电",
-          "change_pct": 4.72
-        },
-        {
-          "code": "920523",
-          "name": "德瑞锂电",
-          "change_pct": 3.46
-        }
-      ],
-      "next_opportunities": [
-        {
-          "code": "000049",
-          "name": "德赛电池",
-          "market_cap_yi": 82.0,
-          "change_pct": 2.0
-        },
-        {
-          "code": "301217",
-          "name": "铜冠铜箔",
-          "market_cap_yi": 602.0,
-          "change_pct": 0.92
-        }
-      ],
-      "average_change": 5.53,
-      "not_started_count": 2,
-      "total_market_cap_yi": 684.0
+      "average_change": 3.33,
+      "not_started_count": 11,
+      "total_market_cap_yi": 2027.0
     },
     {
       "theme": "光伏风电",
@@ -561,142 +588,32 @@
         {
           "code": "300093",
           "name": "金刚光伏",
-          "change_pct": 20.0
-        },
+          "change_pct": 4.5
+        }
+      ],
+      "next_opportunities": [
         {
           "code": "301155",
           "name": "海力风电",
-          "change_pct": 7.02
+          "market_cap_yi": 94.0,
+          "change_pct": 0.98
+        },
+        {
+          "code": "601016",
+          "name": "节能风电",
+          "market_cap_yi": 201.0,
+          "change_pct": -0.33
         },
         {
           "code": "688660",
           "name": "电气风电",
-          "change_pct": 4.95
+          "market_cap_yi": 100.0,
+          "change_pct": -1.97
         }
       ],
-      "next_opportunities": [
-        {
-          "code": "601016",
-          "name": "节能风电",
-          "market_cap_yi": 202.0,
-          "change_pct": 0.65
-        }
-      ],
-      "average_change": 10.66,
-      "not_started_count": 1,
-      "total_market_cap_yi": 202.0
-    },
-    {
-      "theme": "军工航天",
-      "logic": "军费预算增长 → 装备采购放量 → 供应链弹性",
-      "started": [
-        {
-          "code": "002389",
-          "name": "航天彩虹",
-          "change_pct": 6.53
-        },
-        {
-          "code": "002928",
-          "name": "华夏航空",
-          "change_pct": 5.86
-        },
-        {
-          "code": "601021",
-          "name": "春秋航空",
-          "change_pct": 5.68
-        }
-      ],
-      "next_opportunities": [
-        {
-          "code": "688522",
-          "name": "纳睿雷达",
-          "market_cap_yi": 78.0,
-          "change_pct": 1.95
-        },
-        {
-          "code": "002025",
-          "name": "航天电器",
-          "market_cap_yi": 228.0,
-          "change_pct": 1.72
-        },
-        {
-          "code": "600151",
-          "name": "航天机电",
-          "market_cap_yi": 124.0,
-          "change_pct": 1.52
-        },
-        {
-          "code": "601606",
-          "name": "长城军工",
-          "market_cap_yi": 216.0,
-          "change_pct": 1.26
-        },
-        {
-          "code": "600118",
-          "name": "中国卫星",
-          "market_cap_yi": 673.0,
-          "change_pct": 1.25
-        }
-      ],
-      "average_change": 3.64,
-      "not_started_count": 17,
-      "total_market_cap_yi": 3638.0
-    },
-    {
-      "theme": "创新药",
-      "logic": "医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "started": [
-        {
-          "code": "301230",
-          "name": "泓博医药",
-          "change_pct": 7.25
-        },
-        {
-          "code": "301075",
-          "name": "多瑞医药",
-          "change_pct": 5.61
-        },
-        {
-          "code": "688192",
-          "name": "迪哲医药",
-          "change_pct": 5.4
-        }
-      ],
-      "next_opportunities": [
-        {
-          "code": "600196",
-          "name": "复星医药",
-          "market_cap_yi": 632.0,
-          "change_pct": 1.68
-        },
-        {
-          "code": "605507",
-          "name": "国邦医药",
-          "market_cap_yi": 124.0,
-          "change_pct": 1.61
-        },
-        {
-          "code": "000963",
-          "name": "华东医药",
-          "market_cap_yi": 491.0,
-          "change_pct": 1.41
-        },
-        {
-          "code": "600713",
-          "name": "南京医药",
-          "market_cap_yi": 69.0,
-          "change_pct": 1.15
-        },
-        {
-          "code": "600216",
-          "name": "浙江医药",
-          "market_cap_yi": 108.0,
-          "change_pct": 0.98
-        }
-      ],
-      "average_change": 3.32,
-      "not_started_count": 13,
-      "total_market_cap_yi": 3209.0
+      "average_change": 4.5,
+      "not_started_count": 3,
+      "total_market_cap_yi": 395.0
     }
   ],
   "forward_events": [
@@ -727,253 +644,253 @@
   ],
   "sectors": [
     {
+      "code": "new_glql",
+      "name": "公路桥梁",
+      "change_pct": 1.39,
+      "net_inflow_yi": 25.42,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "龙江交通"
+    },
+    {
+      "code": "new_dlhy",
+      "name": "电力行业",
+      "change_pct": 0.94,
+      "net_inflow_yi": 252.74,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "乐山电力"
+    },
+    {
+      "code": "new_nlmy",
+      "name": "农林牧渔",
+      "change_pct": 0.32,
+      "net_inflow_yi": 229.9,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "天山生物"
+    },
+    {
+      "code": "new_jdhy",
+      "name": "家电行业",
+      "change_pct": 0.29,
+      "net_inflow_yi": 135.12,
+      "up_count": 0,
+      "down_count": 0,
+      "leader": "日出东方"
+    },
+    {
       "code": "new_jjhy",
       "name": "家具行业",
-      "change_pct": 3.8,
-      "net_inflow_yi": 30.01,
+      "change_pct": 0.03,
+      "net_inflow_yi": 22.32,
       "up_count": 0,
       "down_count": 0,
-      "leader": "德尔未来"
+      "leader": "ST喜临门"
     },
     {
-      "code": "new_ysbz",
-      "name": "印刷包装",
-      "change_pct": 3.58,
-      "net_inflow_yi": 91.17,
+      "code": "new_jrhy",
+      "name": "金融行业",
+      "change_pct": -0.14,
+      "net_inflow_yi": 392.91,
       "up_count": 0,
       "down_count": 0,
-      "leader": "福石控股"
+      "leader": "建设银行"
     },
     {
-      "code": "new_cmyl",
-      "name": "传媒娱乐",
-      "change_pct": 3.23,
-      "net_inflow_yi": 211.1,
+      "code": "new_ljhy",
+      "name": "酿酒行业",
+      "change_pct": -0.28,
+      "net_inflow_yi": 159.14,
       "up_count": 0,
       "down_count": 0,
-      "leader": "吉视传媒"
+      "leader": "山西汾酒"
     },
     {
-      "code": "new_fdc",
-      "name": "房地产",
-      "change_pct": 3.16,
-      "net_inflow_yi": 178.7,
+      "code": "new_cbzz",
+      "name": "船舶制造",
+      "change_pct": -0.34,
+      "net_inflow_yi": 27.79,
       "up_count": 0,
       "down_count": 0,
-      "leader": "京投发展"
+      "leader": "ST亚光"
     },
     {
-      "code": "new_dqhy",
-      "name": "电器行业",
-      "change_pct": 3.06,
-      "net_inflow_yi": 332.12,
+      "code": "new_wzwm",
+      "name": "物资外贸",
+      "change_pct": -0.5,
+      "net_inflow_yi": 27.62,
       "up_count": 0,
       "down_count": 0,
-      "leader": "鹏辉能源"
+      "leader": "东方创业"
     },
     {
-      "code": "new_hghy",
-      "name": "化工行业",
-      "change_pct": 2.92,
-      "net_inflow_yi": 544.05,
+      "code": "new_nyhf",
+      "name": "农药化肥",
+      "change_pct": -0.51,
+      "net_inflow_yi": 62.87,
       "up_count": 0,
       "down_count": 0,
-      "leader": "英 力 特"
+      "leader": "红太阳"
     },
     {
-      "code": "new_slzp",
-      "name": "塑料制品",
-      "change_pct": 2.81,
-      "net_inflow_yi": 69.47,
+      "code": "new_gsgq",
+      "name": "供水供气",
+      "change_pct": -0.63,
+      "net_inflow_yi": 18.16,
       "up_count": 0,
       "down_count": 0,
-      "leader": "慈文传媒"
+      "leader": "武汉控股"
     },
     {
-      "code": "new_blhy",
-      "name": "玻璃行业",
-      "change_pct": 2.77,
-      "net_inflow_yi": 102.29,
+      "code": "new_hbhy",
+      "name": "环保行业",
+      "change_pct": -0.73,
+      "net_inflow_yi": 19.64,
       "up_count": 0,
       "down_count": 0,
-      "leader": "金刚光伏"
+      "leader": "*ST启环"
     },
     {
-      "code": "new_fdsb",
-      "name": "发电设备",
-      "change_pct": 2.7,
-      "net_inflow_yi": 246.25,
+      "code": "new_fjzz",
+      "name": "飞机制造",
+      "change_pct": -0.8,
+      "net_inflow_yi": 74.75,
       "up_count": 0,
       "down_count": 0,
-      "leader": "经纬辉开"
+      "leader": "中直股份"
     },
     {
-      "code": "new_zzhy",
-      "name": "造纸行业",
-      "change_pct": 2.67,
-      "net_inflow_yi": 57.86,
+      "code": "new_fzhy",
+      "name": "纺织行业",
+      "change_pct": -0.8,
+      "net_inflow_yi": 40.92,
       "up_count": 0,
       "down_count": 0,
-      "leader": "顺灏股份"
+      "leader": "浙文影业"
     },
     {
-      "code": "new_snhy",
-      "name": "水泥行业",
-      "change_pct": 2.55,
-      "net_inflow_yi": 35.66,
+      "code": "new_sphy",
+      "name": "食品行业",
+      "change_pct": -0.8,
+      "net_inflow_yi": 100.85,
       "up_count": 0,
       "down_count": 0,
-      "leader": "狮头股份"
-    },
-    {
-      "code": "new_qtxy",
-      "name": "其它行业",
-      "change_pct": 2.48,
-      "net_inflow_yi": 206.34,
-      "up_count": 0,
-      "down_count": 0,
-      "leader": "鲁阳节能"
-    },
-    {
-      "code": "new_gthy",
-      "name": "钢铁行业",
-      "change_pct": 2.47,
-      "net_inflow_yi": 98.34,
-      "up_count": 0,
-      "down_count": 0,
-      "leader": "安阳钢铁"
-    },
-    {
-      "code": "new_ysjs",
-      "name": "有色金属",
-      "change_pct": 2.43,
-      "net_inflow_yi": 679.2,
-      "up_count": 0,
-      "down_count": 0,
-      "leader": "盛达资源"
-    },
-    {
-      "code": "new_hqhy",
-      "name": "化纤行业",
-      "change_pct": 2.41,
-      "net_inflow_yi": 97.55,
-      "up_count": 0,
-      "down_count": 0,
-      "leader": "华峰化学"
+      "leader": "ST龙大"
     }
   ],
   "fund_flow_top10": [
     {
       "code": "",
-      "name": "德尔未来",
-      "change_pct": 3.8,
+      "name": "龙江交通",
+      "change_pct": 1.39,
       "turnover": 0,
-      "net_inflow_yi": 30.01,
+      "net_inflow_yi": 25.42,
+      "market_cap_yi": 0,
+      "sector": "公路桥梁"
+    },
+    {
+      "code": "",
+      "name": "乐山电力",
+      "change_pct": 0.94,
+      "turnover": 0,
+      "net_inflow_yi": 252.74,
+      "market_cap_yi": 0,
+      "sector": "电力行业"
+    },
+    {
+      "code": "",
+      "name": "天山生物",
+      "change_pct": 0.32,
+      "turnover": 0,
+      "net_inflow_yi": 229.9,
+      "market_cap_yi": 0,
+      "sector": "农林牧渔"
+    },
+    {
+      "code": "",
+      "name": "日出东方",
+      "change_pct": 0.29,
+      "turnover": 0,
+      "net_inflow_yi": 135.12,
+      "market_cap_yi": 0,
+      "sector": "家电行业"
+    },
+    {
+      "code": "",
+      "name": "ST喜临门",
+      "change_pct": 0.03,
+      "turnover": 0,
+      "net_inflow_yi": 22.32,
       "market_cap_yi": 0,
       "sector": "家具行业"
     },
     {
       "code": "",
-      "name": "福石控股",
-      "change_pct": 3.58,
+      "name": "建设银行",
+      "change_pct": -0.14,
       "turnover": 0,
-      "net_inflow_yi": 91.17,
+      "net_inflow_yi": 392.91,
       "market_cap_yi": 0,
-      "sector": "印刷包装"
+      "sector": "金融行业"
     },
     {
       "code": "",
-      "name": "吉视传媒",
-      "change_pct": 3.23,
+      "name": "山西汾酒",
+      "change_pct": -0.28,
       "turnover": 0,
-      "net_inflow_yi": 211.1,
+      "net_inflow_yi": 159.14,
       "market_cap_yi": 0,
-      "sector": "传媒娱乐"
+      "sector": "酿酒行业"
     },
     {
       "code": "",
-      "name": "京投发展",
-      "change_pct": 3.16,
+      "name": "ST亚光",
+      "change_pct": -0.34,
       "turnover": 0,
-      "net_inflow_yi": 178.7,
+      "net_inflow_yi": 27.79,
       "market_cap_yi": 0,
-      "sector": "房地产"
+      "sector": "船舶制造"
     },
     {
       "code": "",
-      "name": "鹏辉能源",
-      "change_pct": 3.06,
+      "name": "东方创业",
+      "change_pct": -0.5,
       "turnover": 0,
-      "net_inflow_yi": 332.12,
+      "net_inflow_yi": 27.62,
       "market_cap_yi": 0,
-      "sector": "电器行业"
+      "sector": "物资外贸"
     },
     {
       "code": "",
-      "name": "英 力 特",
-      "change_pct": 2.92,
+      "name": "红太阳",
+      "change_pct": -0.51,
       "turnover": 0,
-      "net_inflow_yi": 544.05,
+      "net_inflow_yi": 62.87,
       "market_cap_yi": 0,
-      "sector": "化工行业"
-    },
-    {
-      "code": "",
-      "name": "慈文传媒",
-      "change_pct": 2.81,
-      "turnover": 0,
-      "net_inflow_yi": 69.47,
-      "market_cap_yi": 0,
-      "sector": "塑料制品"
-    },
-    {
-      "code": "",
-      "name": "金刚光伏",
-      "change_pct": 2.77,
-      "turnover": 0,
-      "net_inflow_yi": 102.29,
-      "market_cap_yi": 0,
-      "sector": "玻璃行业"
-    },
-    {
-      "code": "",
-      "name": "经纬辉开",
-      "change_pct": 2.7,
-      "turnover": 0,
-      "net_inflow_yi": 246.25,
-      "market_cap_yi": 0,
-      "sector": "发电设备"
-    },
-    {
-      "code": "",
-      "name": "顺灏股份",
-      "change_pct": 2.67,
-      "turnover": 0,
-      "net_inflow_yi": 57.86,
-      "market_cap_yi": 0,
-      "sector": "造纸行业"
+      "sector": "农药化肥"
     }
   ],
   "top_headlines": [
-    "吉利汽车披露三季度财报",
-    "伯克希尔连续3天扫货！",
-    "中国太保举牌中国神华H股",
-    "美股三大指数集体大幅下挫 纳指跌超5% AI产业链遭重挫",
-    "何立峰在北京调研时指出 强化科技创新与产业创新深度融合 推动经济持续向新向优向好发展",
-    "调休减少 2027年放假安排来了！9天超长春节假期再次回归",
-    "商务部回应扩大自美采购农产品：持开放态度 对等降税落地是前提",
-    "11月5日晚间上市公司利好消息一览(附名单)",
-    "谷歌将投资170亿美元 在怀俄明州建设其首个数据中心",
-    "宽基ETF继续放量！本轮股票型ETF净流入近6000亿元"
+    "五粮液续签博鳌论坛",
+    "引力传媒获4天3板",
+    "富春股份实控人被提起公诉",
+    "11月8日晚间上市公司利好消息一览(附名单)",
+    "周末要闻汇总：国常会要求完善资本市场稳市机制 增强股市内在稳定性",
+    "十大机构论市：低点已确认 “阻断式反弹”开启",
+    "东吴策略：关注AI下游和低位价值方向",
+    "国金策略：市场重构的开始",
+    "光大策略：外部扰动与政策托底拉锯 市场或震荡筑底",
+    "定了！5×23！纳斯达克即将进入23小时交易时代"
   ],
   "northbound_flow": {},
   "margin_data": {},
   "block_trades": [],
   "stats": {
     "sectors_scanned": 49,
-    "stocks_scanned": 5577,
+    "stocks_scanned": 5578,
     "accumulation_signals": 20,
-    "chain_propagations": 5,
-    "news_catalysts": 8
+    "chain_propagations": 3,
+    "news_catalysts": 6
   }
 }

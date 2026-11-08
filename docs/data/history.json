@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-11-09",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御下的低位蓄势补涨:军工航天配套、半导体材料/封测、风电运营三条传导链",
+      "picks": [
+        {
+          "code": "688543",
+          "name": "国科军工",
+          "return": -0.8,
+          "status": "持有中"
+        },
+        {
+          "code": "301155",
+          "name": "海力风电",
+          "return": -0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "001369",
+          "name": "双欣材料",
+          "return": -0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "603885",
+          "name": "吉祥航空",
+          "return": -0.3,
+          "status": "持有中"
+        },
+        {
+          "code": "600255",
+          "name": "鑫科材料",
+          "return": -0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "601016",
+          "name": "节能风电",
+          "return": 0.7,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-11-06",
       "total_count": 6,
       "win_count": 0,
