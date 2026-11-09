@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "summary": {
-    "total": 19,
-    "watching": 19,
+    "total": 20,
+    "watching": 20,
     "buying": 0,
     "holding": 0,
     "exited": 0,
-    "total_pnl": "-1.22%",
-    "avg_pnl_pct": -1.22
+    "total_pnl": "-1.28%",
+    "avg_pnl_pct": -1.28
   },
   "stocks": [
     {
@@ -19,9 +19,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-16",
       "added_price": 26.3,
-      "current_price": 27.72,
-      "change_pct_today": -0.96,
-      "pnl_pct": 5.4,
+      "current_price": 27.05,
+      "change_pct_today": -2.42,
+      "pnl_pct": 2.85,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -44,9 +44,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 31.41,
-      "current_price": 28.33,
-      "change_pct_today": 3.13,
-      "pnl_pct": -9.81,
+      "current_price": 28.03,
+      "change_pct_today": -1.06,
+      "pnl_pct": -10.76,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -69,9 +69,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 30.26,
-      "current_price": 37.74,
-      "change_pct_today": 3.54,
-      "pnl_pct": 24.72,
+      "current_price": 41.51,
+      "change_pct_today": 9.99,
+      "pnl_pct": 37.18,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -94,9 +94,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 14.91,
-      "current_price": 14.64,
-      "change_pct_today": -0.95,
-      "pnl_pct": -1.81,
+      "current_price": 14.8,
+      "change_pct_today": 1.09,
+      "pnl_pct": -0.74,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -119,9 +119,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-20",
       "added_price": 35.27,
-      "current_price": 32.38,
-      "change_pct_today": 2.24,
-      "pnl_pct": -8.19,
+      "current_price": 32.94,
+      "change_pct_today": 1.73,
+      "pnl_pct": -6.61,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -144,9 +144,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-21",
       "added_price": 10.61,
-      "current_price": 10.54,
-      "change_pct_today": -2.32,
-      "pnl_pct": -0.66,
+      "current_price": 10.61,
+      "change_pct_today": 0.66,
+      "pnl_pct": 0.0,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -169,9 +169,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-22",
       "added_price": 36.2,
-      "current_price": 36.12,
-      "change_pct_today": -1.87,
-      "pnl_pct": -0.22,
+      "current_price": 36.46,
+      "change_pct_today": 0.94,
+      "pnl_pct": 0.72,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -194,9 +194,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-22",
       "added_price": 36.48,
-      "current_price": 30.63,
-      "change_pct_today": -6.76,
-      "pnl_pct": -16.04,
+      "current_price": 30.85,
+      "change_pct_today": 0.72,
+      "pnl_pct": -15.43,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -219,9 +219,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-23",
       "added_price": 11.28,
-      "current_price": 10.88,
-      "change_pct_today": -1.09,
-      "pnl_pct": -3.55,
+      "current_price": 10.8,
+      "change_pct_today": -0.74,
+      "pnl_pct": -4.26,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -244,9 +244,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-23",
       "added_price": 15.28,
-      "current_price": 15.71,
-      "change_pct_today": -0.63,
-      "pnl_pct": 2.81,
+      "current_price": 15.55,
+      "change_pct_today": -1.02,
+      "pnl_pct": 1.77,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -269,9 +269,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-26",
       "added_price": 11.9,
-      "current_price": 11.71,
-      "change_pct_today": -2.09,
-      "pnl_pct": -1.6,
+      "current_price": 11.81,
+      "change_pct_today": 0.85,
+      "pnl_pct": -0.76,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -294,9 +294,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-27",
       "added_price": 12.03,
-      "current_price": 11.14,
-      "change_pct_today": -1.24,
-      "pnl_pct": -7.4,
+      "current_price": 10.98,
+      "change_pct_today": -1.44,
+      "pnl_pct": -8.73,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -319,9 +319,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-28",
       "added_price": 13.27,
-      "current_price": 13.12,
-      "change_pct_today": -4.79,
-      "pnl_pct": -1.13,
+      "current_price": 12.89,
+      "change_pct_today": -1.75,
+      "pnl_pct": -2.86,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -344,9 +344,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-10-28",
       "added_price": 12.6,
-      "current_price": 11.29,
-      "change_pct_today": -3.17,
-      "pnl_pct": -10.4,
+      "current_price": 11.27,
+      "change_pct_today": -0.18,
+      "pnl_pct": -10.56,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -369,9 +369,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-11-02",
       "added_price": 5.1,
-      "current_price": 5.32,
-      "change_pct_today": 0.38,
-      "pnl_pct": 4.31,
+      "current_price": 5.25,
+      "change_pct_today": -1.32,
+      "pnl_pct": 2.94,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -394,9 +394,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-11-05",
       "added_price": 3.06,
-      "current_price": 3.07,
-      "change_pct_today": -0.32,
-      "pnl_pct": 0.33,
+      "current_price": 3.05,
+      "change_pct_today": -0.65,
+      "pnl_pct": -0.33,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -419,9 +419,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-11-06",
       "added_price": 47.96,
-      "current_price": 46.2,
-      "change_pct_today": -3.67,
-      "pnl_pct": -3.67,
+      "current_price": 46.28,
+      "change_pct_today": 0.17,
+      "pnl_pct": -3.5,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -444,9 +444,9 @@
       "timeframe": "12-18个月",
       "added_date": "2026-11-06",
       "added_price": 17.56,
-      "current_price": 18.2,
-      "change_pct_today": 3.64,
-      "pnl_pct": 3.64,
+      "current_price": 17.15,
+      "change_pct_today": -5.77,
+      "pnl_pct": -2.33,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
@@ -469,13 +469,38 @@
       "timeframe": "12-18个月",
       "added_date": "2026-11-09",
       "added_price": 43.42,
-      "current_price": 43.42,
-      "change_pct_today": 0.98,
-      "pnl_pct": 0.0,
+      "current_price": 41.61,
+      "change_pct_today": -4.17,
+      "pnl_pct": -4.17,
       "data_source": "tencent",
       "catalyst_alerts": [
         {
           "event": "Q3-Q4海上风电装机旺季+十五五新能源规划+海风招标放量（广东、江苏项目集中开工）",
+          "expected_date": "TBD",
+          "auto_status": "unknown",
+          "user_status": "pending"
+        }
+      ],
+      "risk_factors": [],
+      "exit_conditions": [],
+      "latest_price_note": ""
+    },
+    {
+      "code": "688503",
+      "name": "聚和材料",
+      "status": "watching",
+      "thesis": "大基金三期投资节奏加快,设备环节已启动而材料配套尚未充分反应。公司为光伏银浆龙头并布局半导体材料,PE26.87在半导体材料候选池中估值最低之一,PB2.39提供安全边际。118亿中盘弹性适中,符合熊市防御+产业链补涨逻辑。相比同板块大票（如千亿级材料龙头）,市值小、弹性大、估值低,补涨空间更足。",
+      "supply_chain": "半导体材料（上游配套）,设备国产化后的第二波受益环节",
+      "timeframe": "12-18个月",
+      "added_date": "2026-11-10",
+      "added_price": 48.9,
+      "current_price": 48.9,
+      "change_pct_today": 1.12,
+      "pnl_pct": 0.0,
+      "data_source": "tencent",
+      "catalyst_alerts": [
+        {
+          "event": "大基金三期投资节奏加快 + 半导体三季报业绩预增潮 + 材料国产替代加速",
           "expected_date": "TBD",
           "auto_status": "unknown",
           "user_status": "pending"

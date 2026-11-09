@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09",
+  "last_updated": "2026-11-10",
   "upcoming": [
     {
       "date": "TBD",
@@ -168,6 +168,15 @@
       "stock_code": "301155",
       "stock_name": "海力风电",
       "event": "Q3-Q4海上风电装机旺季+十五五新能源规划+海风招标放量（广东、江苏项目集中开工）",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688503",
+      "stock_name": "聚和材料",
+      "event": "大基金三期投资节奏加快 + 半导体三季报业绩预增潮 + 材料国产替代加速",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
