@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-11-11",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御下的低位蓄势补涨:半导体材料/封测传导、军工航天配套、创新药CXO订单回暖,回避已爆发热点,聚焦主力逆市吸筹但价格未动的中盘弹性股",
+      "picks": [
+        {
+          "code": "600255",
+          "name": "鑫科材料",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "000672",
+          "name": "上峰材料",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "603698",
+          "name": "航天工程",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "301520",
+          "name": "万邦医药",
+          "return": 0.7,
+          "status": "持有中"
+        },
+        {
+          "code": "002488",
+          "name": "金固股份",
+          "return": 0.3,
+          "status": "持有中"
+        },
+        {
+          "code": "300139",
+          "name": "晓程科技",
+          "return": 1.8,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-11-10",
       "total_count": 6,
       "win_count": 0,

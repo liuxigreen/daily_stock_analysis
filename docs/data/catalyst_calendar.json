@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10",
+  "last_updated": "2026-11-11",
   "upcoming": [
     {
       "date": "TBD",
@@ -177,6 +177,15 @@
       "stock_code": "688503",
       "stock_name": "聚和材料",
       "event": "大基金三期投资节奏加快 + 半导体三季报业绩预增潮 + 材料国产替代加速",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "600255",
+      "stock_name": "鑫科材料",
+      "event": "大基金三期投资节奏加快,设备国产化后材料配套订单外溢；半导体三季报业绩预增潮",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
