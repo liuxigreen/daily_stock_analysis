@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "upcoming": [
     {
       "date": "TBD",
@@ -186,6 +186,24 @@
       "stock_code": "600255",
       "stock_name": "鑫科材料",
       "event": "大基金三期投资节奏加快,设备国产化后材料配套订单外溢；半导体三季报业绩预增潮",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "688073",
+      "stock_name": "毕得医药",
+      "event": "11月医保目录调整结果公布 + 创新药出海订单回暖 + Q3财报季CXO订单验证 + 海外科研试剂需求复苏",
+      "importance": "high",
+      "status": "pending",
+      "auto_status": "unknown"
+    },
+    {
+      "date": "TBD",
+      "stock_code": "601089",
+      "stock_name": "福元医药",
+      "event": "11月医保目录调整结果公布 + 创新药出海 + 集采出清后仿制药毛利企稳 + 冬季用药旺季",
       "importance": "high",
       "status": "pending",
       "auto_status": "unknown"
