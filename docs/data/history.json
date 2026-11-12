@@ -1,6 +1,51 @@
 {
   "records": [
     {
+      "date": "2026-11-13",
+      "total_count": 6,
+      "win_count": 0,
+      "avg_return": 0,
+      "review": "熊市防御下的低位蓄势补涨:军工航天配套+创新药CXO/流通+半导体材料,回避已爆发热点,聚焦主力逆市吸筹但价格未动的中盘弹性股",
+      "picks": [
+        {
+          "code": "600501",
+          "name": "航天晨光",
+          "return": -0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "600855",
+          "name": "航天长峰",
+          "return": -0.3,
+          "status": "持有中"
+        },
+        {
+          "code": "600713",
+          "name": "南京医药",
+          "return": 0.0,
+          "status": "持有中"
+        },
+        {
+          "code": "605507",
+          "name": "国邦医药",
+          "return": 0.5,
+          "status": "持有中"
+        },
+        {
+          "code": "600261",
+          "name": "阳光照明",
+          "return": 1.9,
+          "status": "持有中"
+        },
+        {
+          "code": "000823",
+          "name": "超声电子",
+          "return": 0.2,
+          "status": "持有中"
+        }
+      ]
+    },
+    {
       "date": "2026-11-12",
       "total_count": 6,
       "win_count": 0,
