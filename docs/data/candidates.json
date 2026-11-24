@@ -1,164 +1,164 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "candidates": [
     {
-      "code": "000823",
-      "name": "超声电子",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值18.0%，涨+0.1%",
-      "market_cap_yi": 118.0,
-      "score": 100.0,
-      "pe": 48.06,
-      "pb": 2.03
+      "code": "600877",
+      "name": "电科芯片",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 111.0,
+      "score": 90.0,
+      "pe": 233.75,
+      "pb": 4.46
     },
     {
-      "code": "002584",
-      "name": "西陇科学",
-      "source": "accumulation",
-      "reason": "蓄势信号：活跃蓄势：成交/市值13.2%，涨+1.6%",
-      "market_cap_yi": 51.0,
-      "score": 100.0,
-      "pe": -66.46,
-      "pb": 2.24
+      "code": "000672",
+      "name": "上峰材料",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 119.0,
+      "score": 90.0,
+      "pe": 18.11,
+      "pb": 1.01
+    },
+    {
+      "code": "300398",
+      "name": "飞凯材料",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 157.0,
+      "score": 90.0,
+      "pe": 38.82,
+      "pb": 2.94
     },
     {
       "code": "603196",
       "name": "璞源材料",
       "source": "chain",
       "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 58.0,
+      "market_cap_yi": 57.0,
       "score": 90.0,
-      "pe": 182.61,
-      "pb": 2.78
+      "pe": 178.0,
+      "pb": 2.71
     },
     {
-      "code": "002756",
-      "name": "永兴材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 170.0,
-      "score": 90.0,
-      "pe": 25.42,
-      "pb": 1.23
-    },
-    {
-      "code": "301090",
-      "name": "华润材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 85.0,
-      "score": 90.0,
-      "pe": -99.14,
-      "pb": 1.28
-    },
-    {
-      "code": "001369",
-      "name": "双欣材料",
-      "source": "chain",
-      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
-      "market_cap_yi": 109.0,
-      "score": 90.0,
-      "pe": 15.37,
-      "pb": 1.53
-    },
-    {
-      "code": "000049",
-      "name": "德赛电池",
-      "source": "chain",
-      "reason": "产业链传导(新能源车): 待补涨，渗透率50%+ → 固态电池突破 → 电池材料升级",
-      "market_cap_yi": 73.0,
-      "score": 90.0,
-      "pe": 25.14,
-      "pb": 1.05
-    },
-    {
-      "code": "600316",
-      "name": "洪都航空",
+      "code": "000901",
+      "name": "航天科技",
       "source": "chain",
       "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 199.0,
+      "market_cap_yi": 92.0,
       "score": 90.0,
-      "pe": 503.43,
-      "pb": 3.72
+      "pe": 131.48,
+      "pb": 2.19
     },
     {
-      "code": "688562",
-      "name": "航天软件",
+      "code": "688543",
+      "name": "国科军工",
       "source": "chain",
       "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 52.0,
+      "market_cap_yi": 96.0,
       "score": 90.0,
-      "pe": -431.67,
-      "pb": 3.23
+      "pe": 32.6,
+      "pb": 4.1
     },
     {
-      "code": "688522",
-      "name": "纳睿雷达",
+      "code": "002389",
+      "name": "航天彩虹",
       "source": "chain",
       "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
-      "market_cap_yi": 67.0,
+      "market_cap_yi": 155.0,
       "score": 90.0,
-      "pe": 43.61,
-      "pb": 2.79
+      "pe": 525.0,
+      "pb": 1.95
     },
     {
-      "code": "688176",
-      "name": "亚虹医药",
+      "code": "002928",
+      "name": "华夏航空",
+      "source": "chain",
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 86.0,
+      "score": 90.0,
+      "pe": 13.68,
+      "pb": 2.16
+    },
+    {
+      "code": "300900",
+      "name": "广联航空",
+      "source": "chain",
+      "reason": "产业链传导(军工航天): 待补涨，军费预算增长 → 装备采购放量 → 供应链弹性",
+      "market_cap_yi": 55.0,
+      "score": 90.0,
+      "pe": -47.74,
+      "pb": 2.77
+    },
+    {
+      "code": "688073",
+      "name": "毕得医药",
       "source": "chain",
       "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 56.0,
+      "market_cap_yi": 55.0,
       "score": 90.0,
-      "pe": -13.34,
-      "pb": 4.59
+      "pe": 34.57,
+      "pb": 2.55
     },
     {
       "code": "688131",
       "name": "皓元医药",
       "source": "chain",
       "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 196.0,
+      "market_cap_yi": 194.0,
       "score": 90.0,
-      "pe": 81.02,
-      "pb": 5.84
+      "pe": 80.51,
+      "pb": 5.8
     },
     {
-      "code": "002019",
-      "name": "亿帆医药",
+      "code": "605507",
+      "name": "国邦医药",
       "source": "chain",
       "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 101.0,
+      "market_cap_yi": 117.0,
       "score": 90.0,
-      "pe": 25.09,
-      "pb": 1.13
+      "pe": 10.14,
+      "pb": 1.38
     },
     {
-      "code": "600789",
-      "name": "鲁抗医药",
+      "code": "300285",
+      "name": "国瓷材料",
+      "source": "chain",
+      "reason": "产业链传导(半导体国产替代): 待补涨，大基金三期 → 设备国产化 → 材料配套 → 封测升级",
+      "market_cap_yi": 349.0,
+      "score": 87.0,
+      "pe": 56.39,
+      "pb": 4.66
+    },
+    {
+      "code": "688192",
+      "name": "迪哲医药",
       "source": "chain",
       "reason": "产业链传导(创新药): 待补涨，医保谈判常态化 → 创新药出海 → CXO订单回暖",
-      "market_cap_yi": 66.0,
-      "score": 90.0,
-      "pe": 53.08,
-      "pb": 1.27
+      "market_cap_yi": 279.0,
+      "score": 87.0,
+      "pe": -35.08,
+      "pb": 5.6
     },
     {
-      "code": "601016",
-      "name": "节能风电",
-      "source": "chain",
-      "reason": "产业链传导(光伏风电): 待补涨，产能出清 → 价格企稳 → 十五五新能源规划 → 装机旺季",
-      "market_cap_yi": 191.0,
-      "score": 90.0,
-      "pe": 27.55,
-      "pb": 1.06
+      "code": "600127",
+      "name": "金健米业",
+      "source": "screening",
+      "reason": "中盘蓄势：55亿，涨-1.4%，活跃度18.4%",
+      "market_cap_yi": 55.0,
+      "score": 75.0,
+      "pe": 1445.76,
+      "pb": 8.37
     }
   ],
   "stats": {
     "total": 15,
     "by_source": {
-      "accumulation": 2,
-      "chain": 13
+      "chain": 14,
+      "screening": 1
     },
-    "avg_market_cap": 106,
+    "avg_market_cap": 132,
     "data_source_status": "ok"
   }
 }
